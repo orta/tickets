@@ -26,6 +26,8 @@
 
 - (IBAction) testCredentials:(id)sender;
 - (IBAction)connect:(id)sender;
+
+- (NSString*) addressAt:(NSString*) postfix;
 - (void) createProjectsWithXML:(NSString *) xml;
 
 @end

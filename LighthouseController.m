@@ -30,6 +30,20 @@
                                          forKey:@"NSContinuouslyUpdatesValue"]];
   
 
+  if (self.serverAddress && self.APIKey) {
+    NSString *url = [self addressAt:@"projects.xml"];
+    
+    [Seriously get:url handler:^(id body, NSHTTPURLResponse *response, NSError *error) {
+      if (error) {
+        NSLog(@"Error: %@", error);
+      }
+      else {
+        NSLog(@"%@", body);
+        [self createProjectsWithXML:body];
+      }
+    }];
+    
+  }
 }
 
 - (NSString*) addressAt:(NSString*) postfix {
@@ -38,17 +52,6 @@
 
 - (IBAction) testCredentials:(id)sender {
   
-  NSString *url = [self addressAt:@"projects.xml"];
-  
-  [Seriously get:url handler:^(id body, NSHTTPURLResponse *response, NSError *error) {
-    if (error) {
-      NSLog(@"Error: %@", error);
-    }
-    else {
-      NSLog(@"%@", body);
-      [self createProjectsWithXML:body];
-    }
-  }];
 }
 
 - (void) createProjectsWithXML:(NSString *) xml {
