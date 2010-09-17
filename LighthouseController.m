@@ -34,8 +34,6 @@
 
   if (self.serverAddress && self.APIKey) {    
     [self getProjects];
-    [self getMilestones];
-    [self getUsers];
   }
 }
 
@@ -44,11 +42,40 @@
 }
 
 - (IBAction) projectSelected:(id)sender {
-  self.currentProject = [[projects content] objectAtIndex:[sender indexOfSelectedItem]];
   [[NSUserDefaults standardUserDefaults] setInteger: [sender indexOfSelectedItem] forKey:@"projectIndex"];
-  
+  self.currentProject = [[projects content] objectAtIndex:[sender indexOfSelectedItem]];
+
   [self getMilestones];
   [self getUsers];
+}
+
+- (IBAction) milestoneSelected:(id)sender {
+  [[NSUserDefaults standardUserDefaults] setInteger: [sender indexOfSelectedItem] forKey:@"milestoneIndex"];
+}
+
+- (IBAction) userSelected:(id)sender {
+  [[NSUserDefaults standardUserDefaults] setInteger: [sender indexOfSelectedItem] forKey:@"userIndex"];
+}
+
+
+- (void) getProjects {
+  NSString *url = [self addressAt:@"projects.xml"];
+  [Seriously get:url handler:^(id body, NSHTTPURLResponse *response, NSError *error) {
+    if (error) {
+      NSLog(@"Error: %@", error);
+    }
+    else {
+      [self createEntitiesWithXML:body toArrayController:projects];
+      
+      if ( [[[NSUserDefaults standardUserDefaults] objectForKey:@"projectIndex"] integerValue] ) {
+        self.projectIndex = [[NSUserDefaults standardUserDefaults] integerForKey:@"projectIndex"];
+        self.currentProject = [[projects content] objectAtIndex:self.projectIndex];
+        
+        [self getUsers];
+        [self getMilestones];
+      }
+    }
+  }];
 }
 
 
@@ -60,23 +87,12 @@
     }
     else {
       [self createEntitiesWithXML:body toArrayController:milestones];
+      if ( [[[NSUserDefaults standardUserDefaults] objectForKey:@"milestoneIndex"] integerValue] ) {
+        self.milestoneIndex = [[NSUserDefaults standardUserDefaults] integerForKey:@"milestoneIndex"];
+      }
+      
     }
   }];  
-}
-
-- (void) getProjects {
-  NSString *url = [self addressAt:@"projects.xml"];
-  [Seriously get:url handler:^(id body, NSHTTPURLResponse *response, NSError *error) {
-    if (error) {
-      NSLog(@"Error: %@", error);
-    }
-    else {
-      [self createEntitiesWithXML:body toArrayController:projects];
-      if ( [[[NSUserDefaults standardUserDefaults] objectForKey:@"projectIndex"] integerValue] ) {
-        self.projectIndex = [[NSUserDefaults standardUserDefaults] integerForKey:@"projectIndex"];
-      }
-    }
-  }];
 }
 
 - (void) getUsers {
@@ -88,6 +104,10 @@
     }
     else {
       [self createEntitiesWithXML:body toArrayController:users];
+      
+      if ( [[[NSUserDefaults standardUserDefaults] objectForKey:@"userIndex"] integerValue] ) {
+        self.userIndex = [[NSUserDefaults standardUserDefaults] integerForKey:@"userIndex"];
+      }
     }
   }];  
 }

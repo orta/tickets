@@ -42,10 +42,14 @@
 @property () NSInteger projectIndex;
 @property () NSInteger milestoneIndex;
 @property () NSInteger userIndex;
+- (IBAction) userSelected:(id)sender;
+
+- (IBAction) connect:(id)sender;
+- (IBAction) milestoneSelected:(id)sender;
 
 
 - (IBAction) projectSelected:(id)sender;
-- (IBAction) connect:(id)sender;
+
 
 - (void) getProjects;
 - (void) getMilestones;
