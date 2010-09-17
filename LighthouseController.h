@@ -22,7 +22,10 @@
   IBOutlet NSArrayController *projects;
   IBOutlet NSArrayController *milestones;
   IBOutlet NSArrayController *users;
-
+  
+  NSInteger projectIndex;
+  NSInteger milestoneIndex;
+  NSInteger userIndex;
 }
 
 @property (retain) NSString *APIKey;
@@ -36,11 +39,17 @@
 @property (retain) LighthouseEntity *currentMilestone;
 @property (retain) LighthouseEntity *currentUser;
 
+@property () NSInteger projectIndex;
+@property () NSInteger milestoneIndex;
+@property () NSInteger userIndex;
+
+
 - (IBAction) projectSelected:(id)sender;
 - (IBAction) connect:(id)sender;
 
 - (void) getProjects;
 - (void) getMilestones;
+- (void) getUsers;
 
 - (NSString*) addressAt:(NSString*) postfix;
 - (void) createEntitiesWithXML:(NSString *) xml toArrayController:(NSArrayController*)controller;

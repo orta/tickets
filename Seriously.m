@@ -22,7 +22,7 @@ const NSString *kSeriouslyProgressHandler = @"kSeriouslyProgressHandler";
     [options addEntriesFromDictionary:userOptions];
     
     NSURLRequestCachePolicy cachePolicy = NSURLRequestUseProtocolCachePolicy;
-    NSTimeInterval timeout = 60;    
+    NSTimeInterval timeout = 15;    
     
     [request setCachePolicy:cachePolicy];
     [request setTimeoutInterval:timeout];

@@ -14,6 +14,8 @@
 @synthesize serverAddress, APIKey;
 
 @synthesize currentProject, projects, currentMilestone, milestones, currentUser, users;
+@synthesize projectIndex, milestoneIndex, userIndex;
+
 
 - (void)awakeFromNib {
   
@@ -32,6 +34,8 @@
 
   if (self.serverAddress && self.APIKey) {    
     [self getProjects];
+    [self getMilestones];
+    [self getUsers];
   }
 }
 
@@ -41,6 +45,8 @@
 
 - (IBAction) projectSelected:(id)sender {
   self.currentProject = [[projects content] objectAtIndex:[sender indexOfSelectedItem]];
+  [[NSUserDefaults standardUserDefaults] setInteger: [sender indexOfSelectedItem] forKey:@"projectIndex"];
+  
   [self getMilestones];
   [self getUsers];
 }
@@ -53,7 +59,6 @@
       NSLog(@"Error: %@", error);
     }
     else {
-      NSLog(@"%@", body);
       [self createEntitiesWithXML:body toArrayController:milestones];
     }
   }];  
@@ -66,10 +71,12 @@
       NSLog(@"Error: %@", error);
     }
     else {
-      NSLog(@"%@", body);
       [self createEntitiesWithXML:body toArrayController:projects];
+      if ( [[[NSUserDefaults standardUserDefaults] objectForKey:@"projectIndex"] integerValue] ) {
+        self.projectIndex = [[NSUserDefaults standardUserDefaults] integerForKey:@"projectIndex"];
+      }
     }
-  }];  
+  }];
 }
 
 - (void) getUsers {
@@ -80,7 +87,6 @@
       NSLog(@"Error: %@", error);
     }
     else {
-      NSLog(@"%@", body);
       [self createEntitiesWithXML:body toArrayController:users];
     }
   }];  
