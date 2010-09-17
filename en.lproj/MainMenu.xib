@@ -12,8 +12,6 @@
 		</object>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="57"/>
-			<integer value="534"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -1333,7 +1331,7 @@
 							<reference key="NSNextResponder" ref="439893737"/>
 							<int key="NSvFlags">12</int>
 							<string key="NSFrame">{{462.5, 23}, {4, 312}}</string>
-							<string key="NSBounds">{{5, 0}, {2, 312}}</string>
+							<string key="NSBounds">{{5.5, 0}, {1, 312}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSNextKeyView" ref="163752273"/>
 							<string key="NSOffsets">{0, 0}</string>
@@ -1695,7 +1693,7 @@
 				<nil key="NSViewClass"/>
 				<string key="NSWindowContentMaxSize">{1.79769e+308, 1.79769e+308}</string>
 				<object class="NSView" key="NSWindowView" id="826368976">
-					<reference key="NSNextResponder"/>
+					<nil key="NSNextResponder"/>
 					<int key="NSvFlags">256</int>
 					<object class="NSMutableArray" key="NSSubviews">
 						<bool key="EncodedWithXMLCoder">YES</bool>
@@ -1791,7 +1789,6 @@
 							<int key="NSvFlags">268</int>
 							<string key="NSFrame">{{35, 205}, {200, 17}}</string>
 							<reference key="NSSuperview" ref="826368976"/>
-							<reference key="NSNextKeyView"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="365010584">
 								<int key="NSCellFlags">68288064</int>
@@ -1912,7 +1909,6 @@
 						</object>
 					</object>
 					<string key="NSFrameSize">{359, 430}</string>
-					<reference key="NSSuperview"/>
 					<reference key="NSNextKeyView" ref="115737686"/>
 				</object>
 				<string key="NSScreenRect">{{1440, -180}, {1920, 1080}}</string>
@@ -1930,7 +1926,7 @@
 					<string>name</string>
 					<string>identifier</string>
 				</object>
-				<string key="NSObjectClassName">Project</string>
+				<string key="NSObjectClassName">LighthouseEntity</string>
 				<bool key="NSEditable">YES</bool>
 				<object class="_NSManagedProxy" key="_NSManagedProxy"/>
 				<bool key="NSAvoidsEmptySelection">YES</bool>

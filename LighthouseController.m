@@ -13,7 +13,7 @@
 
 @synthesize serverAddress, APIKey;
 
-@synthesize currentProject, projects;
+@synthesize currentProject, projects, currentMilestone, milestones, currentUser, users;
 
 - (void)awakeFromNib {
   
@@ -30,19 +30,8 @@
                                          forKey:@"NSContinuouslyUpdatesValue"]];
   
 
-  if (self.serverAddress && self.APIKey) {
-    NSString *url = [self addressAt:@"projects.xml"];
-    
-    [Seriously get:url handler:^(id body, NSHTTPURLResponse *response, NSError *error) {
-      if (error) {
-        NSLog(@"Error: %@", error);
-      }
-      else {
-        NSLog(@"%@", body);
-        [self createProjectsWithXML:body];
-      }
-    }];
-    
+  if (self.serverAddress && self.APIKey) {    
+    [self getProjects];
   }
 }
 
@@ -54,23 +43,36 @@
   
 }
 
-- (void) createProjectsWithXML:(NSString *) xml {
-  NSMutableArray *tempProjects = [NSMutableArray array];
-  
+- (void) getProjects {
+  NSString *url = [self addressAt:@"projects.xml"];
+  [Seriously get:url handler:^(id body, NSHTTPURLResponse *response, NSError *error) {
+    if (error) {
+      NSLog(@"Error: %@", error);
+    }
+    else {
+      NSLog(@"%@", body);
+      [self createEntitiesWithXML:body toArrayController:projects];
+    }
+  }];  
+}
+
+- (void) createEntitiesWithXML:(NSString *) xml toArrayController:(NSArrayController*)controller {
+  NSMutableArray *tempMembers = [NSMutableArray array];
   NSError *error;
   NSXMLDocument * doc = [[NSXMLDocument alloc] initWithXMLString:xml options:0 error:&error];
   NSArray *children = [[doc rootElement] children];
   int i, count = [children count];
   for (i=0; i < count; i++) {
     
-    NSXMLElement *projectElement = [children objectAtIndex:i];
-    Project *newProject = [[Project alloc] init];
-    newProject.identifier = [[[[projectElement elementsForName:@"id"] objectAtIndex:0] stringValue] integerValue];
-    newProject.name = [[[projectElement elementsForName:@"name"] objectAtIndex:0] stringValue];
-    [tempProjects addObject:newProject];
+    NSXMLElement *membersElement = [children objectAtIndex:i];
+    LighthouseEntity *newProject = [[LighthouseEntity alloc] init];
+    newProject.identifier = [[[[membersElement elementsForName:@"id"] objectAtIndex:0] stringValue] integerValue];
+    newProject.name = [[[membersElement elementsForName:@"name"] objectAtIndex:0] stringValue];
+    [tempMembers addObject:newProject];
   }
-  [self.projects setContent:tempProjects];
+  [controller setContent:tempMembers];
 }
+
 
 - (IBAction)connect:(id)sender {
   

@@ -7,7 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "Project.h"
+#import "LighthouseEntity.h"
 
 @interface LighthouseController : NSObject {
   
@@ -15,19 +15,34 @@
   NSString *serverAddress;
   NSString *APIKey;
   
-  Project *currentProject;
+  LighthouseEntity *currentProject;
+  LighthouseEntity *currentMilestone;
+  LighthouseEntity *currentUser;
+  
   IBOutlet NSArrayController *projects;
+  IBOutlet NSArrayController *milestones;
+  IBOutlet NSArrayController *users;
+
 }
 
 @property (retain) NSString *APIKey;
 @property (retain) NSString *serverAddress;
+
 @property (retain) NSArrayController *projects;
-@property (retain) Project *currentProject;
+@property (retain) NSArrayController *milestones;
+@property (retain) NSArrayController *users;
+
+@property (retain) LighthouseEntity *currentProject;
+@property (retain) LighthouseEntity *currentMilestone;
+@property (retain) LighthouseEntity *currentUser;
 
 - (IBAction) testCredentials:(id)sender;
 - (IBAction)connect:(id)sender;
 
+- (void) getProjects;
+
 - (NSString*) addressAt:(NSString*) postfix;
-- (void) createProjectsWithXML:(NSString *) xml;
+- (void) createEntitiesWithXML:(NSString *) xml toArrayController:(NSArrayController*)controller;
+
 
 @end

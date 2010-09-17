@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		60554E2F12428FEE0071A103 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 60554E2E12428FED0071A103 /* libz.dylib */; };
 		60554E4A124291B20071A103 /* Ticket.m in Sources */ = {isa = PBXBuildFile; fileRef = 60554E49124291B20071A103 /* Ticket.m */; };
-		60554EBE124368B40071A103 /* Project.m in Sources */ = {isa = PBXBuildFile; fileRef = 60554EBD124368B40071A103 /* Project.m */; };
+		60554EBE124368B40071A103 /* LighthouseEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 60554EBD124368B40071A103 /* LighthouseEntity.m */; };
 		607F5F7512427E51003BC2E8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 607F5F7412427E51003BC2E8 /* Cocoa.framework */; };
 		607F5F7A12427E51003BC2E8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 607F5F7812427E51003BC2E8 /* InfoPlist.strings */; };
 		607F5F7C12427E51003BC2E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 607F5F7B12427E51003BC2E8 /* main.m */; };
@@ -40,8 +40,8 @@
 		60554E2E12428FED0071A103 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		60554E48124291B20071A103 /* Ticket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ticket.h; sourceTree = "<group>"; };
 		60554E49124291B20071A103 /* Ticket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ticket.m; sourceTree = "<group>"; };
-		60554EBC124368B40071A103 /* Project.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Project.h; sourceTree = "<group>"; };
-		60554EBD124368B40071A103 /* Project.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Project.m; sourceTree = "<group>"; };
+		60554EBC124368B40071A103 /* LighthouseEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LighthouseEntity.h; sourceTree = "<group>"; };
+		60554EBD124368B40071A103 /* LighthouseEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LighthouseEntity.m; sourceTree = "<group>"; };
 		607F5F7112427E51003BC2E8 /* Tickifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tickifier.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607F5F7412427E51003BC2E8 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		607F5F7612427E51003BC2E8 /* Tickifier-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tickifier-Info.plist"; sourceTree = "<group>"; };
@@ -84,8 +84,8 @@
 			children = (
 				60554E48124291B20071A103 /* Ticket.h */,
 				60554E49124291B20071A103 /* Ticket.m */,
-				60554EBC124368B40071A103 /* Project.h */,
-				60554EBD124368B40071A103 /* Project.m */,
+				60554EBC124368B40071A103 /* LighthouseEntity.h */,
+				60554EBD124368B40071A103 /* LighthouseEntity.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -236,7 +236,7 @@
 				607F5FF512428F07003BC2E8 /* Seriously.m in Sources */,
 				607F5FF612428F07003BC2E8 /* SeriouslyOperation.m in Sources */,
 				60554E4A124291B20071A103 /* Ticket.m in Sources */,
-				60554EBE124368B40071A103 /* Project.m in Sources */,
+				60554EBE124368B40071A103 /* LighthouseEntity.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
