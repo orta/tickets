@@ -39,8 +39,9 @@
   return [NSString stringWithFormat:@"http://%@/%@?_token=%@", self.serverAddress, postfix, self.APIKey]; 
 }
 
-- (IBAction) testCredentials:(id)sender {
-  
+- (IBAction) projectSelected:(id)sender {
+  self.currentProject = [[projects content] objectAtIndex:[sender indexOfSelectedItem]];
+  NSLog(@"hi %@", self.currentProject);
 }
 
 - (void) getProjects {

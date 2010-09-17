@@ -36,8 +36,8 @@
 @property (retain) LighthouseEntity *currentMilestone;
 @property (retain) LighthouseEntity *currentUser;
 
-- (IBAction) testCredentials:(id)sender;
-- (IBAction)connect:(id)sender;
+- (IBAction) projectSelected:(id)sender;
+- (IBAction) connect:(id)sender;
 
 - (void) getProjects;
 
