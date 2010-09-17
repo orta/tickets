@@ -40,6 +40,7 @@
 - (IBAction) connect:(id)sender;
 
 - (void) getProjects;
+- (void) getMilestones;
 
 - (NSString*) addressAt:(NSString*) postfix;
 - (void) createEntitiesWithXML:(NSString *) xml toArrayController:(NSArrayController*)controller;

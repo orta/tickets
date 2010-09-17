@@ -8,11 +8,15 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "LighthouseController.m"
-         timestampString = "306431421.397365"
+         timestampString = "306432986.476939"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "44"
-         endingLineNumber = "44">
+         startingLineNumber = "58"
+         endingLineNumber = "58">
+         <Actions>
+            <DebuggerCommandAction>
+            </DebuggerCommandAction>
+         </Actions>
       </FileBreakpoint>
    </FileBreakpoints>
 </Bucket>

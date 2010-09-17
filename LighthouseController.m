@@ -41,7 +41,20 @@
 
 - (IBAction) projectSelected:(id)sender {
   self.currentProject = [[projects content] objectAtIndex:[sender indexOfSelectedItem]];
-  NSLog(@"hi %@", self.currentProject);
+  [self getMilestones];
+}
+
+- (void) getMilestones {
+  NSString *url = [self addressAt: [NSString stringWithFormat:@"projects/%i/milestones.xml", self.currentProject.identifier]];
+  [Seriously get:url handler:^(id body, NSHTTPURLResponse *response, NSError *error) {
+    if (error) {
+      NSLog(@"Error: %@", error);
+    }
+    else {
+      NSLog(@"%@", body);
+      [self createEntitiesWithXML:body toArrayController:milestones];
+    }
+  }];  
 }
 
 - (void) getProjects {
@@ -68,7 +81,12 @@
     NSXMLElement *membersElement = [children objectAtIndex:i];
     LighthouseEntity *newProject = [[LighthouseEntity alloc] init];
     newProject.identifier = [[[[membersElement elementsForName:@"id"] objectAtIndex:0] stringValue] integerValue];
-    newProject.name = [[[membersElement elementsForName:@"name"] objectAtIndex:0] stringValue];
+    if([[membersElement elementsForName:@"name"] count] > 0){
+      newProject.name = [[[membersElement elementsForName:@"name"] objectAtIndex:0] stringValue];  
+    }else{
+      newProject.name = [[[membersElement elementsForName:@"title"] objectAtIndex:0] stringValue];
+    }
+    
     [tempMembers addObject:newProject];
   }
   [controller setContent:tempMembers];
