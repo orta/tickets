@@ -1,0 +1,378 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		60554E2F12428FEE0071A103 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 60554E2E12428FED0071A103 /* libz.dylib */; };
+		60554E4A124291B20071A103 /* Ticket.m in Sources */ = {isa = PBXBuildFile; fileRef = 60554E49124291B20071A103 /* Ticket.m */; };
+		60554EBE124368B40071A103 /* Project.m in Sources */ = {isa = PBXBuildFile; fileRef = 60554EBD124368B40071A103 /* Project.m */; };
+		607F5F7512427E51003BC2E8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 607F5F7412427E51003BC2E8 /* Cocoa.framework */; };
+		607F5F7A12427E51003BC2E8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 607F5F7812427E51003BC2E8 /* InfoPlist.strings */; };
+		607F5F7C12427E51003BC2E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 607F5F7B12427E51003BC2E8 /* main.m */; };
+		607F5F7F12427E51003BC2E8 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607F5F7D12427E51003BC2E8 /* MainMenu.xib */; };
+		607F5F8212427E51003BC2E8 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 607F5F8012427E51003BC2E8 /* Credits.rtf */; };
+		607F5F8512427E51003BC2E8 /* TickifierAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 607F5F8412427E51003BC2E8 /* TickifierAppDelegate.m */; };
+		607F5F97124281BE003BC2E8 /* IDEAS in Resources */ = {isa = PBXBuildFile; fileRef = 607F5F96124281BE003BC2E8 /* IDEAS */; };
+		607F5F9A12428390003BC2E8 /* LighthouseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */; };
+		607F5FDA12428816003BC2E8 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 607F5FD912428816003BC2E8 /* Security.framework */; };
+		607F5FDD12428852003BC2E8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 607F5FDC12428852003BC2E8 /* SystemConfiguration.framework */; };
+		607F5FF512428F07003BC2E8 /* Seriously.m in Sources */ = {isa = PBXBuildFile; fileRef = 607F5FF112428F07003BC2E8 /* Seriously.m */; };
+		607F5FF612428F07003BC2E8 /* SeriouslyOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 607F5FF412428F07003BC2E8 /* SeriouslyOperation.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		607F5FE712428BBB003BC2E8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		60554E2E12428FED0071A103 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		60554E48124291B20071A103 /* Ticket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ticket.h; sourceTree = "<group>"; };
+		60554E49124291B20071A103 /* Ticket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ticket.m; sourceTree = "<group>"; };
+		60554EBC124368B40071A103 /* Project.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Project.h; sourceTree = "<group>"; };
+		60554EBD124368B40071A103 /* Project.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Project.m; sourceTree = "<group>"; };
+		607F5F7112427E51003BC2E8 /* Tickifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tickifier.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		607F5F7412427E51003BC2E8 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		607F5F7612427E51003BC2E8 /* Tickifier-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tickifier-Info.plist"; sourceTree = "<group>"; };
+		607F5F7712427E51003BC2E8 /* Tickifier_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tickifier_Prefix.pch; sourceTree = "<group>"; };
+		607F5F7912427E51003BC2E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		607F5F7B12427E51003BC2E8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		607F5F7E12427E51003BC2E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		607F5F8112427E51003BC2E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		607F5F8312427E51003BC2E8 /* TickifierAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TickifierAppDelegate.h; sourceTree = "<group>"; };
+		607F5F8412427E51003BC2E8 /* TickifierAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TickifierAppDelegate.m; sourceTree = "<group>"; };
+		607F5F96124281BE003BC2E8 /* IDEAS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = IDEAS; sourceTree = "<group>"; };
+		607F5F9812428390003BC2E8 /* LighthouseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LighthouseController.h; path = ../../LighthouseController.h; sourceTree = "<group>"; };
+		607F5F9912428390003BC2E8 /* LighthouseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LighthouseController.m; path = ../../LighthouseController.m; sourceTree = "<group>"; };
+		607F5FD912428816003BC2E8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Security.framework; sourceTree = "<group>"; };
+		607F5FDC12428852003BC2E8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SystemConfiguration.framework; sourceTree = "<group>"; };
+		607F5FF012428F07003BC2E8 /* Seriously.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Seriously.h; sourceTree = "<group>"; };
+		607F5FF112428F07003BC2E8 /* Seriously.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Seriously.m; sourceTree = "<group>"; };
+		607F5FF212428F07003BC2E8 /* SeriouslyConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeriouslyConstants.h; sourceTree = "<group>"; };
+		607F5FF312428F07003BC2E8 /* SeriouslyOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeriouslyOperation.h; sourceTree = "<group>"; };
+		607F5FF412428F07003BC2E8 /* SeriouslyOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeriouslyOperation.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		607F5F6E12427E51003BC2E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				607F5FDD12428852003BC2E8 /* SystemConfiguration.framework in Frameworks */,
+				607F5FDA12428816003BC2E8 /* Security.framework in Frameworks */,
+				607F5F7512427E51003BC2E8 /* Cocoa.framework in Frameworks */,
+				60554E2F12428FEE0071A103 /* libz.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		60554E4B124291B50071A103 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				60554E48124291B20071A103 /* Ticket.h */,
+				60554E49124291B20071A103 /* Ticket.m */,
+				60554EBC124368B40071A103 /* Project.h */,
+				60554EBD124368B40071A103 /* Project.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		60554E64124291E90071A103 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				607F5F9912428390003BC2E8 /* LighthouseController.m */,
+				607F5F9812428390003BC2E8 /* LighthouseController.h */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		607F5F6212427E50003BC2E8 = {
+			isa = PBXGroup;
+			children = (
+				607F5F6912427E51003BC2E8 /* Classes */,
+				607F5F6A12427E51003BC2E8 /* Other Sources */,
+				607F5F6B12427E51003BC2E8 /* Resources */,
+				607F5F96124281BE003BC2E8 /* IDEAS */,
+				607F5F6C12427E51003BC2E8 /* Frameworks */,
+				607F5F7212427E51003BC2E8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		607F5F6912427E51003BC2E8 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				60554E64124291E90071A103 /* Controllers */,
+				60554E4B124291B50071A103 /* Models */,
+				607F5F8312427E51003BC2E8 /* TickifierAppDelegate.h */,
+				607F5F8412427E51003BC2E8 /* TickifierAppDelegate.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		607F5F6A12427E51003BC2E8 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				607F5FF012428F07003BC2E8 /* Seriously.h */,
+				607F5FF112428F07003BC2E8 /* Seriously.m */,
+				607F5FF212428F07003BC2E8 /* SeriouslyConstants.h */,
+				607F5FF312428F07003BC2E8 /* SeriouslyOperation.h */,
+				607F5FF412428F07003BC2E8 /* SeriouslyOperation.m */,
+				607F5F7712427E51003BC2E8 /* Tickifier_Prefix.pch */,
+				607F5F7B12427E51003BC2E8 /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		607F5F6B12427E51003BC2E8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				607F5F7612427E51003BC2E8 /* Tickifier-Info.plist */,
+				607F5F7812427E51003BC2E8 /* InfoPlist.strings */,
+				607F5F7D12427E51003BC2E8 /* MainMenu.xib */,
+				607F5F8012427E51003BC2E8 /* Credits.rtf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		607F5F6C12427E51003BC2E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				607F5FDC12428852003BC2E8 /* SystemConfiguration.framework */,
+				607F5FD912428816003BC2E8 /* Security.framework */,
+				60554E2E12428FED0071A103 /* libz.dylib */,
+				607F5F7412427E51003BC2E8 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		607F5F7212427E51003BC2E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				607F5F7112427E51003BC2E8 /* Tickifier.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		607F5F7012427E51003BC2E8 /* Tickifier */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 607F5F8812427E51003BC2E8 /* Build configuration list for PBXNativeTarget "Tickifier" */;
+			buildPhases = (
+				607F5F6D12427E51003BC2E8 /* Sources */,
+				607F5F6E12427E51003BC2E8 /* Frameworks */,
+				607F5F6F12427E51003BC2E8 /* Resources */,
+				607F5FE712428BBB003BC2E8 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tickifier;
+			productName = Tickifier;
+			productReference = 607F5F7112427E51003BC2E8 /* Tickifier.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		607F5F6412427E50003BC2E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "http://www.ortatherox.com";
+			};
+			buildConfigurationList = 607F5F6712427E50003BC2E8 /* Build configuration list for PBXProject "Tickifier" */;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 607F5F6212427E50003BC2E8;
+			productRefGroup = 607F5F7212427E51003BC2E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				607F5F7012427E51003BC2E8 /* Tickifier */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		607F5F6F12427E51003BC2E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				607F5F7A12427E51003BC2E8 /* InfoPlist.strings in Resources */,
+				607F5F7F12427E51003BC2E8 /* MainMenu.xib in Resources */,
+				607F5F8212427E51003BC2E8 /* Credits.rtf in Resources */,
+				607F5F97124281BE003BC2E8 /* IDEAS in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		607F5F6D12427E51003BC2E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				607F5F7C12427E51003BC2E8 /* main.m in Sources */,
+				607F5F8512427E51003BC2E8 /* TickifierAppDelegate.m in Sources */,
+				607F5F9A12428390003BC2E8 /* LighthouseController.m in Sources */,
+				607F5FF512428F07003BC2E8 /* Seriously.m in Sources */,
+				607F5FF612428F07003BC2E8 /* SeriouslyOperation.m in Sources */,
+				60554E4A124291B20071A103 /* Ticket.m in Sources */,
+				60554EBE124368B40071A103 /* Project.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		607F5F7812427E51003BC2E8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				607F5F7912427E51003BC2E8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		607F5F7D12427E51003BC2E8 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				607F5F7E12427E51003BC2E8 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		607F5F8012427E51003BC2E8 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				607F5F8112427E51003BC2E8 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		607F5F8612427E51003BC2E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		607F5F8712427E51003BC2E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+		607F5F8912427E51003BC2E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Tickifier_Prefix.pch;
+				INFOPLIST_FILE = "Tickifier-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				PRODUCT_NAME = Tickifier;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		607F5F8A12427E51003BC2E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Tickifier_Prefix.pch;
+				INFOPLIST_FILE = "Tickifier-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				PRODUCT_NAME = Tickifier;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		607F5F6712427E50003BC2E8 /* Build configuration list for PBXProject "Tickifier" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				607F5F8612427E51003BC2E8 /* Debug */,
+				607F5F8712427E51003BC2E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		607F5F8812427E51003BC2E8 /* Build configuration list for PBXNativeTarget "Tickifier" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				607F5F8912427E51003BC2E8 /* Debug */,
+				607F5F8A12427E51003BC2E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 607F5F6412427E50003BC2E8 /* Project object */;
+}
