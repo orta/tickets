@@ -8,6 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 #import "LighthouseEntity.h"
+#import "Ticket.h"
 
 @interface LighthouseController : NSObject {
   
@@ -19,6 +20,8 @@
   LighthouseEntity *currentMilestone;
   LighthouseEntity *currentUser;
   
+  Ticket *currentTicket;
+  
   IBOutlet NSArrayController *projects;
   IBOutlet NSArrayController *milestones;
   IBOutlet NSArrayController *users;
@@ -26,6 +29,9 @@
   NSInteger projectIndex;
   NSInteger milestoneIndex;
   NSInteger userIndex;
+  
+	NSMutableData *payload;
+  
 }
 
 @property (retain) NSString *APIKey;
@@ -35,6 +41,8 @@
 @property (retain) NSArrayController *milestones;
 @property (retain) NSArrayController *users;
 
+@property (retain) Ticket *currentTicket;
+
 @property (retain) LighthouseEntity *currentProject;
 @property (retain) LighthouseEntity *currentMilestone;
 @property (retain) LighthouseEntity *currentUser;
@@ -42,12 +50,11 @@
 @property () NSInteger projectIndex;
 @property () NSInteger milestoneIndex;
 @property () NSInteger userIndex;
-- (IBAction) userSelected:(id)sender;
 
 - (IBAction) connect:(id)sender;
+- (IBAction) submit:(id)sender;
 - (IBAction) milestoneSelected:(id)sender;
-
-
+- (IBAction) userSelected:(id)sender;
 - (IBAction) projectSelected:(id)sender;
 
 
@@ -57,6 +64,7 @@
 
 - (NSString*) addressAt:(NSString*) postfix;
 - (void) createEntitiesWithXML:(NSString *) xml toArrayController:(NSArrayController*)controller;
+-(void) submitTicket: (Ticket *)ticket;
 
 
 @end

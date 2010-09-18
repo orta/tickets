@@ -13,7 +13,7 @@
 
 @synthesize serverAddress, APIKey;
 
-@synthesize currentProject, projects, currentMilestone, milestones, currentUser, users;
+@synthesize currentProject, projects, currentMilestone, milestones, currentUser, users, currentTicket;
 @synthesize projectIndex, milestoneIndex, userIndex;
 
 
@@ -35,6 +35,8 @@
   if (self.serverAddress && self.APIKey) {    
     [self getProjects];
   }
+  
+  self.currentTicket = [[Ticket alloc] init];
 }
 
 - (NSString*) addressAt:(NSString*) postfix {
@@ -89,8 +91,8 @@
       [self createEntitiesWithXML:body toArrayController:milestones];
       if ( [[[NSUserDefaults standardUserDefaults] objectForKey:@"milestoneIndex"] integerValue] ) {
         self.milestoneIndex = [[NSUserDefaults standardUserDefaults] integerForKey:@"milestoneIndex"];
+        self.currentMilestone = [[milestones content] objectAtIndex:  [[[NSUserDefaults standardUserDefaults] objectForKey:@"milestoneIndex"] integerValue]];
       }
-      
     }
   }];  
 }
@@ -107,6 +109,7 @@
       
       if ( [[[NSUserDefaults standardUserDefaults] objectForKey:@"userIndex"] integerValue] ) {
         self.userIndex = [[NSUserDefaults standardUserDefaults] integerForKey:@"userIndex"];
+        self.currentUser = [[users content] objectAtIndex:  [[[NSUserDefaults standardUserDefaults] objectForKey:@"userIndex"] integerValue]];
       }
     }
   }];  
@@ -143,7 +146,51 @@
   [controller setContent:tempMembers];
 }
 
+- (IBAction) submit:(id)sender {
+  [self submitTicket:currentTicket]; 
+}
 
+-(void) submitTicket: (Ticket *)ticket {
+  
+  NSString *url = [self addressAt: [NSString stringWithFormat:@"projects/%i/tickets.xml", self.currentProject.identifier]];
+  NSString *XML = [NSString stringWithFormat:@"<ticket><title>%@</title><body>%@</body><milestone-id>%@</milestone-id><assigned-user-id>%@</assigned-user-id></ticket>", 
+                   ticket.title, ticket.body, ticket.tags,
+                   [NSString stringWithFormat:@"%i", currentMilestone.identifier], 
+                   [NSString stringWithFormat:@"%i", currentUser.identifier]];
+  
+  NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:url]];
+  [urlRequest setHTTPMethod:@"POST"];
+  [urlRequest setValue:@"text/xml" forHTTPHeaderField:@"Content-type"];
+  [urlRequest setHTTPBody:[XML dataUsingEncoding:NSUTF8StringEncoding]];
+  
+  NSURLConnection *connectionResponse = [[NSURLConnection alloc]  initWithRequest:urlRequest delegate:self];
+
+  if (!connectionResponse) {
+    NSLog(@"Failed to submit request");
+  } else {
+    NSLog(@"Request submitted");
+    payload = [[NSMutableData data] retain];
+  }                           
+}
+
+- (void)connection:(NSURLConnection *)conn didReceiveResponse:(NSURLResponse *)response {
+   [payload setLength:0];
+}
+
+- (void)connection:(NSURLConnection *)conn didReceiveData:(NSData *)data {
+   [payload appendData:data];
+}
+
+- (void)connectionDidFinishLoading:(NSURLConnection *)conn {
+   NSString *content = [NSString stringWithUTF8String:[payload bytes]];
+   NSLog(@"Connection finished: %@ - %@", conn, content);
+}
+
+ - (void)connection:(NSURLConnection *)conn didFailWithError:(NSError *)error {
+   
+}
+
+     
 - (IBAction)connect:(id)sender {
   
 }
