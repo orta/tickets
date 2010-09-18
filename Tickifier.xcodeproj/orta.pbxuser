@@ -236,7 +236,7 @@
 		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
 		name = "LighthouseController.m: 57";
 		rLen = 0;
-		rLoc = 1882;
+		rLoc = 2035;
 		rType = 0;
 		vrLen = 1571;
 		vrLoc = 1125;
@@ -395,6 +395,12 @@
 			6096618D12456912006C7E28 /* PBXTextBookmark */ = 6096618D12456912006C7E28 /* PBXTextBookmark */;
 			60966193124569A2006C7E28 /* PBXTextBookmark */ = 60966193124569A2006C7E28 /* PBXTextBookmark */;
 			60966195124569BC006C7E28 /* PBXTextBookmark */ = 60966195124569BC006C7E28 /* PBXTextBookmark */;
+			6096619812456A18006C7E28 /* PBXTextBookmark */ = 6096619812456A18006C7E28 /* PBXTextBookmark */;
+			6096619C12456A49006C7E28 /* PBXTextBookmark */ = 6096619C12456A49006C7E28 /* PBXTextBookmark */;
+			609661A012456AC4006C7E28 /* PBXTextBookmark */ = 609661A012456AC4006C7E28 /* PBXTextBookmark */;
+			609661A412456B4A006C7E28 /* PBXTextBookmark */ = 609661A412456B4A006C7E28 /* PBXTextBookmark */;
+			609661A612456BB7006C7E28 /* PBXTextBookmark */ = 609661A612456BB7006C7E28 /* PBXTextBookmark */;
+			609661A712456BF9006C7E28 /* PBXTextBookmark */ = 609661A712456BF9006C7E28 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 60554DEB12428FB90071A103 /* Source Control */;
 		userBuildSettings = {
@@ -430,9 +436,10 @@
 	};
 	607F5F9912428390003BC2E8 /* LighthouseController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1195, 2548}}";
-			sepNavSelRange = "{6181, 0}";
-			sepNavVisRange = "{4936, 2122}";
+			sepNavFolds = "{\n    c =     (\n                {\n            l = statements;\n            r = \"{6180, 14}\";\n            s = 1;\n        }\n    );\n    r = \"{0, 7715}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {1286, 2561}}";
+			sepNavSelRange = "{6516, 0}";
+			sepNavVisRange = "{5105, 2087}";
 		};
 	};
 	607F5FF012428F07003BC2E8 /* Seriously.h */ = {
@@ -475,7 +482,7 @@
 		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
 		name = "LighthouseController.m: 57";
 		rLen = 0;
-		rLoc = 1882;
+		rLoc = 2035;
 		rType = 0;
 		vrLen = 1525;
 		vrLoc = 1171;
@@ -540,7 +547,7 @@
 		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
 		name = "LighthouseController.m: 57";
 		rLen = 0;
-		rLoc = 1882;
+		rLoc = 2035;
 		rType = 0;
 		vrLen = 1525;
 		vrLoc = 1171;
@@ -699,7 +706,7 @@
 		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
 		name = "LighthouseController.m: 147";
 		rLen = 0;
-		rLoc = 6768;
+		rLoc = 7113;
 		rType = 0;
 		vrLen = 1764;
 		vrLoc = 3572;
@@ -709,7 +716,7 @@
 		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
 		name = "LighthouseController.m: 155";
 		rLen = 0;
-		rLoc = 6181;
+		rLoc = 6526;
 		rType = 0;
 		vrLen = 1879;
 		vrLoc = 3785;
@@ -719,7 +726,7 @@
 		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
 		name = "LighthouseController.m: 155";
 		rLen = 0;
-		rLoc = 6181;
+		rLoc = 6526;
 		rType = 0;
 		vrLen = 1733;
 		vrLoc = 3960;
@@ -908,7 +915,7 @@
 		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
 		name = "LighthouseController.m: 151";
 		rLen = 41;
-		rLoc = 5619;
+		rLoc = 5909;
 		rType = 0;
 		vrLen = 1588;
 		vrLoc = 4619;
@@ -918,7 +925,7 @@
 		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
 		name = "LighthouseController.m: 150";
 		rLen = 0;
-		rLoc = 5618;
+		rLoc = 5908;
 		rType = 0;
 		vrLen = 1589;
 		vrLoc = 4613;
@@ -928,7 +935,7 @@
 		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
 		name = "LighthouseController.m: 161";
 		rLen = 0;
-		rLoc = 6181;
+		rLoc = 6526;
 		rType = 0;
 		vrLen = 1632;
 		vrLoc = 4613;
@@ -938,7 +945,7 @@
 		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
 		name = "LighthouseController.m: 161";
 		rLen = 0;
-		rLoc = 6181;
+		rLoc = 6526;
 		rType = 0;
 		vrLen = 1632;
 		vrLoc = 4613;
@@ -948,7 +955,7 @@
 		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
 		name = "LighthouseController.m: 161";
 		rLen = 0;
-		rLoc = 6181;
+		rLoc = 6526;
 		rType = 0;
 		vrLen = 1721;
 		vrLoc = 4514;
@@ -958,7 +965,7 @@
 		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
 		name = "LighthouseController.m: 155";
 		rLen = 0;
-		rLoc = 5787;
+		rLoc = 6202;
 		rType = 0;
 		vrLen = 1721;
 		vrLoc = 4514;
@@ -968,7 +975,7 @@
 		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
 		name = "LighthouseController.m: 166";
 		rLen = 0;
-		rLoc = 6181;
+		rLoc = 6526;
 		rType = 0;
 		vrLen = 1721;
 		vrLoc = 4514;
@@ -1175,7 +1182,7 @@
 		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
 		name = "LighthouseController.m: 163";
 		rLen = 0;
-		rLoc = 6181;
+		rLoc = 6526;
 		rType = 0;
 		vrLen = 1681;
 		vrLoc = 4351;
@@ -1185,7 +1192,7 @@
 		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
 		name = "LighthouseController.m: 166";
 		rLen = 0;
-		rLoc = 6767;
+		rLoc = 7112;
 		rType = 0;
 		vrLen = 1674;
 		vrLoc = 4351;
@@ -1205,7 +1212,7 @@
 		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
 		name = "LighthouseController.m: 164";
 		rLen = 0;
-		rLoc = 6764;
+		rLoc = 7109;
 		rType = 0;
 		vrLen = 1286;
 		vrLoc = 5145;
@@ -1215,7 +1222,7 @@
 		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
 		name = "LighthouseController.m: 167";
 		rLen = 0;
-		rLoc = 6767;
+		rLoc = 7112;
 		rType = 0;
 		vrLen = 1747;
 		vrLoc = 4666;
@@ -1245,7 +1252,7 @@
 		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
 		name = "LighthouseController.m: 167";
 		rLen = 0;
-		rLoc = 6767;
+		rLoc = 7112;
 		rType = 0;
 		vrLen = 1585;
 		vrLoc = 4833;
@@ -1255,7 +1262,7 @@
 		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
 		name = "LighthouseController.m: 154";
 		rLen = 0;
-		rLoc = 5662;
+		rLoc = 5952;
 		rType = 0;
 		vrLen = 1616;
 		vrLoc = 4833;
@@ -1265,7 +1272,7 @@
 		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
 		name = "LighthouseController.m: 153";
 		rLen = 0;
-		rLoc = 5662;
+		rLoc = 5952;
 		rType = 0;
 		vrLen = 1598;
 		vrLoc = 4833;
@@ -1342,7 +1349,7 @@
 		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
 		name = "LighthouseController.m: 153";
 		rLen = 0;
-		rLoc = 5662;
+		rLoc = 5952;
 		rType = 0;
 		vrLen = 1598;
 		vrLoc = 4833;
@@ -1352,7 +1359,7 @@
 		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
 		name = "LighthouseController.m: 193";
 		rLen = 0;
-		rLoc = 7370;
+		rLoc = 7715;
 		rType = 0;
 		vrLen = 1429;
 		vrLoc = 5332;
@@ -1362,7 +1369,7 @@
 		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
 		name = "LighthouseController.m: 163";
 		rLen = 0;
-		rLoc = 6181;
+		rLoc = 6526;
 		rType = 0;
 		vrLen = 2022;
 		vrLoc = 5134;
@@ -1372,7 +1379,7 @@
 		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
 		name = "LighthouseController.m: 176";
 		rLen = 0;
-		rLoc = 6767;
+		rLoc = 7112;
 		rType = 0;
 		vrLen = 1999;
 		vrLoc = 5134;
@@ -1382,7 +1389,7 @@
 		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
 		name = "LighthouseController.m: 164";
 		rLen = 0;
-		rLoc = 6181;
+		rLoc = 6526;
 		rType = 0;
 		vrLen = 1724;
 		vrLoc = 5446;
@@ -1472,7 +1479,7 @@
 		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
 		name = "LighthouseController.m: 164";
 		rLen = 0;
-		rLoc = 6181;
+		rLoc = 6526;
 		rType = 0;
 		vrLen = 1838;
 		vrLoc = 5332;
@@ -1482,7 +1489,7 @@
 		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
 		name = "LighthouseController.m: 164";
 		rLen = 0;
-		rLoc = 6181;
+		rLoc = 6526;
 		rType = 0;
 		vrLen = 1973;
 		vrLoc = 5211;
@@ -1492,7 +1499,7 @@
 		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
 		name = "LighthouseController.m: 176";
 		rLen = 0;
-		rLoc = 6767;
+		rLoc = 7112;
 		rType = 0;
 		vrLen = 1973;
 		vrLoc = 5211;
@@ -1502,7 +1509,7 @@
 		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
 		name = "LighthouseController.m: 177";
 		rLen = 0;
-		rLoc = 6767;
+		rLoc = 7112;
 		rType = 0;
 		vrLen = 1706;
 		vrLoc = 5643;
@@ -1512,7 +1519,7 @@
 		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
 		name = "LighthouseController.m: 174";
 		rLen = 0;
-		rLoc = 6764;
+		rLoc = 7109;
 		rType = 0;
 		vrLen = 1985;
 		vrLoc = 5207;
@@ -1522,7 +1529,7 @@
 		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
 		name = "LighthouseController.m: 194";
 		rLen = 0;
-		rLoc = 6769;
+		rLoc = 7114;
 		rType = 0;
 		vrLen = 1964;
 		vrLoc = 5814;
@@ -1532,7 +1539,7 @@
 		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
 		name = "LighthouseController.m: 171";
 		rLen = 0;
-		rLoc = 6462;
+		rLoc = 6807;
 		rType = 0;
 		vrLen = 2170;
 		vrLoc = 5645;
@@ -1552,7 +1559,7 @@
 		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
 		name = "LighthouseController.m: 178";
 		rLen = 0;
-		rLoc = 6674;
+		rLoc = 7019;
 		rType = 0;
 		vrLen = 2392;
 		vrLoc = 5643;
@@ -1562,7 +1569,7 @@
 		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
 		name = "LighthouseController.m: 206";
 		rLen = 0;
-		rLoc = 6769;
+		rLoc = 7114;
 		rType = 0;
 		vrLen = 1483;
 		vrLoc = 6756;
@@ -1572,7 +1579,7 @@
 		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
 		name = "LighthouseController.m: 208";
 		rLen = 0;
-		rLoc = 6769;
+		rLoc = 7114;
 		rType = 0;
 		vrLen = 1561;
 		vrLoc = 6756;
@@ -1582,7 +1589,7 @@
 		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
 		name = "LighthouseController.m: 203";
 		rLen = 0;
-		rLoc = 7370;
+		rLoc = 7715;
 		rType = 0;
 		vrLen = 2122;
 		vrLoc = 4936;
@@ -1592,9 +1599,69 @@
 		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
 		name = "LighthouseController.m: 160";
 		rLen = 0;
-		rLoc = 6181;
+		rLoc = 6526;
 		rType = 0;
 		vrLen = 2122;
 		vrLoc = 4936;
+	};
+	6096619812456A18006C7E28 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
+		name = "LighthouseController.m: 163";
+		rLen = 0;
+		rLoc = 6526;
+		rType = 0;
+		vrLen = 2096;
+		vrLoc = 4936;
+	};
+	6096619C12456A49006C7E28 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
+		name = "LighthouseController.m: 156";
+		rLen = 0;
+		rLoc = 6353;
+		rType = 0;
+		vrLen = 1990;
+		vrLoc = 4936;
+	};
+	609661A012456AC4006C7E28 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
+		name = "LighthouseController.m: 62";
+		rLen = 0;
+		rLoc = 2218;
+		rType = 0;
+		vrLen = 1790;
+		vrLoc = 1133;
+	};
+	609661A412456B4A006C7E28 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
+		name = "LighthouseController.m: 159";
+		rLen = 0;
+		rLoc = 6302;
+		rType = 0;
+		vrLen = 2384;
+		vrLoc = 4495;
+	};
+	609661A612456BB7006C7E28 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
+		name = "LighthouseController.m: 161";
+		rLen = 0;
+		rLoc = 6172;
+		rType = 0;
+		vrLen = 2254;
+		vrLoc = 4495;
+	};
+	609661A712456BF9006C7E28 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
+		name = "LighthouseController.m: 170";
+		rLen = 0;
+		rLoc = 6529;
+		rType = 0;
+		vrLen = 2100;
+		vrLoc = 5105;
 	};
 }

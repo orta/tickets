@@ -53,10 +53,13 @@
 
 - (IBAction) milestoneSelected:(id)sender {
   [[NSUserDefaults standardUserDefaults] setInteger: [sender indexOfSelectedItem] forKey:@"milestoneIndex"];
+  self.currentMilestone = [[milestones content] objectAtIndex:  [[[NSUserDefaults standardUserDefaults] objectForKey:@"milestoneIndex"] integerValue]];
+
 }
 
 - (IBAction) userSelected:(id)sender {
   [[NSUserDefaults standardUserDefaults] setInteger: [sender indexOfSelectedItem] forKey:@"userIndex"];
+  self.currentUser = [[users content] objectAtIndex:  [[[NSUserDefaults standardUserDefaults] objectForKey:@"userIndex"] integerValue]];
 }
 
 
@@ -153,11 +156,17 @@
 -(void) submitTicket: (Ticket *)ticket {
   
   NSString *url = [self addressAt: [NSString stringWithFormat:@"projects/%i/tickets.xml", self.currentProject.identifier]];
-  NSString *XML = [NSString stringWithFormat:@"<ticket><title>%@</title><body>%@</body><milestone-id>%@</milestone-id><assigned-user-id>%@</assigned-user-id></ticket>", 
-                   ticket.title, ticket.body, ticket.tags,
-                   [NSString stringWithFormat:@"%i", currentMilestone.identifier], 
-                   [NSString stringWithFormat:@"%i", currentUser.identifier]];
   
+  NSMutableString *tags = [NSMutableString stringWithString:@""];
+  for (tags in ticket.tags) {
+    <#statements#>
+  }
+  
+  NSString *XML = [NSString stringWithFormat:@"<ticket><title>%@</title><body>%@</body><tag>%@</tag><milestone-id>%i</milestone-id><assigned-user-id>%i</assigned-user-id></ticket>", 
+                   ticket.title, ticket.body, ticket.tags, currentMilestone.identifier, currentUser.identifier];
+  
+  NSLog(@"XML %@", XML);
+
   NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:url]];
   [urlRequest setHTTPMethod:@"POST"];
   [urlRequest setValue:@"text/xml" forHTTPHeaderField:@"Content-type"];
