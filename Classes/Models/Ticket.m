@@ -10,5 +10,5 @@
 
 
 @implementation Ticket
-
+@synthesize title,body tags;
 @end

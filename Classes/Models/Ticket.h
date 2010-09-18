@@ -10,7 +10,14 @@
 
 
 @interface Ticket : NSObject {
-
+  NSString * title;
+  NSString *body;
+  NSString *tags;
 }
+
+@property (retain) NSString * title;
+@property (retain) NSString *body;
+@property (retain) NSString *tags;
+
 
 @end
