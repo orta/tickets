@@ -276,7 +276,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>12</integer>
+									<integer>28</integer>
+									<integer>27</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -300,7 +301,7 @@
 							<real>245</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>1745 126 1307 749 1440 -180 1920 1080 </string>
+						<string>1476 134 1307 749 1440 -180 1920 1080 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -330,7 +331,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>609661B412456DC1006C7E28</string>
+										<string>609661EF12466885006C7E28</string>
 										<key>history</key>
 										<array>
 											<string>607DB4A91243D210001CCF9F</string>
@@ -360,7 +361,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {1040, 703}}</string>
 								<key>RubberWindowFrame</key>
-								<string>1745 126 1307 749 1440 -180 1920 1080 </string>
+								<string>1476 134 1307 749 1440 -180 1920 1080 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -380,7 +381,7 @@
 								<key>Frame</key>
 								<string>{{0, 708}, {1040, 0}}</string>
 								<key>RubberWindowFrame</key>
-								<string>1745 126 1307 749 1440 -180 1920 1080 </string>
+								<string>1476 134 1307 749 1440 -180 1920 1080 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -544,7 +545,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>609661B512456DC1006C7E28</string>
 		<string>6096607912455215006C7E28</string>
 		<string>6096607A12455215006C7E28</string>
 		<string>1CD10A99069EF8BA00B06720</string>
@@ -554,7 +554,7 @@
 		<string>/Users/orta/spiel/cocoa/Tickifier/Tickifier.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>1745 126 1307 749 1440 -180 1920 1080 </string>
+	<string>1476 134 1307 749 1440 -180 1920 1080 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>

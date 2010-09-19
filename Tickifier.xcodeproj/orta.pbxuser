@@ -405,6 +405,8 @@
 			609661AF12456D3F006C7E28 /* PBXTextBookmark */ = 609661AF12456D3F006C7E28 /* PBXTextBookmark */;
 			609661B112456D91006C7E28 /* PBXTextBookmark */ = 609661B112456D91006C7E28 /* PBXTextBookmark */;
 			609661B412456DC1006C7E28 /* PBXTextBookmark */ = 609661B412456DC1006C7E28 /* PBXTextBookmark */;
+			609661ED12466828006C7E28 /* PBXTextBookmark */ = 609661ED12466828006C7E28 /* PBXTextBookmark */;
+			609661EF12466885006C7E28 /* PBXTextBookmark */ = 609661EF12466885006C7E28 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 60554DEB12428FB90071A103 /* Source Control */;
 		userBuildSettings = {
@@ -440,9 +442,9 @@
 	};
 	607F5F9912428390003BC2E8 /* LighthouseController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1286, 2743}}";
-			sepNavSelRange = "{7539, 0}";
-			sepNavVisRange = "{5906, 1782}";
+			sepNavIntBoundsRect = "{{0, 0}, {1069, 2795}}";
+			sepNavSelRange = "{1607, 0}";
+			sepNavVisRange = "{773, 2071}";
 		};
 	};
 	607F5FF012428F07003BC2E8 /* Seriously.h */ = {
@@ -1706,5 +1708,25 @@
 		rType = 0;
 		vrLen = 1782;
 		vrLoc = 5906;
+	};
+	609661ED12466828006C7E28 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
+		name = "LighthouseController.m: 50";
+		rLen = 0;
+		rLoc = 1607;
+		rType = 0;
+		vrLen = 2037;
+		vrLoc = 773;
+	};
+	609661EF12466885006C7E28 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
+		name = "LighthouseController.m: 50";
+		rLen = 0;
+		rLoc = 1607;
+		rType = 0;
+		vrLen = 2071;
+		vrLoc = 773;
 	};
 }

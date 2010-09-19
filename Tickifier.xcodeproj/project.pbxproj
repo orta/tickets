@@ -22,6 +22,7 @@
 		607F5FDD12428852003BC2E8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 607F5FDC12428852003BC2E8 /* SystemConfiguration.framework */; };
 		607F5FF512428F07003BC2E8 /* Seriously.m in Sources */ = {isa = PBXBuildFile; fileRef = 607F5FF112428F07003BC2E8 /* Seriously.m */; };
 		607F5FF612428F07003BC2E8 /* SeriouslyOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 607F5FF412428F07003BC2E8 /* SeriouslyOperation.m */; };
+		609661E01246681E006C7E28 /* ShortcutRecorder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609661DF1246681E006C7E28 /* ShortcutRecorder.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -62,6 +63,7 @@
 		607F5FF212428F07003BC2E8 /* SeriouslyConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeriouslyConstants.h; sourceTree = "<group>"; };
 		607F5FF312428F07003BC2E8 /* SeriouslyOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeriouslyOperation.h; sourceTree = "<group>"; };
 		607F5FF412428F07003BC2E8 /* SeriouslyOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeriouslyOperation.m; sourceTree = "<group>"; };
+		609661DF1246681E006C7E28 /* ShortcutRecorder.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShortcutRecorder.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				607F5FDA12428816003BC2E8 /* Security.framework in Frameworks */,
 				607F5F7512427E51003BC2E8 /* Cocoa.framework in Frameworks */,
 				60554E2F12428FEE0071A103 /* libz.dylib in Frameworks */,
+				609661E01246681E006C7E28 /* ShortcutRecorder.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +149,7 @@
 		607F5F6C12427E51003BC2E8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				609661DF1246681E006C7E28 /* ShortcutRecorder.framework */,
 				607F5FDC12428852003BC2E8 /* SystemConfiguration.framework */,
 				607F5FD912428816003BC2E8 /* Security.framework */,
 				60554E2E12428FED0071A103 /* libz.dylib */,
