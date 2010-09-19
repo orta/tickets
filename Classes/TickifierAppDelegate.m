@@ -14,7 +14,6 @@
 @synthesize window, setupWindow;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-  
   [self toggleGlobalHotKey:self];
   if([[NSUserDefaults standardUserDefaults] objectForKey:@"api_key"]){
     [window becomeKeyWindow];
@@ -50,10 +49,7 @@
     [window orderOut:self];
   }else{
     [window makeKeyAndOrderFront:self];
-   
   }
- 
-	
 }
 
 

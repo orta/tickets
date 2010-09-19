@@ -11,7 +11,7 @@
 #import "PTHotKey.h"
 
 @interface TickifierAppDelegate : NSObject <NSApplicationDelegate> {
-  NSWindow *window;
+  IBOutlet NSWindow *window;
   IBOutlet NSWindow *setupWindow;
   
   IBOutlet SRRecorderControl *shortcutRecorder;
