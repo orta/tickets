@@ -22,7 +22,7 @@
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
 			<integer value="372"/>
-			<integer value="534"/>
+			<integer value="690"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -1804,18 +1804,18 @@
 								<int key="NSArrowPosition">2</int>
 							</object>
 						</object>
-						<object class="NSButton" id="731515786">
+						<object class="NSButton" id="934578983">
 							<reference key="NSNextResponder" ref="439893737"/>
 							<int key="NSvFlags">268</int>
 							<string key="NSFrame">{{14, 15}, {96, 32}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<bool key="NSEnabled">YES</bool>
-							<object class="NSButtonCell" key="NSCell" id="252754409">
+							<object class="NSButtonCell" key="NSCell" id="542969113">
 								<int key="NSCellFlags">67239424</int>
 								<int key="NSCellFlags2">134217728</int>
 								<string key="NSContents">Go</string>
 								<reference key="NSSupport" ref="717616117"/>
-								<reference key="NSControlView" ref="731515786"/>
+								<reference key="NSControlView" ref="934578983"/>
 								<int key="NSButtonFlags">-2038284033</int>
 								<int key="NSButtonFlags2">129</int>
 								<string key="NSAlternateContents"/>
@@ -2035,7 +2035,7 @@
 								<int key="NSArrowPosition">2</int>
 							</object>
 						</object>
-						<object class="SRRecorderControl" id="350213617">
+						<object class="SRRecorderControl" id="322898231">
 							<reference key="NSNextResponder" ref="826368976"/>
 							<int key="NSvFlags">298</int>
 							<string key="NSFrame">{{38, 125}, {271, 22}}</string>
@@ -2044,7 +2044,7 @@
 							<object class="SRRecorderCell" key="NSCell">
 								<int key="NSCellFlags">654848</int>
 								<int key="NSCellFlags2">0</int>
-								<reference key="NSControlView" ref="350213617"/>
+								<reference key="NSControlView" ref="322898231"/>
 								<nil key="autosaveName"/>
 								<integer value="99" key="keyComboCode"/>
 								<integer value="1048576" key="keyComboFlags"/>
@@ -2056,18 +2056,18 @@
 								<integer value="0" key="style"/>
 							</object>
 						</object>
-						<object class="NSTextField" id="479305610">
+						<object class="NSTextField" id="855105122">
 							<reference key="NSNextResponder" ref="826368976"/>
 							<int key="NSvFlags">268</int>
 							<string key="NSFrame">{{35, 155}, {200, 17}}</string>
 							<reference key="NSSuperview" ref="826368976"/>
 							<bool key="NSEnabled">YES</bool>
-							<object class="NSTextFieldCell" key="NSCell" id="158179107">
+							<object class="NSTextFieldCell" key="NSCell" id="554189118">
 								<int key="NSCellFlags">68288064</int>
 								<int key="NSCellFlags2">272630784</int>
 								<string key="NSContents">key binding</string>
 								<reference key="NSSupport" ref="717616117"/>
-								<reference key="NSControlView" ref="479305610"/>
+								<reference key="NSControlView" ref="855105122"/>
 								<reference key="NSBackgroundColor" ref="433546879"/>
 								<reference key="NSTextColor" ref="935917744"/>
 							</object>
@@ -3148,7 +3148,7 @@
 					<object class="IBActionConnection" key="connection">
 						<string key="label">submit:</string>
 						<reference key="source" ref="380411522"/>
-						<reference key="destination" ref="731515786"/>
+						<reference key="destination" ref="934578983"/>
 					</object>
 					<int key="connectionID">689</int>
 				</object>
@@ -3172,14 +3172,14 @@
 					<object class="IBOutletConnection" key="connection">
 						<string key="label">nextKeyView</string>
 						<reference key="source" ref="870751215"/>
-						<reference key="destination" ref="350213617"/>
+						<reference key="destination" ref="322898231"/>
 					</object>
 					<int key="connectionID">695</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
 						<string key="label">nextKeyView</string>
-						<reference key="source" ref="350213617"/>
+						<reference key="source" ref="322898231"/>
 						<reference key="destination" ref="717548628"/>
 					</object>
 					<int key="connectionID">696</int>
@@ -3191,14 +3191,6 @@
 						<reference key="destination" ref="717548628"/>
 					</object>
 					<int key="connectionID">697</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">delegate</string>
-						<reference key="source" ref="350213617"/>
-						<reference key="destination" ref="976324537"/>
-					</object>
-					<int key="connectionID">698</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBBindingConnection" key="connection">
@@ -3239,6 +3231,22 @@
 						</object>
 					</object>
 					<int key="connectionID">700</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">shortcutRecorder</string>
+						<reference key="source" ref="976324537"/>
+						<reference key="destination" ref="322898231"/>
+					</object>
+					<int key="connectionID">701</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">setupWindow</string>
+						<reference key="source" ref="976324537"/>
+						<reference key="destination" ref="963484577"/>
+					</object>
+					<int key="connectionID">702</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -3806,7 +3814,7 @@
 							<reference ref="18585837"/>
 							<reference ref="623093055"/>
 							<reference ref="782825215"/>
-							<reference ref="731515786"/>
+							<reference ref="934578983"/>
 						</object>
 						<reference key="parent" ref="972006081"/>
 					</object>
@@ -4315,8 +4323,8 @@
 							<reference ref="499366214"/>
 							<reference ref="695031392"/>
 							<reference ref="1073676334"/>
-							<reference ref="479305610"/>
-							<reference ref="350213617"/>
+							<reference ref="855105122"/>
+							<reference ref="322898231"/>
 							<reference ref="870751215"/>
 							<reference ref="717548628"/>
 							<reference ref="115737686"/>
@@ -4703,36 +4711,36 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">687</int>
-						<reference key="object" ref="731515786"/>
+						<reference key="object" ref="934578983"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="252754409"/>
+							<reference ref="542969113"/>
 						</object>
 						<reference key="parent" ref="439893737"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">688</int>
-						<reference key="object" ref="252754409"/>
-						<reference key="parent" ref="731515786"/>
+						<reference key="object" ref="542969113"/>
+						<reference key="parent" ref="934578983"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">690</int>
-						<reference key="object" ref="350213617"/>
+						<reference key="object" ref="322898231"/>
 						<reference key="parent" ref="826368976"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">691</int>
-						<reference key="object" ref="479305610"/>
+						<reference key="object" ref="855105122"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="158179107"/>
+							<reference ref="554189118"/>
 						</object>
 						<reference key="parent" ref="826368976"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">692</int>
-						<reference key="object" ref="158179107"/>
-						<reference key="parent" ref="479305610"/>
+						<reference key="object" ref="554189118"/>
+						<reference key="parent" ref="855105122"/>
 					</object>
 				</object>
 			</object>
@@ -5387,7 +5395,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">700</int>
+			<int key="maxID">702</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptionsV3.1+">
@@ -5497,6 +5505,53 @@
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBDocumentRelativeSource</string>
 						<string key="minorKey">../LighthouseController.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">TickifierAppDelegate</string>
+					<string key="superclassName">NSObject</string>
+					<object class="NSMutableDictionary" key="outlets">
+						<bool key="EncodedWithXMLCoder">YES</bool>
+						<object class="NSArray" key="dict.sortedKeys">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>setupWindow</string>
+							<string>shortcutRecorder</string>
+							<string>window</string>
+						</object>
+						<object class="NSMutableArray" key="dict.values">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>NSWindow</string>
+							<string>SRRecorderControl</string>
+							<string>NSWindow</string>
+						</object>
+					</object>
+					<object class="NSMutableDictionary" key="toOneOutletInfosByName">
+						<bool key="EncodedWithXMLCoder">YES</bool>
+						<object class="NSArray" key="dict.sortedKeys">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>setupWindow</string>
+							<string>shortcutRecorder</string>
+							<string>window</string>
+						</object>
+						<object class="NSMutableArray" key="dict.values">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<object class="IBToOneOutletInfo">
+								<string key="name">setupWindow</string>
+								<string key="candidateClassName">NSWindow</string>
+							</object>
+							<object class="IBToOneOutletInfo">
+								<string key="name">shortcutRecorder</string>
+								<string key="candidateClassName">SRRecorderControl</string>
+							</object>
+							<object class="IBToOneOutletInfo">
+								<string key="name">window</string>
+								<string key="candidateClassName">NSWindow</string>
+							</object>
+						</object>
+					</object>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBDocumentRelativeSource</string>
+						<string key="minorKey">../Classes/TickifierAppDelegate.h</string>
 					</object>
 				</object>
 			</object>

@@ -282,7 +282,7 @@
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 0}, {245, 690}}</string>
+							<string>{{0, 0}, {245, 814}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -294,14 +294,14 @@
 					<key>GeometryConfiguration</key>
 					<dict>
 						<key>Frame</key>
-						<string>{{0, 0}, {262, 708}}</string>
+						<string>{{0, 0}, {262, 832}}</string>
 						<key>GroupTreeTableConfiguration</key>
 						<array>
 							<string>MainColumn</string>
 							<real>245</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>1476 134 1307 749 1440 -180 1920 1080 </string>
+						<string>1476 10 1504 873 1440 -180 1920 1080 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -331,7 +331,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>6096629B124677BE006C7E28</string>
+										<string>609662B112467998006C7E28</string>
 										<key>history</key>
 										<array>
 											<string>607DB4A91243D210001CCF9F</string>
@@ -353,8 +353,8 @@
 											<string>6096622812466CE0006C7E28</string>
 											<string>6096622A12466CE0006C7E28</string>
 											<string>6096622C12466CE0006C7E28</string>
-											<string>6096627812467260006C7E28</string>
-											<string>6096629A124677BE006C7E28</string>
+											<string>609662B012467998006C7E28</string>
+											<string>609662A9124678EA006C7E28</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -366,14 +366,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {1040, 486}}</string>
+								<string>{{0, 0}, {1237, 827}}</string>
 								<key>RubberWindowFrame</key>
-								<string>1476 134 1307 749 1440 -180 1920 1080 </string>
+								<string>1476 10 1504 873 1440 -180 1920 1080 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>486pt</string>
+							<string>827pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -386,18 +386,18 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 491}, {1040, 217}}</string>
+								<string>{{0, 832}, {1237, 0}}</string>
 								<key>RubberWindowFrame</key>
-								<string>1476 134 1307 749 1440 -180 1920 1080 </string>
+								<string>1476 10 1504 873 1440 -180 1920 1080 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>217pt</string>
+							<string>0pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
-					<string>1040pt</string>
+					<string>1237pt</string>
 				</dict>
 			</array>
 			<key>Name</key>
@@ -552,7 +552,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>6096629C124677BE006C7E28</string>
 		<string>6096624812466CEB006C7E28</string>
 		<string>6096624912466CEB006C7E28</string>
 		<string>1CD10A99069EF8BA00B06720</string>
@@ -561,7 +560,7 @@
 		<string>/Users/orta/spiel/cocoa/Tickifier/Tickifier.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>1476 134 1307 749 1440 -180 1920 1080 </string>
+	<string>1476 10 1504 873 1440 -180 1920 1080 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>

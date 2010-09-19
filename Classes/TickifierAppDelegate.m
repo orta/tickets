@@ -7,6 +7,7 @@
 //
 
 #import "TickifierAppDelegate.h"
+#import "PTHotKeyCenter.h"
 
 @implementation TickifierAppDelegate
 
@@ -14,6 +15,7 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
   
+  [self toggleGlobalHotKey:self];
   if([[NSUserDefaults standardUserDefaults] objectForKey:@"api_key"]){
     [window becomeKeyWindow];
     [window orderFrontRegardless];
@@ -24,21 +26,32 @@
   }
 }
 
-//- (void)shortcutRecorder:(SRRecorderControl *)aRecorder keyComboDidChange:(KeyCombo)newKeyCombo
-//{
-//	if (aRecorder == shortcutRecorder)
-//   {
-//		[self toggleGlobalHotKey: aRecorder];
-//   }
-//}
-//
-//- (void)hitHotKey:(PTHotKey *)hotKey
-//{
-//	NSMutableAttributedString *logString = [globalHotKeyLogView textStorage];
-//	[[logString mutableString] appendString: [NSString stringWithFormat: @"%@ pressed. \n", [shortcutRecorder keyComboString]]];
-//	
-//	[globalHotKeyLogView scrollPoint: NSMakePoint(0, [globalHotKeyLogView frame].size.height)];
-//}
+- (IBAction)toggleGlobalHotKey:(id)sender {
+	if (globalHotKey != nil) {
+		[[PTHotKeyCenter sharedCenter] unregisterHotKey: globalHotKey];
+		globalHotKey = nil;
+   }
+    
+	globalHotKey = [[PTHotKey alloc] initWithIdentifier:@"tickifier"
+                                             keyCombo:[PTKeyCombo keyComboWithKeyCode:[shortcutRecorder keyCombo].code
+                                                                            modifiers:[shortcutRecorder cocoaToCarbonFlags: [shortcutRecorder keyCombo].flags]]];
+	[globalHotKey setTarget: self];
+	[globalHotKey setAction: @selector(hitHotKey:)];
+	
+	[[PTHotKeyCenter sharedCenter] registerHotKey: globalHotKey];
+}
+
+
+- (void)shortcutRecorder:(SRRecorderControl *)aRecorder keyComboDidChange:(KeyCombo)newKeyCombo {
+	if (aRecorder == shortcutRecorder) {
+		[self toggleGlobalHotKey: aRecorder];
+   }
+}
+
+- (void)hitHotKey:(PTHotKey *)hotKey {
+  NSLog( @"%@ pressed. \n", [shortcutRecorder keyComboString]);
+	
+}
 
 
 @end
