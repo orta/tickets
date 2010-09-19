@@ -166,6 +166,7 @@
                    ticket.title, ticket.body, tags, currentMilestone.identifier, currentUser.identifier];
   
   NSLog(@"XML %@", XML);
+  NSLog(@"not sending to avoid spam");
   return;
   
   NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:url]];
