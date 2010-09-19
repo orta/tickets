@@ -46,7 +46,13 @@
 }
 
 - (void)hitHotKey:(PTHotKey *)hotKey {
-  NSLog( @"%@ pressed. \n", [shortcutRecorder keyComboString]);
+  if([window isKeyWindow]){
+    [window orderOut:self];
+  }else{
+    [window makeKeyAndOrderFront:self];
+   
+  }
+ 
 	
 }
 
