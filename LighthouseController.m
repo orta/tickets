@@ -158,15 +158,16 @@
   NSString *url = [self addressAt: [NSString stringWithFormat:@"projects/%i/tickets.xml", self.currentProject.identifier]];
   
   NSMutableString *tags = [NSMutableString stringWithString:@""];
-  for (tags in ticket.tags) {
-    <#statements#>
+  for (NSString* tag in ticket.tags) {
+    [tags appendString:tag];
   }
   
   NSString *XML = [NSString stringWithFormat:@"<ticket><title>%@</title><body>%@</body><tag>%@</tag><milestone-id>%i</milestone-id><assigned-user-id>%i</assigned-user-id></ticket>", 
-                   ticket.title, ticket.body, ticket.tags, currentMilestone.identifier, currentUser.identifier];
+                   ticket.title, ticket.body, tags, currentMilestone.identifier, currentUser.identifier];
   
   NSLog(@"XML %@", XML);
-
+  return;
+  
   NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:url]];
   [urlRequest setHTTPMethod:@"POST"];
   [urlRequest setValue:@"text/xml" forHTTPHeaderField:@"Content-type"];
@@ -192,6 +193,7 @@
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)conn {
    NSString *content = [NSString stringWithUTF8String:[payload bytes]];
+  currentTicket = [[Ticket alloc] init];
    NSLog(@"Connection finished: %@ - %@", conn, content);
 }
 
