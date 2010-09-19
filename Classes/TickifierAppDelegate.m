@@ -13,7 +13,7 @@
 @synthesize window, setupWindow;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-
+  
   if([[NSUserDefaults standardUserDefaults] objectForKey:@"api_key"]){
     [window becomeKeyWindow];
     [window orderFrontRegardless];
@@ -24,10 +24,21 @@
   }
 }
 
-- (void)dealloc {
+//- (void)shortcutRecorder:(SRRecorderControl *)aRecorder keyComboDidChange:(KeyCombo)newKeyCombo
+//{
+//	if (aRecorder == shortcutRecorder)
+//   {
+//		[self toggleGlobalHotKey: aRecorder];
+//   }
+//}
+//
+//- (void)hitHotKey:(PTHotKey *)hotKey
+//{
+//	NSMutableAttributedString *logString = [globalHotKeyLogView textStorage];
+//	[[logString mutableString] appendString: [NSString stringWithFormat: @"%@ pressed. \n", [shortcutRecorder keyComboString]]];
+//	
+//	[globalHotKeyLogView scrollPoint: NSMakePoint(0, [globalHotKeyLogView frame].size.height)];
+//}
 
-  [window release];
-    [super dealloc];
-}
 
 @end

@@ -22,17 +22,24 @@
 		607F5FDD12428852003BC2E8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 607F5FDC12428852003BC2E8 /* SystemConfiguration.framework */; };
 		607F5FF512428F07003BC2E8 /* Seriously.m in Sources */ = {isa = PBXBuildFile; fileRef = 607F5FF112428F07003BC2E8 /* Seriously.m */; };
 		607F5FF612428F07003BC2E8 /* SeriouslyOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 607F5FF412428F07003BC2E8 /* SeriouslyOperation.m */; };
-		609661E01246681E006C7E28 /* ShortcutRecorder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609661DF1246681E006C7E28 /* ShortcutRecorder.framework */; };
+		609661FA12466BE4006C7E28 /* PTHotKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 609661F312466BE4006C7E28 /* PTHotKey.m */; };
+		609661FB12466BE4006C7E28 /* PTHotKeyCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 609661F512466BE4006C7E28 /* PTHotKeyCenter.m */; };
+		609661FC12466BE4006C7E28 /* PTKeyCodeTranslator.m in Sources */ = {isa = PBXBuildFile; fileRef = 609661F712466BE4006C7E28 /* PTKeyCodeTranslator.m */; };
+		609661FD12466BE4006C7E28 /* PTKeyCombo.m in Sources */ = {isa = PBXBuildFile; fileRef = 609661F912466BE4006C7E28 /* PTKeyCombo.m */; };
+		6096620D12466CA0006C7E28 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6096620C12466CA0006C7E28 /* Carbon.framework */; };
+		6096620F12466CA0006C7E28 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6096620E12466CA0006C7E28 /* CoreServices.framework */; };
+		6096628B124677AC006C7E28 /* ShortcutRecorder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6096628A124677AC006C7E28 /* ShortcutRecorder.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		607F5FE712428BBB003BC2E8 /* CopyFiles */ = {
+		607F5FE712428BBB003BC2E8 /* Move Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
 			);
+			name = "Move Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -63,7 +70,17 @@
 		607F5FF212428F07003BC2E8 /* SeriouslyConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeriouslyConstants.h; sourceTree = "<group>"; };
 		607F5FF312428F07003BC2E8 /* SeriouslyOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeriouslyOperation.h; sourceTree = "<group>"; };
 		607F5FF412428F07003BC2E8 /* SeriouslyOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeriouslyOperation.m; sourceTree = "<group>"; };
-		609661DF1246681E006C7E28 /* ShortcutRecorder.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShortcutRecorder.framework; sourceTree = "<group>"; };
+		609661F212466BE4006C7E28 /* PTHotKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTHotKey.h; sourceTree = "<group>"; };
+		609661F312466BE4006C7E28 /* PTHotKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTHotKey.m; sourceTree = "<group>"; };
+		609661F412466BE4006C7E28 /* PTHotKeyCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTHotKeyCenter.h; sourceTree = "<group>"; };
+		609661F512466BE4006C7E28 /* PTHotKeyCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTHotKeyCenter.m; sourceTree = "<group>"; };
+		609661F612466BE4006C7E28 /* PTKeyCodeTranslator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTKeyCodeTranslator.h; sourceTree = "<group>"; };
+		609661F712466BE4006C7E28 /* PTKeyCodeTranslator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTKeyCodeTranslator.m; sourceTree = "<group>"; };
+		609661F812466BE4006C7E28 /* PTKeyCombo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTKeyCombo.h; sourceTree = "<group>"; };
+		609661F912466BE4006C7E28 /* PTKeyCombo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTKeyCombo.m; sourceTree = "<group>"; };
+		6096620C12466CA0006C7E28 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		6096620E12466CA0006C7E28 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		6096628A124677AC006C7E28 /* ShortcutRecorder.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShortcutRecorder.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +92,9 @@
 				607F5FDA12428816003BC2E8 /* Security.framework in Frameworks */,
 				607F5F7512427E51003BC2E8 /* Cocoa.framework in Frameworks */,
 				60554E2F12428FEE0071A103 /* libz.dylib in Frameworks */,
-				609661E01246681E006C7E28 /* ShortcutRecorder.framework in Frameworks */,
+				6096620D12466CA0006C7E28 /* Carbon.framework in Frameworks */,
+				6096620F12466CA0006C7E28 /* CoreServices.framework in Frameworks */,
+				6096628B124677AC006C7E28 /* ShortcutRecorder.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,16 +130,18 @@
 				607F5F96124281BE003BC2E8 /* IDEAS */,
 				607F5F6C12427E51003BC2E8 /* Frameworks */,
 				607F5F7212427E51003BC2E8 /* Products */,
+				6096620C12466CA0006C7E28 /* Carbon.framework */,
+				6096620E12466CA0006C7E28 /* CoreServices.framework */,
 			);
 			sourceTree = "<group>";
 		};
 		607F5F6912427E51003BC2E8 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				60554E64124291E90071A103 /* Controllers */,
-				60554E4B124291B50071A103 /* Models */,
 				607F5F8312427E51003BC2E8 /* TickifierAppDelegate.h */,
 				607F5F8412427E51003BC2E8 /* TickifierAppDelegate.m */,
+				60554E64124291E90071A103 /* Controllers */,
+				60554E4B124291B50071A103 /* Models */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -128,6 +149,7 @@
 		607F5F6A12427E51003BC2E8 /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
+				609661F112466BE4006C7E28 /* HotKey */,
 				60966051124551D7006C7E28 /* Seriously */,
 				607F5F7712427E51003BC2E8 /* Tickifier_Prefix.pch */,
 				607F5F7B12427E51003BC2E8 /* main.m */,
@@ -149,7 +171,7 @@
 		607F5F6C12427E51003BC2E8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				609661DF1246681E006C7E28 /* ShortcutRecorder.framework */,
+				6096628A124677AC006C7E28 /* ShortcutRecorder.framework */,
 				607F5FDC12428852003BC2E8 /* SystemConfiguration.framework */,
 				607F5FD912428816003BC2E8 /* Security.framework */,
 				60554E2E12428FED0071A103 /* libz.dylib */,
@@ -178,6 +200,21 @@
 			name = Seriously;
 			sourceTree = "<group>";
 		};
+		609661F112466BE4006C7E28 /* HotKey */ = {
+			isa = PBXGroup;
+			children = (
+				609661F212466BE4006C7E28 /* PTHotKey.h */,
+				609661F312466BE4006C7E28 /* PTHotKey.m */,
+				609661F412466BE4006C7E28 /* PTHotKeyCenter.h */,
+				609661F512466BE4006C7E28 /* PTHotKeyCenter.m */,
+				609661F612466BE4006C7E28 /* PTKeyCodeTranslator.h */,
+				609661F712466BE4006C7E28 /* PTKeyCodeTranslator.m */,
+				609661F812466BE4006C7E28 /* PTKeyCombo.h */,
+				609661F912466BE4006C7E28 /* PTKeyCombo.m */,
+			);
+			path = HotKey;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -188,7 +225,7 @@
 				607F5F6D12427E51003BC2E8 /* Sources */,
 				607F5F6E12427E51003BC2E8 /* Frameworks */,
 				607F5F6F12427E51003BC2E8 /* Resources */,
-				607F5FE712428BBB003BC2E8 /* CopyFiles */,
+				607F5FE712428BBB003BC2E8 /* Move Frameworks */,
 			);
 			buildRules = (
 			);
@@ -249,6 +286,10 @@
 				607F5FF612428F07003BC2E8 /* SeriouslyOperation.m in Sources */,
 				60554E4A124291B20071A103 /* Ticket.m in Sources */,
 				60554EBE124368B40071A103 /* LighthouseEntity.m in Sources */,
+				609661FA12466BE4006C7E28 /* PTHotKey.m in Sources */,
+				609661FB12466BE4006C7E28 /* PTHotKeyCenter.m in Sources */,
+				609661FC12466BE4006C7E28 /* PTKeyCodeTranslator.m in Sources */,
+				609661FD12466BE4006C7E28 /* PTKeyCombo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +328,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_GC = required;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -304,6 +346,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_GC = required;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
