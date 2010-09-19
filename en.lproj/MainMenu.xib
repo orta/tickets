@@ -22,7 +22,7 @@
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
 			<integer value="372"/>
-			<integer value="690"/>
+			<integer value="534"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -1343,7 +1343,7 @@
 							<reference key="NSNextResponder" ref="439893737"/>
 							<int key="NSvFlags">12</int>
 							<string key="NSFrame">{{462.5, 23}, {4, 312}}</string>
-							<string key="NSBounds">{{7.5, 0}, {0, 312}}</string>
+							<string key="NSBounds">{{8, 0}, {0, 312}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<string key="NSOffsets">{0, 0}</string>
 							<object class="NSTextFieldCell" key="NSTitleCell">
@@ -2041,14 +2041,14 @@
 							<string key="NSFrame">{{38, 125}, {271, 22}}</string>
 							<reference key="NSSuperview" ref="826368976"/>
 							<bool key="NSEnabled">YES</bool>
-							<object class="SRRecorderCell" key="NSCell">
+							<object class="SRRecorderCell" key="NSCell" id="360847457">
 								<int key="NSCellFlags">654848</int>
 								<int key="NSCellFlags2">0</int>
 								<reference key="NSControlView" ref="322898231"/>
 								<nil key="autosaveName"/>
 								<integer value="99" key="keyComboCode"/>
-								<integer value="1048576" key="keyComboFlags"/>
-								<integer value="1966080" key="allowedFlags"/>
+								<integer value="8388608" key="keyComboFlags"/>
+								<integer value="10354688" key="allowedFlags"/>
 								<integer value="0" key="requiredFlags"/>
 								<boolean value="NO" key="allowsKeyOnly"/>
 								<boolean value="NO" key="escapeKeysRecord"/>
@@ -4726,6 +4726,10 @@
 					<object class="IBObjectRecord">
 						<int key="objectID">690</int>
 						<reference key="object" ref="322898231"/>
+						<object class="NSMutableArray" key="children">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<reference ref="360847457"/>
+						</object>
 						<reference key="parent" ref="826368976"/>
 					</object>
 					<object class="IBObjectRecord">
@@ -4741,6 +4745,11 @@
 						<int key="objectID">692</int>
 						<reference key="object" ref="554189118"/>
 						<reference key="parent" ref="855105122"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">703</int>
+						<reference key="object" ref="360847457"/>
+						<reference key="parent" ref="322898231"/>
 					</object>
 				</object>
 			</object>
@@ -5395,7 +5404,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">702</int>
+			<int key="maxID">703</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptionsV3.1+">

@@ -34,18 +34,15 @@
     
 	globalHotKey = [[PTHotKey alloc] initWithIdentifier:@"tickifier"
                                              keyCombo:[PTKeyCombo keyComboWithKeyCode:[shortcutRecorder keyCombo].code
-                                                                            modifiers:[shortcutRecorder cocoaToCarbonFlags: [shortcutRecorder keyCombo].flags]]];
+                                           modifiers:[shortcutRecorder cocoaToCarbonFlags: [shortcutRecorder keyCombo].flags]]];
 	[globalHotKey setTarget: self];
 	[globalHotKey setAction: @selector(hitHotKey:)];
 	
 	[[PTHotKeyCenter sharedCenter] registerHotKey: globalHotKey];
 }
 
-
 - (void)shortcutRecorder:(SRRecorderControl *)aRecorder keyComboDidChange:(KeyCombo)newKeyCombo {
-	if (aRecorder == shortcutRecorder) {
-		[self toggleGlobalHotKey: aRecorder];
-   }
+  [self toggleGlobalHotKey: aRecorder];
 }
 
 - (void)hitHotKey:(PTHotKey *)hotKey {
