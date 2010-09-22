@@ -251,6 +251,7 @@
 			};
 			buildConfigurationList = 607F5F6712427E50003BC2E8 /* Build configuration list for PBXProject "Tickifier" */;
 			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,

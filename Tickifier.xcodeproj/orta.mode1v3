@@ -229,6 +229,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -274,9 +276,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>6</integer>
-									<integer>4</integer>
-									<integer>1</integer>
+									<integer>14</integer>
+									<integer>11</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -311,8 +312,6 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -330,7 +329,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>6096633B1246876B006C7E28</string>
+										<string>60A71949124A99FD00F4CD3E</string>
 										<key>history</key>
 										<array>
 											<string>607DB4A91243D210001CCF9F</string>
@@ -347,7 +346,6 @@
 											<string>6096622812466CE0006C7E28</string>
 											<string>6096622A12466CE0006C7E28</string>
 											<string>6096622C12466CE0006C7E28</string>
-											<string>609662CE12467FEC006C7E28</string>
 											<string>609662CF12467FEC006C7E28</string>
 											<string>609662D012467FEC006C7E28</string>
 											<string>609662D112467FEC006C7E28</string>
@@ -355,7 +353,7 @@
 											<string>6096630512468401006C7E28</string>
 											<string>6096630612468401006C7E28</string>
 											<string>6096633312468728006C7E28</string>
-											<string>6096633412468728006C7E28</string>
+											<string>6096633D12468934006C7E28</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -413,9 +411,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>6096623D12466CEB006C7E28</string>
+				<string>60A7194A124A99FD00F4CD3E</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>6096623E12466CEB006C7E28</string>
+				<string>60A7194B124A99FD00F4CD3E</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -553,13 +551,8 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>6096633C1246876B006C7E28</string>
-		<string>6096624812466CEB006C7E28</string>
-		<string>6096624912466CEB006C7E28</string>
-		<string>1CD10A99069EF8BA00B06720</string>
 		<string>60554E3212428FF40071A103</string>
-		<string>1C78EAAD065D492600B07095</string>
-		<string>/Users/orta/spiel/cocoa/Tickifier/Tickifier.xcodeproj</string>
+		<string>/Users/orta/spiel/cocoa/tickifier/Tickifier.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>62 139 1057 705 0 0 1440 878 </string>
@@ -639,7 +632,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>60554E3212428FF40071A103</string>
-				<string>6096623F12466CEB006C7E28</string>
+				<string>60A7194C124A99FD00F4CD3E</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
