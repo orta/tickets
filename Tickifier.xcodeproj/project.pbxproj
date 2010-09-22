@@ -29,7 +29,7 @@
 		6096620D12466CA0006C7E28 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6096620C12466CA0006C7E28 /* Carbon.framework */; };
 		6096620F12466CA0006C7E28 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6096620E12466CA0006C7E28 /* CoreServices.framework */; };
 		6096628B124677AC006C7E28 /* ShortcutRecorder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6096628A124677AC006C7E28 /* ShortcutRecorder.framework */; };
-		609662FD12468302006C7E28 /* PrefsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 609662FC12468302006C7E28 /* PrefsViewController.m */; };
+		609662FD12468302006C7E28 /* AppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 609662FC12468302006C7E28 /* AppViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -82,8 +82,8 @@
 		6096620C12466CA0006C7E28 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
 		6096620E12466CA0006C7E28 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 		6096628A124677AC006C7E28 /* ShortcutRecorder.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShortcutRecorder.framework; sourceTree = "<group>"; };
-		609662FB12468302006C7E28 /* PrefsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PrefsViewController.h; path = ../PrefsViewController.h; sourceTree = "<group>"; };
-		609662FC12468302006C7E28 /* PrefsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PrefsViewController.m; path = ../PrefsViewController.m; sourceTree = "<group>"; };
+		609662FB12468302006C7E28 /* AppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppViewController.h; path = ../AppViewController.h; sourceTree = "<group>"; };
+		609662FC12468302006C7E28 /* AppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppViewController.m; path = ../AppViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,8 +118,8 @@
 		60554E64124291E90071A103 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				609662FB12468302006C7E28 /* PrefsViewController.h */,
-				609662FC12468302006C7E28 /* PrefsViewController.m */,
+				609662FB12468302006C7E28 /* AppViewController.h */,
+				609662FC12468302006C7E28 /* AppViewController.m */,
 				607F5F9912428390003BC2E8 /* LighthouseController.m */,
 				607F5F9812428390003BC2E8 /* LighthouseController.h */,
 			);
@@ -296,7 +296,7 @@
 				609661FB12466BE4006C7E28 /* PTHotKeyCenter.m in Sources */,
 				609661FC12466BE4006C7E28 /* PTKeyCodeTranslator.m in Sources */,
 				609661FD12466BE4006C7E28 /* PTKeyCombo.m in Sources */,
-				609662FD12468302006C7E28 /* PrefsViewController.m in Sources */,
+				609662FD12468302006C7E28 /* AppViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
