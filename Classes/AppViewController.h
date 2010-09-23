@@ -15,9 +15,11 @@
   
   IBOutlet NSWindow *mainWindow;
   IBOutlet NSView *accessoryView;
+  
+  Boolean fullView;
 }
 
 - (void)composeInterface;
-
+- (IBAction) toggleViewMode:(id)sender;
 
 @end

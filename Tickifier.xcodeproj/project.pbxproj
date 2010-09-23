@@ -30,6 +30,7 @@
 		6096620F12466CA0006C7E28 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6096620E12466CA0006C7E28 /* CoreServices.framework */; };
 		609662FD12468302006C7E28 /* AppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 609662FC12468302006C7E28 /* AppViewController.m */; };
 		60998033124BCC43006AA575 /* ShortcutRecorder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6099801E124BCC1B006AA575 /* ShortcutRecorder.framework */; };
+		6099805E124BD51E006AA575 /* tab.png in Resources */ = {isa = PBXBuildFile; fileRef = 6099805D124BD51E006AA575 /* tab.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,6 +130,7 @@
 		609662FB12468302006C7E28 /* AppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppViewController.h; path = ../AppViewController.h; sourceTree = "<group>"; };
 		609662FC12468302006C7E28 /* AppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppViewController.m; path = ../AppViewController.m; sourceTree = "<group>"; };
 		60998011124BCC1B006AA575 /* ShortcutRecorder.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ShortcutRecorder.xcodeproj; path = ../3rdparty/shortcutrecorder/ShortcutRecorder.xcodeproj; sourceTree = SOURCE_ROOT; };
+		6099805D124BD51E006AA575 /* tab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +213,7 @@
 		607F5F6B12427E51003BC2E8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				6099805D124BD51E006AA575 /* tab.png */,
 				607F5F7612427E51003BC2E8 /* Tickifier-Info.plist */,
 				607F5F7812427E51003BC2E8 /* InfoPlist.strings */,
 				607F5F7D12427E51003BC2E8 /* MainMenu.xib */,
@@ -377,6 +380,7 @@
 				607F5F7F12427E51003BC2E8 /* MainMenu.xib in Resources */,
 				607F5F8212427E51003BC2E8 /* Credits.rtf in Resources */,
 				607F5F97124281BE003BC2E8 /* IDEAS in Resources */,
+				6099805E124BD51E006AA575 /* tab.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

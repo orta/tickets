@@ -22,7 +22,22 @@
                                accessoryViewRect.size.height);
   [accessoryView setFrame:newFrame];
   [themeFrame addSubview:accessoryView];
+  fullView = NO;
+}
+
+- (IBAction) toggleViewMode:(id)sender {
+//  448 - 240
   
+  if(fullView){
+    NSRect newFrame = [mainWindow frame];
+    newFrame.size.width = 448;
+    [mainWindow setFrame:newFrame display:YES animate:YES];
+  }else{
+    NSRect newFrame = [mainWindow frame];
+    newFrame.size.width = 266;
+    [mainWindow setFrame:newFrame display:YES animate:YES];
+  }
+  fullView = !fullView;
 }
 
 // tab support in textviews
