@@ -7,8 +7,8 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import <ShortcutRecorder/ShortcutRecorder.h>
 #import "PTHotKey.h"
+#import <ShortcutRecorder/ShortcutRecorder.h>
 
 @interface TickifierAppDelegate : NSObject <NSApplicationDelegate> {
   IBOutlet NSWindow *window;
