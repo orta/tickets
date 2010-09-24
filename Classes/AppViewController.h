@@ -20,5 +20,7 @@
 }
 
 - (IBAction) toggleViewMode:(id)sender;
+- (IBAction) cycleInfoLabel:(id)sender;
+
 
 @end

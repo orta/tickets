@@ -14,7 +14,7 @@
 @synthesize identifier, name;
 
 - (NSString * )description {
-  return [NSString stringWithFormat:@"%@ (%i) ", self.name, self.identifier];
+  return [NSString stringWithFormat:@"%@", self.name];
 }
 
 @end
