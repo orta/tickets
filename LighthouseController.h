@@ -9,6 +9,7 @@
 #import <Cocoa/Cocoa.h>
 #import "LighthouseEntity.h"
 #import "Ticket.h"
+#import "ORCycleTextField.h"
 
 @interface LighthouseController : NSObject {
   
@@ -32,6 +33,8 @@
   
 	NSMutableData *payload;
   
+  IBOutlet ORCycleTextField *cycleTextField;
+  
 }
 
 @property (retain) NSString *APIKey;
@@ -51,7 +54,6 @@
 @property () NSInteger milestoneIndex;
 @property () NSInteger userIndex;
 
-- (IBAction) connect:(id)sender;
 - (IBAction) submit:(id)sender;
 - (IBAction) milestoneSelected:(id)sender;
 - (IBAction) userSelected:(id)sender;
@@ -64,7 +66,8 @@
 
 - (NSString*) addressAt:(NSString*) postfix;
 - (void) createEntitiesWithXML:(NSString *) xml toArrayController:(NSArrayController*)controller;
--(void) submitTicket: (Ticket *)ticket;
+- (void) submitTicket: (Ticket *)ticket;
+- (void) currentProjectUserMileStoneArray;
 
 
 @end

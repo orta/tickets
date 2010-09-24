@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6025C1BF124CF7D0006044FB /* ORCycleTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 6025C1BE124CF7D0006044FB /* ORCycleTextField.m */; };
 		60554E2F12428FEE0071A103 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 60554E2E12428FED0071A103 /* libz.dylib */; };
 		60554E4A124291B20071A103 /* Ticket.m in Sources */ = {isa = PBXBuildFile; fileRef = 60554E49124291B20071A103 /* Ticket.m */; };
 		60554EBE124368B40071A103 /* LighthouseEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 60554EBD124368B40071A103 /* LighthouseEntity.m */; };
@@ -92,6 +93,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6025C1BD124CF7D0006044FB /* ORCycleTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORCycleTextField.h; sourceTree = "<group>"; };
+		6025C1BE124CF7D0006044FB /* ORCycleTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORCycleTextField.m; sourceTree = "<group>"; };
 		60554E2E12428FED0071A103 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		60554E48124291B20071A103 /* Ticket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ticket.h; sourceTree = "<group>"; };
 		60554E49124291B20071A103 /* Ticket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ticket.m; sourceTree = "<group>"; };
@@ -151,6 +154,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6025C1BC124CF7A5006044FB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6025C1BD124CF7D0006044FB /* ORCycleTextField.h */,
+				6025C1BE124CF7D0006044FB /* ORCycleTextField.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		60554E4B124291B50071A103 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +207,7 @@
 				607F5F8412427E51003BC2E8 /* TickifierAppDelegate.m */,
 				60554E64124291E90071A103 /* Controllers */,
 				60554E4B124291B50071A103 /* Models */,
+				6025C1BC124CF7A5006044FB /* Views */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -403,6 +416,7 @@
 				609661FC12466BE4006C7E28 /* PTKeyCodeTranslator.m in Sources */,
 				609661FD12466BE4006C7E28 /* PTKeyCombo.m in Sources */,
 				609662FD12468302006C7E28 /* AppViewController.m in Sources */,
+				6025C1BF124CF7D0006044FB /* ORCycleTextField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

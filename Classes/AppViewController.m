@@ -23,6 +23,7 @@
   [accessoryView setFrame:newFrame];
   [themeFrame addSubview:accessoryView];
   fullView = NO;
+  [self toggleViewMode:self];
 }
 
 - (IBAction) toggleViewMode:(id)sender {

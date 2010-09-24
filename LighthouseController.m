@@ -49,17 +49,22 @@
 
   [self getMilestones];
   [self getUsers];
+  [self currentProjectUserMileStoneArray];
+
 }
 
 - (IBAction) milestoneSelected:(id)sender {
   [[NSUserDefaults standardUserDefaults] setInteger: [sender indexOfSelectedItem] forKey:@"milestoneIndex"];
   self.currentMilestone = [[milestones content] objectAtIndex:  [[[NSUserDefaults standardUserDefaults] objectForKey:@"milestoneIndex"] integerValue]];
+  [self currentProjectUserMileStoneArray];
 
 }
 
 - (IBAction) userSelected:(id)sender {
   [[NSUserDefaults standardUserDefaults] setInteger: [sender indexOfSelectedItem] forKey:@"userIndex"];
   self.currentUser = [[users content] objectAtIndex:  [[[NSUserDefaults standardUserDefaults] objectForKey:@"userIndex"] integerValue]];
+  [self currentProjectUserMileStoneArray];
+
 }
 
 
@@ -73,11 +78,15 @@
       [self createEntitiesWithXML:body toArrayController:projects];
       
       if ( [[[NSUserDefaults standardUserDefaults] objectForKey:@"projectIndex"] integerValue] ) {
-        self.projectIndex = [[NSUserDefaults standardUserDefaults] integerForKey:@"projectIndex"];
-        self.currentProject = [[projects content] objectAtIndex:self.projectIndex];
-        
-        [self getUsers];
-        [self getMilestones];
+        if([[self.projects content] count]){
+          self.projectIndex = [[NSUserDefaults standardUserDefaults] integerForKey:@"projectIndex"];
+          self.currentProject = [[projects content] objectAtIndex:self.projectIndex];  
+          
+          [self getUsers];
+          [self getMilestones];
+          [self currentProjectUserMileStoneArray];
+
+        }
       }
     }
   }];
@@ -93,8 +102,12 @@
     else {
       [self createEntitiesWithXML:body toArrayController:milestones];
       if ( [[[NSUserDefaults standardUserDefaults] objectForKey:@"milestoneIndex"] integerValue] ) {
-        self.milestoneIndex = [[NSUserDefaults standardUserDefaults] integerForKey:@"milestoneIndex"];
-        self.currentMilestone = [[milestones content] objectAtIndex:  [[[NSUserDefaults standardUserDefaults] objectForKey:@"milestoneIndex"] integerValue]];
+        if([[self.milestones content] count]){
+          self.milestoneIndex = [[NSUserDefaults standardUserDefaults] integerForKey:@"milestoneIndex"];
+          self.currentMilestone = [[milestones content] objectAtIndex:  [[[NSUserDefaults standardUserDefaults] objectForKey:@"milestoneIndex"] integerValue]];        
+        }else{
+          self.currentMilestone = nil;
+        }
       }
     }
   }];  
@@ -111,8 +124,15 @@
       [self createEntitiesWithXML:body toArrayController:users];
       
       if ( [[[NSUserDefaults standardUserDefaults] objectForKey:@"userIndex"] integerValue] ) {
-        self.userIndex = [[NSUserDefaults standardUserDefaults] integerForKey:@"userIndex"];
-        self.currentUser = [[users content] objectAtIndex:  [[[NSUserDefaults standardUserDefaults] objectForKey:@"userIndex"] integerValue]];
+        if([[self.users content] count]){
+
+          self.userIndex = [[NSUserDefaults standardUserDefaults] integerForKey:@"userIndex"];
+          self.currentUser = [[users content] objectAtIndex:  [[[NSUserDefaults standardUserDefaults] objectForKey:@"userIndex"] integerValue]];
+        }
+        else {
+          self.currentUser = nil;
+        }
+
       }
     }
   }];  
@@ -202,9 +222,21 @@
    
 }
 
-     
-- (IBAction)connect:(id)sender {
-  
+- (void) currentProjectUserMileStoneArray {
+  NSMutableArray * strings = [NSMutableArray array];
+  NSLog(@"1");
+  if (self.currentProject != nil) {
+    [strings addObject:currentProject.name];
+  }
+  NSLog(@"2");
+  if (self.currentUser.name != nil) {
+    [strings addObject:currentUser.name];
+  }
+    NSLog(@"3");
+  if (self.currentMilestone.name != nil) {
+    [strings addObject:currentMilestone.name];
+  }
+  cycleTextField.strings = strings;
 }
 
 - (void)dealloc {

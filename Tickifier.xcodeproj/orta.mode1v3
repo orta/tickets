@@ -197,7 +197,48 @@
 	<key>Notifications</key>
 	<array/>
 	<key>OpenEditors</key>
-	<array/>
+	<array>
+		<dict>
+			<key>Content</key>
+			<dict>
+				<key>PBXProjectModuleGUID</key>
+				<string>6025C239124D0109006044FB</string>
+				<key>PBXProjectModuleLabel</key>
+				<string>LighthouseController.m</string>
+				<key>PBXSplitModuleInNavigatorKey</key>
+				<dict>
+					<key>Split0</key>
+					<dict>
+						<key>PBXProjectModuleGUID</key>
+						<string>6025C23A124D0109006044FB</string>
+						<key>PBXProjectModuleLabel</key>
+						<string>LighthouseController.m</string>
+						<key>_historyCapacity</key>
+						<integer>0</integer>
+						<key>bookmark</key>
+						<string>6025C2B5124D0602006044FB</string>
+						<key>history</key>
+						<array>
+							<string>6025C234124D0101006044FB</string>
+						</array>
+					</dict>
+					<key>SplitCount</key>
+					<string>1</string>
+				</dict>
+				<key>StatusBarVisibility</key>
+				<true/>
+			</dict>
+			<key>Geometry</key>
+			<dict>
+				<key>Frame</key>
+				<string>{{0, 20}, {1285, 528}}</string>
+				<key>PBXModuleWindowStatusBarHidden2</key>
+				<false/>
+				<key>RubberWindowFrame</key>
+				<string>1455 326 1285 569 1440 -180 1920 1080 </string>
+			</dict>
+		</dict>
+	</array>
 	<key>PerspectiveWidths</key>
 	<array>
 		<integer>-1</integer>
@@ -229,8 +270,6 @@
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -270,6 +309,7 @@
 								<string>607F5F6912427E51003BC2E8</string>
 								<string>60554E64124291E90071A103</string>
 								<string>60554E4B124291B50071A103</string>
+								<string>6025C1BC124CF7A5006044FB</string>
 								<string>607F5F6B12427E51003BC2E8</string>
 								<string>607F5F6C12427E51003BC2E8</string>
 								<string>607F5FD912428816003BC2E8</string>
@@ -279,13 +319,11 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>25</integer>
-									<integer>21</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 93}, {245, 646}}</string>
+							<string>{{0, 0}, {245, 646}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -315,12 +353,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>AppViewController.m</string>
+								<string>LighthouseController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -328,11 +368,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>AppViewController.m</string>
+										<string>LighthouseController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>6025C1A5124CF4D9006044FB</string>
+										<string>6025C2B4124D0602006044FB</string>
 										<key>history</key>
 										<array>
 											<string>609660B112455392006C7E28</string>
@@ -341,16 +381,19 @@
 											<string>6096611812455C3E006C7E28</string>
 											<string>6096611912455C3E006C7E28</string>
 											<string>609662CF12467FEC006C7E28</string>
-											<string>609662D012467FEC006C7E28</string>
 											<string>609662D112467FEC006C7E28</string>
 											<string>609662D212467FEC006C7E28</string>
-											<string>6099808C124CCF94006AA575</string>
-											<string>6099808D124CCF94006AA575</string>
-											<string>6099808E124CCF94006AA575</string>
-											<string>6099808F124CCF94006AA575</string>
-											<string>60998090124CCF94006AA575</string>
-											<string>6025C19D124CF497006044FB</string>
-											<string>6025C19E124CF497006044FB</string>
+											<string>6025C1B7124CF724006044FB</string>
+											<string>6025C1C4124CFA8B006044FB</string>
+											<string>6025C1D3124CFC4F006044FB</string>
+											<string>6025C1E6124CFE2E006044FB</string>
+											<string>6025C1E7124CFE2E006044FB</string>
+											<string>6025C202124CFF47006044FB</string>
+											<string>6025C203124CFF47006044FB</string>
+											<string>6025C22A124D0071006044FB</string>
+											<string>6025C22B124D0071006044FB</string>
+											<string>6025C2B2124D0602006044FB</string>
+											<string>6025C2B3124D0602006044FB</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -548,12 +591,13 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>6025C1A6124CF4D9006044FB</string>
+		<string>6025C2B1124D058A006044FB</string>
 		<string>6025C19A124CF322006044FB</string>
 		<string>6025C19B124CF322006044FB</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
+		<string>6025C239124D0109006044FB</string>
 		<string>60554E3212428FF40071A103</string>
+		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/orta/spiel/cocoa/tickifier/Tickifier.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -578,7 +622,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string></string>
+								<string>LighthouseController.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -595,6 +639,8 @@
 							<string>125pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -647,7 +693,7 @@
 			<key>WindowToolGUID</key>
 			<string>60554E3212428FF40071A103</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>
@@ -881,6 +927,8 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -926,7 +974,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>Identifier</key>
