@@ -19,7 +19,6 @@
   Boolean fullView;
 }
 
-- (void)composeInterface;
 - (IBAction) toggleViewMode:(id)sender;
 
 @end
