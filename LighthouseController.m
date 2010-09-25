@@ -187,6 +187,7 @@
   
   NSLog(@"XML %@", XML);
   NSLog(@"not sending to avoid spam");
+  
   return;
   
   NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:url]];
@@ -224,15 +225,12 @@
 
 - (void) currentProjectUserMileStoneArray {
   NSMutableArray * strings = [NSMutableArray array];
-  NSLog(@"1");
   if (self.currentProject != nil) {
     [strings addObject:currentProject.name];
   }
-  NSLog(@"2");
   if (self.currentUser.name != nil) {
     [strings addObject:currentUser.name];
   }
-    NSLog(@"3");
   if (self.currentMilestone.name != nil) {
     [strings addObject:currentMilestone.name];
   }

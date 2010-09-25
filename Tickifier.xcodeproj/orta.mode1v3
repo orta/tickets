@@ -216,10 +216,10 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>6025C2B5124D0602006044FB</string>
+						<string>60CF7EB5124E6AA000601A8F</string>
 						<key>history</key>
 						<array>
-							<string>6025C234124D0101006044FB</string>
+							<string>6025C2CA124D06BE006044FB</string>
 						</array>
 					</dict>
 					<key>SplitCount</key>
@@ -319,6 +319,9 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
+									<integer>14</integer>
+									<integer>10</integer>
+									<integer>7</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -372,7 +375,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>6025C2B4124D0602006044FB</string>
+										<string>60CF7EB2124E6AA000601A8F</string>
 										<key>history</key>
 										<array>
 											<string>609660B112455392006C7E28</string>
@@ -385,15 +388,15 @@
 											<string>609662D212467FEC006C7E28</string>
 											<string>6025C1B7124CF724006044FB</string>
 											<string>6025C1C4124CFA8B006044FB</string>
-											<string>6025C1D3124CFC4F006044FB</string>
-											<string>6025C1E6124CFE2E006044FB</string>
-											<string>6025C1E7124CFE2E006044FB</string>
 											<string>6025C202124CFF47006044FB</string>
 											<string>6025C203124CFF47006044FB</string>
 											<string>6025C22A124D0071006044FB</string>
 											<string>6025C22B124D0071006044FB</string>
-											<string>6025C2B2124D0602006044FB</string>
-											<string>6025C2B3124D0602006044FB</string>
+											<string>6025C2BB124D0673006044FB</string>
+											<string>6025C2C6124D06BE006044FB</string>
+											<string>6025C2C7124D06BE006044FB</string>
+											<string>6025C2C8124D06BE006044FB</string>
+											<string>6025C2C9124D06BE006044FB</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -451,9 +454,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>6025C18F124CF322006044FB</string>
+				<string>60CF7EB3124E6AA000601A8F</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>6025C190124CF322006044FB</string>
+				<string>60CF7EB4124E6AA000601A8F</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -591,13 +594,8 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>6025C2B1124D058A006044FB</string>
-		<string>6025C19A124CF322006044FB</string>
-		<string>6025C19B124CF322006044FB</string>
-		<string>1CD10A99069EF8BA00B06720</string>
-		<string>6025C239124D0109006044FB</string>
 		<string>60554E3212428FF40071A103</string>
-		<string>1C78EAAD065D492600B07095</string>
+		<string>6025C239124D0109006044FB</string>
 		<string>/Users/orta/spiel/cocoa/tickifier/Tickifier.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -622,7 +620,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>LighthouseController.m</string>
+								<string></string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -639,8 +637,6 @@
 							<string>125pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -680,7 +676,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>60554E3212428FF40071A103</string>
-				<string>6025C191124CF322006044FB</string>
+				<string>60CF7EB6124E6AA000601A8F</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -693,7 +689,7 @@
 			<key>WindowToolGUID</key>
 			<string>60554E3212428FF40071A103</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>

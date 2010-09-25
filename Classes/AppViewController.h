@@ -11,7 +11,7 @@
 
 @interface AppViewController : NSObject {
   IBOutlet NSTextView *bodyTextView;
-  IBOutlet NSTokenField *tagsTextField;
+  IBOutlet NSTextField *tagsTextField;
   
   IBOutlet NSWindow *mainWindow;
   IBOutlet NSView *accessoryView;
