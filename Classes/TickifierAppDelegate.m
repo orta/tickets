@@ -45,9 +45,12 @@
 }
 
 - (void)hitHotKey:(PTHotKey *)hotKey {
+  NSLog(@"hotkey");
   if([window isKeyWindow]){
+    [[NSApplication sharedApplication] hide:self];
     [window orderOut:self];
   }else{
+    [[NSApplication sharedApplication] activateIgnoringOtherApps:YES];
     [window makeKeyAndOrderFront:self];
   }
 }
