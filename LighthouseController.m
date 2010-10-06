@@ -255,7 +255,10 @@
 
 
 - (NSString *) getStatus {
-  return [NSString stringWithFormat:@"Posting to %@, assigning to %@ on %@", self.currentProject.name, self.currentUser.name, self.currentMilestone.name];
+  NSString * milestone = self.currentMilestone.name;
+  if(milestone == nil) milestone = @"no milestone";
+  
+  return [NSString stringWithFormat:@"Posting to %@, assigning to %@ on %@", self.currentProject.name, self.currentUser.name, milestone];
 }
 
 - (void)dealloc {

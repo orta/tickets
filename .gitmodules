@@ -1,3 +1,6 @@
 [submodule "ext/shortcutrecorder"]
 	path = ext/shortcutrecorder
 	url = http://github.com/darwin/shortcutrecorder.git
+[submodule "ext/bwtoolkit"]
+	path = ext/bwtoolkit
+	url = http://github.com/orta/bwtoolkit.git
