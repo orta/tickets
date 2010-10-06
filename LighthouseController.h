@@ -13,6 +13,7 @@
 
 @interface LighthouseController : NSObject {
   
+  IBOutlet NSWindow *ticketWindow;
   IBOutlet NSTextField * passwordField;
   NSString *serverAddress;
   NSString *APIKey;
@@ -57,10 +58,12 @@
 - (IBAction) userSelected:(id)sender;
 - (IBAction) projectSelected:(id)sender;
 
-
 - (void) getProjects;
 - (void) getMilestones;
 - (void) getUsers;
+
+- (void) networkErrorSheet:(NSString *) errorString;
+
 
 - (NSString*) addressAt:(NSString*) postfix;
 - (void) createEntitiesWithXML:(NSString *) xml toArrayController:(NSArrayController*)controller;

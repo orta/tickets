@@ -75,6 +75,7 @@
   [Seriously get:url handler:^(id body, NSHTTPURLResponse *response, NSError *error) {
     if (error) {
       NSLog(@"Error: %@", error);
+      [self networkErrorSheet:[error localizedDescription]];
     }
     else {
       [self createEntitiesWithXML:body toArrayController:projects];
@@ -100,6 +101,7 @@
   [Seriously get:url handler:^(id body, NSHTTPURLResponse *response, NSError *error) {
     if (error) {
       NSLog(@"Error: %@", error);
+      [self networkErrorSheet: [error localizedDescription] ];
     }
     else {
       [self createEntitiesWithXML:body toArrayController:milestones];
@@ -122,6 +124,7 @@
   [Seriously get:url handler:^(id body, NSHTTPURLResponse *response, NSError *error) {
     if (error) {
       NSLog(@"Error: %@", error);
+      [self networkErrorSheet:[error localizedDescription]];
     }
     else {
       [self createEntitiesWithXML:body toArrayController:users];
@@ -185,6 +188,15 @@
   }
   
   [controller setContent:tempMembers];
+}
+
+- (void) networkErrorSheet:(NSString *) errorString{
+  NSAlert *alert = [[[NSAlert alloc] init] autorelease];
+  [alert addButtonWithTitle:@"OK"];
+  [alert setMessageText:[NSString stringWithFormat:@"Network Error : %@", errorString]];
+  [alert setInformativeText:@"We."];
+  [alert setAlertStyle:NSWarningAlertStyle];
+  [alert beginSheetModalForWindow:ticketWindow modalDelegate:self didEndSelector:nil contextInfo:nil];
 }
 
 - (IBAction) submit:(id)sender {
