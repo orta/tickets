@@ -33,8 +33,6 @@
   
   
 	NSMutableData *payload;
-  
-  IBOutlet ORCycleTextField *cycleTextField;
 }
 
 @property (retain) NSString *APIKey;

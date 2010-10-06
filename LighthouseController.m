@@ -31,12 +31,17 @@
      options:[NSDictionary dictionaryWithObject:[NSNumber numberWithBool:YES]
                                          forKey:@"NSContinuouslyUpdatesValue"]];
   
+	NSSortDescriptor *descriptor = [[NSSortDescriptor alloc] initWithKey:@"name" ascending:YES selector:@selector(caseInsensitiveCompare:)];
+	[projects setSortDescriptors:[NSArray arrayWithObject:descriptor]];
+	[milestones setSortDescriptors:[NSArray arrayWithObject:descriptor]];
+	[users setSortDescriptors:[NSArray arrayWithObject:descriptor]];
 
   if (self.serverAddress && self.APIKey) {    
     [self getProjects];
   }
   
   self.currentTicket = [[Ticket alloc] init];
+  
 }
 
 - (NSString*) addressAt:(NSString*) postfix {
@@ -49,21 +54,18 @@
 
   [self getMilestones];
   [self getUsers];
-  [self currentProjectUserMileStoneArray];
 
 }
 
 - (IBAction) milestoneSelected:(id)sender {
   [[NSUserDefaults standardUserDefaults] setInteger: [sender indexOfSelectedItem] forKey:@"milestoneIndex"];
   self.currentMilestone = [[milestones content] objectAtIndex:  [[[NSUserDefaults standardUserDefaults] objectForKey:@"milestoneIndex"] integerValue]];
-  [self currentProjectUserMileStoneArray];
 
 }
 
 - (IBAction) userSelected:(id)sender {
   [[NSUserDefaults standardUserDefaults] setInteger: [sender indexOfSelectedItem] forKey:@"userIndex"];
   self.currentUser = [[users content] objectAtIndex:  [[[NSUserDefaults standardUserDefaults] objectForKey:@"userIndex"] integerValue]];
-  [self currentProjectUserMileStoneArray];
 
 }
 
@@ -101,14 +103,12 @@
     }
     else {
       [self createEntitiesWithXML:body toArrayController:milestones];
-      NSLog(@" milessotnes = %i", [[milestones content ]count]);
         if([[self.milestones content] count] > 0){
           if ( [[[NSUserDefaults standardUserDefaults] objectForKey:@"milestoneIndex"] integerValue] ) {
             self.milestoneIndex = [[NSUserDefaults standardUserDefaults] integerForKey:@"milestoneIndex"];
             self.currentMilestone = [[milestones content] objectAtIndex:  [[[NSUserDefaults standardUserDefaults] objectForKey:@"milestoneIndex"] integerValue]];       
           }
         }else{
-          NSLog(@"NILLING milestones");
           self.currentMilestone = nil;
           [self.milestones setContent:nil]; 
         }
@@ -221,18 +221,8 @@
    
 }
 
-- (void) currentProjectUserMileStoneArray {
-  NSMutableArray * strings = [NSMutableArray array];
-  if (self.currentProject != nil) {
-    [strings addObject:currentProject.name];
-  }
-  if (self.currentUser.name != nil) {
-    [strings addObject:currentUser.name];
-  }
-  if (self.currentMilestone.name != nil) {
-    [strings addObject:currentMilestone.name];
-  }
-  cycleTextField.strings = strings;
+- (NSString *) currentProjectUserMileStone {
+  return [NSString stringWithFormat:@"Posting to %@, assigning to %@ on %@", self.currentProject.name, self.currentUser.name, self.currentMilestone.name];
 }
 
 - (void)dealloc {

@@ -229,8 +229,6 @@
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -287,14 +285,14 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>67</integer>
-									<integer>66</integer>
-									<integer>54</integer>
-									<integer>53</integer>
+									<integer>14</integer>
+									<integer>10</integer>
+									<integer>7</integer>
+									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 612}, {245, 646}}</string>
+							<string>{{0, 15}, {245, 646}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -313,7 +311,7 @@
 							<real>245</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>137 146 1057 705 0 0 1440 878 </string>
+						<string>206 152 1057 705 0 0 1440 878 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -324,12 +322,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>TickifierAppDelegate.m</string>
+								<string>LighthouseController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -337,11 +337,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>TickifierAppDelegate.m</string>
+										<string>LighthouseController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>604513B0125CDBD5009D0824</string>
+										<string>604513F6125CE54D009D0824</string>
 										<key>history</key>
 										<array>
 											<string>609660B112455392006C7E28</string>
@@ -356,14 +356,14 @@
 											<string>6025C22B124D0071006044FB</string>
 											<string>60CF7EE4124E7F1300601A8F</string>
 											<string>60CF7EE5124E7F1300601A8F</string>
-											<string>60CF7EE6124E7F1300601A8F</string>
-											<string>60CF7EE7124E7F1300601A8F</string>
-											<string>603F07691256051600FE3C85</string>
-											<string>604513AB125CDBD5009D0824</string>
 											<string>604513AC125CDBD5009D0824</string>
 											<string>604513AD125CDBD5009D0824</string>
 											<string>604513AE125CDBD5009D0824</string>
-											<string>604513AF125CDBD5009D0824</string>
+											<string>604513D6125CE132009D0824</string>
+											<string>604513D7125CE132009D0824</string>
+											<string>604513D8125CE132009D0824</string>
+											<string>604513F0125CE4E1009D0824</string>
+											<string>604513F1125CE4E1009D0824</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -375,14 +375,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {790, 461}}</string>
+								<string>{{0, 0}, {790, 659}}</string>
 								<key>RubberWindowFrame</key>
-								<string>137 146 1057 705 0 0 1440 878 </string>
+								<string>206 152 1057 705 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>461pt</string>
+							<string>659pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -395,14 +395,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 466}, {790, 198}}</string>
+								<string>{{0, 664}, {790, 0}}</string>
 								<key>RubberWindowFrame</key>
-								<string>137 146 1057 705 0 0 1440 878 </string>
+								<string>206 152 1057 705 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>198pt</string>
+							<string>0pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
@@ -561,7 +561,8 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>604513B1125CDBD5009D0824</string>
+		<string>604513F7125CE54D009D0824</string>
+		<string>607DB3D91243C1FC001CCF9F</string>
 		<string>6045131A125CD892009D0824</string>
 		<string>6045131B125CD892009D0824</string>
 		<string>1C78EAAD065D492600B07095</string>
@@ -570,7 +571,7 @@
 		<string>/Users/orta/spiel/cocoa/tickifier/Tickifier.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>137 146 1057 705 0 0 1440 878 </string>
+	<string>206 152 1057 705 0 0 1440 878 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
@@ -608,6 +609,8 @@
 							<string>125pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -660,7 +663,7 @@
 			<key>WindowToolGUID</key>
 			<string>60554E3212428FF40071A103</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>
@@ -1407,7 +1410,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {500, 315}}</string>
 								<key>RubberWindowFrame</key>
-								<string>228 494 500 356 0 0 1440 878 </string>
+								<string>59 345 500 356 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCRefactoringModule</string>
@@ -1430,11 +1433,11 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>607DB3D91243C1FC001CCF9F</string>
-				<string>60A7195A124AAC8500F4CD3E</string>
+				<string>604513DB125CE132009D0824</string>
 				<string>607DB3D81243C1FC001CCF9F</string>
 			</array>
 			<key>WindowString</key>
-			<string>228 494 500 356 0 0 1440 878 </string>
+			<string>59 345 500 356 0 0 1440 878 </string>
 			<key>WindowToolGUID</key>
 			<string>607DB3D91243C1FC001CCF9F</string>
 			<key>WindowToolIsVisible</key>

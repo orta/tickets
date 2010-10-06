@@ -12,7 +12,7 @@
 @synthesize fullView;
 
 -(void)awakeFromNib{
-  NSView *themeFrame = [[mainWindow contentView] superview];
+  NSView *themeFrame = [[ticketWindow contentView] superview];
   NSRect containerRect = [themeFrame frame]; 
   NSRect accessoryViewRect = [accessoryView frame]; 
   NSRect newFrame = NSMakeRect(
@@ -24,6 +24,8 @@
   [themeFrame addSubview:accessoryView];
   self.fullView = NO;
   [self toggleViewMode:self];
+  [ticketWindow setContentBorderThickness:20.0 forEdge:NSMinYEdge];
+
 }
 
 - (IBAction) toggleViewMode:(id)sender {
@@ -31,17 +33,17 @@
   
   if(self.fullView){
     
-    NSRect newFrame = [mainWindow frame];
+    NSRect newFrame = [ticketWindow frame];
     newFrame.size.width = 448;
-    [mainWindow setFrame:newFrame display:YES animate:YES];
+    [ticketWindow setFrame:newFrame display:YES animate:YES];
     self.fullView = !self.fullView;
 
   }else{
     
     self.fullView = !self.fullView;    
-    NSRect newFrame = [mainWindow frame];
+    NSRect newFrame = [ticketWindow frame];
     newFrame.size.width = 266;
-    [mainWindow setFrame:newFrame display:YES animate:YES];
+    [ticketWindow setFrame:newFrame display:YES animate:YES];
   }
 }
 
