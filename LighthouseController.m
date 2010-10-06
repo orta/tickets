@@ -101,14 +101,17 @@
     }
     else {
       [self createEntitiesWithXML:body toArrayController:milestones];
-      if ( [[[NSUserDefaults standardUserDefaults] objectForKey:@"milestoneIndex"] integerValue] ) {
-        if([[self.milestones content] count]){
-          self.milestoneIndex = [[NSUserDefaults standardUserDefaults] integerForKey:@"milestoneIndex"];
-          self.currentMilestone = [[milestones content] objectAtIndex:  [[[NSUserDefaults standardUserDefaults] objectForKey:@"milestoneIndex"] integerValue]];        
+      NSLog(@" milessotnes = %i", [[milestones content ]count]);
+        if([[self.milestones content] count] > 0){
+          if ( [[[NSUserDefaults standardUserDefaults] objectForKey:@"milestoneIndex"] integerValue] ) {
+            self.milestoneIndex = [[NSUserDefaults standardUserDefaults] integerForKey:@"milestoneIndex"];
+            self.currentMilestone = [[milestones content] objectAtIndex:  [[[NSUserDefaults standardUserDefaults] objectForKey:@"milestoneIndex"] integerValue]];       
+          }
         }else{
+          NSLog(@"NILLING milestones");
           self.currentMilestone = nil;
+          [self.milestones setContent:nil]; 
         }
-      }
     }
   }];  
 }
@@ -176,19 +179,14 @@
 -(void) submitTicket: (Ticket *)ticket {
   
   NSString *url = [self addressAt: [NSString stringWithFormat:@"projects/%i/tickets.xml", self.currentProject.identifier]];
-  
-  NSMutableString *tags = [NSMutableString stringWithString:@""];
-  for (NSString* tag in ticket.tags) {
-    [tags appendString:tag];
-  }
-  
+    
   NSString *XML = [NSString stringWithFormat:@"<ticket><title>%@</title><body>%@</body><tag>%@</tag><milestone-id>%i</milestone-id><assigned-user-id>%i</assigned-user-id></ticket>", 
-                   ticket.title, ticket.body, tags, currentMilestone.identifier, currentUser.identifier];
+                   ticket.title, ticket.body, ticket.tags, currentMilestone.identifier, currentUser.identifier];
   
   NSLog(@"XML %@", XML);
   NSLog(@"not sending to avoid spam");
   
-  return;
+ // return;
   
   NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:url]];
   [urlRequest setHTTPMethod:@"POST"];

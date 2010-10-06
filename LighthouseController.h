@@ -26,15 +26,15 @@
   IBOutlet NSArrayController *projects;
   IBOutlet NSArrayController *milestones;
   IBOutlet NSArrayController *users;
-  
   NSInteger projectIndex;
   NSInteger milestoneIndex;
   NSInteger userIndex;
+  //
+  
   
 	NSMutableData *payload;
   
   IBOutlet ORCycleTextField *cycleTextField;
-  
 }
 
 @property (retain) NSString *APIKey;

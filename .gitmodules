@@ -1,0 +1,3 @@
+[submodule "ext/shortcutrecorder"]
+	path = ext/shortcutrecorder
+	url = http://github.com/darwin/shortcutrecorder.git
