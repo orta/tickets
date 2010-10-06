@@ -15,7 +15,7 @@
 
 @synthesize currentProject, projects, currentMilestone, milestones, currentUser, users, currentTicket;
 @synthesize projectIndex, milestoneIndex, userIndex;
-
+@synthesize status;
 
 - (void)awakeFromNib {
   
@@ -50,7 +50,7 @@
 
 - (IBAction) projectSelected:(id)sender {
   [[NSUserDefaults standardUserDefaults] setInteger: [sender indexOfSelectedItem] forKey:@"projectIndex"];
-  self.currentProject = [[projects content] objectAtIndex:[sender indexOfSelectedItem]];
+  self.currentProject = [[projects arrangedObjects] objectAtIndex:[sender indexOfSelectedItem]];
 
   [self getMilestones];
   [self getUsers];
@@ -59,13 +59,13 @@
 
 - (IBAction) milestoneSelected:(id)sender {
   [[NSUserDefaults standardUserDefaults] setInteger: [sender indexOfSelectedItem] forKey:@"milestoneIndex"];
-  self.currentMilestone = [[milestones content] objectAtIndex:  [[[NSUserDefaults standardUserDefaults] objectForKey:@"milestoneIndex"] integerValue]];
+  self.currentMilestone = [[milestones arrangedObjects] objectAtIndex:  [[[NSUserDefaults standardUserDefaults] objectForKey:@"milestoneIndex"] integerValue]];
 
 }
 
 - (IBAction) userSelected:(id)sender {
   [[NSUserDefaults standardUserDefaults] setInteger: [sender indexOfSelectedItem] forKey:@"userIndex"];
-  self.currentUser = [[users content] objectAtIndex:  [[[NSUserDefaults standardUserDefaults] objectForKey:@"userIndex"] integerValue]];
+  self.currentUser = [[users arrangedObjects] objectAtIndex:  [[[NSUserDefaults standardUserDefaults] objectForKey:@"userIndex"] integerValue]];
 
 }
 
@@ -87,8 +87,6 @@
           
           [self getUsers];
           [self getMilestones];
-          [self currentProjectUserMileStoneArray];
-
         }
       }
     }
@@ -240,7 +238,9 @@
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)conn {
    NSString *content = [NSString stringWithUTF8String:[payload bytes]];
-  currentTicket = [[Ticket alloc] init];
+  currentTicket.body = @"";
+  currentTicket.tags = @"";
+  currentTicket.title= @"";
    NSLog(@"Connection finished: %@ - %@", conn, content);
 }
 
@@ -248,7 +248,13 @@
    
 }
 
-- (NSString *) currentProjectUserMileStone {
++ (NSSet *)keyPathsForValuesAffectingStatus
+{
+  return [NSSet setWithObjects:@"currentUser", @"currentMilestone", @"currentProject", nil];
+}
+
+
+- (NSString *) getStatus {
   return [NSString stringWithFormat:@"Posting to %@, assigning to %@ on %@", self.currentProject.name, self.currentUser.name, self.currentMilestone.name];
 }
 

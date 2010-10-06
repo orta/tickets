@@ -30,8 +30,8 @@
   NSInteger projectIndex;
   NSInteger milestoneIndex;
   NSInteger userIndex;
-  //
   
+  NSString *status;
   
 	NSMutableData *payload;
 }
@@ -53,6 +53,8 @@
 @property () NSInteger milestoneIndex;
 @property () NSInteger userIndex;
 
+@property (retain) NSString *status;
+
 - (IBAction) submit:(id)sender;
 - (IBAction) milestoneSelected:(id)sender;
 - (IBAction) userSelected:(id)sender;
@@ -68,7 +70,5 @@
 - (NSString*) addressAt:(NSString*) postfix;
 - (void) createEntitiesWithXML:(NSString *) xml toArrayController:(NSArrayController*)controller;
 - (void) submitTicket: (Ticket *)ticket;
-- (void) currentProjectUserMileStoneArray;
-
 
 @end

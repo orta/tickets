@@ -144,7 +144,7 @@
 		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
 		name = "LighthouseController.m: 196";
 		rLen = 12;
-		rLoc = 7275;
+		rLoc = 7449;
 		rType = 0;
 		vrLen = 1524;
 		vrLoc = 6451;
@@ -154,10 +154,95 @@
 		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
 		name = "LighthouseController.m: 190";
 		rLen = 17;
-		rLoc = 6933;
+		rLoc = 7107;
 		rType = 0;
 		vrLen = 1524;
 		vrLoc = 6451;
+	};
+	60451490125CF4A7009D0824 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Method definition for 'currentProjectUserMileStoneArray' not found";
+		fRef = 607F5F9812428390003BC2E8 /* LighthouseController.h */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 71;
+		rType = 1;
+	};
+	60451495125CF4B6009D0824 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F9812428390003BC2E8 /* LighthouseController.h */;
+		name = "LighthouseController.h: 69";
+		rLen = 0;
+		rLoc = 1678;
+		rType = 0;
+		vrLen = 1297;
+		vrLoc = 616;
+	};
+	60451496125CF4B6009D0824 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Incomplete implementation";
+		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 11;
+		rType = 1;
+	};
+	60451497125CF4B6009D0824 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
+		name = "LighthouseController.m: 12";
+		rLen = 0;
+		rLoc = 219;
+		rType = 0;
+		vrLen = 1601;
+		vrLoc = 0;
+	};
+	6045149C125CF4B6009D0824 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F9812428390003BC2E8 /* LighthouseController.h */;
+		name = "LighthouseController.h: 72";
+		rLen = 0;
+		rLoc = 1862;
+		rType = 0;
+		vrLen = 1046;
+		vrLoc = 823;
+	};
+	604514AA125CF5B9009D0824 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
+		name = "LighthouseController.m: 12";
+		rLen = 0;
+		rLoc = 219;
+		rType = 0;
+		vrLen = 1601;
+		vrLoc = 0;
+	};
+	604514AB125CF5B9009D0824 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F9812428390003BC2E8 /* LighthouseController.h */;
+		name = "LighthouseController.h: 31";
+		rLen = 0;
+		rLoc = 729;
+		rType = 0;
+		vrLen = 825;
+		vrLoc = 0;
+	};
+	604514AC125CF5B9009D0824 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
+		rLen = 0;
+		rLoc = 9223372036854775831;
+		rType = 0;
+	};
+	604514AD125CF5B9009D0824 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
+		name = "LighthouseController.m: 68";
+		rLen = 0;
+		rLoc = 2509;
+		rType = 0;
+		vrLen = 1357;
+		vrLoc = 1549;
 	};
 	60554DDD12428F870071A103 /* Tickifier */ = {
 		isa = PBXExecutable;
@@ -318,6 +403,15 @@
 			60451460125CF1E6009D0824 = 60451460125CF1E6009D0824 /* PBXTextBookmark */;
 			60451461125CF1E6009D0824 = 60451461125CF1E6009D0824 /* PBXTextBookmark */;
 			60451463125CF203009D0824 = 60451463125CF203009D0824 /* PBXTextBookmark */;
+			60451490125CF4A7009D0824 /* XCBuildMessageTextBookmark */ = 60451490125CF4A7009D0824 /* XCBuildMessageTextBookmark */;
+			60451495125CF4B6009D0824 /* PBXTextBookmark */ = 60451495125CF4B6009D0824 /* PBXTextBookmark */;
+			60451496125CF4B6009D0824 /* XCBuildMessageTextBookmark */ = 60451496125CF4B6009D0824 /* XCBuildMessageTextBookmark */;
+			60451497125CF4B6009D0824 /* PBXTextBookmark */ = 60451497125CF4B6009D0824 /* PBXTextBookmark */;
+			6045149C125CF4B6009D0824 /* PBXTextBookmark */ = 6045149C125CF4B6009D0824 /* PBXTextBookmark */;
+			604514AA125CF5B9009D0824 /* PBXTextBookmark */ = 604514AA125CF5B9009D0824 /* PBXTextBookmark */;
+			604514AB125CF5B9009D0824 /* PBXTextBookmark */ = 604514AB125CF5B9009D0824 /* PBXTextBookmark */;
+			604514AC125CF5B9009D0824 /* PBXTextBookmark */ = 604514AC125CF5B9009D0824 /* PBXTextBookmark */;
+			604514AD125CF5B9009D0824 /* PBXTextBookmark */ = 604514AD125CF5B9009D0824 /* PBXTextBookmark */;
 			609660B112455392006C7E28 = 609660B112455392006C7E28 /* PBXTextBookmark */;
 			609660B212455392006C7E28 = 609660B212455392006C7E28 /* PBXTextBookmark */;
 			609660B312455392006C7E28 = 609660B312455392006C7E28 /* PBXTextBookmark */;
@@ -359,17 +453,17 @@
 	};
 	607F5F9812428390003BC2E8 /* LighthouseController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {729, 962}}";
-			sepNavSelRange = "{346, 0}";
-			sepNavVisRange = "{3, 1130}";
+			sepNavIntBoundsRect = "{{0, 0}, {1226, 975}}";
+			sepNavSelRange = "{729, 0}";
+			sepNavVisRange = "{0, 825}";
 			sepNavWindowFrame = "{{1478, 249}, {1285, 625}}";
 		};
 	};
 	607F5F9912428390003BC2E8 /* LighthouseController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1034, 3315}}";
-			sepNavSelRange = "{6802, 0}";
-			sepNavVisRange = "{6105, 518}";
+			sepNavIntBoundsRect = "{{0, 0}, {1226, 3484}}";
+			sepNavSelRange = "{2509, 0}";
+			sepNavVisRange = "{1549, 1357}";
 		};
 	};
 	607F5FF012428F07003BC2E8 /* Seriously.h */ = {
