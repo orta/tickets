@@ -11,10 +11,10 @@
 
 @interface LighthouseEntity : NSObject {
   NSString * name;
-  NSInteger identifier;
+  NSString * identifier;
 }
 
 @property (retain) NSString *name;
-@property () NSInteger identifier;
+@property (retain) NSString *identifier;
 
 @end

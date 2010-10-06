@@ -96,7 +96,7 @@
 
 
 - (void) getMilestones {
-  NSString *url = [self addressAt: [NSString stringWithFormat:@"projects/%i/milestones.xml", self.currentProject.identifier]];
+  NSString *url = [self addressAt: [NSString stringWithFormat:@"projects/%@/milestones.xml", self.currentProject.identifier]];
   [Seriously get:url handler:^(id body, NSHTTPURLResponse *response, NSError *error) {
     if (error) {
       NSLog(@"Error: %@", error);
@@ -117,7 +117,7 @@
 }
 
 - (void) getUsers {
-  NSString *url = [self addressAt: [NSString stringWithFormat:@"projects/%i/memberships.xml", self.currentProject.identifier]];
+  NSString *url = [self addressAt: [NSString stringWithFormat:@"projects/%@/memberships.xml", self.currentProject.identifier]];
 
   [Seriously get:url handler:^(id body, NSHTTPURLResponse *response, NSError *error) {
     if (error) {
@@ -135,7 +135,6 @@
         else {
           self.currentUser = nil;
         }
-
       }
     }
   }];  
@@ -152,7 +151,8 @@
     
     NSXMLElement *membersElement = [children objectAtIndex:i];
     LighthouseEntity *newEntity = [[LighthouseEntity alloc] init];
-    newEntity.identifier = [[[[membersElement elementsForName:@"id"] objectAtIndex:0] stringValue] integerValue];
+    newEntity.identifier = [[[membersElement elementsForName:@"id"] objectAtIndex:0] stringValue] ;
+    
     //Project
     if([[membersElement elementsForName:@"name"] count] > 0){
       newEntity.name = [[[membersElement elementsForName:@"name"] objectAtIndex:0] stringValue];  
@@ -163,12 +163,27 @@
     }
     //Users
     if([[membersElement elementsForName:@"user-id"] count] > 0){
-      newEntity.identifier = [[[[membersElement elementsForName:@"user-id"] objectAtIndex:0] stringValue] integerValue];
+      newEntity.identifier = [[[membersElement elementsForName:@"user-id"] objectAtIndex:0] stringValue] ;
       newEntity.name = [[[[membersElement elementsForName:@"user"] objectAtIndex:0] childAtIndex:2] stringValue];
     }
-    NSLog(@"created : %@", newEntity);
-    [tempMembers addObject:newEntity];
+    
+    // Dupe code
+    BOOL found= NO;
+    for (LighthouseEntity *entity in tempMembers) {
+      NSLog(@" old %@ vs new %@ ", entity.name, newEntity.name);
+      if ([entity.name isEqualToString: newEntity.name]) {
+        found = YES;
+        break;
+      }
+    }
+    
+    if(!found){  
+      
+      NSLog(@"created : %@ - %@", newEntity.name, newEntity.identifier);
+      [tempMembers addObject:newEntity];
+    }
   }
+  
   [controller setContent:tempMembers];
 }
 
@@ -178,9 +193,9 @@
 
 -(void) submitTicket: (Ticket *)ticket {
   
-  NSString *url = [self addressAt: [NSString stringWithFormat:@"projects/%i/tickets.xml", self.currentProject.identifier]];
+  NSString *url = [self addressAt: [NSString stringWithFormat:@"projects/%@/tickets.xml", self.currentProject.identifier]];
     
-  NSString *XML = [NSString stringWithFormat:@"<ticket><title>%@</title><body>%@</body><tag>%@</tag><milestone-id>%i</milestone-id><assigned-user-id>%i</assigned-user-id></ticket>", 
+  NSString *XML = [NSString stringWithFormat:@"<ticket><title>%@</title><body>%@</body><tag>%@</tag><milestone-id>%@</milestone-id><assigned-user-id>%@</assigned-user-id></ticket>", 
                    ticket.title, ticket.body, ticket.tags, currentMilestone.identifier, currentUser.identifier];
   
   NSLog(@"XML %@", XML);
