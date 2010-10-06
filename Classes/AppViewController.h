@@ -13,14 +13,13 @@
   IBOutlet NSTextView *bodyTextView;
   IBOutlet NSTextField *tagsTextField;
   
-  IBOutlet NSWindow *mainWindow;
+  IBOutlet NSWindow *ticketWindow;
   IBOutlet NSView *accessoryView;
   
   Boolean fullView;
 }
 
 - (IBAction) toggleViewMode:(id)sender;
-- (IBAction) cycleInfoLabel:(id)sender;
 
 @property () Boolean fullView;
 

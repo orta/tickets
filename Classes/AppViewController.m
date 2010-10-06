@@ -55,8 +55,4 @@
   return NO;
 }
 
-- (IBAction) cycleInfoLabel:(id)sender{
-  NSLog(@"send %@", sender);
-}
-
 @end

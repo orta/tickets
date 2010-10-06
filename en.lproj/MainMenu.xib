@@ -21,9 +21,6 @@
 		</object>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="81"/>
-			<integer value="768"/>
-			<integer value="371"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -1249,7 +1246,7 @@
 				<nil key="NSViewClass"/>
 				<string key="NSWindowContentMaxSize">{1.79769e+308, 1.79769e+308}</string>
 				<object class="NSView" key="NSWindowView" id="439893737">
-					<reference key="NSNextResponder"/>
+					<nil key="NSNextResponder"/>
 					<int key="NSvFlags">256</int>
 					<object class="NSMutableArray" key="NSSubviews">
 						<bool key="EncodedWithXMLCoder">YES</bool>
@@ -1769,7 +1766,6 @@
 						</object>
 					</object>
 					<string key="NSFrameSize">{448, 226}</string>
-					<reference key="NSSuperview"/>
 				</object>
 				<string key="NSScreenRect">{{0, 0}, {1440, 878}}</string>
 				<string key="NSMaxSize">{1.79769e+308, 1.79769e+308}</string>
@@ -2076,7 +2072,7 @@
 				<bool key="NSClearsFilterPredicateOnInsertion">YES</bool>
 			</object>
 			<object class="NSCustomView" id="77845299">
-				<reference key="NSNextResponder"/>
+				<nil key="NSNextResponder"/>
 				<int key="NSvFlags">266</int>
 				<object class="NSMutableArray" key="NSSubviews">
 					<bool key="EncodedWithXMLCoder">YES</bool>
@@ -2154,7 +2150,6 @@
 					</object>
 				</object>
 				<string key="NSFrameSize">{286, 22}</string>
-				<reference key="NSSuperview"/>
 				<string key="NSClassName">NSView</string>
 			</object>
 		</object>
@@ -3254,14 +3249,6 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
-						<string key="label">mainWindow</string>
-						<reference key="source" ref="569138149"/>
-						<reference key="destination" ref="972006081"/>
-					</object>
-					<int key="connectionID">771</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
 						<string key="label">accessoryView</string>
 						<reference key="source" ref="569138149"/>
 						<reference key="destination" ref="77845299"/>
@@ -3409,6 +3396,14 @@
 						</object>
 					</object>
 					<int key="connectionID">819</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">ticketWindow</string>
+						<reference key="source" ref="569138149"/>
+						<reference key="destination" ref="972006081"/>
+					</object>
+					<int key="connectionID">820</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -5631,7 +5626,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">819</int>
+			<int key="maxID">820</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -5640,35 +5635,14 @@
 					<string key="className">AppViewController</string>
 					<string key="superclassName">NSObject</string>
 					<object class="NSMutableDictionary" key="actions">
-						<bool key="EncodedWithXMLCoder">YES</bool>
-						<object class="NSArray" key="dict.sortedKeys">
-							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>cycleInfoLabel:</string>
-							<string>toggleViewMode:</string>
-						</object>
-						<object class="NSMutableArray" key="dict.values">
-							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>id</string>
-							<string>id</string>
-						</object>
+						<string key="NS.key.0">toggleViewMode:</string>
+						<string key="NS.object.0">id</string>
 					</object>
 					<object class="NSMutableDictionary" key="actionInfosByName">
-						<bool key="EncodedWithXMLCoder">YES</bool>
-						<object class="NSArray" key="dict.sortedKeys">
-							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>cycleInfoLabel:</string>
-							<string>toggleViewMode:</string>
-						</object>
-						<object class="NSMutableArray" key="dict.values">
-							<bool key="EncodedWithXMLCoder">YES</bool>
-							<object class="IBActionInfo">
-								<string key="name">cycleInfoLabel:</string>
-								<string key="candidateClassName">id</string>
-							</object>
-							<object class="IBActionInfo">
-								<string key="name">toggleViewMode:</string>
-								<string key="candidateClassName">id</string>
-							</object>
+						<string key="NS.key.0">toggleViewMode:</string>
+						<object class="IBActionInfo" key="NS.object.0">
+							<string key="name">toggleViewMode:</string>
+							<string key="candidateClassName">id</string>
 						</object>
 					</object>
 					<object class="NSMutableDictionary" key="outlets">
@@ -5677,15 +5651,15 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>accessoryView</string>
 							<string>bodyTextView</string>
-							<string>mainWindow</string>
 							<string>tagsTextField</string>
+							<string>ticketWindow</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>NSView</string>
 							<string>NSTextView</string>
-							<string>NSWindow</string>
 							<string>NSTextField</string>
+							<string>NSWindow</string>
 						</object>
 					</object>
 					<object class="NSMutableDictionary" key="toOneOutletInfosByName">
@@ -5694,8 +5668,8 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>accessoryView</string>
 							<string>bodyTextView</string>
-							<string>mainWindow</string>
 							<string>tagsTextField</string>
+							<string>ticketWindow</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
@@ -5708,12 +5682,12 @@
 								<string key="candidateClassName">NSTextView</string>
 							</object>
 							<object class="IBToOneOutletInfo">
-								<string key="name">mainWindow</string>
-								<string key="candidateClassName">NSWindow</string>
-							</object>
-							<object class="IBToOneOutletInfo">
 								<string key="name">tagsTextField</string>
 								<string key="candidateClassName">NSTextField</string>
+							</object>
+							<object class="IBToOneOutletInfo">
+								<string key="name">ticketWindow</string>
+								<string key="candidateClassName">NSWindow</string>
 							</object>
 						</object>
 					</object>
