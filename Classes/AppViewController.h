@@ -22,5 +22,6 @@
 - (IBAction) toggleViewMode:(id)sender;
 - (IBAction) cycleInfoLabel:(id)sender;
 
+@property () Boolean fullView;
 
 @end

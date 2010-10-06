@@ -8,8 +8,8 @@
 
 #import "AppViewController.h"
 
-
 @implementation AppViewController
+@synthesize fullView;
 
 -(void)awakeFromNib{
   NSView *themeFrame = [[mainWindow contentView] superview];
@@ -22,23 +22,27 @@
                                accessoryViewRect.size.height);
   [accessoryView setFrame:newFrame];
   [themeFrame addSubview:accessoryView];
-  fullView = NO;
+  self.fullView = NO;
   [self toggleViewMode:self];
 }
 
 - (IBAction) toggleViewMode:(id)sender {
 //  448 - 240
   
-  if(fullView){
+  if(self.fullView){
+    
     NSRect newFrame = [mainWindow frame];
     newFrame.size.width = 448;
     [mainWindow setFrame:newFrame display:YES animate:YES];
+    self.fullView = !self.fullView;
+
   }else{
+    
+    self.fullView = !self.fullView;    
     NSRect newFrame = [mainWindow frame];
     newFrame.size.width = 266;
     [mainWindow setFrame:newFrame display:YES animate:YES];
   }
-  fullView = !fullView;
 }
 
 // tab support in textviews
