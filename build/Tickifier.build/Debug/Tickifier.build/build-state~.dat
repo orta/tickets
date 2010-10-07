@@ -1,0 +1,588 @@
+TTickifier
+v7
+r0
+t306608025.386967
+cCheck dependencies
+cProcessInfoPlistFile /Users/orta/spiel/cocoa/Tickifier/build/Debug/Tickifier.app/Contents/Info.plist Tickifier-Info.plist
+cProcessPCH /var/folders/+4/+4OapLVSFDqtZHWN+eZXNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Tickifier_Prefix-fskjmihomarskjhioxkquiukgquc/Tickifier_Prefix.pch.pth Tickifier_Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Tickifier.build/Debug/Tickifier.build/Objects-normal/x86_64/main.o /Users/orta/spiel/cocoa/Tickifier/main.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Tickifier.build/Debug/Tickifier.build/Objects-normal/x86_64/TickifierAppDelegate.o /Users/orta/spiel/cocoa/Tickifier/Classes/TickifierAppDelegate.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Tickifier.build/Debug/Tickifier.build/Objects-normal/x86_64/LighthouseController.o /Users/orta/spiel/cocoa/Tickifier/Classes/Controllers/../../LighthouseController.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Tickifier.build/Debug/Tickifier.build/Objects-normal/x86_64/Seriously.o /Users/orta/spiel/cocoa/Tickifier/Seriously.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Tickifier.build/Debug/Tickifier.build/Objects-normal/x86_64/SeriouslyOperation.o /Users/orta/spiel/cocoa/Tickifier/SeriouslyOperation.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Tickifier.build/Debug/Tickifier.build/Objects-normal/x86_64/Ticket.o /Users/orta/spiel/cocoa/Tickifier/Classes/Models/Ticket.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Tickifier.build/Debug/Tickifier.build/Objects-normal/x86_64/LighthouseEntity.o /Users/orta/spiel/cocoa/Tickifier/Classes/Models/LighthouseEntity.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Tickifier.build/Debug/Tickifier.build/Objects-normal/x86_64/PTHotKey.o /Users/orta/spiel/cocoa/Tickifier/HotKey/PTHotKey.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Tickifier.build/Debug/Tickifier.build/Objects-normal/x86_64/PTHotKeyCenter.o /Users/orta/spiel/cocoa/Tickifier/HotKey/PTHotKeyCenter.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Tickifier.build/Debug/Tickifier.build/Objects-normal/x86_64/PTKeyCodeTranslator.o /Users/orta/spiel/cocoa/Tickifier/HotKey/PTKeyCodeTranslator.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Tickifier.build/Debug/Tickifier.build/Objects-normal/x86_64/PTKeyCombo.o /Users/orta/spiel/cocoa/Tickifier/HotKey/PTKeyCombo.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/orta/spiel/cocoa/Tickifier/build/Debug/Tickifier.app/Contents/MacOS/Tickifier normal x86_64
+cCopyStringsFile /Users/orta/spiel/cocoa/Tickifier/build/Debug/Tickifier.app/Contents/Resources/en.lproj/InfoPlist.strings en.lproj/InfoPlist.strings
+cCompileXIB /Users/orta/spiel/cocoa/Tickifier/en.lproj/MainMenu.xib
+cCpResource build/Debug/Tickifier.app/Contents/Resources/en.lproj/Credits.rtf en.lproj/Credits.rtf
+cCpResource build/Debug/Tickifier.app/Contents/Resources/IDEAS IDEAS
+cPBXCp build/Debug/Tickifier.app/Contents/Frameworks/ShortcutRecorder.framework ShortcutRecorder.framework
+cTouch /Users/orta/spiel/cocoa/Tickifier/build/Debug/Tickifier.app
+
+N/Developer/SDKs/MacOSX10.6.sdk
+c000000004C8126AC00000000000000EE
+t1283532460
+s238
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Carbon.framework/Carbon
+c000000004BF4700E0000000000003A54
+t1274310670
+s14932
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h
+c000000004B4834EA00000000000005FF
+t1263023338
+s1535
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Cocoa.framework/Cocoa
+c000000004BF4700F0000000000003430
+t1274310671
+s13360
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
+c0000000040C4AA6800000000000001E5
+t1086630504
+s485
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/CoreServices.framework/CoreServices
+c000000004BF4700F000000000001A854
+t1274310671
+s108628
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004B90FBB700000000000013E6
+t1267792823
+s5094
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/lib/libz.dylib
+c000000004BF470180000000000005D2C
+t1274310680
+s23852
+
+N/Users/orta/spiel/cocoa/Tickifier/Classes/Controllers/../../LighthouseController.m
+c000000004C9632B20000000000001E8B
+t1284911794
+s7819
+i"LighthouseController.h"
+i"Seriously.h"
+
+N/Users/orta/spiel/cocoa/Tickifier/Classes/Models/LighthouseEntity.h
+c000000004C938AFA000000000000014F
+t1284737786
+s335
+i<Cocoa/Cocoa.h>
+
+N/Users/orta/spiel/cocoa/Tickifier/Classes/Models/LighthouseEntity.m
+c000000004C938AF60000000000000165
+t1284737782
+s357
+i"LighthouseEntity.h"
+
+N/Users/orta/spiel/cocoa/Tickifier/Classes/Models/Ticket.h
+c000000004C951B1B0000000000000177
+t1284840219
+s375
+i<Cocoa/Cocoa.h>
+
+N/Users/orta/spiel/cocoa/Tickifier/Classes/Models/Ticket.m
+c000000004C951E6100000000000000E1
+t1284841057
+s225
+i"Ticket.h"
+
+N/Users/orta/spiel/cocoa/Tickifier/Classes/TickifierAppDelegate.h
+c000000004C963AD20000000000000219
+t1284913874
+s537
+i<Cocoa/Cocoa.h>
+
+N/Users/orta/spiel/cocoa/Tickifier/Classes/TickifierAppDelegate.m
+c000000004C9635060000000000000486
+t1284912390
+s1158
+i"TickifierAppDelegate.h"
+
+N/Users/orta/spiel/cocoa/Tickifier/HotKey/PTHotKey.h
+c000000004C962B0B000000000000040B
+t1284909835
+s1035
+i<Foundation/Foundation.h>
+i<Carbon/Carbon.h>
+i"PTKeyCombo.h"
+
+N/Users/orta/spiel/cocoa/Tickifier/HotKey/PTHotKey.m
+c000000004C962B0B000000000000074E
+t1284909835
+s1870
+i"PTHotKey.h"
+i"PTHotKeyCenter.h"
+i"PTKeyCombo.h"
+
+N/Users/orta/spiel/cocoa/Tickifier/HotKey/PTHotKeyCenter.h
+c000000004C962B0B00000000000002ED
+t1284909835
+s749
+i<Cocoa/Cocoa.h>
+
+N/Users/orta/spiel/cocoa/Tickifier/HotKey/PTHotKeyCenter.m
+c000000004C962B0B0000000000001526
+t1284909835
+s5414
+i"PTHotKeyCenter.h"
+i"PTHotKey.h"
+i"PTKeyCombo.h"
+i<Carbon/Carbon.h>
+
+N/Users/orta/spiel/cocoa/Tickifier/HotKey/PTKeyCodeTranslator.h
+c000000004C962B0B000000000000021D
+t1284909835
+s541
+i<Carbon/Carbon.h>
+
+N/Users/orta/spiel/cocoa/Tickifier/HotKey/PTKeyCodeTranslator.m
+c000000004C962B0B000000000000076E
+t1284909835
+s1902
+i"PTKeyCodeTranslator.h"
+
+N/Users/orta/spiel/cocoa/Tickifier/HotKey/PTKeyCombo.h
+c000000004C962B0B000000000000030E
+t1284909835
+s782
+i<Cocoa/Cocoa.h>
+
+N/Users/orta/spiel/cocoa/Tickifier/HotKey/PTKeyCombo.m
+c000000004C962B0B0000000000001409
+t1284909835
+s5129
+i"PTKeyCombo.h"
+i"PTKeyCodeTranslator.h"
+
+N/Users/orta/spiel/cocoa/Tickifier/IDEAS
+c000000004C924A510000000000000034
+t1284655697
+s52
+
+N/Users/orta/spiel/cocoa/Tickifier/LighthouseController.h
+c000000004C95302600000000000006C1
+t1284845606
+s1729
+i<Cocoa/Cocoa.h>
+i"LighthouseEntity.h"
+i"Ticket.h"
+
+N/Users/orta/spiel/cocoa/Tickifier/Security.framework/Security
+c000000004C7DBC62000000000006603C
+t1283308642
+s417852
+
+N/Users/orta/spiel/cocoa/Tickifier/Seriously.h
+c000000004C80C04C00000000000005A7
+t1283506252
+s1447
+i<Foundation/Foundation.h>
+i"SeriouslyConstants.h"
+
+N/Users/orta/spiel/cocoa/Tickifier/Seriously.m
+c000000004C95242B0000000000001AB6
+t1284842539
+s6838
+i"Seriously.h"
+i"SeriouslyOperation.h"
+
+N/Users/orta/spiel/cocoa/Tickifier/SeriouslyConstants.h
+c000000004C80C04C000000000000022B
+t1283506252
+s555
+
+N/Users/orta/spiel/cocoa/Tickifier/SeriouslyOperation.h
+c000000004C80C04C0000000000000331
+t1283506252
+s817
+i<Foundation/Foundation.h>
+i"SeriouslyConstants.h"
+
+N/Users/orta/spiel/cocoa/Tickifier/SeriouslyOperation.m
+c000000004C9257B30000000000001292
+t1284659123
+s4754
+i"SeriouslyOperation.h"
+
+N/Users/orta/spiel/cocoa/Tickifier/ShortcutRecorder.framework
+c000000004C962BAC00000000000000CC
+t1284909996
+s204
+
+N/Users/orta/spiel/cocoa/Tickifier/ShortcutRecorder.framework/ShortcutRecorder
+c000000004C962BA2000000000004E3E0
+t1284909986
+s320480
+
+N/Users/orta/spiel/cocoa/Tickifier/SystemConfiguration.framework/SystemConfiguration
+c000000004C7DBC6200000000000316AC
+t1283308642
+s202412
+
+N/Users/orta/spiel/cocoa/Tickifier/Tickifier_Prefix.pch
+c000000004C9246D10000000000000093
+t1284654801
+s147
+i<Cocoa/Cocoa.h>
+
+N/Users/orta/spiel/cocoa/Tickifier/build/Debug/Tickifier.app
+t1284915225
+s102
+
+N/Users/orta/spiel/cocoa/Tickifier/build/Debug/Tickifier.app/Contents/Frameworks/ShortcutRecorder.framework
+t1284915224
+s204
+
+N/Users/orta/spiel/cocoa/Tickifier/build/Debug/Tickifier.app/Contents/Info.plist
+t1284915215
+s886
+
+N/Users/orta/spiel/cocoa/Tickifier/build/Debug/Tickifier.app/Contents/MacOS/Tickifier
+t1284915222
+s111224
+
+N/Users/orta/spiel/cocoa/Tickifier/build/Debug/Tickifier.app/Contents/PkgInfo
+t1284915215
+s8
+
+N/Users/orta/spiel/cocoa/Tickifier/build/Debug/Tickifier.app/Contents/Resources/IDEAS
+t1284915222
+s52
+
+N/Users/orta/spiel/cocoa/Tickifier/build/Debug/Tickifier.app/Contents/Resources/en.lproj/Credits.rtf
+t1284915223
+s436
+
+N/Users/orta/spiel/cocoa/Tickifier/build/Debug/Tickifier.app/Contents/Resources/en.lproj/InfoPlist.strings
+t1284915223
+s220
+
+N/Users/orta/spiel/cocoa/Tickifier/build/Debug/Tickifier.app/Contents/Resources/en.lproj/MainMenu.nib
+t1284915223
+s56188
+
+N/Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/Objects-normal/x86_64/LighthouseController.o
+t1284915220
+s70984
+
+N/Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/Objects-normal/x86_64/LighthouseEntity.o
+t1284915220
+s8192
+
+N/Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/Objects-normal/x86_64/PTHotKey.o
+t1284915221
+s20580
+
+N/Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/Objects-normal/x86_64/PTHotKeyCenter.o
+t1284915221
+s33252
+
+N/Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/Objects-normal/x86_64/PTKeyCodeTranslator.o
+t1284915221
+s13688
+
+N/Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/Objects-normal/x86_64/PTKeyCombo.o
+t1284915221
+s30872
+
+N/Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/Objects-normal/x86_64/Seriously.o
+t1284915220
+s31332
+
+N/Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/Objects-normal/x86_64/SeriouslyOperation.o
+t1284915221
+s31980
+
+N/Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/Objects-normal/x86_64/Ticket.o
+t1284915220
+s7592
+
+N/Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/Objects-normal/x86_64/Tickifier.LinkFileList
+c000000004C96400F00000000000004FD
+t1284915215
+s1277
+
+N/Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/Objects-normal/x86_64/TickifierAppDelegate.o
+t1284915220
+s21872
+
+N/Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/Objects-normal/x86_64/main.o
+t1284915220
+s2400
+
+N/Users/orta/spiel/cocoa/Tickifier/en.lproj/Credits.rtf
+c000000004C9246D100000000000001B4
+t1284654801
+s436
+
+N/Users/orta/spiel/cocoa/Tickifier/en.lproj/InfoPlist.strings
+c000000004C9246D1000000000000006E
+t1284654801
+s110
+
+N/Users/orta/spiel/cocoa/Tickifier/en.lproj/MainMenu.xib
+c000000004C9636B5000000000003A9F2
+t1284912821
+s240114
+
+N/Users/orta/spiel/cocoa/Tickifier/main.m
+c000000004C9246D1000000000000010A
+t1284654801
+s266
+i<Cocoa/Cocoa.h>
+
+N/var/folders/+4/+4OapLVSFDqtZHWN+eZXNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Tickifier_Prefix-fskjmihomarskjhioxkquiukgquc/Tickifier_Prefix.pch.pth
+t1284915220
+s8773240
+
+NTickifier-Info.plist
+c000000004C9246D10000000000000400
+t1284654801
+s1024
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies306608015#306608015#0(0"0(0#1#0"8634504064#0"0#
+
+CCompileC build/Tickifier.build/Debug/Tickifier.build/Objects-normal/x86_64/LighthouseController.o /Users/orta/spiel/cocoa/Tickifier/Classes/Controllers/../../LighthouseController.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s306608020.367191
+e306608020.935909
+r1
+xCompileC
+xbuild/Tickifier.build/Debug/Tickifier.build/Objects-normal/x86_64/LighthouseController.o
+x/Users/orta/spiel/cocoa/Tickifier/Classes/Controllers/../../LighthouseController.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@90"Compile /Users/orta/spiel/cocoa/Tickifier/Classes/Controllers/../../LighthouseController.m306608020#306608021#0(0"0(0#0#82"/Users/orta/spiel/cocoa/Tickifier/Classes/Controllers/../../LighthouseController.m8637616640#1589"    cd /Users/orta/spiel/cocoa/Tickifier    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -fobjc-gc-only -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -iquote /Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/Tickifier-generated-files.hmap -I/Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/Tickifier-own-target-headers.hmap -I/Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/Tickifier-all-target-headers.hmap -iquote /Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/Tickifier-project-headers.hmap -F/Users/orta/spiel/cocoa/Tickifier/build/Debug -F/Users/orta/spiel/cocoa/Tickifier -I/Users/orta/spiel/cocoa/Tickifier/build/Debug/include -I/Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/DerivedSources/x86_64 -I/Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/DerivedSources -include /var/folders/+4/+4OapLVSFDqtZHWN+eZXNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Tickifier_Prefix-fskjmihomarskjhioxkquiukgquc/Tickifier_Prefix.pch -c /Users/orta/spiel/cocoa/Tickifier/Classes/Controllers/../../LighthouseController.m -o /Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/Objects-normal/x86_64/LighthouseController.o0#
+
+CCompileC build/Tickifier.build/Debug/Tickifier.build/Objects-normal/x86_64/LighthouseEntity.o /Users/orta/spiel/cocoa/Tickifier/Classes/Models/LighthouseEntity.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s306608020.917168
+e306608020.996776
+r1
+xCompileC
+xbuild/Tickifier.build/Debug/Tickifier.build/Objects-normal/x86_64/LighthouseEntity.o
+x/Users/orta/spiel/cocoa/Tickifier/Classes/Models/LighthouseEntity.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@75"Compile /Users/orta/spiel/cocoa/Tickifier/Classes/Models/LighthouseEntity.m306608020#306608021#0(0"0(0#0#67"/Users/orta/spiel/cocoa/Tickifier/Classes/Models/LighthouseEntity.m8632302720#1570"    cd /Users/orta/spiel/cocoa/Tickifier    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -fobjc-gc-only -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -iquote /Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/Tickifier-generated-files.hmap -I/Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/Tickifier-own-target-headers.hmap -I/Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/Tickifier-all-target-headers.hmap -iquote /Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/Tickifier-project-headers.hmap -F/Users/orta/spiel/cocoa/Tickifier/build/Debug -F/Users/orta/spiel/cocoa/Tickifier -I/Users/orta/spiel/cocoa/Tickifier/build/Debug/include -I/Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/DerivedSources/x86_64 -I/Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/DerivedSources -include /var/folders/+4/+4OapLVSFDqtZHWN+eZXNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Tickifier_Prefix-fskjmihomarskjhioxkquiukgquc/Tickifier_Prefix.pch -c /Users/orta/spiel/cocoa/Tickifier/Classes/Models/LighthouseEntity.m -o /Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/Objects-normal/x86_64/LighthouseEntity.o0#
+
+CCompileC build/Tickifier.build/Debug/Tickifier.build/Objects-normal/x86_64/PTHotKey.o /Users/orta/spiel/cocoa/Tickifier/HotKey/PTHotKey.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s306608020.936013
+e306608021.498318
+r1
+xCompileC
+xbuild/Tickifier.build/Debug/Tickifier.build/Objects-normal/x86_64/PTHotKey.o
+x/Users/orta/spiel/cocoa/Tickifier/HotKey/PTHotKey.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@59"Compile /Users/orta/spiel/cocoa/Tickifier/HotKey/PTHotKey.m306608020#306608021#0(0"0(0#0#51"/Users/orta/spiel/cocoa/Tickifier/HotKey/PTHotKey.m8632223136#1546"    cd /Users/orta/spiel/cocoa/Tickifier    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -fobjc-gc-only -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -iquote /Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/Tickifier-generated-files.hmap -I/Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/Tickifier-own-target-headers.hmap -I/Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/Tickifier-all-target-headers.hmap -iquote /Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/Tickifier-project-headers.hmap -F/Users/orta/spiel/cocoa/Tickifier/build/Debug -F/Users/orta/spiel/cocoa/Tickifier -I/Users/orta/spiel/cocoa/Tickifier/build/Debug/include -I/Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/DerivedSources/x86_64 -I/Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/DerivedSources -include /var/folders/+4/+4OapLVSFDqtZHWN+eZXNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Tickifier_Prefix-fskjmihomarskjhioxkquiukgquc/Tickifier_Prefix.pch -c /Users/orta/spiel/cocoa/Tickifier/HotKey/PTHotKey.m -o /Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/Objects-normal/x86_64/PTHotKey.o0#
+
+CCompileC build/Tickifier.build/Debug/Tickifier.build/Objects-normal/x86_64/PTHotKeyCenter.o /Users/orta/spiel/cocoa/Tickifier/HotKey/PTHotKeyCenter.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s306608020.937405
+e306608021.616356
+r1
+xCompileC
+xbuild/Tickifier.build/Debug/Tickifier.build/Objects-normal/x86_64/PTHotKeyCenter.o
+x/Users/orta/spiel/cocoa/Tickifier/HotKey/PTHotKeyCenter.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@65"Compile /Users/orta/spiel/cocoa/Tickifier/HotKey/PTHotKeyCenter.m306608020#306608021#0(0"0(0#0#57"/Users/orta/spiel/cocoa/Tickifier/HotKey/PTHotKeyCenter.m8632152512#1558"    cd /Users/orta/spiel/cocoa/Tickifier    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -fobjc-gc-only -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -iquote /Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/Tickifier-generated-files.hmap -I/Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/Tickifier-own-target-headers.hmap -I/Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/Tickifier-all-target-headers.hmap -iquote /Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/Tickifier-project-headers.hmap -F/Users/orta/spiel/cocoa/Tickifier/build/Debug -F/Users/orta/spiel/cocoa/Tickifier -I/Users/orta/spiel/cocoa/Tickifier/build/Debug/include -I/Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/DerivedSources/x86_64 -I/Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/DerivedSources -include /var/folders/+4/+4OapLVSFDqtZHWN+eZXNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Tickifier_Prefix-fskjmihomarskjhioxkquiukgquc/Tickifier_Prefix.pch -c /Users/orta/spiel/cocoa/Tickifier/HotKey/PTHotKeyCenter.m -o /Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/Objects-normal/x86_64/PTHotKeyCenter.o0#
+
+CCompileC build/Tickifier.build/Debug/Tickifier.build/Objects-normal/x86_64/PTKeyCodeTranslator.o /Users/orta/spiel/cocoa/Tickifier/HotKey/PTKeyCodeTranslator.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s306608020.996921
+e306608021.493278
+r1
+xCompileC
+xbuild/Tickifier.build/Debug/Tickifier.build/Objects-normal/x86_64/PTKeyCodeTranslator.o
+x/Users/orta/spiel/cocoa/Tickifier/HotKey/PTKeyCodeTranslator.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@70"Compile /Users/orta/spiel/cocoa/Tickifier/HotKey/PTKeyCodeTranslator.m306608020#306608021#0(0"0(0#0#62"/Users/orta/spiel/cocoa/Tickifier/HotKey/PTKeyCodeTranslator.m8632080448#1568"    cd /Users/orta/spiel/cocoa/Tickifier    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -fobjc-gc-only -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -iquote /Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/Tickifier-generated-files.hmap -I/Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/Tickifier-own-target-headers.hmap -I/Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/Tickifier-all-target-headers.hmap -iquote /Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/Tickifier-project-headers.hmap -F/Users/orta/spiel/cocoa/Tickifier/build/Debug -F/Users/orta/spiel/cocoa/Tickifier -I/Users/orta/spiel/cocoa/Tickifier/build/Debug/include -I/Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/DerivedSources/x86_64 -I/Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/DerivedSources -include /var/folders/+4/+4OapLVSFDqtZHWN+eZXNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Tickifier_Prefix-fskjmihomarskjhioxkquiukgquc/Tickifier_Prefix.pch -c /Users/orta/spiel/cocoa/Tickifier/HotKey/PTKeyCodeTranslator.m -o /Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/Objects-normal/x86_64/PTKeyCodeTranslator.o0#
+
+CCompileC build/Tickifier.build/Debug/Tickifier.build/Objects-normal/x86_64/PTKeyCombo.o /Users/orta/spiel/cocoa/Tickifier/HotKey/PTKeyCombo.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s306608021.078212
+e306608021.510707
+r1
+xCompileC
+xbuild/Tickifier.build/Debug/Tickifier.build/Objects-normal/x86_64/PTKeyCombo.o
+x/Users/orta/spiel/cocoa/Tickifier/HotKey/PTKeyCombo.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@61"Compile /Users/orta/spiel/cocoa/Tickifier/HotKey/PTKeyCombo.m306608021#306608021#0(0"0(0#0#53"/Users/orta/spiel/cocoa/Tickifier/HotKey/PTKeyCombo.m8631817056#1550"    cd /Users/orta/spiel/cocoa/Tickifier    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -fobjc-gc-only -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -iquote /Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/Tickifier-generated-files.hmap -I/Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/Tickifier-own-target-headers.hmap -I/Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/Tickifier-all-target-headers.hmap -iquote /Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/Tickifier-project-headers.hmap -F/Users/orta/spiel/cocoa/Tickifier/build/Debug -F/Users/orta/spiel/cocoa/Tickifier -I/Users/orta/spiel/cocoa/Tickifier/build/Debug/include -I/Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/DerivedSources/x86_64 -I/Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/DerivedSources -include /var/folders/+4/+4OapLVSFDqtZHWN+eZXNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Tickifier_Prefix-fskjmihomarskjhioxkquiukgquc/Tickifier_Prefix.pch -c /Users/orta/spiel/cocoa/Tickifier/HotKey/PTKeyCombo.m -o /Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/Objects-normal/x86_64/PTKeyCombo.o0#
+
+CCompileC build/Tickifier.build/Debug/Tickifier.build/Objects-normal/x86_64/Seriously.o /Users/orta/spiel/cocoa/Tickifier/Seriously.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s306608020.368455
+e306608020.916997
+r1
+xCompileC
+xbuild/Tickifier.build/Debug/Tickifier.build/Objects-normal/x86_64/Seriously.o
+x/Users/orta/spiel/cocoa/Tickifier/Seriously.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@53"Compile /Users/orta/spiel/cocoa/Tickifier/Seriously.m306608020#306608021#0(0"0(0#0#45"/Users/orta/spiel/cocoa/Tickifier/Seriously.m8636749248#1541"    cd /Users/orta/spiel/cocoa/Tickifier    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -fobjc-gc-only -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -iquote /Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/Tickifier-generated-files.hmap -I/Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/Tickifier-own-target-headers.hmap -I/Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/Tickifier-all-target-headers.hmap -iquote /Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/Tickifier-project-headers.hmap -F/Users/orta/spiel/cocoa/Tickifier/build/Debug -F/Users/orta/spiel/cocoa/Tickifier -I/Users/orta/spiel/cocoa/Tickifier/build/Debug/include -I/Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/DerivedSources/x86_64 -I/Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/DerivedSources -include /var/folders/+4/+4OapLVSFDqtZHWN+eZXNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Tickifier_Prefix-fskjmihomarskjhioxkquiukgquc/Tickifier_Prefix.pch -c /Users/orta/spiel/cocoa/Tickifier/Seriously.m -o /Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/Objects-normal/x86_64/Seriously.o0#
+
+CCompileC build/Tickifier.build/Debug/Tickifier.build/Objects-normal/x86_64/SeriouslyOperation.o /Users/orta/spiel/cocoa/Tickifier/SeriouslyOperation.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s306608020.859251
+e306608021.078056
+r1
+xCompileC
+xbuild/Tickifier.build/Debug/Tickifier.build/Objects-normal/x86_64/SeriouslyOperation.o
+x/Users/orta/spiel/cocoa/Tickifier/SeriouslyOperation.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+o/Users/orta/spiel/cocoa/Tickifier/SeriouslyOperation.m:114:10:{114:19-114:23}: warning: incompatible integer to pointer conversion initializing 'id' with an expression of type 'int'
+o       id result = true;
+o          ^        ~~~~
+o1 warning generated.
+lSLF07#2@62"Compile /Users/orta/spiel/cocoa/Tickifier/SeriouslyOperation.m306608020#306608021#0(252"/Users/orta/spiel/cocoa/Tickifier/SeriouslyOperation.m:114:10:{114:19-114:23}: warning: incompatible integer to pointer conversion initializing 'id' with an expression of type 'int'       id result = true;          ^        ~~~~1 warning generated.1(22@93"Incompatible integer to pointer conversion initializing 'id' with an expression of type 'int'306608020#0#182#0(6@54"/Users/orta/spiel/cocoa/Tickifier/SeriouslyOperation.m306351923#114#10#0#0#44"incompatible integer to pointer conversion *1(6@54"/Users/orta/spiel/cocoa/Tickifier/SeriouslyOperation.m306351923#114#19#114#23#0#0#54"/Users/orta/spiel/cocoa/Tickifier/SeriouslyOperation.m8633152448#1559"    cd /Users/orta/spiel/cocoa/Tickifier    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -fobjc-gc-only -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -iquote /Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/Tickifier-generated-files.hmap -I/Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/Tickifier-own-target-headers.hmap -I/Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/Tickifier-all-target-headers.hmap -iquote /Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/Tickifier-project-headers.hmap -F/Users/orta/spiel/cocoa/Tickifier/build/Debug -F/Users/orta/spiel/cocoa/Tickifier -I/Users/orta/spiel/cocoa/Tickifier/build/Debug/include -I/Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/DerivedSources/x86_64 -I/Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/DerivedSources -include /var/folders/+4/+4OapLVSFDqtZHWN+eZXNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Tickifier_Prefix-fskjmihomarskjhioxkquiukgquc/Tickifier_Prefix.pch -c /Users/orta/spiel/cocoa/Tickifier/SeriouslyOperation.m -o /Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/Objects-normal/x86_64/SeriouslyOperation.o0#
+
+CCompileC build/Tickifier.build/Debug/Tickifier.build/Objects-normal/x86_64/Ticket.o /Users/orta/spiel/cocoa/Tickifier/Classes/Models/Ticket.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s306608020.888565
+e306608020.937291
+r1
+xCompileC
+xbuild/Tickifier.build/Debug/Tickifier.build/Objects-normal/x86_64/Ticket.o
+x/Users/orta/spiel/cocoa/Tickifier/Classes/Models/Ticket.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@65"Compile /Users/orta/spiel/cocoa/Tickifier/Classes/Models/Ticket.m306608020#306608021#0(0"0(0#0#57"/Users/orta/spiel/cocoa/Tickifier/Classes/Models/Ticket.m8632600544#1550"    cd /Users/orta/spiel/cocoa/Tickifier    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -fobjc-gc-only -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -iquote /Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/Tickifier-generated-files.hmap -I/Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/Tickifier-own-target-headers.hmap -I/Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/Tickifier-all-target-headers.hmap -iquote /Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/Tickifier-project-headers.hmap -F/Users/orta/spiel/cocoa/Tickifier/build/Debug -F/Users/orta/spiel/cocoa/Tickifier -I/Users/orta/spiel/cocoa/Tickifier/build/Debug/include -I/Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/DerivedSources/x86_64 -I/Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/DerivedSources -include /var/folders/+4/+4OapLVSFDqtZHWN+eZXNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Tickifier_Prefix-fskjmihomarskjhioxkquiukgquc/Tickifier_Prefix.pch -c /Users/orta/spiel/cocoa/Tickifier/Classes/Models/Ticket.m -o /Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/Objects-normal/x86_64/Ticket.o0#
+
+CCompileC build/Tickifier.build/Debug/Tickifier.build/Objects-normal/x86_64/TickifierAppDelegate.o /Users/orta/spiel/cocoa/Tickifier/Classes/TickifierAppDelegate.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s306608020.366251
+e306608020.888459
+r1
+xCompileC
+xbuild/Tickifier.build/Debug/Tickifier.build/Objects-normal/x86_64/TickifierAppDelegate.o
+x/Users/orta/spiel/cocoa/Tickifier/Classes/TickifierAppDelegate.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@72"Compile /Users/orta/spiel/cocoa/Tickifier/Classes/TickifierAppDelegate.m306608020#306608021#0(0"0(0#0#64"/Users/orta/spiel/cocoa/Tickifier/Classes/TickifierAppDelegate.m8643766688#1571"    cd /Users/orta/spiel/cocoa/Tickifier    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -fobjc-gc-only -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -iquote /Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/Tickifier-generated-files.hmap -I/Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/Tickifier-own-target-headers.hmap -I/Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/Tickifier-all-target-headers.hmap -iquote /Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/Tickifier-project-headers.hmap -F/Users/orta/spiel/cocoa/Tickifier/build/Debug -F/Users/orta/spiel/cocoa/Tickifier -I/Users/orta/spiel/cocoa/Tickifier/build/Debug/include -I/Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/DerivedSources/x86_64 -I/Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/DerivedSources -include /var/folders/+4/+4OapLVSFDqtZHWN+eZXNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Tickifier_Prefix-fskjmihomarskjhioxkquiukgquc/Tickifier_Prefix.pch -c /Users/orta/spiel/cocoa/Tickifier/Classes/TickifierAppDelegate.m -o /Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/Objects-normal/x86_64/TickifierAppDelegate.o0#
+
+CCompileC build/Tickifier.build/Debug/Tickifier.build/Objects-normal/x86_64/main.o /Users/orta/spiel/cocoa/Tickifier/main.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s306608020.365137
+e306608020.859151
+r1
+xCompileC
+xbuild/Tickifier.build/Debug/Tickifier.build/Objects-normal/x86_64/main.o
+x/Users/orta/spiel/cocoa/Tickifier/main.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@48"Compile /Users/orta/spiel/cocoa/Tickifier/main.m306608020#306608020#0(0"0(0#0#40"/Users/orta/spiel/cocoa/Tickifier/main.m8647498112#1531"    cd /Users/orta/spiel/cocoa/Tickifier    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -fobjc-gc-only -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -iquote /Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/Tickifier-generated-files.hmap -I/Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/Tickifier-own-target-headers.hmap -I/Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/Tickifier-all-target-headers.hmap -iquote /Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/Tickifier-project-headers.hmap -F/Users/orta/spiel/cocoa/Tickifier/build/Debug -F/Users/orta/spiel/cocoa/Tickifier -I/Users/orta/spiel/cocoa/Tickifier/build/Debug/include -I/Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/DerivedSources/x86_64 -I/Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/DerivedSources -include /var/folders/+4/+4OapLVSFDqtZHWN+eZXNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Tickifier_Prefix-fskjmihomarskjhioxkquiukgquc/Tickifier_Prefix.pch -c /Users/orta/spiel/cocoa/Tickifier/main.m -o /Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/Objects-normal/x86_64/main.o0#
+
+CCompileXIB /Users/orta/spiel/cocoa/Tickifier/en.lproj/MainMenu.xib
+s306608022.665982
+e306608023.956818
+r1
+xCompileXIB
+x/Users/orta/spiel/cocoa/Tickifier/en.lproj/MainMenu.xib
+o/* com.apple.ibtool.document.warnings */
+o/Users/orta/spiel/cocoa/Tickifier/en.lproj/MainMenu.xib:494: warning: The 'window' outlet of 'Tickifier App Delegate' is connected to 'Window (Tickifier)' but 'window' is no longer defined on TickifierAppDelegate.
+lSLF07#2@32"CompileXIB en.lproj/MainMenu.xib306608022#306608023#0(255"/* com.apple.ibtool.document.warnings *//Users/orta/spiel/cocoa/Tickifier/en.lproj/MainMenu.xib:494: warning: The 'window' outlet of 'Tickifier App Delegate' is connected to 'Window (Tickifier)' but 'window' is no longer defined on TickifierAppDelegate.1(22@143"The 'window' outlet of 'Tickifier App Delegate' is connected to 'Window (Tickifier)' but 'window' is no longer defined on TickifierAppDelegate.306608023#18446744073709551615#0#0(6@55"/Users/orta/spiel/cocoa/Tickifier/en.lproj/MainMenu.xib306605621#494#0#494#0#0"0(0#0#55"/Users/orta/spiel/cocoa/Tickifier/en.lproj/MainMenu.xib8641837248#341"    cd /Users/orta/spiel/cocoa/Tickifier    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/orta/spiel/cocoa/Tickifier/build/Debug/Tickifier.app/Contents/Resources/en.lproj/MainMenu.nib /Users/orta/spiel/cocoa/Tickifier/en.lproj/MainMenu.xib --sdk /Developer/SDKs/MacOSX10.6.sdk0#
+
+CCopyStringsFile /Users/orta/spiel/cocoa/Tickifier/build/Debug/Tickifier.app/Contents/Resources/en.lproj/InfoPlist.strings en.lproj/InfoPlist.strings
+s306608022.664951
+e306608023.534379
+r1
+xCopyStringsFile
+x/Users/orta/spiel/cocoa/Tickifier/build/Debug/Tickifier.app/Contents/Resources/en.lproj/InfoPlist.strings
+xen.lproj/InfoPlist.strings
+lSLF07#2@31"Copy en.lproj/InfoPlist.strings306608022#306608023#0(0"0(0#0#60"/Users/orta/spiel/cocoa/Tickifier/en.lproj/InfoPlist.strings8642489344#347"    cd /Users/orta/spiel/cocoa/Tickifier    setenv ICONV /usr/bin/iconv    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copystrings --validate --inputencoding utf-8 --outputencoding UTF-16 en.lproj/InfoPlist.strings --outdir /Users/orta/spiel/cocoa/Tickifier/build/Debug/Tickifier.app/Contents/Resources/en.lproj0#
+
+CCpResource build/Debug/Tickifier.app/Contents/Resources/IDEAS IDEAS
+s306608022.667484
+e306608022.758852
+r1
+xCpResource
+xbuild/Debug/Tickifier.app/Contents/Resources/IDEAS
+xIDEAS
+lSLF07#2@10"Copy IDEAS306608022#306608022#0(0"0(0#0#39"/Users/orta/spiel/cocoa/Tickifier/IDEAS8647435648#308"    cd /Users/orta/spiel/cocoa/Tickifier    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/orta/spiel/cocoa/Tickifier/IDEAS /Users/orta/spiel/cocoa/Tickifier/build/Debug/Tickifier.app/Contents/Resources0#
+
+CCpResource build/Debug/Tickifier.app/Contents/Resources/en.lproj/Credits.rtf en.lproj/Credits.rtf
+s306608022.666670
+e306608023.135375
+r1
+xCpResource
+xbuild/Debug/Tickifier.app/Contents/Resources/en.lproj/Credits.rtf
+xen.lproj/Credits.rtf
+lSLF07#2@25"Copy en.lproj/Credits.rtf306608022#306608023#0(0"0(0#0#54"/Users/orta/spiel/cocoa/Tickifier/en.lproj/Credits.rtf8651965152#332"    cd /Users/orta/spiel/cocoa/Tickifier    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/orta/spiel/cocoa/Tickifier/en.lproj/Credits.rtf /Users/orta/spiel/cocoa/Tickifier/build/Debug/Tickifier.app/Contents/Resources/en.lproj0#
+
+CLd /Users/orta/spiel/cocoa/Tickifier/build/Debug/Tickifier.app/Contents/MacOS/Tickifier normal x86_64
+s306608021.616481
+e306608022.664635
+r1
+xLd
+x/Users/orta/spiel/cocoa/Tickifier/build/Debug/Tickifier.app/Contents/MacOS/Tickifier
+xnormal
+xx86_64
+lSLF07#2@89"Link /Users/orta/spiel/cocoa/Tickifier/build/Debug/Tickifier.app/Contents/MacOS/Tickifier306608021#306608022#0(0"0(0#0#0"8644129952#722"    cd /Users/orta/spiel/cocoa/Tickifier    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/clang -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/orta/spiel/cocoa/Tickifier/build/Debug -L/Users/orta/spiel/cocoa/Tickifier -F/Users/orta/spiel/cocoa/Tickifier/build/Debug -F/Users/orta/spiel/cocoa/Tickifier -filelist /Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/Objects-normal/x86_64/Tickifier.LinkFileList -mmacosx-version-min=10.6 -framework SystemConfiguration -framework Security -framework Cocoa -lz -framework ShortcutRecorder -framework Carbon -framework CoreServices -o /Users/orta/spiel/cocoa/Tickifier/build/Debug/Tickifier.app/Contents/MacOS/Tickifier0#
+
+CPBXCp build/Debug/Tickifier.app/Contents/Frameworks/ShortcutRecorder.framework ShortcutRecorder.framework
+s306608023.957030
+e306608025.383049
+r1
+xPBXCp
+xbuild/Debug/Tickifier.app/Contents/Frameworks/ShortcutRecorder.framework
+xShortcutRecorder.framework
+lSLF07#2@31"Copy ShortcutRecorder.framework306608023#306608025#0(0"0(0#0#60"/Users/orta/spiel/cocoa/Tickifier/ShortcutRecorder.framework8653061856#330"    cd /Users/orta/spiel/cocoa/Tickifier    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/orta/spiel/cocoa/Tickifier/ShortcutRecorder.framework /Users/orta/spiel/cocoa/Tickifier/build/Debug/Tickifier.app/Contents/Frameworks0#
+
+CProcessInfoPlistFile /Users/orta/spiel/cocoa/Tickifier/build/Debug/Tickifier.app/Contents/Info.plist Tickifier-Info.plist
+s306608015.465943
+e306608015.470135
+r1
+xProcessInfoPlistFile
+x/Users/orta/spiel/cocoa/Tickifier/build/Debug/Tickifier.app/Contents/Info.plist
+xTickifier-Info.plist
+lSLF07#2@28"Process Tickifier-Info.plist306608015#306608015#0(0"0(0#0#54"/Users/orta/spiel/cocoa/Tickifier/Tickifier-Info.plist8632988864#301"    cd /Users/orta/spiel/cocoa/Tickifier    builtin-infoPlistUtility Tickifier-Info.plist -genpkginfo /Users/orta/spiel/cocoa/Tickifier/build/Debug/Tickifier.app/Contents/PkgInfo -expandbuildsettings -platform macosx -o /Users/orta/spiel/cocoa/Tickifier/build/Debug/Tickifier.app/Contents/Info.plist0#
+
+CProcessPCH /var/folders/+4/+4OapLVSFDqtZHWN+eZXNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Tickifier_Prefix-fskjmihomarskjhioxkquiukgquc/Tickifier_Prefix.pch.pth Tickifier_Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s306608015.470297
+e306608020.364839
+r1
+xProcessPCH
+x/var/folders/+4/+4OapLVSFDqtZHWN+eZXNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Tickifier_Prefix-fskjmihomarskjhioxkquiukgquc/Tickifier_Prefix.pch.pth
+xTickifier_Prefix.pch
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF07#2@31"Precompile Tickifier_Prefix.pch306608015#306608020#0(0"0(0#0#54"/Users/orta/spiel/cocoa/Tickifier/Tickifier_Prefix.pch8627252864#1440"    cd /Users/orta/spiel/cocoa/Tickifier    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c-header -arch x86_64 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -fobjc-gc-only -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -iquote /Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/Tickifier-generated-files.hmap -I/Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/Tickifier-own-target-headers.hmap -I/Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/Tickifier-all-target-headers.hmap -iquote /Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/Tickifier-project-headers.hmap -F/Users/orta/spiel/cocoa/Tickifier/build/Debug -F/Users/orta/spiel/cocoa/Tickifier -I/Users/orta/spiel/cocoa/Tickifier/build/Debug/include -I/Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/DerivedSources/x86_64 -I/Users/orta/spiel/cocoa/Tickifier/build/Tickifier.build/Debug/Tickifier.build/DerivedSources -c /Users/orta/spiel/cocoa/Tickifier/Tickifier_Prefix.pch -o /var/folders/+4/+4OapLVSFDqtZHWN+eZXNE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Tickifier_Prefix-fskjmihomarskjhioxkquiukgquc/Tickifier_Prefix.pch.pth0#
+
+CTouch /Users/orta/spiel/cocoa/Tickifier/build/Debug/Tickifier.app
+s306608025.383346
+e306608025.386912
+r1
+xTouch
+x/Users/orta/spiel/cocoa/Tickifier/build/Debug/Tickifier.app
+lSLF07#2@65"Touch /Users/orta/spiel/cocoa/Tickifier/build/Debug/Tickifier.app306608025#306608025#0(0"0(0#0#0"8652114784#123"    cd /Users/orta/spiel/cocoa/Tickifier    /usr/bin/touch -c /Users/orta/spiel/cocoa/Tickifier/build/Debug/Tickifier.app0#
+
