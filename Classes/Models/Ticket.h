@@ -13,11 +13,12 @@
   NSString * title;
   NSString *body;
   NSString *tags;
+  NSString *identifier;
 }
 
 @property (retain) NSString * title;
 @property (retain) NSString *body;
 @property (retain) NSString *tags;
-
+@property (retain) NSString *identifier;
 
 @end

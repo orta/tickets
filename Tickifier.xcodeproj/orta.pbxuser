@@ -114,7 +114,7 @@
 		fRef = 60554E48124291B20071A103 /* Ticket.h */;
 		name = "Ticket.h: 24";
 		rLen = 0;
-		rLoc = 375;
+		rLoc = 399;
 		rType = 0;
 		vrLen = 375;
 		vrLoc = 0;
@@ -161,7 +161,7 @@
 		isa = PBXTextBookmark;
 		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
 		rLen = 0;
-		rLoc = 9795;
+		rLoc = 9946;
 		rType = 0;
 	};
 	60451590125DCE9A009D0824 /* PBXTextBookmark */ = {
@@ -169,7 +169,7 @@
 		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
 		name = "LighthouseController.m: 234";
 		rLen = 0;
-		rLoc = 8855;
+		rLoc = 9006;
 		rType = 0;
 		vrLen = 1035;
 		vrLoc = 8435;
@@ -239,8 +239,8 @@
 	};
 	60554E49124291B20071A103 /* Ticket.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {729, 579}}";
-			sepNavSelRange = "{189, 0}";
+			sepNavIntBoundsRect = "{{0, 0}, {1052, 623}}";
+			sepNavSelRange = "{219, 5}";
 			sepNavVisRange = "{0, 225}";
 			sepNavWindowFrame = "{{1455, 270}, {1285, 625}}";
 		};
@@ -307,7 +307,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					511,
+					834,
 					60,
 					20,
 					48,
@@ -395,9 +395,9 @@
 	};
 	607F5F9912428390003BC2E8 /* LighthouseController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1286, 3562}}";
-			sepNavSelRange = "{8855, 0}";
-			sepNavVisRange = "{8435, 1035}";
+			sepNavIntBoundsRect = "{{0, 0}, {1216, 3458}}";
+			sepNavSelRange = "{6801, 0}";
+			sepNavVisRange = "{0, 1708}";
 		};
 	};
 	607F5FF012428F07003BC2E8 /* Seriously.h */ = {
