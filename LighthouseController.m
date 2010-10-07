@@ -83,7 +83,7 @@
       if ( [[[NSUserDefaults standardUserDefaults] objectForKey:@"projectIndex"] integerValue] ) {
         if([[self.projects content] count]){
           self.projectIndex = [[NSUserDefaults standardUserDefaults] integerForKey:@"projectIndex"];
-          self.currentProject = [[projects content] objectAtIndex:self.projectIndex];  
+          self.currentProject = [[projects arrangedObjects] objectAtIndex:self.projectIndex];  
           
           [self getUsers];
           [self getMilestones];
@@ -103,15 +103,14 @@
     }
     else {
       [self createEntitiesWithXML:body toArrayController:milestones];
-        if([[self.milestones content] count] > 0){
-          if ( [[[NSUserDefaults standardUserDefaults] objectForKey:@"milestoneIndex"] integerValue] ) {
-            self.milestoneIndex = [[NSUserDefaults standardUserDefaults] integerForKey:@"milestoneIndex"];
-            self.currentMilestone = [[milestones content] objectAtIndex:  [[[NSUserDefaults standardUserDefaults] objectForKey:@"milestoneIndex"] integerValue]];       
-          }
-        }else{
-          self.currentMilestone = nil;
-          [self.milestones setContent:nil]; 
-        }
+      LighthouseEntity *noMilestone = [[LighthouseEntity alloc] init];
+      noMilestone.name = @"No Milestone";
+      noMilestone.identifier = @"999999999";
+      [milestones insertObject: noMilestone atArrangedObjectIndex:0];
+      if ( [[[NSUserDefaults standardUserDefaults] objectForKey:@"milestoneIndex"] integerValue] ) {
+        self.milestoneIndex = [[NSUserDefaults standardUserDefaults] integerForKey:@"milestoneIndex"];
+        self.currentMilestone = [[milestones arrangedObjects] objectAtIndex:  [[[NSUserDefaults standardUserDefaults] objectForKey:@"milestoneIndex"] integerValue]];       
+      }
     }
   }];  
 }
@@ -131,7 +130,7 @@
         if([[self.users content] count]){
 
           self.userIndex = [[NSUserDefaults standardUserDefaults] integerForKey:@"userIndex"];
-          self.currentUser = [[users content] objectAtIndex:  [[[NSUserDefaults standardUserDefaults] objectForKey:@"userIndex"] integerValue]];
+          self.currentUser = [[users arrangedObjects] objectAtIndex:  [[[NSUserDefaults standardUserDefaults] objectForKey:@"userIndex"] integerValue]];
         }
         else {
           self.currentUser = nil;
@@ -204,12 +203,16 @@
 -(void) submitTicket: (Ticket *)ticket {
   
   NSString *url = [self addressAt: [NSString stringWithFormat:@"projects/%@/tickets.xml", self.currentProject.identifier]];
-    
-  NSString *XML = [NSString stringWithFormat:@"<ticket><title>%@</title><body>%@</body><tag>%@</tag><milestone-id>%@</milestone-id><assigned-user-id>%@</assigned-user-id></ticket>", 
-                   ticket.title, ticket.body, ticket.tags, currentMilestone.identifier, currentUser.identifier];
+  
+  NSString *milestoneString = @"";
+  if([currentMilestone.identifier isEqualToString:@"9999999"]){
+    milestoneString = [NSString stringWithFormat:@"<milestone-id>%@</milestone-id>", currentMilestone.identifier];
+  }
+  
+  NSString *XML = [NSString stringWithFormat:@"<ticket><title>%@</title><body>%@</body><tag>%@</tag>%@<assigned-user-id>%@</assigned-user-id></ticket>", 
+                   ticket.title, ticket.body, ticket.tags, milestoneString, currentUser.identifier];
   
   NSLog(@"XML %@", XML);
-  NSLog(@"not sending to avoid spam");
   
  // return;
   

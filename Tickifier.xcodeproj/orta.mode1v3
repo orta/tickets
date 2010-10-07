@@ -216,7 +216,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>6045158C125CF932009D0824</string>
+						<string>60451591125DCE9A009D0824</string>
 						<key>history</key>
 						<array>
 							<string>604514AB125CF5B9009D0824</string>
@@ -236,7 +236,7 @@
 				<key>PBXModuleWindowStatusBarHidden2</key>
 				<false/>
 				<key>RubberWindowFrame</key>
-				<string>1478 305 1285 569 1440 -180 1920 1080 </string>
+				<string>9 295 1285 569 0 0 1440 878 </string>
 			</dict>
 		</dict>
 	</array>
@@ -376,7 +376,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>6045158B125CF932009D0824</string>
+										<string>60451590125DCE9A009D0824</string>
 										<key>history</key>
 										<array>
 											<string>609660B112455392006C7E28</string>
@@ -697,7 +697,7 @@
 			<key>WindowToolGUID</key>
 			<string>60554E3212428FF40071A103</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>
