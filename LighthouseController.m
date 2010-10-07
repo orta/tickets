@@ -170,7 +170,6 @@
     // Dupe code
     BOOL found= NO;
     for (LighthouseEntity *entity in tempMembers) {
-      NSLog(@" old %@ vs new %@ ", entity.name, newEntity.name);
       if ([entity.name isEqualToString: newEntity.name]) {
         found = YES;
         break;
@@ -205,7 +204,7 @@
   NSString *url = [self addressAt: [NSString stringWithFormat:@"projects/%@/tickets.xml", self.currentProject.identifier]];
   
   NSString *milestoneString = @"";
-  if([currentMilestone.identifier isEqualToString:@"9999999"]){
+  if(![currentMilestone.identifier isEqualToString:@"999999999"]){
     milestoneString = [NSString stringWithFormat:@"<milestone-id>%@</milestone-id>", currentMilestone.identifier];
   }
   
@@ -214,7 +213,7 @@
   
   NSLog(@"XML %@", XML);
   
- // return;
+  return;
   
   NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:url]];
   [urlRequest setHTTPMethod:@"POST"];
