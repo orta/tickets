@@ -11,17 +11,32 @@
 #import <ShortcutRecorder/ShortcutRecorder.h>
 
 @interface TickifierAppDelegate : NSObject <NSApplicationDelegate> {
-  IBOutlet NSWindow *window;
+  IBOutlet NSWindow *newTicketWindow;
+    IBOutlet NSWindow *listTicketsWindow;
   IBOutlet NSWindow *setupWindow;
   
   IBOutlet SRRecorderControl *shortcutRecorderNewTicket;
 	PTHotKey *globalHotKeyNewTicket;
   
+  IBOutlet SRRecorderControl *shortcutRecorderListTickets;
+	PTHotKey *globalHotKeyListTicket;
   
+  NSString* previouslyActiveAppPath;
+  NSNumber* previouslyActiveAppPID;
+  id      runningApplicationClass_;
+
 }
 
-- (IBAction)toggleGlobalHotKey:(id)sender;
+- (IBAction)toggleNewTicketHotKey:(id)sender;
+- (IBAction)toggleListTicketsHotKey:(id)sender;
 
-@property (retain) IBOutlet NSWindow *window;
+- (void)slideWindows:(BOOL)direction fast:(bool)fast;
+- (void)placeWindow:(id)win offset:(float)offset;
+
+- (void)storePreviouslyActiveApp;
+- (void)restorePreviouslyActiveApp;
+
+
+@property (retain) IBOutlet NSWindow *newTicketWindow;
 @property (retain) IBOutlet NSWindow *setupWindow;
 @end

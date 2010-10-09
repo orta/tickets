@@ -76,7 +76,7 @@
 		fRef = 607F5F8412427E51003BC2E8 /* TickifierAppDelegate.m */;
 		name = "TickifierAppDelegate.m: 15";
 		rLen = 0;
-		rLoc = 295;
+		rLoc = 274;
 		rType = 0;
 		vrLen = 1469;
 		vrLoc = 261;
@@ -1689,7 +1689,7 @@
 		fRef = 607F5F8412427E51003BC2E8 /* TickifierAppDelegate.m */;
 		name = "TickifierAppDelegate.m: 37";
 		rLen = 0;
-		rLoc = 716;
+		rLoc = 274;
 		rType = 0;
 		vrLen = 1437;
 		vrLoc = 261;
@@ -1699,7 +1699,7 @@
 		fRef = 607F5F8312427E51003BC2E8 /* TickifierAppDelegate.h */;
 		name = "TickifierAppDelegate.h: 26";
 		rLen = 0;
-		rLoc = 636;
+		rLoc = 1128;
 		rType = 0;
 		vrLen = 612;
 		vrLoc = 0;
@@ -1797,8 +1797,8 @@
 		isa = PBXTextBookmark;
 		fRef = 607F5F8312427E51003BC2E8 /* TickifierAppDelegate.h */;
 		name = "TickifierAppDelegate.h: 18";
-		rLen = 12;
-		rLoc = 458;
+		rLen = 0;
+		rLoc = 345;
 		rType = 0;
 		vrLen = 621;
 		vrLoc = 0;
@@ -1808,7 +1808,7 @@
 		fRef = 607F5F8312427E51003BC2E8 /* TickifierAppDelegate.h */;
 		name = "TickifierAppDelegate.h: 20";
 		rLen = 0;
-		rLoc = 486;
+		rLoc = 345;
 		rType = 0;
 		vrLen = 636;
 		vrLoc = 0;
@@ -1818,7 +1818,7 @@
 		fRef = 607F5F8312427E51003BC2E8 /* TickifierAppDelegate.h */;
 		name = "TickifierAppDelegate.h: 22";
 		rLen = 0;
-		rLoc = 489;
+		rLoc = 345;
 		rType = 0;
 		vrLen = 636;
 		vrLoc = 0;
@@ -1953,6 +1953,470 @@
 		vrLen = 1958;
 		vrLoc = 4644;
 	};
+	604A5CAF1260E98D00705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F9812428390003BC2E8 /* LighthouseController.h */;
+		name = "LighthouseController.h: 12";
+		rLen = 0;
+		rLoc = 235;
+		rType = 0;
+		vrLen = 339;
+		vrLoc = 47;
+	};
+	604A5CB01260E98D00705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
+		name = "LighthouseController.m: 131";
+		rLen = 0;
+		rLoc = 5038;
+		rType = 0;
+		vrLen = 613;
+		vrLoc = 4731;
+	};
+	604A5CB11260E99000705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
+		name = "LighthouseController.m: 141";
+		rLen = 0;
+		rLoc = 5711;
+		rType = 0;
+		vrLen = 1532;
+		vrLoc = 0;
+	};
+	604A5CCA1260EBAC00705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
+		name = "LighthouseController.m: 141";
+		rLen = 0;
+		rLoc = 5711;
+		rType = 0;
+		vrLen = 1683;
+		vrLoc = 7781;
+	};
+	604A5CCB1260EBAC00705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F8412427E51003BC2E8 /* TickifierAppDelegate.m */;
+		name = "TickifierAppDelegate.m: 124";
+		rLen = 0;
+		rLoc = 6015;
+		rType = 0;
+		vrLen = 1561;
+		vrLoc = 2868;
+	};
+	604A5CCC1260EEA900705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 609661F312466BE4006C7E28 /* PTHotKey.m */;
+		name = "PTHotKey.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 627;
+		vrLoc = 0;
+	};
+	604A5CCD1260EEA900705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 609661F412466BE4006C7E28 /* PTHotKeyCenter.h */;
+		name = "PTHotKeyCenter.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 749;
+		vrLoc = 0;
+	};
+	604A5CCE1260EEA900705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 609661F212466BE4006C7E28 /* PTHotKey.h */;
+		name = "PTHotKey.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 832;
+		vrLoc = 0;
+	};
+	604A5CCF1260EEA900705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F8412427E51003BC2E8 /* TickifierAppDelegate.m */;
+		name = "TickifierAppDelegate.m: 63";
+		rLen = 0;
+		rLoc = 274;
+		rType = 0;
+		vrLen = 2015;
+		vrLoc = 853;
+	};
+	604A5CD01260EEA900705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F8312427E51003BC2E8 /* TickifierAppDelegate.h */;
+		name = "TickifierAppDelegate.h: 21";
+		rLen = 0;
+		rLoc = 345;
+		rType = 0;
+		vrLen = 779;
+		vrLoc = 0;
+	};
+	604A5CD11260EEA900705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F8312427E51003BC2E8 /* TickifierAppDelegate.h */;
+		name = "TickifierAppDelegate.h: 14";
+		rLen = 0;
+		rLoc = 345;
+		rType = 0;
+		vrLen = 779;
+		vrLoc = 0;
+	};
+	604A5CD71260EF8800705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F8312427E51003BC2E8 /* TickifierAppDelegate.h */;
+		name = "TickifierAppDelegate.h: 15";
+		rLen = 17;
+		rLoc = 385;
+		rType = 0;
+		vrLen = 839;
+		vrLoc = 0;
+	};
+	604A5CD81260EF8800705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F8412427E51003BC2E8 /* TickifierAppDelegate.m */;
+		name = "TickifierAppDelegate.m: 53";
+		rLen = 0;
+		rLoc = 2248;
+		rType = 0;
+		vrLen = 2516;
+		vrLoc = 652;
+	};
+	604A5CD91260EF8800705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F8412427E51003BC2E8 /* TickifierAppDelegate.m */;
+		name = "TickifierAppDelegate.m: 76";
+		rLen = 0;
+		rLoc = 3176;
+		rType = 0;
+		vrLen = 2492;
+		vrLoc = 844;
+	};
+	604A5CDA1260EF8B00705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F8412427E51003BC2E8 /* TickifierAppDelegate.m */;
+		name = "TickifierAppDelegate.m: 76";
+		rLen = 0;
+		rLoc = 3176;
+		rType = 0;
+		vrLen = 2492;
+		vrLoc = 844;
+	};
+	604A5CDD1260EFE800705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F8412427E51003BC2E8 /* TickifierAppDelegate.m */;
+		name = "TickifierAppDelegate.m: 76";
+		rLen = 0;
+		rLoc = 3176;
+		rType = 0;
+		vrLen = 2570;
+		vrLoc = 414;
+	};
+	604A5CE41260F04A00705440 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Use of undeclared identifier 'ticketListWindow'";
+		fRef = 607F5F8412427E51003BC2E8 /* TickifierAppDelegate.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 104;
+		rType = 1;
+	};
+	604A5CE51260F04A00705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F8412427E51003BC2E8 /* TickifierAppDelegate.m */;
+		name = "TickifierAppDelegate.m: 139";
+		rLen = 0;
+		rLoc = 5369;
+		rType = 0;
+		vrLen = 2155;
+		vrLoc = 3308;
+	};
+	604A5CE91260F07B00705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F8412427E51003BC2E8 /* TickifierAppDelegate.m */;
+		name = "TickifierAppDelegate.m: 18";
+		rLen = 0;
+		rLoc = 445;
+		rType = 0;
+		vrLen = 2428;
+		vrLoc = 304;
+	};
+	604A5CED1260F0FF00705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F8412427E51003BC2E8 /* TickifierAppDelegate.m */;
+		name = "TickifierAppDelegate.m: 73";
+		rLen = 0;
+		rLoc = 2898;
+		rType = 0;
+		vrLen = 2150;
+		vrLoc = 1457;
+	};
+	604A5CF11260F17100705440 /* TickifierAppDelegate.m:77 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 607F5F8412427E51003BC2E8 /* TickifierAppDelegate.m */;
+		functionName = "-hitListTicketHotKey:";
+		hitCount = 1;
+		ignoreCount = 0;
+		lineNumber = 77;
+		location = Tickifier;
+		modificationTime = 308343175.681427;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
+	};
+	604A5CF61260F18600705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F8412427E51003BC2E8 /* TickifierAppDelegate.m */;
+		name = "TickifierAppDelegate.m: 82";
+		rLen = 0;
+		rLoc = 3176;
+		rType = 0;
+		vrLen = 2007;
+		vrLoc = 1454;
+	};
+	604A5CF71260F18600705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F8412427E51003BC2E8 /* TickifierAppDelegate.m */;
+		name = "TickifierAppDelegate.m: 82";
+		rLen = 0;
+		rLoc = 3176;
+		rType = 0;
+		vrLen = 2109;
+		vrLoc = 1380;
+	};
+	604A5CFB1260F1A500705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F8412427E51003BC2E8 /* TickifierAppDelegate.m */;
+		name = "TickifierAppDelegate.m: 80";
+		rLen = 0;
+		rLoc = 3176;
+		rType = 0;
+		vrLen = 2077;
+		vrLoc = 1380;
+	};
+	604A5D011260F21800705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F8312427E51003BC2E8 /* TickifierAppDelegate.h */;
+		name = "TickifierAppDelegate.h: 28";
+		rLen = 0;
+		rLoc = 893;
+		rType = 0;
+		vrLen = 893;
+		vrLoc = 0;
+	};
+	604A5D021260F21800705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F8412427E51003BC2E8 /* TickifierAppDelegate.m */;
+		name = "TickifierAppDelegate.m: 91";
+		rLen = 71;
+		rLoc = 3374;
+		rType = 0;
+		vrLen = 2209;
+		vrLoc = 1731;
+	};
+	604A5D031260F21800705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F8412427E51003BC2E8 /* TickifierAppDelegate.m */;
+		name = "TickifierAppDelegate.m: 75";
+		rLen = 0;
+		rLoc = 3002;
+		rType = 0;
+		vrLen = 1985;
+		vrLoc = 2758;
+	};
+	604A5D071260F24000705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F8412427E51003BC2E8 /* TickifierAppDelegate.m */;
+		name = "TickifierAppDelegate.m: 150";
+		rLen = 0;
+		rLoc = 5680;
+		rType = 0;
+		vrLen = 2227;
+		vrLoc = 3381;
+	};
+	604A5D0B1260F26200705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F8412427E51003BC2E8 /* TickifierAppDelegate.m */;
+		name = "TickifierAppDelegate.m: 150";
+		rLen = 0;
+		rLoc = 5698;
+		rType = 0;
+		vrLen = 2247;
+		vrLoc = 3381;
+	};
+	604A5D0F1260F27C00705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F8412427E51003BC2E8 /* TickifierAppDelegate.m */;
+		name = "TickifierAppDelegate.m: 150";
+		rLen = 0;
+		rLoc = 5680;
+		rType = 0;
+		vrLen = 2247;
+		vrLoc = 3381;
+	};
+	604A5D131260F2CE00705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 604A5D141260F2CE00705440 /* CGGeometry.h */;
+		name = "CGGeometry.h: 31";
+		rLen = 0;
+		rLoc = 477;
+		rType = 0;
+		vrLen = 1285;
+		vrLoc = 0;
+	};
+	604A5D141260F2CE00705440 /* CGGeometry.h */ = {
+		isa = PBXFileReference;
+		name = CGGeometry.h;
+		path = /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/CoreGraphics.framework/Versions/A/Headers/CGGeometry.h;
+		sourceTree = "<absolute>";
+	};
+	604A5D151260F2CE00705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F8412427E51003BC2E8 /* TickifierAppDelegate.m */;
+		name = "TickifierAppDelegate.m: 144";
+		rLen = 0;
+		rLoc = 5387;
+		rType = 0;
+		vrLen = 2247;
+		vrLoc = 3381;
+	};
+	604A5D161260F2CE00705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F8412427E51003BC2E8 /* TickifierAppDelegate.m */;
+		name = "TickifierAppDelegate.m: 147";
+		rLen = 0;
+		rLoc = 5526;
+		rType = 0;
+		vrLen = 2226;
+		vrLoc = 3405;
+	};
+	604A5D1A1260F2F800705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F8412427E51003BC2E8 /* TickifierAppDelegate.m */;
+		name = "TickifierAppDelegate.m: 150";
+		rLen = 0;
+		rLoc = 5697;
+		rType = 0;
+		vrLen = 2226;
+		vrLoc = 3405;
+	};
+	604A5D271260F52300705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F7912427E51003BC2E8 /* en */;
+		name = "InfoPlist.strings: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 109;
+		vrLoc = 0;
+	};
+	604A5D281260F52300705440 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 607F5F7612427E51003BC2E8 /* Tickifier-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/orta/spiel/cocoa/tickifier/Tickifier-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	604A5D291260F52300705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F8312427E51003BC2E8 /* TickifierAppDelegate.h */;
+		name = "TickifierAppDelegate.h: 27";
+		rLen = 0;
+		rLoc = 741;
+		rType = 0;
+		vrLen = 1005;
+		vrLoc = 0;
+	};
+	604A5D2A1260F52300705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F8412427E51003BC2E8 /* TickifierAppDelegate.m */;
+		name = "TickifierAppDelegate.m: 167";
+		rLen = 20;
+		rLoc = 6104;
+		rType = 0;
+		vrLen = 2164;
+		vrLoc = 4212;
+	};
+	604A5D2B1260F52300705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F8412427E51003BC2E8 /* TickifierAppDelegate.m */;
+		name = "TickifierAppDelegate.m: 72";
+		rLen = 0;
+		rLoc = 2836;
+		rType = 0;
+		vrLen = 2379;
+		vrLoc = 995;
+	};
+	604A5D331260F62300705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F8412427E51003BC2E8 /* TickifierAppDelegate.m */;
+		name = "TickifierAppDelegate.m: 64";
+		rLen = 0;
+		rLoc = 2521;
+		rType = 0;
+		vrLen = 2307;
+		vrLoc = 1655;
+	};
+	604A5D371260F65C00705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F8412427E51003BC2E8 /* TickifierAppDelegate.m */;
+		name = "TickifierAppDelegate.m: 160";
+		rLen = 0;
+		rLoc = 5920;
+		rType = 0;
+		vrLen = 2046;
+		vrLoc = 4214;
+	};
+	604A5D3B1260F6AA00705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F8412427E51003BC2E8 /* TickifierAppDelegate.m */;
+		name = "TickifierAppDelegate.m: 149";
+		rLen = 0;
+		rLoc = 5516;
+		rType = 0;
+		vrLen = 2042;
+		vrLoc = 4214;
+	};
+	604A5D411260F6FF00705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F8412427E51003BC2E8 /* TickifierAppDelegate.m */;
+		name = "TickifierAppDelegate.m: 137";
+		rLen = 51;
+		rLoc = 4951;
+		rType = 0;
+		vrLen = 2080;
+		vrLoc = 4214;
+	};
+	604A5D421260F6FF00705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F8312427E51003BC2E8 /* TickifierAppDelegate.h */;
+		name = "TickifierAppDelegate.h: 35";
+		rLen = 0;
+		rLoc = 979;
+		rType = 0;
+		vrLen = 1077;
+		vrLoc = 0;
+	};
+	604A5D431260F6FF00705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F8312427E51003BC2E8 /* TickifierAppDelegate.h */;
+		name = "TickifierAppDelegate.h: 36";
+		rLen = 0;
+		rLoc = 945;
+		rType = 0;
+		vrLen = 1128;
+		vrLoc = 0;
+	};
 	60554DDD12428F870071A103 /* Tickifier */ = {
 		isa = PBXExecutable;
 		activeArgIndices = (
@@ -2048,6 +2512,7 @@
 			607F5F7012427E51003BC2E8 /* Tickifier */,
 		);
 		breakpoints = (
+			604A5CF11260F17100705440 /* TickifierAppDelegate.m:77 */,
 		);
 		codeSenseManager = 60554DEC12428FB90071A103 /* Code sense */;
 		executables = (
@@ -2321,6 +2786,50 @@
 			604A5CA31260E6DE00705440 /* PBXTextBookmark */ = 604A5CA31260E6DE00705440 /* PBXTextBookmark */;
 			604A5CA71260E6EC00705440 /* PBXTextBookmark */ = 604A5CA71260E6EC00705440 /* PBXTextBookmark */;
 			604A5CAB1260E7C700705440 /* PBXTextBookmark */ = 604A5CAB1260E7C700705440 /* PBXTextBookmark */;
+			604A5CAF1260E98D00705440 /* PBXTextBookmark */ = 604A5CAF1260E98D00705440 /* PBXTextBookmark */;
+			604A5CB01260E98D00705440 /* PBXTextBookmark */ = 604A5CB01260E98D00705440 /* PBXTextBookmark */;
+			604A5CB11260E99000705440 /* PBXTextBookmark */ = 604A5CB11260E99000705440 /* PBXTextBookmark */;
+			604A5CCA1260EBAC00705440 /* PBXTextBookmark */ = 604A5CCA1260EBAC00705440 /* PBXTextBookmark */;
+			604A5CCB1260EBAC00705440 /* PBXTextBookmark */ = 604A5CCB1260EBAC00705440 /* PBXTextBookmark */;
+			604A5CCC1260EEA900705440 /* PBXTextBookmark */ = 604A5CCC1260EEA900705440 /* PBXTextBookmark */;
+			604A5CCD1260EEA900705440 /* PBXTextBookmark */ = 604A5CCD1260EEA900705440 /* PBXTextBookmark */;
+			604A5CCE1260EEA900705440 /* PBXTextBookmark */ = 604A5CCE1260EEA900705440 /* PBXTextBookmark */;
+			604A5CCF1260EEA900705440 /* PBXTextBookmark */ = 604A5CCF1260EEA900705440 /* PBXTextBookmark */;
+			604A5CD01260EEA900705440 /* PBXTextBookmark */ = 604A5CD01260EEA900705440 /* PBXTextBookmark */;
+			604A5CD11260EEA900705440 /* PBXTextBookmark */ = 604A5CD11260EEA900705440 /* PBXTextBookmark */;
+			604A5CD71260EF8800705440 /* PBXTextBookmark */ = 604A5CD71260EF8800705440 /* PBXTextBookmark */;
+			604A5CD81260EF8800705440 /* PBXTextBookmark */ = 604A5CD81260EF8800705440 /* PBXTextBookmark */;
+			604A5CD91260EF8800705440 /* PBXTextBookmark */ = 604A5CD91260EF8800705440 /* PBXTextBookmark */;
+			604A5CDA1260EF8B00705440 /* PBXTextBookmark */ = 604A5CDA1260EF8B00705440 /* PBXTextBookmark */;
+			604A5CDD1260EFE800705440 /* PBXTextBookmark */ = 604A5CDD1260EFE800705440 /* PBXTextBookmark */;
+			604A5CE41260F04A00705440 /* XCBuildMessageTextBookmark */ = 604A5CE41260F04A00705440 /* XCBuildMessageTextBookmark */;
+			604A5CE51260F04A00705440 /* PBXTextBookmark */ = 604A5CE51260F04A00705440 /* PBXTextBookmark */;
+			604A5CE91260F07B00705440 /* PBXTextBookmark */ = 604A5CE91260F07B00705440 /* PBXTextBookmark */;
+			604A5CED1260F0FF00705440 /* PBXTextBookmark */ = 604A5CED1260F0FF00705440 /* PBXTextBookmark */;
+			604A5CF61260F18600705440 /* PBXTextBookmark */ = 604A5CF61260F18600705440 /* PBXTextBookmark */;
+			604A5CF71260F18600705440 /* PBXTextBookmark */ = 604A5CF71260F18600705440 /* PBXTextBookmark */;
+			604A5CFB1260F1A500705440 /* PBXTextBookmark */ = 604A5CFB1260F1A500705440 /* PBXTextBookmark */;
+			604A5D011260F21800705440 /* PBXTextBookmark */ = 604A5D011260F21800705440 /* PBXTextBookmark */;
+			604A5D021260F21800705440 /* PBXTextBookmark */ = 604A5D021260F21800705440 /* PBXTextBookmark */;
+			604A5D031260F21800705440 /* PBXTextBookmark */ = 604A5D031260F21800705440 /* PBXTextBookmark */;
+			604A5D071260F24000705440 /* PBXTextBookmark */ = 604A5D071260F24000705440 /* PBXTextBookmark */;
+			604A5D0B1260F26200705440 /* PBXTextBookmark */ = 604A5D0B1260F26200705440 /* PBXTextBookmark */;
+			604A5D0F1260F27C00705440 /* PBXTextBookmark */ = 604A5D0F1260F27C00705440 /* PBXTextBookmark */;
+			604A5D131260F2CE00705440 /* PBXTextBookmark */ = 604A5D131260F2CE00705440 /* PBXTextBookmark */;
+			604A5D151260F2CE00705440 /* PBXTextBookmark */ = 604A5D151260F2CE00705440 /* PBXTextBookmark */;
+			604A5D161260F2CE00705440 /* PBXTextBookmark */ = 604A5D161260F2CE00705440 /* PBXTextBookmark */;
+			604A5D1A1260F2F800705440 /* PBXTextBookmark */ = 604A5D1A1260F2F800705440 /* PBXTextBookmark */;
+			604A5D271260F52300705440 /* PBXTextBookmark */ = 604A5D271260F52300705440 /* PBXTextBookmark */;
+			604A5D281260F52300705440 /* PlistBookmark */ = 604A5D281260F52300705440 /* PlistBookmark */;
+			604A5D291260F52300705440 /* PBXTextBookmark */ = 604A5D291260F52300705440 /* PBXTextBookmark */;
+			604A5D2A1260F52300705440 /* PBXTextBookmark */ = 604A5D2A1260F52300705440 /* PBXTextBookmark */;
+			604A5D2B1260F52300705440 /* PBXTextBookmark */ = 604A5D2B1260F52300705440 /* PBXTextBookmark */;
+			604A5D331260F62300705440 /* PBXTextBookmark */ = 604A5D331260F62300705440 /* PBXTextBookmark */;
+			604A5D371260F65C00705440 /* PBXTextBookmark */ = 604A5D371260F65C00705440 /* PBXTextBookmark */;
+			604A5D3B1260F6AA00705440 /* PBXTextBookmark */ = 604A5D3B1260F6AA00705440 /* PBXTextBookmark */;
+			604A5D411260F6FF00705440 /* PBXTextBookmark */ = 604A5D411260F6FF00705440 /* PBXTextBookmark */;
+			604A5D421260F6FF00705440 /* PBXTextBookmark */ = 604A5D421260F6FF00705440 /* PBXTextBookmark */;
+			604A5D431260F6FF00705440 /* PBXTextBookmark */ = 604A5D431260F6FF00705440 /* PBXTextBookmark */;
 			609660B112455392006C7E28 = 609660B112455392006C7E28 /* PBXTextBookmark */;
 			609660B212455392006C7E28 = 609660B212455392006C7E28 /* PBXTextBookmark */;
 			609660B312455392006C7E28 = 609660B312455392006C7E28 /* PBXTextBookmark */;
@@ -2345,34 +2854,41 @@
 			sepNavVisRange = "{0, 147}";
 		};
 	};
+	607F5F7912427E51003BC2E8 /* en */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1242, 763}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 109}";
+		};
+	};
 	607F5F8312427E51003BC2E8 /* TickifierAppDelegate.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1242, 565}}";
-			sepNavSelRange = "{489, 0}";
-			sepNavVisRange = "{0, 636}";
+			sepNavIntBoundsRect = "{{0, 0}, {1242, 763}}";
+			sepNavSelRange = "{945, 0}";
+			sepNavVisRange = "{0, 1128}";
 			sepNavWindowFrame = "{{15, 4}, {1285, 625}}";
 		};
 	};
 	607F5F8412427E51003BC2E8 /* TickifierAppDelegate.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {960, 754}}";
-			sepNavSelRange = "{1206, 0}";
-			sepNavVisRange = "{261, 1437}";
+			sepNavIntBoundsRect = "{{0, 0}, {1356, 2275}}";
+			sepNavSelRange = "{4951, 51}";
+			sepNavVisRange = "{4214, 2080}";
 		};
 	};
 	607F5F9812428390003BC2E8 /* LighthouseController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1226, 1053}}";
-			sepNavSelRange = "{405, 0}";
-			sepNavVisRange = "{216, 955}";
+			sepNavIntBoundsRect = "{{0, 0}, {1034, 1040}}";
+			sepNavSelRange = "{235, 0}";
+			sepNavVisRange = "{47, 362}";
 			sepNavWindowFrame = "{{1478, 249}, {1285, 625}}";
 		};
 	};
 	607F5F9912428390003BC2E8 /* LighthouseController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1328, 3588}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1328, 3679}}";
 			sepNavSelRange = "{5711, 0}";
-			sepNavVisRange = "{4644, 1958}";
+			sepNavVisRange = "{7781, 1683}";
 			sepNavWindowFrame = "{{9, 239}, {1285, 625}}";
 		};
 	};
@@ -2463,16 +2979,23 @@
 	};
 	609661F212466BE4006C7E28 /* PTHotKey.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {510, 702}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1242, 689}}";
 			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 714}";
+			sepNavVisRange = "{0, 832}";
 		};
 	};
 	609661F312466BE4006C7E28 /* PTHotKey.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {510, 1690}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1242, 1716}}";
 			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 565}";
+			sepNavVisRange = "{0, 627}";
+		};
+	};
+	609661F412466BE4006C7E28 /* PTHotKeyCenter.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1242, 542}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 749}";
 		};
 	};
 	609662FB12468302006C7E28 /* AppViewController.h */ = {
