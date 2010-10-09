@@ -17,6 +17,11 @@
   [self toggleNewTicketHotKey:self];
   [self toggleListTicketsHotKey:self];
 
+  NSRect frame = [listTicketsWindow frame];
+  frame.size.height = [[[NSScreen screens] objectAtIndex:0] frame].size.height - 21;
+  frame.origin.x = 0;
+  [listTicketsWindow setFrame:frame display:NO];
+  
   if([[NSUserDefaults standardUserDefaults] objectForKey:@"api_key"]){
     [newTicketWindow becomeKeyWindow];
     [newTicketWindow orderFrontRegardless];
@@ -61,27 +66,28 @@
 
 - (void)hitNewTicketHotKey:(PTHotKey *)hotKey {
   if([newTicketWindow isKeyWindow]){
+    [self slideWindow:newTicketWindow direction:NO doSlide:NO];
     [self restorePreviouslyActiveApp];    
 
-   // [[NSApplication sharedApplication] hide:self];
-    [newTicketWindow setAlphaValue: 0.0f];
   }else{
     [self storePreviouslyActiveApp];    
     [[NSApplication sharedApplication] activateIgnoringOtherApps:YES];
     [newTicketWindow makeKeyAndOrderFront:self];
-        [newTicketWindow setAlphaValue: 1.0f];
+    [self slideWindow:newTicketWindow direction:YES doSlide:NO];
   }
 }
 
 - (void)hitListTicketHotKey:(PTHotKey *)hotKey {
   if([listTicketsWindow isKeyWindow]){
     [self restorePreviouslyActiveApp];
+    [self slideWindow:listTicketsWindow direction:NO doSlide:YES];
 
-    [self slideWindows:NO fast: NO];    
   }else{
     [self storePreviouslyActiveApp];    
     [[NSApplication sharedApplication] activateIgnoringOtherApps:YES];
-    [self slideWindows:YES fast: NO];
+    [listTicketsWindow makeKeyAndOrderFront:self];
+    [self slideWindow:listTicketsWindow direction:YES doSlide:YES];
+
   }
 }
 
@@ -92,44 +98,43 @@
 #define SLIDE_DIRECTION(d,x) (d?(x):(1.0f-(x)))
 #define ALPHA_DIRECTION(d,x) (d?(1.0f-(x)):(x))
 
-- (void)slideWindows:(BOOL)direction fast:(bool)fast { // true == down
-  if (!fast) {
-    BOOL doSlide = YES;
-    BOOL doFade = YES;
-    float animSpeed = 0.3f;
-    
-    // animation loop
-    if (doFade || doSlide) {
-      if (!doSlide && direction) { // setup final slide position in case of no sliding
-        float offset = SLIDE_DIRECTION(direction, SLIDE_EASING(1));
-        [self placeWindow:listTicketsWindow offset:offset];
+- (void)slideWindow:(NSWindow*)window direction:(BOOL)direction doSlide:(bool)doSlide { // true == down
+  BOOL doFade = YES;
+  float animSpeed = 0.3f;
+  
+  // animation loop
+  if (doFade || doSlide) {
+//    if (!doSlide && direction) { // setup final slide position in case of no sliding
+//      float offset = SLIDE_DIRECTION(direction, SLIDE_EASING(1));
+//      [self placeWindow:window offset:offset];
+//    }
+    if (!doFade && direction) { // setup final alpha state in case of no alpha
+      float alpha = ALPHA_DIRECTION(direction, ALPHA_EASING(1));
+      [window setAlphaValue: alpha];
+    }
+    NSTimeInterval t;
+    NSDate* date=[NSDate date];
+    while (animSpeed>(t=-[date timeIntervalSinceNow])) { // animation update loop
+      float k=t/animSpeed;
+      if (doSlide) {
+        float offset = SLIDE_DIRECTION(direction, SLIDE_EASING(k));
+        [self placeWindow:window offset:offset];
       }
-      if (!doFade && direction) { // setup final alpha state in case of no alpha
-        float alpha = ALPHA_DIRECTION(direction, ALPHA_EASING(1));
-        [listTicketsWindow setAlphaValue: alpha];
+      if (doFade) {
+        float alpha = ALPHA_DIRECTION(direction, ALPHA_EASING(k));
+        [window setAlphaValue:alpha];
       }
-      NSTimeInterval t;
-      NSDate* date=[NSDate date];
-      while (animSpeed>(t=-[date timeIntervalSinceNow])) { // animation update loop
-        float k=t/animSpeed;
-        if (doSlide) {
-          float offset = SLIDE_DIRECTION(direction, SLIDE_EASING(k));
-          [self placeWindow:listTicketsWindow offset:offset];
-        }
-        if (doFade) {
-          float alpha = ALPHA_DIRECTION(direction, ALPHA_EASING(k));
-          [listTicketsWindow setAlphaValue:alpha];
-        }
-        usleep(5000); // 5ms
-      }
+      usleep(5000); // 5ms
     }
   }
   
   // apply final slide and alpha states
-  float offset = SLIDE_DIRECTION(direction, SLIDE_EASING(1));
-  [self placeWindow:listTicketsWindow offset:offset];
-  float alpha = ALPHA_DIRECTION(direction, ALPHA_EASING(1));
-  [listTicketsWindow setAlphaValue: alpha];
+  if (doSlide) {
+    float offset = SLIDE_DIRECTION(direction, SLIDE_EASING(1));
+    [self placeWindow:window offset:offset];
+  }
+    float alpha = ALPHA_DIRECTION(direction, ALPHA_EASING(1));
+  [window setAlphaValue: alpha];
 }
 
 // offset==0.0 means window is "hidden" above top screen edge
@@ -155,19 +160,22 @@
 
 //more thanks to visor, removing 10.5 greatly simplified this
 - (void)storePreviouslyActiveApp {
-    NSDictionary *activeAppDict = [[NSWorkspace sharedWorkspace] activeApplication];
-    previouslyActiveAppPID = nil;
+  NSDictionary *activeAppDict = [[NSWorkspace sharedWorkspace] activeApplication];
+  previouslyActiveAppPID = nil;
+  if ([[activeAppDict objectForKey:@"NSApplicationBundleIdentifier"] compare:@"com.ortatherox.Tickifier"]) {
     previouslyActiveAppPID = [activeAppDict objectForKey:@"NSApplicationProcessIdentifier"];
+  }
+  
 }
 
 - (void)restorePreviouslyActiveApp {
-  if (!previouslyActiveAppPID) return;
+  if (!previouslyActiveAppPID) 
+    [[NSApplication sharedApplication] hide:self];
   id app = [NSRunningApplication runningApplicationWithProcessIdentifier: [previouslyActiveAppPID intValue]];
   if (app) {
     [app activateWithOptions:0];
   }
   previouslyActiveAppPID = nil;
-
 }
 
 

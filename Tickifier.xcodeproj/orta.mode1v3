@@ -324,7 +324,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>TickifierAppDelegate.h</string>
+								<string>TickifierAppDelegate.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -332,11 +332,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>TickifierAppDelegate.h</string>
+										<string>TickifierAppDelegate.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>604A5D431260F6FF00705440</string>
+										<string>604A5D8B1261047900705440</string>
 										<key>history</key>
 										<array>
 											<string>609660B112455392006C7E28</string>
@@ -360,8 +360,8 @@
 											<string>604A5D131260F2CE00705440</string>
 											<string>604A5D271260F52300705440</string>
 											<string>604A5D281260F52300705440</string>
-											<string>604A5D411260F6FF00705440</string>
-											<string>604A5D421260F6FF00705440</string>
+											<string>604A5D541260FA9400705440</string>
+											<string>604A5D551260FA9400705440</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -559,15 +559,15 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>604A5D441260F6FF00705440</string>
+		<string>604A5D8C1261047900705440</string>
 		<string>1C530D57069F1CE1000CFCEE</string>
 		<string>607DB3D91243C1FC001CCF9F</string>
 		<string>604A5B911260AE8D00705440</string>
 		<string>604A5B071260A20500705440</string>
 		<string>604A5B081260A20500705440</string>
 		<string>1CD10A99069EF8BA00B06720</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>60554E3212428FF40071A103</string>
+		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/orta/spiel/cocoa/tickifier/Tickifier.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -601,7 +601,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {1095, 211}}</string>
 								<key>RubberWindowFrame</key>
-								<string>304 60 1095 548 0 0 1440 878 </string>
+								<string>268 107 1095 548 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -627,7 +627,7 @@
 								<key>Frame</key>
 								<string>{{0, 216}, {1095, 291}}</string>
 								<key>RubberWindowFrame</key>
-								<string>304 60 1095 548 0 0 1440 878 </string>
+								<string>268 107 1095 548 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXBuildResultsModule</string>
@@ -659,11 +659,11 @@
 			<key>WindowContentMinSize</key>
 			<string>486 300</string>
 			<key>WindowString</key>
-			<string>304 60 1095 548 0 0 1440 878 </string>
+			<string>268 107 1095 548 0 0 1440 878 </string>
 			<key>WindowToolGUID</key>
 			<string>60554E3212428FF40071A103</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>
