@@ -30,10 +30,9 @@
 		[[PTHotKeyCenter sharedCenter] unregisterHotKey: globalHotKey];
 		globalHotKey = nil;
    }
-    
 	globalHotKey = [[PTHotKey alloc] initWithIdentifier:@"tickifier"
-                                             keyCombo:[PTKeyCombo keyComboWithKeyCode:[shortcutRecorder keyCombo].code
-                                           modifiers:[shortcutRecorder cocoaToCarbonFlags: [shortcutRecorder keyCombo].flags]]];
+                                             keyCombo:[PTKeyCombo keyComboWithKeyCode:[shortcutRecorderNewTicket keyCombo].code
+                                           modifiers:[shortcutRecorderNewTicket cocoaToCarbonFlags: [shortcutRecorderNewTicket keyCombo].flags]]];
 	[globalHotKey setTarget: self];
 	[globalHotKey setAction: @selector(hitHotKey:)];
 	
@@ -45,7 +44,6 @@
 }
 
 - (void)hitHotKey:(PTHotKey *)hotKey {
-  NSLog(@"hotkey");
   if([window isKeyWindow]){
     [[NSApplication sharedApplication] hide:self];
     [window orderOut:self];

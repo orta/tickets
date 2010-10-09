@@ -14,7 +14,7 @@
   IBOutlet NSWindow *window;
   IBOutlet NSWindow *setupWindow;
   
-  IBOutlet SRRecorderControl *shortcutRecorder;
+  IBOutlet SRRecorderControl *shortcutRecorderNewTicket;
 	PTHotKey *globalHotKey;
 }
 

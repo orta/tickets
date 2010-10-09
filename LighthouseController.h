@@ -9,7 +9,6 @@
 #import <Cocoa/Cocoa.h>
 #import "LighthouseEntity.h"
 #import "Ticket.h"
-#import "ORCycleTextField.h"
 
 @interface LighthouseController : NSObject {
   
@@ -21,7 +20,7 @@
   LighthouseEntity *currentProject;
   LighthouseEntity *currentMilestone;
   LighthouseEntity *currentAssignedToUser;
-  
+
   Ticket *currentTicket;
   
   IBOutlet NSArrayController *projects;
@@ -51,6 +50,7 @@
 @property (retain) LighthouseEntity *currentProject;
 @property (retain) LighthouseEntity *currentMilestone;
 @property (retain) LighthouseEntity *currentAssignedToUser;
+
 
 @property () NSInteger projectIndex;
 @property () NSInteger milestoneIndex;

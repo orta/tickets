@@ -1,15 +1,27 @@
 // !$*UTF8*$!
 {
 	6025C1BD124CF7D0006044FB /* ORCycleTextField.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = ORCycleTextField.h;
+		path = /Users/orta/spiel/cocoa/tickifier/Classes/Views/ORCycleTextField.h;
+		sourceTree = "<absolute>";
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {729, 604}}";
+			sepNavIntBoundsRect = "{{0, 0}, {841, 683}}";
 			sepNavSelRange = "{222, 0}";
 			sepNavVisRange = "{0, 314}";
 		};
 	};
 	6025C1BE124CF7D0006044FB /* ORCycleTextField.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = ORCycleTextField.m;
+		path = /Users/orta/spiel/cocoa/tickifier/Classes/Views/ORCycleTextField.m;
+		sourceTree = "<absolute>";
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {729, 604}}";
+			sepNavIntBoundsRect = "{{0, 0}, {841, 683}}";
 			sepNavSelRange = "{382, 0}";
 			sepNavVisRange = "{0, 704}";
 		};
@@ -134,7 +146,7 @@
 		fRef = 607F5F9812428390003BC2E8 /* LighthouseController.h */;
 		name = "LighthouseController.h: 69";
 		rLen = 0;
-		rLoc = 1834;
+		rLoc = 1804;
 		rType = 0;
 		vrLen = 1253;
 		vrLoc = 616;
@@ -152,7 +164,7 @@
 		fRef = 607F5F9812428390003BC2E8 /* LighthouseController.h */;
 		name = "LighthouseController.h: 31";
 		rLen = 0;
-		rLoc = 539;
+		rLoc = 510;
 		rType = 0;
 		vrLen = 825;
 		vrLoc = 0;
@@ -161,7 +173,7 @@
 		isa = PBXTextBookmark;
 		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
 		rLen = 0;
-		rLoc = 10914;
+		rLoc = 10886;
 		rType = 0;
 	};
 	60451590125DCE9A009D0824 /* PBXTextBookmark */ = {
@@ -279,7 +291,7 @@
 		fRef = 607F5F9812428390003BC2E8 /* LighthouseController.h */;
 		name = "LighthouseController.h: 66";
 		rLen = 0;
-		rLoc = 1705;
+		rLoc = 1675;
 		rType = 0;
 		vrLen = 351;
 		vrLoc = 1489;
@@ -308,7 +320,7 @@
 		fRef = 607F5F9812428390003BC2E8 /* LighthouseController.h */;
 		name = "LighthouseController.h: 66";
 		rLen = 0;
-		rLoc = 1712;
+		rLoc = 1682;
 		rType = 0;
 		vrLen = 1225;
 		vrLoc = 759;
@@ -446,7 +458,7 @@
 		fRef = 607F5F9812428390003BC2E8 /* LighthouseController.h */;
 		name = "LighthouseController.h: 66";
 		rLen = 0;
-		rLoc = 1712;
+		rLoc = 1682;
 		rType = 0;
 		vrLen = 1197;
 		vrLoc = 788;
@@ -665,7 +677,7 @@
 		fRef = 607F5F9812428390003BC2E8 /* LighthouseController.h */;
 		name = "LighthouseController.h: 66";
 		rLen = 0;
-		rLoc = 1712;
+		rLoc = 1682;
 		rType = 0;
 		vrLen = 1225;
 		vrLoc = 760;
@@ -883,7 +895,7 @@
 		fRef = 607F5F9812428390003BC2E8 /* LighthouseController.h */;
 		name = "LighthouseController.h: 79";
 		rLen = 0;
-		rLoc = 2025;
+		rLoc = 1995;
 		rType = 0;
 		vrLen = 1261;
 		vrLoc = 744;
@@ -903,7 +915,7 @@
 		fRef = 607F5F9812428390003BC2E8 /* LighthouseController.h */;
 		name = "LighthouseController.h: 35";
 		rLen = 0;
-		rLoc = 810;
+		rLoc = 779;
 		rType = 0;
 		vrLen = 1148;
 		vrLoc = 0;
@@ -923,7 +935,7 @@
 		fRef = 607F5F9812428390003BC2E8 /* LighthouseController.h */;
 		name = "LighthouseController.h: 23";
 		rLen = 0;
-		rLoc = 535;
+		rLoc = 506;
 		rType = 0;
 		vrLen = 1191;
 		vrLoc = 0;
@@ -973,7 +985,7 @@
 		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
 		name = "LighthouseController.m: 295";
 		rLen = 0;
-		rLoc = 10914;
+		rLoc = 10886;
 		rType = 0;
 		vrLen = 654;
 		vrLoc = 2522;
@@ -1113,7 +1125,7 @@
 		fRef = 607F5F9812428390003BC2E8 /* LighthouseController.h */;
 		name = "LighthouseController.h: 29";
 		rLen = 5;
-		rLoc = 698;
+		rLoc = 667;
 		rType = 0;
 		vrLen = 1222;
 		vrLoc = 88;
@@ -1223,7 +1235,7 @@
 		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
 		name = "LighthouseController.m: 289";
 		rLen = 0;
-		rLoc = 10914;
+		rLoc = 10886;
 		rType = 0;
 		vrLen = 571;
 		vrLoc = 1889;
@@ -1300,7 +1312,7 @@
 		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
 		name = "LighthouseController.m: 271";
 		rLen = 0;
-		rLoc = 10528;
+		rLoc = 10500;
 		rType = 0;
 		vrLen = 1679;
 		vrLoc = 9235;
@@ -1320,7 +1332,7 @@
 		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
 		name = "LighthouseController.m: 287";
 		rLen = 0;
-		rLoc = 10914;
+		rLoc = 10886;
 		rType = 0;
 		vrLen = 571;
 		vrLoc = 1889;
@@ -1354,6 +1366,363 @@
 		rType = 0;
 		vrLen = 691;
 		vrLoc = 0;
+	};
+	604A5C2C1260C18700705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
+		name = "LighthouseController.m: 287";
+		rLen = 0;
+		rLoc = 10886;
+		rType = 0;
+		vrLen = 611;
+		vrLoc = 1889;
+	};
+	604A5C2D1260C18700705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
+		name = "LighthouseController.m: 131";
+		rLen = 0;
+		rLoc = 5038;
+		rType = 0;
+		vrLen = 616;
+		vrLoc = 4731;
+	};
+	604A5C2E1260C18900705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
+		name = "LighthouseController.m: 64";
+		rLen = 0;
+		rLoc = 2457;
+		rType = 0;
+		vrLen = 2069;
+		vrLoc = 0;
+	};
+	604A5C2F1260C18900705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F9812428390003BC2E8 /* LighthouseController.h */;
+		name = "LighthouseController.h: 32";
+		rLen = 0;
+		rLoc = 766;
+		rType = 0;
+		vrLen = 1408;
+		vrLoc = 0;
+	};
+	604A5C301260C67B00705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F9812428390003BC2E8 /* LighthouseController.h */;
+		name = "LighthouseController.h: 55";
+		rLen = 0;
+		rLoc = 1339;
+		rType = 0;
+		vrLen = 1449;
+		vrLoc = 163;
+	};
+	604A5C311260C67B00705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
+		name = "LighthouseController.m: 64";
+		rLen = 0;
+		rLoc = 2457;
+		rType = 0;
+		vrLen = 2069;
+		vrLoc = 0;
+	};
+	604A5C341260C71300705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 60554EBC124368B40071A103 /* LighthouseEntity.h */;
+		name = "LighthouseEntity.h: 18";
+		rLen = 0;
+		rLoc = 324;
+		rType = 0;
+		vrLen = 342;
+		vrLoc = 0;
+	};
+	604A5C351260C71300705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 60554F4C124373890071A103 /* Project.m */;
+		name = "LighthouseEntity.m: 21";
+		rLen = 0;
+		rLoc = 334;
+		rType = 0;
+		vrLen = 334;
+		vrLoc = 0;
+	};
+	604A5C361260C71300705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 60554E49124291B20071A103 /* Ticket.m */;
+		name = "Ticket.m: 22";
+		rLen = 0;
+		rLoc = 684;
+		rType = 0;
+		vrLen = 691;
+		vrLoc = 0;
+	};
+	604A5C371260C71300705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F9812428390003BC2E8 /* LighthouseController.h */;
+		name = "LighthouseController.h: 58";
+		rLen = 0;
+		rLoc = 1354;
+		rType = 0;
+		vrLen = 1490;
+		vrLoc = 617;
+	};
+	604A5C381260C71300705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
+		name = "LighthouseController.m: 64";
+		rLen = 0;
+		rLoc = 2457;
+		rType = 0;
+		vrLen = 2096;
+		vrLoc = 47;
+	};
+	604A5C391260C71300705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
+		name = "LighthouseController.m: 138";
+		rLen = 0;
+		rLoc = 5413;
+		rType = 0;
+		vrLen = 2363;
+		vrLoc = 4178;
+	};
+	604A5C3D1260CA7E00705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
+		name = "LighthouseController.m: 196";
+		rLen = 0;
+		rLoc = 7885;
+		rType = 0;
+		vrLen = 1973;
+		vrLoc = 7682;
+	};
+	604A5C3F1260CAAA00705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
+		name = "LighthouseController.m: 286";
+		rLen = 0;
+		rLoc = 10886;
+		rType = 0;
+		vrLen = 571;
+		vrLoc = 1889;
+	};
+	604A5C401260CAAA00705440 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Property 'currentUser' requires method 'currentUser' to be defined - use @synthesize, @dynamic or provide a method implementation";
+		fRef = 607F5F9812428390003BC2E8 /* LighthouseController.h */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 52;
+		rType = 1;
+	};
+	604A5C411260CAAA00705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F9812428390003BC2E8 /* LighthouseController.h */;
+		name = "LighthouseController.h: 23";
+		rLen = 0;
+		rLoc = 525;
+		rType = 0;
+		vrLen = 358;
+		vrLoc = 474;
+	};
+	604A5C421260CAAA00705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
+		name = "LighthouseController.m: 131";
+		rLen = 0;
+		rLoc = 5038;
+		rType = 0;
+		vrLen = 613;
+		vrLoc = 4731;
+	};
+	604A5C451260CAAE00705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
+		name = "LighthouseController.m: 196";
+		rLen = 0;
+		rLoc = 7885;
+		rType = 0;
+		vrLen = 2057;
+		vrLoc = 8016;
+	};
+	604A5C461260CAAE00705440 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Property 'currentUser' requires method 'currentUser' to be defined - use @synthesize, @dynamic or provide a method implementation";
+		fRef = 607F5F9812428390003BC2E8 /* LighthouseController.h */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 52;
+		rType = 1;
+	};
+	604A5C471260CAAE00705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F9812428390003BC2E8 /* LighthouseController.h */;
+		name = "LighthouseController.h: 54";
+		rLen = 0;
+		rLoc = 1339;
+		rType = 0;
+		vrLen = 1443;
+		vrLoc = 581;
+	};
+	604A5C4B1260CC7A00705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F9812428390003BC2E8 /* LighthouseController.h */;
+		name = "LighthouseController.h: 23";
+		rLen = 0;
+		rLoc = 525;
+		rType = 0;
+		vrLen = 381;
+		vrLoc = 474;
+	};
+	604A5C4C1260CC7A00705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
+		name = "LighthouseController.m: 131";
+		rLen = 0;
+		rLoc = 5038;
+		rType = 0;
+		vrLen = 616;
+		vrLoc = 4731;
+	};
+	604A5C4D1260CC7B00705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F9812428390003BC2E8 /* LighthouseController.h */;
+		name = "LighthouseController.h: 39";
+		rLen = 0;
+		rLoc = 853;
+		rType = 0;
+		vrLen = 1370;
+		vrLoc = 0;
+	};
+	604A5C4E1260CD2900705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F9812428390003BC2E8 /* LighthouseController.h */;
+		name = "LighthouseController.h: 45";
+		rLen = 0;
+		rLoc = 1077;
+		rType = 0;
+		vrLen = 1370;
+		vrLoc = 0;
+	};
+	604A5C4F1260CD2900705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
+		name = "LighthouseController.m: 196";
+		rLen = 0;
+		rLoc = 7885;
+		rType = 0;
+		vrLen = 1679;
+		vrLoc = 9246;
+	};
+	604A5C581260D2BB00705440 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "'ORCycleTextField.h' file not found";
+		fRef = 607F5F9812428390003BC2E8 /* LighthouseController.h */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 11;
+		rType = 1;
+	};
+	604A5C5B1260D2BF00705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F9812428390003BC2E8 /* LighthouseController.h */;
+		name = "LighthouseController.h: 45";
+		rLen = 0;
+		rLoc = 1077;
+		rType = 0;
+		vrLen = 922;
+		vrLoc = 235;
+	};
+	604A5C5C1260D2BF00705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 609662FC12468302006C7E28 /* AppViewController.m */;
+		name = "AppViewController.m: 32";
+		rLen = 0;
+		rLoc = 1021;
+		rType = 0;
+		vrLen = 1095;
+		vrLoc = 0;
+	};
+	604A5C5D1260D2BF00705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 609662FB12468302006C7E28 /* AppViewController.h */;
+		name = "AppViewController.h: 16";
+		rLen = 12;
+		rLoc = 326;
+		rType = 0;
+		vrLen = 478;
+		vrLoc = 0;
+	};
+	604A5C5E1260D2BF00705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 609661F212466BE4006C7E28 /* PTHotKey.h */;
+		name = "PTHotKey.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 714;
+		vrLoc = 0;
+	};
+	604A5C5F1260D2BF00705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 609661F312466BE4006C7E28 /* PTHotKey.m */;
+		name = "PTHotKey.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 565;
+		vrLoc = 0;
+	};
+	604A5C601260D2BF00705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
+		name = "LighthouseController.m: 229";
+		rLen = 0;
+		rLoc = 9217;
+		rType = 0;
+		vrLen = 1774;
+		vrLoc = 1109;
+	};
+	604A5C611260D2BF00705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F8412427E51003BC2E8 /* TickifierAppDelegate.m */;
+		name = "TickifierAppDelegate.m: 37";
+		rLen = 0;
+		rLoc = 1233;
+		rType = 0;
+		vrLen = 1437;
+		vrLoc = 261;
+	};
+	604A5C621260D2BF00705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F8312427E51003BC2E8 /* TickifierAppDelegate.h */;
+		name = "TickifierAppDelegate.h: 26";
+		rLen = 0;
+		rLoc = 621;
+		rType = 0;
+		vrLen = 612;
+		vrLoc = 0;
+	};
+	604A5C631260D2BF00705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F8312427E51003BC2E8 /* TickifierAppDelegate.h */;
+		name = "TickifierAppDelegate.h: 12";
+		rLen = 0;
+		rLoc = 254;
+		rType = 0;
+		vrLen = 621;
+		vrLoc = 0;
+	};
+	604A5C661260D2BF00705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F9812428390003BC2E8 /* LighthouseController.h */;
+		name = "LighthouseController.h: 12";
+		rLen = 0;
+		rLoc = 235;
+		rType = 0;
+		vrLen = 955;
+		vrLoc = 216;
 	};
 	60554DDD12428F870071A103 /* Tickifier */ = {
 		isa = PBXExecutable;
@@ -1410,15 +1779,15 @@
 	};
 	60554E49124291B20071A103 /* Ticket.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1226, 474}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1021, 351}}";
 			sepNavSelRange = "{352, 0}";
-			sepNavVisRange = "{0, 691}";
+			sepNavVisRange = "{112, 579}";
 			sepNavWindowFrame = "{{1455, 270}, {1285, 625}}";
 		};
 	};
 	60554EBC124368B40071A103 /* LighthouseEntity.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {888, 603}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1189, 705}}";
 			sepNavSelRange = "{324, 0}";
 			sepNavVisRange = "{0, 342}";
 		};
@@ -1436,6 +1805,11 @@
 		name = Project.m;
 		path = Classes/Models/LighthouseEntity.m;
 		sourceTree = SOURCE_ROOT;
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1189, 705}}";
+			sepNavSelRange = "{334, 0}";
+			sepNavVisRange = "{0, 334}";
+		};
 	};
 	607F5F6412427E50003BC2E8 /* Project object */ = {
 		activeBuildConfigurationName = Debug;
@@ -1480,7 +1854,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					1011,
+					782,
 					20,
 					48,
 					43,
@@ -1502,7 +1876,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					511,
+					292,
 					60,
 					20,
 					48,
@@ -1659,6 +2033,42 @@
 			604A5C281260BF4800705440 /* PBXTextBookmark */ = 604A5C281260BF4800705440 /* PBXTextBookmark */;
 			604A5C291260BF5300705440 /* PBXTextBookmark */ = 604A5C291260BF5300705440 /* PBXTextBookmark */;
 			604A5C2A1260BF5300705440 /* PBXTextBookmark */ = 604A5C2A1260BF5300705440 /* PBXTextBookmark */;
+			604A5C2C1260C18700705440 /* PBXTextBookmark */ = 604A5C2C1260C18700705440 /* PBXTextBookmark */;
+			604A5C2D1260C18700705440 /* PBXTextBookmark */ = 604A5C2D1260C18700705440 /* PBXTextBookmark */;
+			604A5C2E1260C18900705440 /* PBXTextBookmark */ = 604A5C2E1260C18900705440 /* PBXTextBookmark */;
+			604A5C2F1260C18900705440 /* PBXTextBookmark */ = 604A5C2F1260C18900705440 /* PBXTextBookmark */;
+			604A5C301260C67B00705440 /* PBXTextBookmark */ = 604A5C301260C67B00705440 /* PBXTextBookmark */;
+			604A5C311260C67B00705440 /* PBXTextBookmark */ = 604A5C311260C67B00705440 /* PBXTextBookmark */;
+			604A5C341260C71300705440 /* PBXTextBookmark */ = 604A5C341260C71300705440 /* PBXTextBookmark */;
+			604A5C351260C71300705440 /* PBXTextBookmark */ = 604A5C351260C71300705440 /* PBXTextBookmark */;
+			604A5C361260C71300705440 /* PBXTextBookmark */ = 604A5C361260C71300705440 /* PBXTextBookmark */;
+			604A5C371260C71300705440 /* PBXTextBookmark */ = 604A5C371260C71300705440 /* PBXTextBookmark */;
+			604A5C381260C71300705440 /* PBXTextBookmark */ = 604A5C381260C71300705440 /* PBXTextBookmark */;
+			604A5C391260C71300705440 /* PBXTextBookmark */ = 604A5C391260C71300705440 /* PBXTextBookmark */;
+			604A5C3D1260CA7E00705440 /* PBXTextBookmark */ = 604A5C3D1260CA7E00705440 /* PBXTextBookmark */;
+			604A5C3F1260CAAA00705440 /* PBXTextBookmark */ = 604A5C3F1260CAAA00705440 /* PBXTextBookmark */;
+			604A5C401260CAAA00705440 /* XCBuildMessageTextBookmark */ = 604A5C401260CAAA00705440 /* XCBuildMessageTextBookmark */;
+			604A5C411260CAAA00705440 /* PBXTextBookmark */ = 604A5C411260CAAA00705440 /* PBXTextBookmark */;
+			604A5C421260CAAA00705440 /* PBXTextBookmark */ = 604A5C421260CAAA00705440 /* PBXTextBookmark */;
+			604A5C451260CAAE00705440 /* PBXTextBookmark */ = 604A5C451260CAAE00705440 /* PBXTextBookmark */;
+			604A5C461260CAAE00705440 /* XCBuildMessageTextBookmark */ = 604A5C461260CAAE00705440 /* XCBuildMessageTextBookmark */;
+			604A5C471260CAAE00705440 /* PBXTextBookmark */ = 604A5C471260CAAE00705440 /* PBXTextBookmark */;
+			604A5C4B1260CC7A00705440 /* PBXTextBookmark */ = 604A5C4B1260CC7A00705440 /* PBXTextBookmark */;
+			604A5C4C1260CC7A00705440 /* PBXTextBookmark */ = 604A5C4C1260CC7A00705440 /* PBXTextBookmark */;
+			604A5C4D1260CC7B00705440 /* PBXTextBookmark */ = 604A5C4D1260CC7B00705440 /* PBXTextBookmark */;
+			604A5C4E1260CD2900705440 /* PBXTextBookmark */ = 604A5C4E1260CD2900705440 /* PBXTextBookmark */;
+			604A5C4F1260CD2900705440 /* PBXTextBookmark */ = 604A5C4F1260CD2900705440 /* PBXTextBookmark */;
+			604A5C581260D2BB00705440 /* XCBuildMessageTextBookmark */ = 604A5C581260D2BB00705440 /* XCBuildMessageTextBookmark */;
+			604A5C5B1260D2BF00705440 /* PBXTextBookmark */ = 604A5C5B1260D2BF00705440 /* PBXTextBookmark */;
+			604A5C5C1260D2BF00705440 /* PBXTextBookmark */ = 604A5C5C1260D2BF00705440 /* PBXTextBookmark */;
+			604A5C5D1260D2BF00705440 /* PBXTextBookmark */ = 604A5C5D1260D2BF00705440 /* PBXTextBookmark */;
+			604A5C5E1260D2BF00705440 /* PBXTextBookmark */ = 604A5C5E1260D2BF00705440 /* PBXTextBookmark */;
+			604A5C5F1260D2BF00705440 /* PBXTextBookmark */ = 604A5C5F1260D2BF00705440 /* PBXTextBookmark */;
+			604A5C601260D2BF00705440 /* PBXTextBookmark */ = 604A5C601260D2BF00705440 /* PBXTextBookmark */;
+			604A5C611260D2BF00705440 /* PBXTextBookmark */ = 604A5C611260D2BF00705440 /* PBXTextBookmark */;
+			604A5C621260D2BF00705440 /* PBXTextBookmark */ = 604A5C621260D2BF00705440 /* PBXTextBookmark */;
+			604A5C631260D2BF00705440 /* PBXTextBookmark */ = 604A5C631260D2BF00705440 /* PBXTextBookmark */;
+			604A5C661260D2BF00705440 /* PBXTextBookmark */ = 604A5C661260D2BF00705440 /* PBXTextBookmark */;
 			609660B112455392006C7E28 = 609660B112455392006C7E28 /* PBXTextBookmark */;
 			609660B212455392006C7E28 = 609660B212455392006C7E28 /* PBXTextBookmark */;
 			609660B312455392006C7E28 = 609660B312455392006C7E28 /* PBXTextBookmark */;
@@ -1685,32 +2095,32 @@
 	};
 	607F5F8312427E51003BC2E8 /* TickifierAppDelegate.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {729, 627}}";
-			sepNavSelRange = "{304, 0}";
-			sepNavVisRange = "{0, 612}";
+			sepNavIntBoundsRect = "{{0, 0}, {960, 565}}";
+			sepNavSelRange = "{254, 0}";
+			sepNavVisRange = "{0, 621}";
 			sepNavWindowFrame = "{{15, 4}, {1285, 625}}";
 		};
 	};
 	607F5F8412427E51003BC2E8 /* TickifierAppDelegate.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {908, 780}}";
-			sepNavSelRange = "{295, 0}";
-			sepNavVisRange = "{261, 1469}";
+			sepNavIntBoundsRect = "{{0, 0}, {960, 754}}";
+			sepNavSelRange = "{1206, 0}";
+			sepNavVisRange = "{261, 1437}";
 		};
 	};
 	607F5F9812428390003BC2E8 /* LighthouseController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {888, 1027}}";
-			sepNavSelRange = "{698, 5}";
-			sepNavVisRange = "{88, 1222}";
+			sepNavIntBoundsRect = "{{0, 0}, {1226, 1053}}";
+			sepNavSelRange = "{235, 0}";
+			sepNavVisRange = "{216, 955}";
 			sepNavWindowFrame = "{{1478, 249}, {1285, 625}}";
 		};
 	};
 	607F5F9912428390003BC2E8 /* LighthouseController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1223, 3731}}";
-			sepNavSelRange = "{1583, 0}";
-			sepNavVisRange = "{824, 2188}";
+			sepNavIntBoundsRect = "{{0, 0}, {1328, 3536}}";
+			sepNavSelRange = "{9217, 0}";
+			sepNavVisRange = "{1109, 1774}";
 			sepNavWindowFrame = "{{9, 239}, {1285, 625}}";
 		};
 	};
@@ -1799,18 +2209,32 @@
 		vrLen = 1447;
 		vrLoc = 0;
 	};
+	609661F212466BE4006C7E28 /* PTHotKey.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {510, 702}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 714}";
+		};
+	};
+	609661F312466BE4006C7E28 /* PTHotKey.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {510, 1690}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 565}";
+		};
+	};
 	609662FB12468302006C7E28 /* AppViewController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {729, 602}}";
+			sepNavIntBoundsRect = "{{0, 0}, {510, 462}}";
 			sepNavSelRange = "{326, 12}";
 			sepNavVisRange = "{0, 478}";
 		};
 	};
 	609662FC12468302006C7E28 /* AppViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {888, 793}}";
+			sepNavIntBoundsRect = "{{0, 0}, {635, 767}}";
 			sepNavSelRange = "{1021, 0}";
-			sepNavVisRange = "{87, 1510}";
+			sepNavVisRange = "{0, 1095}";
 		};
 	};
 	6099805D124BD51E006AA575 /* tab.png */ = {

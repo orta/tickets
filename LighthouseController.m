@@ -137,7 +137,7 @@
 
 // this would break the get/setters if the naming convetion stayed
 - (void) getProjectsTickets {
-  NSString *url = [NSString stringWithFormat:@"http://%@/projects/%@/tickets.xml?q=state:open&_token=%@", self.serverAddress, self.currentProject.identifier , self.APIKey]; 
+  NSString *url = [NSString stringWithFormat:@"http://%@/projects/%@/tickets.xml?q=state:open&responsible:me&_token=%@", self.serverAddress, self.currentProject.identifier , self.APIKey]; 
   [Seriously get:url handler:^(id body, NSHTTPURLResponse *response, NSError *error) {
     if (error) {
       NSLog(@"Error: %@", error);
@@ -193,9 +193,8 @@
       }
     }
     
-    if(!found){  
-      
-      NSLog(@"created : %@ - %@", newEntity.name, newEntity.identifier);
+    if(!found){   
+     // NSLog(@"created : %@ - %@", newEntity.name, newEntity.identifier);
       [tempMembers addObject:newEntity];
     }
   }
@@ -227,11 +226,7 @@
   
   NSString *XML = [NSString stringWithFormat:@"<ticket><title>%@</title><body>%@</body><tag>%@</tag>%@<assigned-user-id>%@</assigned-user-id></ticket>", 
                    ticket.title, ticket.body, ticket.tags, milestoneString, currentAssignedToUser.identifier];
-  
-  NSLog(@"XML %@", XML);
-  
-  return;
-  
+    
   NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:url]];
   [urlRequest setHTTPMethod:@"POST"];
   [urlRequest setValue:@"text/xml" forHTTPHeaderField:@"Content-type"];
