@@ -217,11 +217,18 @@
 }
 
 - (void) resolveTicket: (Ticket *)ticket{
-  NSLog(@"Resolving ticket %@", ticket.title);
-
-  NSString *url = [self addressAt: [NSString stringWithFormat:@"projects/%@/tickets/%@.xml", self.currentProject.identifier, ticket.identifier]];
   NSString *XML = @"<ticket><state>resolved</state></ticket>";
+  [self updateTicket:ticket withXML:XML];
+}
 
+- (void) invalidateTicket: (Ticket *)ticket{
+  NSString *XML = @"<ticket><state>invalid</state></ticket>";
+  [self updateTicket:ticket withXML:XML];
+}
+
+- (void) updateTicket:(Ticket *)ticket withXML:(NSString*)XML{
+  NSString *url = [self addressAt: [NSString stringWithFormat:@"projects/%@/tickets/%@.xml", self.currentProject.identifier, ticket.identifier]];
+  
   NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:url]];
   [urlRequest setHTTPMethod:@"PUT"];
   [urlRequest setValue:@"text/xml" forHTTPHeaderField:@"Content-type"];
@@ -234,9 +241,7 @@
     }else{
       [self getProjectsTickets];
     }
-  }];
-  
-   
+  }];  
   
 }
 
@@ -257,38 +262,19 @@
   [urlRequest setValue:@"text/xml" forHTTPHeaderField:@"Content-type"];
   [urlRequest setHTTPBody:[XML dataUsingEncoding:NSUTF8StringEncoding]];
   
-  
-  
-  NSURLConnection *connectionResponse = [[NSURLConnection alloc]  initWithRequest:urlRequest delegate:self];
-
-  if (!connectionResponse) {
-    NSLog(@"Failed to submit request");
-  } else {
-    NSLog(@"Request submitted");
-    payload = [[NSMutableData data] retain];
-  }                           
+  [Seriously request:urlRequest options:nil handler:^(id body, NSHTTPURLResponse *response, NSError *error) {
+    if (error) {
+      NSLog(@"Error: %@", error);
+      [self networkErrorSheet:[error localizedDescription]];
+    }else{
+      NSString *content = [NSString stringWithUTF8String:[payload bytes]];
+      currentTicket.body = @"";
+      currentTicket.tags = @"";
+      currentTicket.title= @"";
+      [self getProjectsTickets];
+    }
+  }];  
 }
-
-- (void)connection:(NSURLConnection *)conn didReceiveResponse:(NSURLResponse *)response {
-   [payload setLength:0];
-}
-
-- (void)connection:(NSURLConnection *)conn didReceiveData:(NSData *)data {
-   [payload appendData:data];
-}
-
-- (void)connectionDidFinishLoading:(NSURLConnection *)conn {
-   NSString *content = [NSString stringWithUTF8String:[payload bytes]];
-  currentTicket.body = @"";
-  currentTicket.tags = @"";
-  currentTicket.title= @"";
-   NSLog(@"Connection finished: %@ - %@", conn, content);
-}
-
- - (void)connection:(NSURLConnection *)conn didFailWithError:(NSError *)error {
-   
-}
-
 
 + (NSSet *)keyPathsForValuesAffectingStatus {
   return [NSSet setWithObjects:@"currentAssignedToUser", @"currentMilestone", @"currentProject", nil];

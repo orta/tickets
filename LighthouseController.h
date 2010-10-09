@@ -70,11 +70,12 @@
 
 - (void) networkErrorSheet:(NSString *) errorString;
 
-
 - (NSString*) addressAt:(NSString*) postfix;
 - (void) createEntitiesWithXML:(NSString *) xml toArrayController:(NSArrayController*)controller;
 
 - (void) createNewTicket: (Ticket *)ticket;
 - (void) resolveTicket: (Ticket *)ticket;
+- (void) invalidateTicket: (Ticket *)ticket;
+- (void) updateTicket:(Ticket *)ticket withXML:(NSString*)XML;
 
 @end
