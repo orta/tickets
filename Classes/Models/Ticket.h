@@ -14,11 +14,15 @@
   NSString *body;
   NSString *tags;
   NSString *identifier;
+  NSString *url;
 }
 
 @property (retain) NSString * title;
 @property (retain) NSString *body;
 @property (retain) NSString *tags;
 @property (retain) NSString *identifier;
+@property (retain) NSString *url;
 
+
++ (Ticket *) ticketWithXMLElement: (NSXMLElement *) element;
 @end

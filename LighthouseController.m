@@ -14,7 +14,7 @@
 @synthesize serverAddress, APIKey;
 
 @synthesize currentProject, projects, currentMilestone, milestones, currentUser, users, currentTicket;
-@synthesize projectIndex, milestoneIndex, userIndex;
+@synthesize projectIndex, milestoneIndex, userIndex, tickets;
 @synthesize status;
 
 - (void)awakeFromNib {
@@ -54,7 +54,7 @@
 
   [self getMilestones];
   [self getUsers];
-
+  [self getProjectsTickets];
 }
 
 - (IBAction) milestoneSelected:(id)sender {
@@ -69,6 +69,28 @@
 
 }
 
+// this would break the get/setters if the naming convetion stayed
+- (void) getProjectsTickets {
+  NSString *url = [NSString stringWithFormat:@"http://%@/projects/%@/tickets.xml?q=state:open&_token=%@", self.serverAddress, self.currentProject.identifier , self.APIKey]; 
+  [Seriously get:url handler:^(id body, NSHTTPURLResponse *response, NSError *error) {
+    if (error) {
+      NSLog(@"Error: %@", error);
+      [self networkErrorSheet:[error localizedDescription]];
+    }
+    else {
+      NSXMLDocument * doc = [[NSXMLDocument alloc] initWithXMLString:body options:0 error:&error];
+      NSArray *children = [[doc rootElement] children];
+      NSMutableArray * tempTickets = [NSMutableArray array];
+      int i, count = [children count];
+      for (i=0; i < count; i++) { 
+        NSXMLElement *ticketXML = [children objectAtIndex:i];
+        Ticket *t = [Ticket ticketWithXMLElement:ticketXML];
+        [tempTickets addObject:t];
+      }        
+      [tickets setContent:tempTickets];
+    }
+  }];
+}
 
 - (void) getProjects {
   NSString *url = [self addressAt:@"projects.xml"];
@@ -84,6 +106,8 @@
         if([[self.projects content] count]){
           self.projectIndex = [[NSUserDefaults standardUserDefaults] integerForKey:@"projectIndex"];
           self.currentProject = [[projects arrangedObjects] objectAtIndex:self.projectIndex];  
+          
+          [self getProjectsTickets];
           
           [self getUsers];
           [self getMilestones];

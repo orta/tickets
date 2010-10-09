@@ -27,6 +27,7 @@
   IBOutlet NSArrayController *projects;
   IBOutlet NSArrayController *milestones;
   IBOutlet NSArrayController *users;
+  IBOutlet NSArrayController *tickets;
   NSInteger projectIndex;
   NSInteger milestoneIndex;
   NSInteger userIndex;
@@ -42,6 +43,8 @@
 @property (retain) NSArrayController *projects;
 @property (retain) NSArrayController *milestones;
 @property (retain) NSArrayController *users;
+@property (retain) NSArrayController *tickets;
+
 
 @property (retain) Ticket *currentTicket;
 
@@ -60,6 +63,7 @@
 - (IBAction) userSelected:(id)sender;
 - (IBAction) projectSelected:(id)sender;
 
+- (void) getProjectsTickets;
 - (void) getProjects;
 - (void) getMilestones;
 - (void) getUsers;

@@ -10,5 +10,16 @@
 
 
 @implementation Ticket
-@synthesize title, body, tags, identifier;
+@synthesize title, body, tags, identifier, url;
+
++ (Ticket *) ticketWithXMLElement: (NSXMLElement *) element {
+  Ticket * t = [[[Ticket alloc] init] autorelease];
+  NSLog(@"hi %@", element);
+  t.title = [[[element elementsForName:@"title"] objectAtIndex:0] stringValue];
+  t.identifier = [[[element elementsForName:@"number"] objectAtIndex:0] stringValue];
+  t.url = [[[element elementsForName:@"url"] objectAtIndex:0] stringValue];
+  t.tags = [[[element elementsForName:@"tag"] objectAtIndex:0] stringValue];
+  return t;
+}
+
 @end
