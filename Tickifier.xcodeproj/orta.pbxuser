@@ -1689,7 +1689,7 @@
 		fRef = 607F5F8412427E51003BC2E8 /* TickifierAppDelegate.m */;
 		name = "TickifierAppDelegate.m: 37";
 		rLen = 0;
-		rLoc = 1233;
+		rLoc = 716;
 		rType = 0;
 		vrLen = 1437;
 		vrLoc = 261;
@@ -1699,7 +1699,7 @@
 		fRef = 607F5F8312427E51003BC2E8 /* TickifierAppDelegate.h */;
 		name = "TickifierAppDelegate.h: 26";
 		rLen = 0;
-		rLoc = 621;
+		rLoc = 636;
 		rType = 0;
 		vrLen = 612;
 		vrLoc = 0;
@@ -1723,6 +1723,95 @@
 		rType = 0;
 		vrLen = 955;
 		vrLoc = 216;
+	};
+	604A5C691260D4C700705440 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "'ORCycleTextField.h' file not found";
+		fRef = 607F5F9812428390003BC2E8 /* LighthouseController.h */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 11;
+		rType = 1;
+	};
+	604A5C6A1260D4C700705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F9812428390003BC2E8 /* LighthouseController.h */;
+		name = "LighthouseController.h: 12";
+		rLen = 0;
+		rLoc = 235;
+		rType = 0;
+		vrLen = 362;
+		vrLoc = 47;
+	};
+	604A5C6B1260D4C700705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
+		name = "LighthouseController.m: 131";
+		rLen = 0;
+		rLoc = 5038;
+		rType = 0;
+		vrLen = 616;
+		vrLoc = 4731;
+	};
+	604A5C6C1260D4CB00705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F9812428390003BC2E8 /* LighthouseController.h */;
+		name = "LighthouseController.h: 12";
+		rLen = 0;
+		rLoc = 235;
+		rType = 0;
+		vrLen = 362;
+		vrLoc = 47;
+	};
+	604A5C6D1260D4CB00705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */;
+		name = "LighthouseController.m: 131";
+		rLen = 0;
+		rLoc = 5038;
+		rType = 0;
+		vrLen = 616;
+		vrLoc = 4731;
+	};
+	604A5C6E1260D4CC00705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F8312427E51003BC2E8 /* TickifierAppDelegate.h */;
+		name = "TickifierAppDelegate.h: 12";
+		rLen = 0;
+		rLoc = 254;
+		rType = 0;
+		vrLen = 621;
+		vrLoc = 0;
+	};
+	604A5C6F1260D4CC00705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F9812428390003BC2E8 /* LighthouseController.h */;
+		name = "LighthouseController.h: 18";
+		rLen = 0;
+		rLoc = 405;
+		rType = 0;
+		vrLen = 955;
+		vrLoc = 216;
+	};
+	604A5C701260D50B00705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F8312427E51003BC2E8 /* TickifierAppDelegate.h */;
+		name = "TickifierAppDelegate.h: 18";
+		rLen = 12;
+		rLoc = 458;
+		rType = 0;
+		vrLen = 621;
+		vrLoc = 0;
+	};
+	604A5C781260D78200705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F8312427E51003BC2E8 /* TickifierAppDelegate.h */;
+		name = "TickifierAppDelegate.h: 20";
+		rLen = 0;
+		rLoc = 486;
+		rType = 0;
+		vrLen = 636;
+		vrLoc = 0;
 	};
 	60554DDD12428F870071A103 /* Tickifier */ = {
 		isa = PBXExecutable;
@@ -1854,7 +1943,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					782,
+					1064,
 					20,
 					48,
 					43,
@@ -2069,6 +2158,15 @@
 			604A5C621260D2BF00705440 /* PBXTextBookmark */ = 604A5C621260D2BF00705440 /* PBXTextBookmark */;
 			604A5C631260D2BF00705440 /* PBXTextBookmark */ = 604A5C631260D2BF00705440 /* PBXTextBookmark */;
 			604A5C661260D2BF00705440 /* PBXTextBookmark */ = 604A5C661260D2BF00705440 /* PBXTextBookmark */;
+			604A5C691260D4C700705440 /* XCBuildMessageTextBookmark */ = 604A5C691260D4C700705440 /* XCBuildMessageTextBookmark */;
+			604A5C6A1260D4C700705440 /* PBXTextBookmark */ = 604A5C6A1260D4C700705440 /* PBXTextBookmark */;
+			604A5C6B1260D4C700705440 /* PBXTextBookmark */ = 604A5C6B1260D4C700705440 /* PBXTextBookmark */;
+			604A5C6C1260D4CB00705440 /* PBXTextBookmark */ = 604A5C6C1260D4CB00705440 /* PBXTextBookmark */;
+			604A5C6D1260D4CB00705440 /* PBXTextBookmark */ = 604A5C6D1260D4CB00705440 /* PBXTextBookmark */;
+			604A5C6E1260D4CC00705440 /* PBXTextBookmark */ = 604A5C6E1260D4CC00705440 /* PBXTextBookmark */;
+			604A5C6F1260D4CC00705440 /* PBXTextBookmark */ = 604A5C6F1260D4CC00705440 /* PBXTextBookmark */;
+			604A5C701260D50B00705440 /* PBXTextBookmark */ = 604A5C701260D50B00705440 /* PBXTextBookmark */;
+			604A5C781260D78200705440 /* PBXTextBookmark */ = 604A5C781260D78200705440 /* PBXTextBookmark */;
 			609660B112455392006C7E28 = 609660B112455392006C7E28 /* PBXTextBookmark */;
 			609660B212455392006C7E28 = 609660B212455392006C7E28 /* PBXTextBookmark */;
 			609660B312455392006C7E28 = 609660B312455392006C7E28 /* PBXTextBookmark */;
@@ -2095,9 +2193,9 @@
 	};
 	607F5F8312427E51003BC2E8 /* TickifierAppDelegate.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {960, 565}}";
-			sepNavSelRange = "{254, 0}";
-			sepNavVisRange = "{0, 621}";
+			sepNavIntBoundsRect = "{{0, 0}, {1242, 542}}";
+			sepNavSelRange = "{486, 0}";
+			sepNavVisRange = "{0, 636}";
 			sepNavWindowFrame = "{{15, 4}, {1285, 625}}";
 		};
 	};
@@ -2111,16 +2209,16 @@
 	607F5F9812428390003BC2E8 /* LighthouseController.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1226, 1053}}";
-			sepNavSelRange = "{235, 0}";
+			sepNavSelRange = "{405, 0}";
 			sepNavVisRange = "{216, 955}";
 			sepNavWindowFrame = "{{1478, 249}, {1285, 625}}";
 		};
 	};
 	607F5F9912428390003BC2E8 /* LighthouseController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1328, 3536}}";
-			sepNavSelRange = "{9217, 0}";
-			sepNavVisRange = "{1109, 1774}";
+			sepNavIntBoundsRect = "{{0, 0}, {1202, 3679}}";
+			sepNavSelRange = "{5038, 0}";
+			sepNavVisRange = "{4731, 616}";
 			sepNavWindowFrame = "{{9, 239}, {1285, 625}}";
 		};
 	};

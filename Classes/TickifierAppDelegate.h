@@ -15,7 +15,9 @@
   IBOutlet NSWindow *setupWindow;
   
   IBOutlet SRRecorderControl *shortcutRecorderNewTicket;
-	PTHotKey *globalHotKey;
+	PTHotKey *globalHotKeyNewTicket;
+  
+  
 }
 
 - (IBAction)toggleGlobalHotKey:(id)sender;

@@ -26,17 +26,17 @@
 }
 
 - (IBAction)toggleGlobalHotKey:(id)sender {
-	if (globalHotKey != nil) {
-		[[PTHotKeyCenter sharedCenter] unregisterHotKey: globalHotKey];
-		globalHotKey = nil;
+	if (globalHotKeyNewTicket != nil) {
+		[[PTHotKeyCenter sharedCenter] unregisterHotKey: globalHotKeyNewTicket];
+		globalHotKeyNewTicket = nil;
    }
-	globalHotKey = [[PTHotKey alloc] initWithIdentifier:@"tickifier"
+	globalHotKeyNewTicket = [[PTHotKey alloc] initWithIdentifier:@"tickifier"
                                              keyCombo:[PTKeyCombo keyComboWithKeyCode:[shortcutRecorderNewTicket keyCombo].code
                                            modifiers:[shortcutRecorderNewTicket cocoaToCarbonFlags: [shortcutRecorderNewTicket keyCombo].flags]]];
-	[globalHotKey setTarget: self];
-	[globalHotKey setAction: @selector(hitHotKey:)];
+	[globalHotKeyNewTicket setTarget: self];
+	[globalHotKeyNewTicket setAction: @selector(hitHotKey:)];
 	
-	[[PTHotKeyCenter sharedCenter] registerHotKey: globalHotKey];
+	[[PTHotKeyCenter sharedCenter] registerHotKey: globalHotKeyNewTicket];
 }
 
 - (void)shortcutRecorder:(SRRecorderControl *)aRecorder keyComboDidChange:(KeyCombo)newKeyCombo {
