@@ -20,7 +20,7 @@
   
   LighthouseEntity *currentProject;
   LighthouseEntity *currentMilestone;
-  LighthouseEntity *currentUser;
+  LighthouseEntity *currentAssignedToUser;
   
   Ticket *currentTicket;
   
@@ -30,7 +30,7 @@
   IBOutlet NSArrayController *tickets;
   NSInteger projectIndex;
   NSInteger milestoneIndex;
-  NSInteger userIndex;
+  NSInteger assignedToUserIndex;
   
   NSString *status;
   
@@ -50,11 +50,11 @@
 
 @property (retain) LighthouseEntity *currentProject;
 @property (retain) LighthouseEntity *currentMilestone;
-@property (retain) LighthouseEntity *currentUser;
+@property (retain) LighthouseEntity *currentAssignedToUser;
 
 @property () NSInteger projectIndex;
 @property () NSInteger milestoneIndex;
-@property () NSInteger userIndex;
+@property () NSInteger assignedToUserIndex;
 
 @property (retain) NSString *status;
 

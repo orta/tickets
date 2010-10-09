@@ -13,8 +13,8 @@
 
 @synthesize serverAddress, APIKey;
 
-@synthesize currentProject, projects, currentMilestone, milestones, currentUser, users, currentTicket;
-@synthesize projectIndex, milestoneIndex, userIndex, tickets;
+@synthesize currentProject, projects, currentMilestone, milestones, currentAssignedToUser, users, currentTicket;
+@synthesize projectIndex, milestoneIndex, assignedToUserIndex, tickets;
 @synthesize status;
 
 - (void)awakeFromNib {
@@ -50,8 +50,9 @@
 
 - (IBAction) projectSelected:(id)sender {
   [[NSUserDefaults standardUserDefaults] setInteger: [sender indexOfSelectedItem] forKey:@"projectIndex"];
-  self.currentProject = [[projects arrangedObjects] objectAtIndex:[sender indexOfSelectedItem]];
+  [[NSUserDefaults standardUserDefaults] setInteger: 0 forKey:@"milestoneIndex"];
 
+  self.currentProject = [[projects arrangedObjects] objectAtIndex:[sender indexOfSelectedItem]];
   [self getMilestones];
   [self getUsers];
   [self getProjectsTickets];
@@ -64,32 +65,9 @@
 }
 
 - (IBAction) userSelected:(id)sender {
-  [[NSUserDefaults standardUserDefaults] setInteger: [sender indexOfSelectedItem] forKey:@"userIndex"];
-  self.currentUser = [[users arrangedObjects] objectAtIndex:  [[[NSUserDefaults standardUserDefaults] objectForKey:@"userIndex"] integerValue]];
+  [[NSUserDefaults standardUserDefaults] setInteger: [sender indexOfSelectedItem] forKey:@"assignedToUserIndex"];
+  self.currentAssignedToUser = [[users arrangedObjects] objectAtIndex:  [sender indexOfSelectedItem]];
 
-}
-
-// this would break the get/setters if the naming convetion stayed
-- (void) getProjectsTickets {
-  NSString *url = [NSString stringWithFormat:@"http://%@/projects/%@/tickets.xml?q=state:open&_token=%@", self.serverAddress, self.currentProject.identifier , self.APIKey]; 
-  [Seriously get:url handler:^(id body, NSHTTPURLResponse *response, NSError *error) {
-    if (error) {
-      NSLog(@"Error: %@", error);
-      [self networkErrorSheet:[error localizedDescription]];
-    }
-    else {
-      NSXMLDocument * doc = [[NSXMLDocument alloc] initWithXMLString:body options:0 error:&error];
-      NSArray *children = [[doc rootElement] children];
-      NSMutableArray * tempTickets = [NSMutableArray array];
-      int i, count = [children count];
-      for (i=0; i < count; i++) { 
-        NSXMLElement *ticketXML = [children objectAtIndex:i];
-        Ticket *t = [Ticket ticketWithXMLElement:ticketXML];
-        [tempTickets addObject:t];
-      }        
-      [tickets setContent:tempTickets];
-    }
-  }];
 }
 
 - (void) getProjects {
@@ -131,10 +109,9 @@
       noMilestone.name = @"No Milestone";
       noMilestone.identifier = @"999999999";
       [milestones insertObject: noMilestone atArrangedObjectIndex:0];
-      if ( [[[NSUserDefaults standardUserDefaults] objectForKey:@"milestoneIndex"] integerValue] ) {
-        self.milestoneIndex = [[NSUserDefaults standardUserDefaults] integerForKey:@"milestoneIndex"];
-        self.currentMilestone = [[milestones arrangedObjects] objectAtIndex:  [[[NSUserDefaults standardUserDefaults] objectForKey:@"milestoneIndex"] integerValue]];       
-      }
+      int index = [[[NSUserDefaults standardUserDefaults] objectForKey:@"milestoneIndex"] integerValue];
+      self.milestoneIndex = index;
+      self.currentMilestone = [[milestones arrangedObjects] objectAtIndex: index];       
     }
   }];  
 }
@@ -150,20 +127,36 @@
     else {
       [self createEntitiesWithXML:body toArrayController:users];
       
-      if ( [[[NSUserDefaults standardUserDefaults] objectForKey:@"userIndex"] integerValue] ) {
-        if([[self.users content] count]){
-
-          self.userIndex = [[NSUserDefaults standardUserDefaults] integerForKey:@"userIndex"];
-          self.currentUser = [[users arrangedObjects] objectAtIndex:  [[[NSUserDefaults standardUserDefaults] objectForKey:@"userIndex"] integerValue]];
-        }
-        else {
-          self.currentUser = nil;
-        }
+      if ( [[[NSUserDefaults standardUserDefaults] objectForKey:@"assignedToUserIndex"] integerValue] ) {
+        self.assignedToUserIndex = [[NSUserDefaults standardUserDefaults] integerForKey:@"assignedToUserIndex"];
+        self.currentAssignedToUser = [[users arrangedObjects] objectAtIndex:  [[[NSUserDefaults standardUserDefaults] objectForKey:@"assignedToUserIndex"] integerValue]];
       }
     }
   }];  
 }
 
+// this would break the get/setters if the naming convetion stayed
+- (void) getProjectsTickets {
+  NSString *url = [NSString stringWithFormat:@"http://%@/projects/%@/tickets.xml?q=state:open&_token=%@", self.serverAddress, self.currentProject.identifier , self.APIKey]; 
+  [Seriously get:url handler:^(id body, NSHTTPURLResponse *response, NSError *error) {
+    if (error) {
+      NSLog(@"Error: %@", error);
+      [self networkErrorSheet:[error localizedDescription]];
+    }
+    else {
+      NSXMLDocument * doc = [[NSXMLDocument alloc] initWithXMLString:body options:0 error:&error];
+      NSArray *children = [[doc rootElement] children];
+      NSMutableArray * tempTickets = [NSMutableArray array];
+      int i, count = [children count];
+      for (i=0; i < count; i++) { 
+        NSXMLElement *ticketXML = [children objectAtIndex:i];
+        Ticket *t = [Ticket ticketWithXMLElement:ticketXML];
+        [tempTickets addObject:t];
+      }        
+      [tickets setContent:tempTickets];
+    }
+  }];
+}
 
 - (void) createEntitiesWithXML:(NSString *) xml toArrayController:(NSArrayController*)controller {
   NSMutableArray *tempMembers = [NSMutableArray array];
@@ -233,7 +226,7 @@
   }
   
   NSString *XML = [NSString stringWithFormat:@"<ticket><title>%@</title><body>%@</body><tag>%@</tag>%@<assigned-user-id>%@</assigned-user-id></ticket>", 
-                   ticket.title, ticket.body, ticket.tags, milestoneString, currentUser.identifier];
+                   ticket.title, ticket.body, ticket.tags, milestoneString, currentAssignedToUser.identifier];
   
   NSLog(@"XML %@", XML);
   
@@ -274,9 +267,8 @@
    
 }
 
-+ (NSSet *)keyPathsForValuesAffectingStatus
-{
-  return [NSSet setWithObjects:@"currentUser", @"currentMilestone", @"currentProject", nil];
++ (NSSet *)keyPathsForValuesAffectingStatus {
+  return [NSSet setWithObjects:@"currentAssignedToUser", @"currentMilestone", @"currentProject", nil];
 }
 
 
@@ -284,7 +276,7 @@
   NSString * milestone = self.currentMilestone.name;
   if(milestone == nil) milestone = @"no milestone";
   
-  return [NSString stringWithFormat:@"Posting to %@, assigning to %@ on %@", self.currentProject.name, self.currentUser.name, milestone];
+  return [NSString stringWithFormat:@"Posting to %@, assigning to %@ on %@", self.currentProject.name, self.currentAssignedToUser.name, milestone];
 }
 
 - (void)dealloc {
