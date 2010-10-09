@@ -269,6 +269,7 @@
 								<string>60554E4B124291B50071A103</string>
 								<string>607F5F6A12427E51003BC2E8</string>
 								<string>609661F112466BE4006C7E28</string>
+								<string>60966051124551D7006C7E28</string>
 								<string>607F5F6B12427E51003BC2E8</string>
 								<string>607F5F7812427E51003BC2E8</string>
 								<string>607F5F6C12427E51003BC2E8</string>
@@ -280,14 +281,14 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>9</integer>
-									<integer>6</integer>
-									<integer>3</integer>
+									<integer>28</integer>
+									<integer>26</integer>
+									<integer>16</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 0}, {294, 805}}</string>
+							<string>{{0, 35}, {294, 805}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -306,7 +307,7 @@
 							<real>294</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>1541 -93 1619 864 1440 -180 1920 1080 </string>
+						<string>2097 -72 1619 864 1440 -180 1920 1080 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -324,7 +325,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>LighthouseController.h</string>
+								<string>Seriously.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -332,18 +333,15 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>LighthouseController.h</string>
+										<string>Seriously.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>604A5DD812611B8400705440</string>
+										<string>604A5E151261213400705440</string>
 										<key>history</key>
 										<array>
 											<string>609660B112455392006C7E28</string>
 											<string>609660B212455392006C7E28</string>
-											<string>609660B312455392006C7E28</string>
-											<string>6096611812455C3E006C7E28</string>
-											<string>6096611912455C3E006C7E28</string>
 											<string>604513AC125CDBD5009D0824</string>
 											<string>604A5C341260C71300705440</string>
 											<string>604A5C351260C71300705440</string>
@@ -368,8 +366,11 @@
 											<string>604A5DC8126118CD00705440</string>
 											<string>604A5DD412611A6C00705440</string>
 											<string>604A5DD612611B8400705440</string>
-											<string>604A5DD712611B8400705440</string>
-											<string>604A5C5B1260D2BF00705440</string>
+											<string>604A5DDB12611C2800705440</string>
+											<string>604A5DE612611D1900705440</string>
+											<string>604A5E0112611FE900705440</string>
+											<string>604A5E0D126120F000705440</string>
+											<string>604A5E0E126120F000705440</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -383,7 +384,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {1303, 818}}</string>
 								<key>RubberWindowFrame</key>
-								<string>1541 -93 1619 864 1440 -180 1920 1080 </string>
+								<string>2097 -72 1619 864 1440 -180 1920 1080 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -403,7 +404,7 @@
 								<key>Frame</key>
 								<string>{{0, 823}, {1303, 0}}</string>
 								<key>RubberWindowFrame</key>
-								<string>1541 -93 1619 864 1440 -180 1920 1080 </string>
+								<string>2097 -72 1619 864 1440 -180 1920 1080 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -567,6 +568,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>604A5E161261213400705440</string>
 		<string>1C530D57069F1CE1000CFCEE</string>
 		<string>607DB3D91243C1FC001CCF9F</string>
 		<string>604A5B911260AE8D00705440</string>
@@ -578,7 +580,7 @@
 		<string>/Users/orta/spiel/cocoa/tickifier/Tickifier.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>1541 -93 1619 864 1440 -180 1920 1080 </string>
+	<string>2097 -72 1619 864 1440 -180 1920 1080 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
@@ -599,7 +601,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>TickifierAppDelegate.m</string>
+								<string>LighthouseController.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -812,6 +814,8 @@
 							<key>Dock</key>
 							<array>
 								<dict>
+									<key>BecomeActive</key>
+									<true/>
 									<key>ContentConfiguration</key>
 									<dict>
 										<key>PBXProjectModuleGUID</key>
@@ -838,8 +842,6 @@
 							<string>212pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -918,7 +920,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {1168, 386}}</string>
 								<key>RubberWindowFrame</key>
-								<string>193 319 1168 427 0 0 1440 878 </string>
+								<string>1561 130 1168 427 1440 -180 1920 1080 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXDebugCLIModule</string>
@@ -947,7 +949,7 @@
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.consoleV3</string>
 			<key>WindowString</key>
-			<string>193 319 1168 427 0 0 1440 878 </string>
+			<string>1561 130 1168 427 1440 -180 1920 1080 </string>
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>

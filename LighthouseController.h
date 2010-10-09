@@ -75,5 +75,6 @@
 - (void) createEntitiesWithXML:(NSString *) xml toArrayController:(NSArrayController*)controller;
 
 - (void) createNewTicket: (Ticket *)ticket;
+- (void) resolveTicket: (Ticket *)ticket;
 
 @end

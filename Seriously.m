@@ -26,14 +26,9 @@ const NSString *kSeriouslyProgressHandler = @"kSeriouslyProgressHandler";
     
     [request setCachePolicy:cachePolicy];
     [request setTimeoutInterval:timeout];
-    [request setHTTPMethod:[[options objectForKey:kSeriouslyMethod] uppercaseString]];
-    [request setTimeoutInterval:[[options objectForKey:kSeriouslyTimeout] doubleValue]];
-    [request setAllHTTPHeaderFields:[options objectForKey:kSeriouslyHeaders]];
-    
-    if ([[request HTTPMethod] isEqual:@"POST"] || [[request HTTPMethod] isEqual:@"PUT"]) {
-        [request setHTTPBody:[options objectForKey:kSeriouslyBody]];
-    }
-
+  
+  //Removed bits I dont need that are a bit too ruby-like for me
+  
     NSLog(@"(%@) %@", [request HTTPMethod], [request URL]);
     
     SeriouslyProgressHandler progressHandler = [options objectForKey:kSeriouslyProgressHandler];

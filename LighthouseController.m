@@ -213,10 +213,34 @@
 }
 
 - (IBAction) submit:(id)sender {
-  [self submitTicket:currentTicket]; 
+  [self createNewTicket:currentTicket]; 
 }
 
--(void) submitTicket: (Ticket *)ticket {
+- (void) resolveTicket: (Ticket *)ticket{
+  NSLog(@"Resolving ticket %@", ticket.title);
+
+  NSString *url = [self addressAt: [NSString stringWithFormat:@"projects/%@/tickets/%@.xml", self.currentProject.identifier, ticket.identifier]];
+  NSString *XML = @"<ticket><state>resolved</state></ticket>";
+
+  NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:url]];
+  [urlRequest setHTTPMethod:@"PUT"];
+  [urlRequest setValue:@"text/xml" forHTTPHeaderField:@"Content-type"];
+  [urlRequest setHTTPBody:[XML dataUsingEncoding:NSUTF8StringEncoding]];
+  
+  [Seriously request:urlRequest options:nil handler:^(id body, NSHTTPURLResponse *response, NSError *error) {
+    if (error) {
+      NSLog(@"Error: %@", error);
+      [self networkErrorSheet:[error localizedDescription]];
+    }else{
+      [self getProjectsTickets];
+    }
+  }];
+  
+   
+  
+}
+
+-(void) createNewTicket: (Ticket *)ticket {
   
   NSString *url = [self addressAt: [NSString stringWithFormat:@"projects/%@/tickets.xml", self.currentProject.identifier]];
   
@@ -232,6 +256,8 @@
   [urlRequest setHTTPMethod:@"POST"];
   [urlRequest setValue:@"text/xml" forHTTPHeaderField:@"Content-type"];
   [urlRequest setHTTPBody:[XML dataUsingEncoding:NSUTF8StringEncoding]];
+  
+  
   
   NSURLConnection *connectionResponse = [[NSURLConnection alloc]  initWithRequest:urlRequest delegate:self];
 
