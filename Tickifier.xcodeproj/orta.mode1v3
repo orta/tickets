@@ -281,7 +281,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>10</integer>
+									<integer>14</integer>
+									<integer>11</integer>
 									<integer>8</integer>
 									<integer>0</integer>
 								</array>
@@ -306,7 +307,7 @@
 							<real>294</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>1457 29 1619 864 1440 -180 1920 1080 </string>
+						<string>1511 -118 1619 864 1440 -180 1920 1080 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -324,7 +325,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>TickifierAppDelegate.h</string>
+								<string>LighthouseController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -332,11 +333,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>TickifierAppDelegate.h</string>
+										<string>LighthouseController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>604A5C781260D78200705440</string>
+										<string>604A5CAB1260E7C700705440</string>
 										<key>history</key>
 										<array>
 											<string>609660B112455392006C7E28</string>
@@ -347,18 +348,18 @@
 											<string>604513AC125CDBD5009D0824</string>
 											<string>604513AD125CDBD5009D0824</string>
 											<string>604513AE125CDBD5009D0824</string>
-											<string>604A5BEC1260B8A400705440</string>
 											<string>604A5C341260C71300705440</string>
 											<string>604A5C351260C71300705440</string>
-											<string>604A5C361260C71300705440</string>
 											<string>604A5C5B1260D2BF00705440</string>
 											<string>604A5C5C1260D2BF00705440</string>
 											<string>604A5C5D1260D2BF00705440</string>
 											<string>604A5C5E1260D2BF00705440</string>
 											<string>604A5C5F1260D2BF00705440</string>
-											<string>604A5C601260D2BF00705440</string>
 											<string>604A5C611260D2BF00705440</string>
-											<string>604A5C621260D2BF00705440</string>
+											<string>604A5C821260DA2B00705440</string>
+											<string>604A5C871260DA5A00705440</string>
+											<string>604A5C881260DA5A00705440</string>
+											<string>604A5C601260D2BF00705440</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -372,7 +373,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {1303, 597}}</string>
 								<key>RubberWindowFrame</key>
-								<string>1457 29 1619 864 1440 -180 1920 1080 </string>
+								<string>1511 -118 1619 864 1440 -180 1920 1080 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -392,7 +393,7 @@
 								<key>Frame</key>
 								<string>{{0, 602}, {1303, 221}}</string>
 								<key>RubberWindowFrame</key>
-								<string>1457 29 1619 864 1440 -180 1920 1080 </string>
+								<string>1511 -118 1619 864 1440 -180 1920 1080 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -556,19 +557,19 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>604A5C791260D78200705440</string>
+		<string>604A5CAC1260E7C700705440</string>
 		<string>1C530D57069F1CE1000CFCEE</string>
 		<string>607DB3D91243C1FC001CCF9F</string>
 		<string>604A5B911260AE8D00705440</string>
 		<string>604A5B071260A20500705440</string>
 		<string>604A5B081260A20500705440</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>60554E3212428FF40071A103</string>
+		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/orta/spiel/cocoa/tickifier/Tickifier.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>1457 29 1619 864 1440 -180 1920 1080 </string>
+	<string>1511 -118 1619 864 1440 -180 1920 1080 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
@@ -941,7 +942,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>Identifier</key>

@@ -23,6 +23,5 @@
 @property (retain) NSString *identifier;
 @property (retain) NSString *url;
 
-
 + (Ticket *) ticketWithXMLElement: (NSXMLElement *) element;
 @end

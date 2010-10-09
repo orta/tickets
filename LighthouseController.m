@@ -137,7 +137,8 @@
 
 // this would break the get/setters if the naming convetion stayed
 - (void) getProjectsTickets {
-  NSString *url = [NSString stringWithFormat:@"http://%@/projects/%@/tickets.xml?q=state:open&responsible:me&_token=%@", self.serverAddress, self.currentProject.identifier , self.APIKey]; 
+  NSString *url = [NSString stringWithFormat:@"http://%@/projects/%@/tickets.xml?q=state:open responsible:me&_token=%@", self.serverAddress, self.currentProject.identifier , self.APIKey]; 
+  url = [url stringByAddingPercentEscapesUsingEncoding:NSASCIIStringEncoding];
   [Seriously get:url handler:^(id body, NSHTTPURLResponse *response, NSError *error) {
     if (error) {
       NSLog(@"Error: %@", error);
@@ -206,7 +207,7 @@
   NSAlert *alert = [[[NSAlert alloc] init] autorelease];
   [alert addButtonWithTitle:@"OK"];
   [alert setMessageText:[NSString stringWithFormat:@"Network Error : %@", errorString]];
-  [alert setInformativeText:@"We."];
+  [alert setInformativeText:@"Oh noes! This is a problem, you're probably offline. Better to wait."];
   [alert setAlertStyle:NSWarningAlertStyle];
   [alert beginSheetModalForWindow:ticketWindow modalDelegate:self didEndSelector:nil contextInfo:nil];
 }
