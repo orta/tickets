@@ -264,7 +264,6 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateExpansionKey</key>
 							<array>
 								<string>607F5F6212427E50003BC2E8</string>
-								<string>60451333125CDB9D009D0824</string>
 								<string>607F5F6912427E51003BC2E8</string>
 								<string>60554E64124291E90071A103</string>
 								<string>60554E4B124291B50071A103</string>
@@ -281,8 +280,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>10</integer>
-									<integer>8</integer>
+									<integer>5</integer>
+									<integer>3</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -324,7 +323,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>TickifierAppDelegate.m</string>
+								<string>TickifierAppDelegate.h</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -332,11 +331,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>TickifierAppDelegate.m</string>
+										<string>TickifierAppDelegate.h</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>604A5D8B1261047900705440</string>
+										<string>604A5D8E1261088C00705440</string>
 										<key>history</key>
 										<array>
 											<string>609660B112455392006C7E28</string>
@@ -360,8 +359,8 @@
 											<string>604A5D131260F2CE00705440</string>
 											<string>604A5D271260F52300705440</string>
 											<string>604A5D281260F52300705440</string>
+											<string>604A5D8D1261088C00705440</string>
 											<string>604A5D541260FA9400705440</string>
-											<string>604A5D551260FA9400705440</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>

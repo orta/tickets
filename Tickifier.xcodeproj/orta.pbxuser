@@ -1699,7 +1699,7 @@
 		fRef = 607F5F8312427E51003BC2E8 /* TickifierAppDelegate.h */;
 		name = "TickifierAppDelegate.h: 26";
 		rLen = 0;
-		rLoc = 1161;
+		rLoc = 1124;
 		rType = 0;
 		vrLen = 612;
 		vrLoc = 0;
@@ -2187,7 +2187,7 @@
 		fRef = 607F5F8312427E51003BC2E8 /* TickifierAppDelegate.h */;
 		name = "TickifierAppDelegate.h: 28";
 		rLen = 0;
-		rLoc = 926;
+		rLoc = 889;
 		rType = 0;
 		vrLen = 893;
 		vrLoc = 0;
@@ -2314,7 +2314,7 @@
 		fRef = 607F5F8312427E51003BC2E8 /* TickifierAppDelegate.h */;
 		name = "TickifierAppDelegate.h: 27";
 		rLen = 0;
-		rLoc = 741;
+		rLoc = 705;
 		rType = 0;
 		vrLen = 1005;
 		vrLoc = 0;
@@ -2384,7 +2384,7 @@
 		fRef = 607F5F8312427E51003BC2E8 /* TickifierAppDelegate.h */;
 		name = "TickifierAppDelegate.h: 35";
 		rLen = 0;
-		rLoc = 1012;
+		rLoc = 975;
 		rType = 0;
 		vrLen = 1077;
 		vrLoc = 0;
@@ -2394,7 +2394,7 @@
 		fRef = 607F5F8312427E51003BC2E8 /* TickifierAppDelegate.h */;
 		name = "TickifierAppDelegate.h: 36";
 		rLen = 0;
-		rLoc = 978;
+		rLoc = 941;
 		rType = 0;
 		vrLen = 1128;
 		vrLoc = 0;
@@ -2404,7 +2404,7 @@
 		fRef = 607F5F8312427E51003BC2E8 /* TickifierAppDelegate.h */;
 		name = "TickifierAppDelegate.h: 36";
 		rLen = 0;
-		rLoc = 978;
+		rLoc = 941;
 		rType = 0;
 		vrLen = 1128;
 		vrLoc = 0;
@@ -2493,7 +2493,7 @@
 		fRef = 607F5F8312427E51003BC2E8 /* TickifierAppDelegate.h */;
 		name = "TickifierAppDelegate.h: 33";
 		rLen = 0;
-		rLoc = 926;
+		rLoc = 889;
 		rType = 0;
 		vrLen = 1161;
 		vrLoc = 0;
@@ -2646,6 +2646,26 @@
 		rLoc = 604;
 		rType = 0;
 		vrLen = 2456;
+		vrLoc = 0;
+	};
+	604A5D8D1261088C00705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F8412427E51003BC2E8 /* TickifierAppDelegate.m */;
+		name = "TickifierAppDelegate.m: 145";
+		rLen = 0;
+		rLoc = 5283;
+		rType = 0;
+		vrLen = 1982;
+		vrLoc = 4667;
+	};
+	604A5D8E1261088C00705440 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F8312427E51003BC2E8 /* TickifierAppDelegate.h */;
+		name = "TickifierAppDelegate.h: 26";
+		rLen = 0;
+		rLoc = 705;
+		rType = 0;
+		vrLen = 1124;
 		vrLoc = 0;
 	};
 	60554DDD12428F870071A103 /* Tickifier */ = {
@@ -3085,6 +3105,8 @@
 			604A5D831261043600705440 /* PBXTextBookmark */ = 604A5D831261043600705440 /* PBXTextBookmark */;
 			604A5D871261046B00705440 /* PBXTextBookmark */ = 604A5D871261046B00705440 /* PBXTextBookmark */;
 			604A5D8B1261047900705440 /* PBXTextBookmark */ = 604A5D8B1261047900705440 /* PBXTextBookmark */;
+			604A5D8D1261088C00705440 /* PBXTextBookmark */ = 604A5D8D1261088C00705440 /* PBXTextBookmark */;
+			604A5D8E1261088C00705440 /* PBXTextBookmark */ = 604A5D8E1261088C00705440 /* PBXTextBookmark */;
 			609660B112455392006C7E28 = 609660B112455392006C7E28 /* PBXTextBookmark */;
 			609660B212455392006C7E28 = 609660B212455392006C7E28 /* PBXTextBookmark */;
 			609660B312455392006C7E28 = 609660B312455392006C7E28 /* PBXTextBookmark */;
@@ -3119,16 +3141,16 @@
 	607F5F8312427E51003BC2E8 /* TickifierAppDelegate.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1242, 763}}";
-			sepNavSelRange = "{926, 0}";
-			sepNavVisRange = "{0, 1161}";
+			sepNavSelRange = "{705, 0}";
+			sepNavVisRange = "{0, 1124}";
 			sepNavWindowFrame = "{{15, 4}, {1285, 625}}";
 		};
 	};
 	607F5F8412427E51003BC2E8 /* TickifierAppDelegate.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1356, 2314}}";
-			sepNavSelRange = "{604, 0}";
-			sepNavVisRange = "{0, 2456}";
+			sepNavIntBoundsRect = "{{0, 0}, {1356, 2379}}";
+			sepNavSelRange = "{5283, 0}";
+			sepNavVisRange = "{4667, 1982}";
 		};
 	};
 	607F5F9812428390003BC2E8 /* LighthouseController.h */ = {

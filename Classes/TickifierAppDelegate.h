@@ -23,8 +23,6 @@
   
   NSString* previouslyActiveAppPath;
   NSNumber* previouslyActiveAppPID;
-  id      runningApplicationClass_;
-
 }
 
 - (IBAction)toggleNewTicketHotKey:(id)sender;
