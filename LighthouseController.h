@@ -73,6 +73,7 @@
 
 - (NSString*) addressAt:(NSString*) postfix;
 - (void) createEntitiesWithXML:(NSString *) xml toArrayController:(NSArrayController*)controller;
-- (void) submitTicket: (Ticket *)ticket;
+
+- (void) createNewTicket: (Ticket *)ticket;
 
 @end

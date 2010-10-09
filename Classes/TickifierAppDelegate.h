@@ -23,7 +23,7 @@
   
   NSString* previouslyActiveAppPath;
   NSNumber* previouslyActiveAppPID;
-}
+ }
 
 - (IBAction)toggleNewTicketHotKey:(id)sender;
 - (IBAction)toggleListTicketsHotKey:(id)sender;

@@ -263,6 +263,7 @@
    
 }
 
+
 + (NSSet *)keyPathsForValuesAffectingStatus {
   return [NSSet setWithObjects:@"currentAssignedToUser", @"currentMilestone", @"currentProject", nil];
 }
