@@ -16,6 +16,8 @@
 		604A5DBB1261170800705440 /* icon-ok-hover.png in Resources */ = {isa = PBXBuildFile; fileRef = 604A5DB51261170800705440 /* icon-ok-hover.png */; };
 		604A5DBC1261170800705440 /* icon-ok.png in Resources */ = {isa = PBXBuildFile; fileRef = 604A5DB61261170800705440 /* icon-ok.png */; };
 		604A5DBE1261189F00705440 /* key-labels.png in Resources */ = {isa = PBXBuildFile; fileRef = 604A5DBD1261189F00705440 /* key-labels.png */; };
+		604A5E611263419500705440 /* BWToolkitFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60451588125CF921009D0824 /* BWToolkitFramework.framework */; };
+		604A5E64126341A000705440 /* BWToolkitFramework.framework in Move Frameworks */ = {isa = PBXBuildFile; fileRef = 60451588125CF921009D0824 /* BWToolkitFramework.framework */; };
 		60554E2F12428FEE0071A103 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 60554E2E12428FED0071A103 /* libz.dylib */; };
 		60554E4A124291B20071A103 /* Ticket.m in Sources */ = {isa = PBXBuildFile; fileRef = 60554E49124291B20071A103 /* Ticket.m */; };
 		60554EBE124368B40071A103 /* LighthouseEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 60554EBD124368B40071A103 /* LighthouseEntity.m */; };
@@ -114,6 +116,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				604A5E64126341A000705440 /* BWToolkitFramework.framework in Move Frameworks */,
 				604513A5125CDBCF009D0824 /* ShortcutRecorder.framework in Move Frameworks */,
 			);
 			name = "Move Frameworks";
@@ -176,6 +179,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				604A5E611263419500705440 /* BWToolkitFramework.framework in Frameworks */,
 				604513A4125CDBCB009D0824 /* ShortcutRecorder.framework in Frameworks */,
 				607F5FDD12428852003BC2E8 /* SystemConfiguration.framework in Frameworks */,
 				607F5FDA12428816003BC2E8 /* Security.framework in Frameworks */,

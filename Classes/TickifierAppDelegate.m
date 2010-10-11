@@ -155,7 +155,6 @@
     frame.origin.x = screenRect.origin.x - NSWidth(frame) + round(offset*NSWidth(frame));
 //  }
   [win setFrame:frame display:YES];
-  NSLog(@"set frame %f", frame.origin.x );
 }
 
 //more thanks to visor, removing 10.5 greatly simplified this

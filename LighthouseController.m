@@ -216,12 +216,12 @@
   [self createNewTicket:currentTicket]; 
 }
 
-- (void) resolveTicket: (Ticket *)ticket{
+- (void) resolveTicket: (Ticket *)ticket {
   NSString *XML = @"<ticket><state>resolved</state></ticket>";
   [self updateTicket:ticket withXML:XML];
 }
 
-- (void) invalidateTicket: (Ticket *)ticket{
+- (void) invalidateTicket: (Ticket *)ticket {
   NSString *XML = @"<ticket><state>invalid</state></ticket>";
   [self updateTicket:ticket withXML:XML];
 }
