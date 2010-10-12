@@ -11,6 +11,27 @@
 
 @implementation LighthouseServer
 
-@synthesize url, APICode;
+@synthesize url, APIKey;
+
+- (id)copyWithZone:(NSZone *)aZone {
+  LighthouseServer*   result = [[self class] allocWithZone:aZone]; 
+  result.url = self.url;
+  result.APIKey = self.APIKey;
+  return result;
+}  
+
+- (void)encodeWithCoder: (NSCoder *)coder {
+  [coder encodeObject: [self url] forKey: @"url"];
+  [coder encodeObject: [self APIKey] forKey: @"APIKey"];
+}
+
+- (id)initWithCoder: (NSCoder *)coder {
+  if((self = [self init]))
+   {
+    self.url = [coder decodeObjectForKey: @"url"];
+    self.APIKey = [coder decodeObjectForKey: @"APIKey"];
+   }
+  return self;
+}
 
 @end

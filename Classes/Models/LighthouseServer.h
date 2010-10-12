@@ -9,10 +9,13 @@
 #import <Cocoa/Cocoa.h>
 
 
-@interface LighthouseServer : NSObject {
+@interface LighthouseServer : NSObject <NSCoding>{
   NSString *url;
-  NSString *APICode;
+  NSString *APIKey;
 }
 @property (retain) NSString *url;
-@property (retain) NSString *APICode;
+@property (retain) NSString *APIKey;
+
+- (id) copyWithZone:(NSZone *)aZone;
+
 @end

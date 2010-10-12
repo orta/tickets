@@ -9,13 +9,14 @@
 #import <Cocoa/Cocoa.h>
 #import "LighthouseEntity.h"
 #import "Ticket.h"
+#import "LighthouseServer.h"
 
 @interface LighthouseController : NSObject {
   
   IBOutlet NSWindow *ticketWindow;
   IBOutlet NSTextField * passwordField;
-  NSString *serverAddress;
-  NSString *APIKey;
+  
+  LighthouseServer *currentServer;
   
   LighthouseEntity *currentProject;
   LighthouseEntity *currentMilestone;
@@ -23,6 +24,7 @@
 
   Ticket *currentTicket;
   
+  IBOutlet NSArrayController *servers;
   IBOutlet NSArrayController *projects;
   IBOutlet NSArrayController *milestones;
   IBOutlet NSArrayController *users;
@@ -36,14 +38,10 @@
 	NSMutableData *payload;
 }
 
-@property (retain) NSString *APIKey;
-@property (retain) NSString *serverAddress;
-
 @property (retain) NSArrayController *projects;
 @property (retain) NSArrayController *milestones;
 @property (retain) NSArrayController *users;
 @property (retain) NSArrayController *tickets;
-
 
 @property (retain) Ticket *currentTicket;
 
@@ -51,6 +49,7 @@
 @property (retain) LighthouseEntity *currentMilestone;
 @property (retain) LighthouseEntity *currentAssignedToUser;
 
+@property (retain) LighthouseServer *currentServer;
 
 @property () NSInteger projectIndex;
 @property () NSInteger milestoneIndex;
@@ -68,6 +67,8 @@
 - (void) getMilestones;
 - (void) getUsers;
 
+-(IBAction) addServer:(id)sender;
+- (void) getCachedServers;
 - (void) networkErrorSheet:(NSString *) errorString;
 
 - (NSString*) addressAt:(NSString*) postfix;
@@ -78,4 +79,6 @@
 - (void) invalidateTicket: (Ticket *)ticket;
 - (void) updateTicket:(Ticket *)ticket withXML:(NSString*)XML;
 
+// remove em when ypu're not coding past midnight
+- (NSString *) pathForDataFile;
 @end

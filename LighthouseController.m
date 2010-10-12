@@ -11,41 +11,77 @@
 
 @implementation LighthouseController
 
-@synthesize serverAddress, APIKey;
-
 @synthesize currentProject, projects, currentMilestone, milestones, currentAssignedToUser, users, currentTicket;
-@synthesize projectIndex, milestoneIndex, assignedToUserIndex, tickets;
+@synthesize currentServer, projectIndex, milestoneIndex, assignedToUserIndex, tickets;
 @synthesize status;
 
 - (void)awakeFromNib {
-  
-  [self bind:@"serverAddress"
-    toObject:[NSUserDefaultsController sharedUserDefaultsController]
- withKeyPath:@"values.server_address"
-     options:[NSDictionary dictionaryWithObject:[NSNumber numberWithBool:YES]
-                                         forKey:@"NSContinuouslyUpdatesValue"]];
-  
-  [self bind:@"APIKey"
-    toObject:[NSUserDefaultsController sharedUserDefaultsController]
- withKeyPath:@"values.api_key"
-     options:[NSDictionary dictionaryWithObject:[NSNumber numberWithBool:YES]
-                                         forKey:@"NSContinuouslyUpdatesValue"]];
+  [self getCachedServers];
   
 	NSSortDescriptor *descriptor = [[NSSortDescriptor alloc] initWithKey:@"name" ascending:YES selector:@selector(caseInsensitiveCompare:)];
 	[projects setSortDescriptors:[NSArray arrayWithObject:descriptor]];
 	[milestones setSortDescriptors:[NSArray arrayWithObject:descriptor]];
 	[users setSortDescriptors:[NSArray arrayWithObject:descriptor]];
 
-  if (self.serverAddress && self.APIKey) {    
+  if (self.currentServer.url && self.currentServer.APIKey) {    
     [self getProjects];
   }
   
   self.currentTicket = [[Ticket alloc] init];
-  
 }
 
+- (void) getCachedServers{
+  // get our servers
+  NSString * path = [self pathForDataFile];
+  NSDictionary * rootObject;
+  
+  rootObject = [NSKeyedUnarchiver unarchiveObjectWithFile:path];    
+  [servers setContent: [rootObject valueForKey:@"servers"]];
+  if([servers content] == nil){
+    [self addServer:self];
+  }
+  
+  for (LighthouseServer *server in [servers content]) {
+    [server addObserver:self forKeyPath:@"self.url" options:0 context:@""];
+    [server addObserver:self forKeyPath:@"self.APIKey" options:0 context:@""];
+  }
+  
+  NSString * currentURL = [[NSUserDefaults standardUserDefaults] stringForKey:@"currentURL"];
+  for (LighthouseServer *server in [servers content]) {
+    if ([server.url isEqualToString: currentURL  ]) {
+      self.currentServer = server;
+      break;
+    }
+  }  
+}
+
+-(IBAction) addServer:(id)sender {
+  LighthouseServer * newServer = [[LighthouseServer alloc] init];
+  newServer.url = @"example.lighthouseapp.com";
+  [servers setContent:[[servers content] arrayByAddingObject:newServer]];
+  self.currentServer = newServer;
+  [newServer addObserver:self forKeyPath:@"self.url" options:0 context:@""];
+  [newServer addObserver:self forKeyPath:@"self.APIKey" options:0 context:@""];
+}
+
+- (void)observeValueForKeyPath:(NSString *)keyPath
+                      ofObject:(id)object
+                        change:(NSDictionary *)change
+                       context:(void *)context {
+  NSLog(@"saving servers");
+  
+  NSString * path = [self pathForDataFile];
+  
+  NSMutableDictionary * rootObject;
+  rootObject = [NSMutableDictionary dictionary];
+  
+  [rootObject setValue: [servers content] forKey:@"servers"];
+  [NSKeyedArchiver archiveRootObject: rootObject toFile: path];
+}
+
+
 - (NSString*) addressAt:(NSString*) postfix {
-  return [NSString stringWithFormat:@"http://%@/%@?_token=%@", self.serverAddress, postfix, self.APIKey]; 
+  return [NSString stringWithFormat:@"http://%@/%@?_token=%@", self.currentServer.url, postfix, self.currentServer.APIKey]; 
 }
 
 - (IBAction) projectSelected:(id)sender {
@@ -137,7 +173,7 @@
 
 // this would break the get/setters if the naming convetion stayed
 - (void) getProjectsTickets {
-  NSString *url = [NSString stringWithFormat:@"http://%@/projects/%@/tickets.xml?q=state:open responsible:me&_token=%@", self.serverAddress, self.currentProject.identifier , self.APIKey]; 
+  NSString *url = [NSString stringWithFormat:@"http://%@/projects/%@/tickets.xml?q=state:open responsible:me&_token=%@", self.currentServer.url, self.currentProject.identifier , self.currentServer.APIKey]; 
   url = [url stringByAddingPercentEscapesUsingEncoding:NSASCIIStringEncoding];
   [Seriously get:url handler:^(id body, NSHTTPURLResponse *response, NSError *error) {
     if (error) {
@@ -267,7 +303,7 @@
       NSLog(@"Error: %@", error);
       [self networkErrorSheet:[error localizedDescription]];
     }else{
-      NSString *content = [NSString stringWithUTF8String:[payload bytes]];
+   //   NSString *content = [NSString stringWithUTF8String:[payload bytes]];
       currentTicket.body = @"";
       currentTicket.tags = @"";
       currentTicket.title= @"";
@@ -288,8 +324,20 @@
   return [NSString stringWithFormat:@"Posting to %@, assigning to %@ on %@", self.currentProject.name, self.currentAssignedToUser.name, milestone];
 }
 
-- (void)dealloc {
-    [super dealloc];
+
+- (NSString *) pathForDataFile {
+  NSFileManager *fileManager = [NSFileManager defaultManager];
+  
+  NSString *folder = @"~/Library/Application Support/tickets/";
+  folder = [folder stringByExpandingTildeInPath];
+  
+  if ([fileManager fileExistsAtPath: folder] == NO) {
+    NSError *error;
+    [fileManager createDirectoryAtPath:folder withIntermediateDirectories:YES attributes:nil error:&error];
+   }
+  
+  NSString *fileName = @"servers.plist";
+  return [folder stringByAppendingPathComponent: fileName];    
 }
 
 @end
