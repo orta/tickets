@@ -15,7 +15,7 @@
                                                name:@"NSViewFrameDidChangeNotification" object:self];
 }
 
-// This gets called 
+// This gets called pretty often I think, but it's where the scroller gets its layout from
 - (void) handleFrameDidChange:( NSNotification* ) note
 {  
   NSRect frame = [_vScroller frame];

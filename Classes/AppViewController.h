@@ -16,6 +16,7 @@
   IBOutlet NSWindow *ticketWindow;
   IBOutlet NSView *accessoryView;
   
+//  IBOutlet AMCollectionView *ticketCollectionView;
   Boolean fullView;
 }
 
