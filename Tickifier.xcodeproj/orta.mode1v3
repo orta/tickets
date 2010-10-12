@@ -216,7 +216,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>60E8A676126526EF004D1814</string>
+						<string>60E8A6BB12652D28004D1814</string>
 						<key>history</key>
 						<array>
 							<string>60E8A61F12652286004D1814</string>
@@ -376,7 +376,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>60E8A675126526EF004D1814</string>
+										<string>60E8A6BA12652D28004D1814</string>
 										<key>history</key>
 										<array>
 											<string>609660B112455392006C7E28</string>
@@ -422,8 +422,8 @@
 											<string>60E8A5F212652080004D1814</string>
 											<string>60E8A628126522B1004D1814</string>
 											<string>60E8A62E12652318004D1814</string>
-											<string>60E8A64C12652485004D1814</string>
-											<string>60E8A64D12652485004D1814</string>
+											<string>60E8A69C12652C12004D1814</string>
+											<string>60E8A69D12652C12004D1814</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -621,7 +621,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>60E8A677126526EF004D1814</string>
+		<string>60E8A6B912652D11004D1814</string>
 		<string>60E8A5FB12652080004D1814</string>
 		<string>60E8A5FC12652080004D1814</string>
 		<string>1CD10A99069EF8BA00B06720</string>
@@ -970,18 +970,18 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {767, 205}}</string>
+								<string>{{0, 0}, {1034, 199}}</string>
 								<key>RubberWindowFrame</key>
-								<string>97 72 767 246 0 0 1440 878 </string>
+								<string>97 78 1034 240 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXDebugCLIModule</string>
 							<key>Proportion</key>
-							<string>205pt</string>
+							<string>199pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
-					<string>205pt</string>
+					<string>199pt</string>
 				</dict>
 			</array>
 			<key>Name</key>
@@ -1001,7 +1001,7 @@
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.consoleV3</string>
 			<key>WindowString</key>
-			<string>97 72 767 246 0 0 1440 878 </string>
+			<string>97 78 1034 240 0 0 1440 878 </string>
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>

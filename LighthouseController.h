@@ -32,6 +32,7 @@
   NSInteger projectIndex;
   NSInteger milestoneIndex;
   NSInteger assignedToUserIndex;
+  NSInteger serverIndex;
   
   NSString *status;
   
@@ -54,6 +55,7 @@
 @property () NSInteger projectIndex;
 @property () NSInteger milestoneIndex;
 @property () NSInteger assignedToUserIndex;
+@property () NSInteger serverIndex;
 
 @property (retain) NSString *status;
 
@@ -81,4 +83,6 @@
 
 // remove em when ypu're not coding past midnight
 - (NSString *) pathForDataFile;
+- (IBAction)tableViewSelected:(id)sender;
+
 @end

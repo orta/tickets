@@ -12,7 +12,7 @@
 @implementation LighthouseController
 
 @synthesize currentProject, projects, currentMilestone, milestones, currentAssignedToUser, users, currentTicket;
-@synthesize currentServer, projectIndex, milestoneIndex, assignedToUserIndex, tickets;
+@synthesize currentServer, serverIndex, projectIndex, milestoneIndex, assignedToUserIndex, tickets;
 @synthesize status;
 
 - (void)awakeFromNib {
@@ -22,10 +22,6 @@
 	[projects setSortDescriptors:[NSArray arrayWithObject:descriptor]];
 	[milestones setSortDescriptors:[NSArray arrayWithObject:descriptor]];
 	[users setSortDescriptors:[NSArray arrayWithObject:descriptor]];
-
-  if (self.currentServer.url && self.currentServer.APIKey) {    
-    [self getProjects];
-  }
   
   self.currentTicket = [[Ticket alloc] init];
 }
@@ -40,18 +36,20 @@
   if([servers content] == nil){
     [self addServer:self];
   }
-  
+
   for (LighthouseServer *server in [servers content]) {
     [server addObserver:self forKeyPath:@"self.url" options:0 context:@""];
     [server addObserver:self forKeyPath:@"self.APIKey" options:0 context:@""];
   }
-  
+
+  int i = 0;
   NSString * currentURL = [[NSUserDefaults standardUserDefaults] stringForKey:@"currentURL"];
   for (LighthouseServer *server in [servers content]) {
-    if ([server.url isEqualToString: currentURL  ]) {
-      self.currentServer = server;
+    if ([server.url isEqualToString: currentURL ]) {
+      self.serverIndex = i;
       break;
     }
+    i++;
   }  
 }
 
@@ -68,8 +66,6 @@
                       ofObject:(id)object
                         change:(NSDictionary *)change
                        context:(void *)context {
-  NSLog(@"saving servers");
-  
   NSString * path = [self pathForDataFile];
   
   NSMutableDictionary * rootObject;
@@ -324,6 +320,21 @@
   return [NSString stringWithFormat:@"Posting to %@, assigning to %@ on %@", self.currentProject.name, self.currentAssignedToUser.name, milestone];
 }
 
+- (IBAction)tableViewSelected:(id)sender {
+  self.serverIndex = [sender selectedRow];
+
+}
+
+
+-(void) setServerIndex:(NSInteger)index {
+  self.currentServer = [[servers content] objectAtIndex:index];
+  NSLog(@"setting server to %@", self.currentServer.url);
+  serverIndex = index;
+  [[NSUserDefaults standardUserDefaults] setObject:self.currentServer.url forKey:@"currentURL"];
+  if(self.currentServer.url && self.currentServer.APIKey){
+    [self getProjects];
+  }
+}
 
 - (NSString *) pathForDataFile {
   NSFileManager *fileManager = [NSFileManager defaultManager];
