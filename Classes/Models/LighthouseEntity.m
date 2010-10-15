@@ -8,7 +8,6 @@
 
 #import "LighthouseEntity.h"
 
-
 @implementation LighthouseEntity
 
 @synthesize identifier, name;

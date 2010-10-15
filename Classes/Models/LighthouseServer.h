@@ -12,10 +12,16 @@
 @interface LighthouseServer : NSObject <NSCoding>{
   NSString *url;
   NSString *APIKey;
+  
+  int projectIndex;
+  int milestoneIndex;
+  int userIndex;
 }
+
 @property (retain) NSString *url;
 @property (retain) NSString *APIKey;
-
-- (id) copyWithZone:(NSZone *)aZone;
+@property () int projectIndex;
+@property () int milestoneIndex;
+@property () int userIndex;
 
 @end
