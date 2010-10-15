@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		6034C7221263471F0029D2CD /* ORBackwardsScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6034C7211263471F0029D2CD /* ORBackwardsScrollView.m */; };
 		6034C7BC12635BCF0029D2CD /* ORTransparentDarkScroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 6034C7BB12635BCF0029D2CD /* ORTransparentDarkScroller.m */; };
-		6034C7DF126360680029D2CD /* ORTicketView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6034C7DE126360680029D2CD /* ORTicketView.m */; };
 		604513A4125CDBCB009D0824 /* ShortcutRecorder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60451357125CDBA5009D0824 /* ShortcutRecorder.framework */; };
 		604513A5125CDBCF009D0824 /* ShortcutRecorder.framework in Move Frameworks */ = {isa = PBXBuildFile; fileRef = 60451357125CDBA5009D0824 /* ShortcutRecorder.framework */; };
 		604A5DB71261170800705440 /* icon-ok-comment-hover.png in Resources */ = {isa = PBXBuildFile; fileRef = 604A5DB11261170800705440 /* icon-ok-comment-hover.png */; };
@@ -31,7 +30,7 @@
 		607F5F8212427E51003BC2E8 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 607F5F8012427E51003BC2E8 /* Credits.rtf */; };
 		607F5F8512427E51003BC2E8 /* TickifierAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 607F5F8412427E51003BC2E8 /* TickifierAppDelegate.m */; };
 		607F5F97124281BE003BC2E8 /* IDEAS in Resources */ = {isa = PBXBuildFile; fileRef = 607F5F96124281BE003BC2E8 /* IDEAS */; };
-		607F5F9A12428390003BC2E8 /* LighthouseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 607F5F9912428390003BC2E8 /* LighthouseController.m */; };
+		607F5F9A12428390003BC2E8 /* ServerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 607F5F9912428390003BC2E8 /* ServerController.m */; };
 		607F5FDA12428816003BC2E8 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 607F5FD912428816003BC2E8 /* Security.framework */; };
 		607F5FDD12428852003BC2E8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 607F5FDC12428852003BC2E8 /* SystemConfiguration.framework */; };
 		607F5FF512428F07003BC2E8 /* Seriously.m in Sources */ = {isa = PBXBuildFile; fileRef = 607F5FF112428F07003BC2E8 /* Seriously.m */; };
@@ -159,8 +158,6 @@
 		6034C7211263471F0029D2CD /* ORBackwardsScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORBackwardsScrollView.m; sourceTree = "<group>"; };
 		6034C7BA12635BCF0029D2CD /* ORTransparentDarkScroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORTransparentDarkScroller.h; sourceTree = "<group>"; };
 		6034C7BB12635BCF0029D2CD /* ORTransparentDarkScroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORTransparentDarkScroller.m; sourceTree = "<group>"; };
-		6034C7DD126360680029D2CD /* ORTicketView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORTicketView.h; sourceTree = "<group>"; };
-		6034C7DE126360680029D2CD /* ORTicketView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORTicketView.m; sourceTree = "<group>"; };
 		60451333125CDB9D009D0824 /* ShortcutRecorder.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ShortcutRecorder.xcodeproj; path = ext/shortcutrecorder/ShortcutRecorder.xcodeproj; sourceTree = SOURCE_ROOT; };
 		6045157C125CF921009D0824 /* BWToolkit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BWToolkit.xcodeproj; path = ext/bwtoolkit/BWToolkit.xcodeproj; sourceTree = "<group>"; };
 		604A5DB11261170800705440 /* icon-ok-comment-hover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-ok-comment-hover.png"; path = "resources/icon-ok-comment-hover.png"; sourceTree = "<group>"; };
@@ -186,8 +183,8 @@
 		607F5F8312427E51003BC2E8 /* TickifierAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TickifierAppDelegate.h; sourceTree = "<group>"; };
 		607F5F8412427E51003BC2E8 /* TickifierAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TickifierAppDelegate.m; sourceTree = "<group>"; };
 		607F5F96124281BE003BC2E8 /* IDEAS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = IDEAS; sourceTree = "<group>"; };
-		607F5F9812428390003BC2E8 /* LighthouseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LighthouseController.h; path = ../../LighthouseController.h; sourceTree = "<group>"; };
-		607F5F9912428390003BC2E8 /* LighthouseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LighthouseController.m; path = ../../LighthouseController.m; sourceTree = "<group>"; };
+		607F5F9812428390003BC2E8 /* ServerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ServerController.h; path = ../../ServerController.h; sourceTree = "<group>"; };
+		607F5F9912428390003BC2E8 /* ServerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ServerController.m; path = ../../ServerController.m; sourceTree = "<group>"; };
 		607F5FD912428816003BC2E8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Security.framework; sourceTree = "<group>"; };
 		607F5FDC12428852003BC2E8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SystemConfiguration.framework; sourceTree = "<group>"; };
 		607F5FF012428F07003BC2E8 /* Seriously.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Seriously.h; sourceTree = "<group>"; };
@@ -281,8 +278,6 @@
 				6034C7211263471F0029D2CD /* ORBackwardsScrollView.m */,
 				6034C7BA12635BCF0029D2CD /* ORTransparentDarkScroller.h */,
 				6034C7BB12635BCF0029D2CD /* ORTransparentDarkScroller.m */,
-				6034C7DD126360680029D2CD /* ORTicketView.h */,
-				6034C7DE126360680029D2CD /* ORTicketView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -305,8 +300,8 @@
 			children = (
 				609662FB12468302006C7E28 /* AppViewController.h */,
 				609662FC12468302006C7E28 /* AppViewController.m */,
-				607F5F9912428390003BC2E8 /* LighthouseController.m */,
-				607F5F9812428390003BC2E8 /* LighthouseController.h */,
+				607F5F9912428390003BC2E8 /* ServerController.m */,
+				607F5F9812428390003BC2E8 /* ServerController.h */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -589,7 +584,7 @@
 			files = (
 				607F5F7C12427E51003BC2E8 /* main.m in Sources */,
 				607F5F8512427E51003BC2E8 /* TickifierAppDelegate.m in Sources */,
-				607F5F9A12428390003BC2E8 /* LighthouseController.m in Sources */,
+				607F5F9A12428390003BC2E8 /* ServerController.m in Sources */,
 				607F5FF512428F07003BC2E8 /* Seriously.m in Sources */,
 				607F5FF612428F07003BC2E8 /* SeriouslyOperation.m in Sources */,
 				60554E4A124291B20071A103 /* Ticket.m in Sources */,
@@ -601,7 +596,6 @@
 				609662FD12468302006C7E28 /* AppViewController.m in Sources */,
 				6034C7221263471F0029D2CD /* ORBackwardsScrollView.m in Sources */,
 				6034C7BC12635BCF0029D2CD /* ORTransparentDarkScroller.m in Sources */,
-				6034C7DF126360680029D2CD /* ORTicketView.m in Sources */,
 				60E8A31E126390F6004D1814 /* AMCollectionView.m in Sources */,
 				60E8A31F126390F6004D1814 /* AMCollectionViewItem.m in Sources */,
 				60E8A5B71265107B004D1814 /* LighthouseServer.m in Sources */,

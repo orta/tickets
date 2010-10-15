@@ -6,10 +6,10 @@
 //  Copyright (c) 2010 http://www.ortatherox.com. All rights reserved.
 //
 
-#import "LighthouseController.h"
+#import "ServerController.h"
 #import "Seriously.h"
 
-@implementation LighthouseController
+@implementation ServerController
 
 @synthesize currentProject, projects, currentMilestone, milestones, currentAssignedToUser, users, currentTicket;
 @synthesize currentServer, serverIndex, projectIndex, milestoneIndex, assignedToUserIndex, tickets;
@@ -44,6 +44,7 @@
 
   int i = 0;
   NSString * currentURL = [[NSUserDefaults standardUserDefaults] stringForKey:@"currentURL"];
+  NSLog(@"currentURL : %@", currentURL);
   for (LighthouseServer *server in [servers content]) {
     if ([server.url isEqualToString: currentURL ]) {
       self.serverIndex = i;
@@ -112,16 +113,17 @@
     else {
       [self createEntitiesWithXML:body toArrayController:projects];
       
-      if ( [[[NSUserDefaults standardUserDefaults] objectForKey:@"projectIndex"] integerValue] ) {
-        if([[self.projects content] count]){
-          self.projectIndex = [[NSUserDefaults standardUserDefaults] integerForKey:@"projectIndex"];
-          self.currentProject = [[projects arrangedObjects] objectAtIndex:self.projectIndex];  
-          
-          [self getProjectsTickets];
-          
-          [self getUsers];
-          [self getMilestones];
-        }
+      if([[self.projects content] count]){
+        self.projectIndex = [[NSUserDefaults standardUserDefaults] integerForKey:@"projectIndex"];
+        self.currentProject = [[projects arrangedObjects] objectAtIndex:self.projectIndex];  
+        
+        [self getProjectsTickets];
+        
+        [self getUsers];
+        [self getMilestones];
+  
+      }else{
+        NSLog(@"No project selected");
       }
     }
   }];

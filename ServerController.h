@@ -11,7 +11,7 @@
 #import "Ticket.h"
 #import "LighthouseServer.h"
 
-@interface LighthouseController : NSObject {
+@interface ServerController : NSObject {
   
   IBOutlet NSWindow *ticketWindow;
   IBOutlet NSTextField * passwordField;
