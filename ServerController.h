@@ -9,14 +9,14 @@
 #import <Cocoa/Cocoa.h>
 #import "LighthouseEntity.h"
 #import "Ticket.h"
-#import "LighthouseServer.h"
+#import "Server.h"
 
 @interface ServerController : NSObject {
   
   IBOutlet NSWindow *ticketWindow;
   IBOutlet NSTextField * passwordField;
   
-  LighthouseServer *currentServer;
+  Server *currentServer;
   
   LighthouseEntity *currentProject;
   LighthouseEntity *currentMilestone;
@@ -50,7 +50,7 @@
 @property (retain) LighthouseEntity *currentMilestone;
 @property (retain) LighthouseEntity *currentAssignedToUser;
 
-@property (retain) LighthouseServer *currentServer;
+@property (retain) Server *currentServer;
 
 @property () NSInteger projectIndex;
 @property () NSInteger milestoneIndex;

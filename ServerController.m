@@ -37,7 +37,7 @@
     [self addServer:self];
   }
 
-  for (LighthouseServer *server in [servers content]) {
+  for (Server *server in [servers content]) {
     [server addObserver:self forKeyPath:@"self.url" options:0 context:@""];
     [server addObserver:self forKeyPath:@"self.APIKey" options:0 context:@""];
   }
@@ -45,7 +45,8 @@
   int i = 0;
   NSString * currentURL = [[NSUserDefaults standardUserDefaults] stringForKey:@"currentURL"];
   NSLog(@"currentURL : %@", currentURL);
-  for (LighthouseServer *server in [servers content]) {
+  for (Server *server in [servers content]) {
+    NSLog(@"found server %@", server);
     if ([server.url isEqualToString: currentURL ]) {
       self.serverIndex = i;
       break;
@@ -55,7 +56,7 @@
 }
 
 -(IBAction) addServer:(id)sender {
-  LighthouseServer * newServer = [[LighthouseServer alloc] init];
+  Server * newServer = [[Server alloc] init];
   newServer.url = @"example.lighthouseapp.com";
   [servers setContent:[[servers content] arrayByAddingObject:newServer]];
   self.currentServer = newServer;
@@ -329,13 +330,27 @@
 
 
 -(void) setServerIndex:(NSInteger)index {
+  [self.currentServer unbind:@"projectIndex"];
+  [self.currentServer unbind:@"milestoneIndex"];
+  [self.currentServer unbind:@"userIndex"];
+  
   self.currentServer = [[servers content] objectAtIndex:index];
   NSLog(@"setting server to %@", self.currentServer.url);
   serverIndex = index;
   [[NSUserDefaults standardUserDefaults] setObject:self.currentServer.url forKey:@"currentURL"];
+  NSLog(@"Server: %@", self.currentServer);
+  
   if(self.currentServer.url && self.currentServer.APIKey){
-    [self getProjects];
+    [self getProjects];    
+    self.projectIndex = currentServer.projectIndex;
+    self.milestoneIndex = currentServer.milestoneIndex;
+    self.assignedToUserIndex = currentServer.userIndex;
   }
+  
+  [self.currentServer bind:@"projectIndex" toObject:self withKeyPath:@"projectIndex" options:nil];
+  [self.currentServer bind:@"milestoneIndex" toObject:self withKeyPath:@"milestoneIndex" options:nil];
+  [self.currentServer bind:@"userIndex" toObject:self withKeyPath:@"assignedToUserIndex" options:nil];
+  
 }
 
 - (NSString *) pathForDataFile {

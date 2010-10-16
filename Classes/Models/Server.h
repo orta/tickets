@@ -9,7 +9,7 @@
 #import <Cocoa/Cocoa.h>
 
 
-@interface LighthouseServer : NSObject <NSCoding>{
+@interface Server : NSObject <NSCoding>{
   NSString *url;
   NSString *APIKey;
   

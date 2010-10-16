@@ -6,12 +6,16 @@
 //  Copyright 2010 http://www.ortatherox.com. All rights reserved.
 //
 
-#import "LighthouseServer.h"
+#import "Server.h"
 
 
-@implementation LighthouseServer
+@implementation Server
 
 @synthesize url, APIKey, projectIndex, milestoneIndex, userIndex;
+
+- (NSString*) description {
+  return [NSString stringWithFormat:@"%@ : projectID: %i userID %i milestoneID %i", self.url, self.projectIndex, self.userIndex, self.milestoneIndex ];
+}
 
 - (void)encodeWithCoder: (NSCoder *)coder {
   [coder encodeObject: [self url] forKey: @"url"];
