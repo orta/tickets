@@ -33,7 +33,8 @@
   self.currentServer = [[servers content] objectAtIndex:index];
   serverIndex = index;
   [[NSUserDefaults standardUserDefaults] setObject:self.currentServer.url forKey:@"currentURL"];
-
+  [self didChangeValueForKey:@"selectedIndices"];
+  
   self.mixer = [self mixerFromServer:self.currentServer];
   
   if(self.currentServer.url && self.currentServer.APIKey){
@@ -44,6 +45,11 @@
   }
   
   [self bindToCurrentServer:YES];
+  
+}
+
+- (NSIndexSet *)selectedIndices {
+  return [NSIndexSet indexSetWithIndex:serverIndex];
 }
 
 - (NSObject *) mixerFromServer:(Server *) mixerServer{
