@@ -23,6 +23,7 @@
 		</object>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
+			<integer value="81"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -199,6 +200,15 @@
 							<string key="NSTitle">File</string>
 							<object class="NSMutableArray" key="NSMenuItems">
 								<bool key="EncodedWithXMLCoder">YES</bool>
+								<object class="NSMenuItem" id="2724">
+									<reference key="NSMenu" ref="720053764"/>
+									<string key="NSTitle">Refresh Tickets</string>
+									<string key="NSKeyEquiv">r</string>
+									<int key="NSKeyEquivModMask">1048576</int>
+									<int key="NSMnemonicLoc">2147483647</int>
+									<reference key="NSOnImage" ref="35465992"/>
+									<reference key="NSMixedImage" ref="502551668"/>
+								</object>
 								<object class="NSMenuItem" id="418406453">
 									<reference key="NSMenu" ref="720053764"/>
 									<string key="NSTitle">Submit</string>
@@ -4130,6 +4140,14 @@
 					</object>
 					<int key="connectionID">987</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">refresh:</string>
+						<reference key="source" ref="380411522"/>
+						<reference key="destination" ref="2724"/>
+					</object>
+					<int key="connectionID">990</int>
+				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<object class="NSArray" key="orderedObjects">
@@ -4219,6 +4237,7 @@
 							<reference ref="776162233"/>
 							<reference ref="418406453"/>
 							<reference ref="425164168"/>
+							<reference ref="2724"/>
 						</object>
 						<reference key="parent" ref="379814623"/>
 					</object>
@@ -5900,6 +5919,11 @@
 						<reference key="object" ref="232952679"/>
 						<reference key="parent" ref="695278537"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">988</int>
+						<reference key="object" ref="2724"/>
+						<reference key="parent" ref="720053764"/>
+					</object>
 				</object>
 			</object>
 			<object class="NSMutableDictionary" key="flattenedProperties">
@@ -6280,6 +6304,8 @@
 					<string>973.IBPluginDependency</string>
 					<string>974.IBPluginDependency</string>
 					<string>975.IBPluginDependency</string>
+					<string>988.IBPluginDependency</string>
+					<string>988.ImportedFromIB2</string>
 				</object>
 				<object class="NSMutableArray" key="dict.values">
 					<bool key="EncodedWithXMLCoder">YES</bool>
@@ -6597,7 +6623,7 @@
 					<integer value="1"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<integer value="1"/>
-					<string>{{470, 783}, {128, 53}}</string>
+					<string>{{470, 763}, {184, 73}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<integer value="1"/>
 					<string>{{145, 474}, {199, 203}}</string>
@@ -6736,6 +6762,8 @@
 					<string>com.brandonwalkin.BWToolkit</string>
 					<string>com.brandonwalkin.BWToolkit</string>
 					<string>com.brandonwalkin.BWToolkit</string>
+					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
+					<integer value="1"/>
 				</object>
 			</object>
 			<object class="NSMutableDictionary" key="unlocalizedProperties">
@@ -6754,7 +6782,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">987</int>
+			<int key="maxID">990</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -6946,12 +6974,14 @@
 							<string>addServer:</string>
 							<string>milestoneSelected:</string>
 							<string>projectSelected:</string>
+							<string>refresh:</string>
 							<string>submit:</string>
 							<string>tableViewSelected:</string>
 							<string>userSelected:</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>id</string>
 							<string>id</string>
 							<string>id</string>
 							<string>id</string>
@@ -6967,6 +6997,7 @@
 							<string>addServer:</string>
 							<string>milestoneSelected:</string>
 							<string>projectSelected:</string>
+							<string>refresh:</string>
 							<string>submit:</string>
 							<string>tableViewSelected:</string>
 							<string>userSelected:</string>
@@ -6983,6 +7014,10 @@
 							</object>
 							<object class="IBActionInfo">
 								<string key="name">projectSelected:</string>
+								<string key="candidateClassName">id</string>
+							</object>
+							<object class="IBActionInfo">
+								<string key="name">refresh:</string>
 								<string key="candidateClassName">id</string>
 							</object>
 							<object class="IBActionInfo">

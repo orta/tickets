@@ -68,6 +68,7 @@
 - (IBAction) milestoneSelected:(id)sender;
 - (IBAction) userSelected:(id)sender;
 - (IBAction) projectSelected:(id)sender;
+- (IBAction) refresh:(id)sender;
 
 - (void) getProjectsTickets;
 - (void) getProjects;

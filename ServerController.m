@@ -163,6 +163,9 @@
   [alert beginSheetModalForWindow:ticketWindow modalDelegate:self didEndSelector:nil contextInfo:nil];
 }
 
+- (IBAction) refresh:(id)sender {
+  [mixer getTickets]; 
+}
 
 - (void) getProjects {
   [mixer getProjects];  
