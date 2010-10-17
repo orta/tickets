@@ -13,13 +13,11 @@
 				<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string>com.brandonwalkin.BWToolkit</string>
 				<string>net.wafflesoftware.ShortcutRecorder.IB.Leopard</string>
-				<string>org.robrix.RXObjectBinderPlugin</string>
 			</object>
 			<object class="NSMutableArray" key="dict.values">
 				<bool key="EncodedWithXMLCoder">YES</bool>
 				<string>804</string>
 				<string>1.2.5</string>
-				<string>1</string>
 				<string>1</string>
 			</object>
 		</object>
@@ -28,10 +26,9 @@
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<string>org.robrix.RXObjectBinderPlugin</string>
 			<string>com.brandonwalkin.BWToolkit</string>
-			<string>net.wafflesoftware.ShortcutRecorder.IB.Leopard</string>
 			<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
+			<string>net.wafflesoftware.ShortcutRecorder.IB.Leopard</string>
 		</object>
 		<object class="NSMutableDictionary" key="IBDocument.Metadata">
 			<string key="NS.key.0">PluginDependencyRecalculationVersion</string>
@@ -2633,14 +2630,6 @@
 				<bool key="NSFilterRestrictsInsertion">YES</bool>
 				<bool key="NSClearsFilterPredicateOnInsertion">YES</bool>
 			</object>
-			<object class="RXObjectBinder" id="290661395">
-				<nil key="RXObjectBinderRepresentedObject"/>
-				<object class="NSMutableArray" key="RXObjectBinderKeys">
-					<bool key="EncodedWithXMLCoder">YES</bool>
-					<string>itemPrototype</string>
-					<string>content</string>
-				</object>
-			</object>
 			<object class="NSCustomObject" id="530444040">
 				<string key="NSClassName">AMCollectionViewItem</string>
 			</object>
@@ -4020,39 +4009,6 @@
 						</object>
 					</object>
 					<int key="connectionID">927</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBBindingConnection" key="connection">
-						<string key="label">content: arrangedObjects</string>
-						<reference key="source" ref="290661395"/>
-						<reference key="destination" ref="357794404"/>
-						<object class="NSNibBindingConnector" key="connector" id="811266666">
-							<reference key="NSSource" ref="290661395"/>
-							<reference key="NSDestination" ref="357794404"/>
-							<string key="NSLabel">content: arrangedObjects</string>
-							<string key="NSBinding">content</string>
-							<string key="NSKeyPath">arrangedObjects</string>
-							<int key="NSNibBindingConnectorVersion">2</int>
-						</object>
-					</object>
-					<int key="connectionID">936</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBBindingConnection" key="connection">
-						<string key="label">itemPrototype: representedObject</string>
-						<reference key="source" ref="290661395"/>
-						<reference key="destination" ref="315485072"/>
-						<object class="NSNibBindingConnector" key="connector">
-							<reference key="NSSource" ref="290661395"/>
-							<reference key="NSDestination" ref="315485072"/>
-							<string key="NSLabel">itemPrototype: representedObject</string>
-							<string key="NSBinding">itemPrototype</string>
-							<string key="NSKeyPath">representedObject</string>
-							<reference key="NSPreviousConnector" ref="811266666"/>
-							<int key="NSNibBindingConnectorVersion">2</int>
-						</object>
-					</object>
-					<int key="connectionID">937</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBBindingConnection" key="connection">
@@ -5805,12 +5761,6 @@
 						<reference key="parent" ref="8715380"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">934</int>
-						<reference key="object" ref="290661395"/>
-						<reference key="parent" ref="0"/>
-						<string key="objectName">Ticket List</string>
-					</object>
-					<object class="IBObjectRecord">
 						<int key="objectID">939</int>
 						<reference key="object" ref="431392750"/>
 						<object class="NSMutableArray" key="children">
@@ -6306,7 +6256,6 @@
 					<string>907.IBPluginDependency</string>
 					<string>92.IBPluginDependency</string>
 					<string>92.ImportedFromIB2</string>
-					<string>934.IBPluginDependency</string>
 					<string>939.CustomClassName</string>
 					<string>939.IBPluginDependency</string>
 					<string>939.IBViewBoundsToFrameTransform</string>
@@ -6757,7 +6706,6 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<integer value="1"/>
-					<string>org.robrix.RXObjectBinderPlugin</string>
 					<string>ORBackwardsScrollView</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<object class="NSAffineTransform">
@@ -7118,6 +7066,14 @@
 							</object>
 						</object>
 					</object>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">ServerController.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">ServerController</string>
+					<string key="superclassName">NSObject</string>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBUserSource</string>
 						<string key="minorKey"/>

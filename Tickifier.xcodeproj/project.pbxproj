@@ -43,8 +43,6 @@
 		6096620F12466CA0006C7E28 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6096620E12466CA0006C7E28 /* CoreServices.framework */; };
 		609662FD12468302006C7E28 /* AppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 609662FC12468302006C7E28 /* AppViewController.m */; };
 		6099805E124BD51E006AA575 /* tab.png in Resources */ = {isa = PBXBuildFile; fileRef = 6099805D124BD51E006AA575 /* tab.png */; };
-		60E8A2F112638246004D1814 /* RXObjectBinderFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E8A2D2126378A4004D1814 /* RXObjectBinderFramework.framework */; };
-		60E8A2F21263824C004D1814 /* RXObjectBinderFramework.framework in Move Frameworks */ = {isa = PBXBuildFile; fileRef = 60E8A2D2126378A4004D1814 /* RXObjectBinderFramework.framework */; };
 		60E8A31E126390F6004D1814 /* AMCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E8A31A126390F6004D1814 /* AMCollectionView.m */; };
 		60E8A31F126390F6004D1814 /* AMCollectionViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E8A31C126390F6004D1814 /* AMCollectionViewItem.m */; };
 		60E8A5B71265107B004D1814 /* Server.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E8A5B61265107B004D1814 /* Server.m */; };
@@ -114,27 +112,6 @@
 			remoteGlobalIDString = 53DF6901067E5B8E0090B5B0;
 			remoteInfo = All;
 		};
-		60E8A2CF126378A4004D1814 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 60E8A2C6126378A4004D1814 /* RXObjectBinder.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 8D1AC9740486D14A00FE50C9;
-			remoteInfo = RXObjectBinder;
-		};
-		60E8A2D1126378A4004D1814 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 60E8A2C6126378A4004D1814 /* RXObjectBinder.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 53DF68FD067E5B5A0090B5B0;
-			remoteInfo = RXObjectBinderFramework;
-		};
-		60E8A2E812638076004D1814 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 60E8A2C6126378A4004D1814 /* RXObjectBinder.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 53DF6901067E5B8E0090B5B0;
-			remoteInfo = All;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -144,7 +121,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				60E8A2F21263824C004D1814 /* RXObjectBinderFramework.framework in Move Frameworks */,
 				604A5E64126341A000705440 /* BWToolkitFramework.framework in Move Frameworks */,
 				604513A5125CDBCF009D0824 /* ShortcutRecorder.framework in Move Frameworks */,
 			);
@@ -205,7 +181,6 @@
 		609662FB12468302006C7E28 /* AppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppViewController.h; path = ../AppViewController.h; sourceTree = "<group>"; };
 		609662FC12468302006C7E28 /* AppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppViewController.m; path = ../AppViewController.m; sourceTree = "<group>"; };
 		6099805D124BD51E006AA575 /* tab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab.png; sourceTree = "<group>"; };
-		60E8A2C6126378A4004D1814 /* RXObjectBinder.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RXObjectBinder.xcodeproj; path = ext/objectbinder/RXObjectBinder.xcodeproj; sourceTree = "<group>"; };
 		60E8A319126390F6004D1814 /* AMCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMCollectionView.h; sourceTree = "<group>"; };
 		60E8A31A126390F6004D1814 /* AMCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMCollectionView.m; sourceTree = "<group>"; };
 		60E8A31B126390F6004D1814 /* AMCollectionViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMCollectionViewItem.h; sourceTree = "<group>"; };
@@ -220,7 +195,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60E8A2F112638246004D1814 /* RXObjectBinderFramework.framework in Frameworks */,
 				604A5E611263419500705440 /* BWToolkitFramework.framework in Frameworks */,
 				604513A4125CDBCB009D0824 /* ShortcutRecorder.framework in Frameworks */,
 				607F5FDD12428852003BC2E8 /* SystemConfiguration.framework in Frameworks */,
@@ -309,7 +283,6 @@
 		607F5F6212427E50003BC2E8 = {
 			isa = PBXGroup;
 			children = (
-				60E8A2C6126378A4004D1814 /* RXObjectBinder.xcodeproj */,
 				6045157C125CF921009D0824 /* BWToolkit.xcodeproj */,
 				60451333125CDB9D009D0824 /* ShortcutRecorder.xcodeproj */,
 				607F5F6912427E51003BC2E8 /* Classes */,
@@ -405,15 +378,6 @@
 			path = HotKey;
 			sourceTree = "<group>";
 		};
-		60E8A2C7126378A4004D1814 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				60E8A2D0126378A4004D1814 /* RXObjectBinder.ibplugin */,
-				60E8A2D2126378A4004D1814 /* RXObjectBinderFramework.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		60E8A318126390E9004D1814 /* AMCollection */ = {
 			isa = PBXGroup;
 			children = (
@@ -443,7 +407,6 @@
 			dependencies = (
 				60451576125CF8FC009D0824 /* PBXTargetDependency */,
 				6045158A125CF92F009D0824 /* PBXTargetDependency */,
-				60E8A2E912638076004D1814 /* PBXTargetDependency */,
 			);
 			name = Tickifier;
 			productName = Tickifier;
@@ -472,10 +435,6 @@
 				{
 					ProductGroup = 6045157D125CF921009D0824 /* Products */;
 					ProjectRef = 6045157C125CF921009D0824 /* BWToolkit.xcodeproj */;
-				},
-				{
-					ProductGroup = 60E8A2C7126378A4004D1814 /* Products */;
-					ProjectRef = 60E8A2C6126378A4004D1814 /* RXObjectBinder.xcodeproj */;
 				},
 				{
 					ProductGroup = 6045134E125CDBA5009D0824 /* Products */;
@@ -539,20 +498,6 @@
 			remoteRef = 60451587125CF921009D0824 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		60E8A2D0126378A4004D1814 /* RXObjectBinder.ibplugin */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = RXObjectBinder.ibplugin;
-			remoteRef = 60E8A2CF126378A4004D1814 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		60E8A2D2126378A4004D1814 /* RXObjectBinderFramework.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = RXObjectBinderFramework.framework;
-			remoteRef = 60E8A2D1126378A4004D1814 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -614,11 +559,6 @@
 			isa = PBXTargetDependency;
 			name = All;
 			targetProxy = 60451589125CF92F009D0824 /* PBXContainerItemProxy */;
-		};
-		60E8A2E912638076004D1814 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = All;
-			targetProxy = 60E8A2E812638076004D1814 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

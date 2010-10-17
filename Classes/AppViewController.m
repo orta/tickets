@@ -32,14 +32,12 @@
 //  448 - 240
   
   if(self.fullView){
-    
     NSRect newFrame = [ticketWindow frame];
     newFrame.size.width = 448;
     [ticketWindow setFrame:newFrame display:YES animate:YES];
     self.fullView = !self.fullView;
 
-  }else{
-    
+  }else{    
     self.fullView = !self.fullView;    
     NSRect newFrame = [ticketWindow frame];
     newFrame.size.width = 266;

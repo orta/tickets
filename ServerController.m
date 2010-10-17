@@ -38,8 +38,13 @@
   }
 
   for (Server *server in [servers content]) {
+    // These are things to trigger saves from
     [server addObserver:self forKeyPath:@"self.url" options:0 context:@""];
     [server addObserver:self forKeyPath:@"self.APIKey" options:0 context:@""];
+    [server addObserver:self forKeyPath:@"self.projectIndex" options:0 context:@""];
+    [server addObserver:self forKeyPath:@"self.milestoneIndex" options:0 context:@""];
+    [server addObserver:self forKeyPath:@"self.userIndex" options:0 context:@""];
+
   }
 
   int i = 0;
@@ -68,13 +73,17 @@
                       ofObject:(id)object
                         change:(NSDictionary *)change
                        context:(void *)context {
+  [self saveServerData];
+}
+
+- (void) saveServerData {
   NSString * path = [self pathForDataFile];
   
   NSMutableDictionary * rootObject;
   rootObject = [NSMutableDictionary dictionary];
   
   [rootObject setValue: [servers content] forKey:@"servers"];
-  [NSKeyedArchiver archiveRootObject: rootObject toFile: path];
+  [NSKeyedArchiver archiveRootObject: rootObject toFile: path];  
 }
 
 

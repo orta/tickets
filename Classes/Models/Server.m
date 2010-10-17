@@ -18,12 +18,12 @@
 }
 
 - (void)encodeWithCoder: (NSCoder *)coder {
+  NSLog(@"ENCODING %@", self);
   [coder encodeObject: [self url] forKey: @"url"];
   [coder encodeObject: [self APIKey] forKey: @"APIKey"];
   [coder encodeInt:self.userIndex forKey:@"userIndex"];
   [coder encodeInt:self.milestoneIndex forKey:@"milestoneIndex"];
   [coder encodeInt:self.projectIndex forKey:@"projectIndex"];
-  
 }
 
 - (id)initWithCoder: (NSCoder *)coder {
@@ -34,6 +34,7 @@
     self.milestoneIndex = [coder decodeIntForKey:@"milestoneIndex"];
     self.projectIndex = [coder decodeIntForKey:@"projectIndex"];
    }
+  NSLog(@"UNENCODED %@", self);
   return self;
 }
 

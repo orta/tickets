@@ -277,7 +277,6 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>11</integer>
 									<integer>8</integer>
 									<integer>4</integer>
 									<integer>0</integer>
@@ -303,7 +302,7 @@
 							<real>241</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>1507 -89 1477 915 1440 -180 1920 1080 </string>
+						<string>1559 -74 1477 915 1440 -180 1920 1080 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -321,7 +320,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>ServerController.m</string>
+								<string>AppViewController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -329,11 +328,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>ServerController.m</string>
+										<string>AppViewController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>600870401269F602002103D0</string>
+										<string>6008704F126A2B57002103D0</string>
 										<key>history</key>
 										<array>
 											<string>609660B112455392006C7E28</string>
@@ -373,14 +372,14 @@
 											<string>60E8A5F012652080004D1814</string>
 											<string>60E8A5F112652080004D1814</string>
 											<string>605EB42D1268D2AD00474B1B</string>
-											<string>605EB42E1268D2AD00474B1B</string>
-											<string>600870391269F602002103D0</string>
-											<string>6008703A1269F602002103D0</string>
 											<string>6008703B1269F602002103D0</string>
 											<string>6008703C1269F602002103D0</string>
-											<string>6008703D1269F602002103D0</string>
 											<string>6008703E1269F602002103D0</string>
-											<string>6008703F1269F602002103D0</string>
+											<string>6008704B126A2B57002103D0</string>
+											<string>6008704C126A2B57002103D0</string>
+											<string>6008704D126A2B57002103D0</string>
+											<string>6008704E126A2B57002103D0</string>
+											<string>6008703D1269F602002103D0</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -394,7 +393,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {1214, 869}}</string>
 								<key>RubberWindowFrame</key>
-								<string>1507 -89 1477 915 1440 -180 1920 1080 </string>
+								<string>1559 -74 1477 915 1440 -180 1920 1080 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -414,7 +413,7 @@
 								<key>Frame</key>
 								<string>{{0, 874}, {1214, 0}}</string>
 								<key>RubberWindowFrame</key>
-								<string>1507 -89 1477 915 1440 -180 1920 1080 </string>
+								<string>1559 -74 1477 915 1440 -180 1920 1080 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -587,7 +586,7 @@
 		<string>/Users/orta/spiel/cocoa/tickifier/Tickifier.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>1507 -89 1477 915 1440 -180 1920 1080 </string>
+	<string>1559 -74 1477 915 1440 -180 1920 1080 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
