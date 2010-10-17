@@ -24,6 +24,7 @@
 		60554E4A124291B20071A103 /* Ticket.m in Sources */ = {isa = PBXBuildFile; fileRef = 60554E49124291B20071A103 /* Ticket.m */; };
 		60554EBE124368B40071A103 /* LighthouseEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 60554EBD124368B40071A103 /* LighthouseEntity.m */; };
 		6074E8F7126B33E100E134B7 /* LighthouseMixer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6074E8F6126B33E100E134B7 /* LighthouseMixer.m */; };
+		6074E9FB126B6EC300E134B7 /* OSStartupController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6074E9FA126B6EC300E134B7 /* OSStartupController.m */; };
 		607F5F7512427E51003BC2E8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 607F5F7412427E51003BC2E8 /* Cocoa.framework */; };
 		607F5F7A12427E51003BC2E8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 607F5F7812427E51003BC2E8 /* InfoPlist.strings */; };
 		607F5F7C12427E51003BC2E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 607F5F7B12427E51003BC2E8 /* main.m */; };
@@ -152,6 +153,8 @@
 		6074E8F5126B33E100E134B7 /* LighthouseMixer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LighthouseMixer.h; sourceTree = "<group>"; };
 		6074E8F6126B33E100E134B7 /* LighthouseMixer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LighthouseMixer.m; sourceTree = "<group>"; };
 		6074E8F8126B341300E134B7 /* Mixer_Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mixer_Protocol.h; sourceTree = "<group>"; };
+		6074E9F9126B6EC300E134B7 /* OSStartupController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSStartupController.h; sourceTree = "<group>"; };
+		6074E9FA126B6EC300E134B7 /* OSStartupController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSStartupController.m; sourceTree = "<group>"; };
 		607F5F7112427E51003BC2E8 /* Tickifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tickifier.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607F5F7412427E51003BC2E8 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		607F5F7612427E51003BC2E8 /* Tickifier-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tickifier-Info.plist"; sourceTree = "<group>"; };
@@ -319,6 +322,8 @@
 				607F5F8412427E51003BC2E8 /* TickifierAppDelegate.m */,
 				60554E64124291E90071A103 /* Controllers */,
 				60554E4B124291B50071A103 /* Models */,
+				6074E9F9126B6EC300E134B7 /* OSStartupController.h */,
+				6074E9FA126B6EC300E134B7 /* OSStartupController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -560,6 +565,7 @@
 				60E8A31F126390F6004D1814 /* AMCollectionViewItem.m in Sources */,
 				60E8A5B71265107B004D1814 /* Server.m in Sources */,
 				6074E8F7126B33E100E134B7 /* LighthouseMixer.m in Sources */,
+				6074E9FB126B6EC300E134B7 /* OSStartupController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

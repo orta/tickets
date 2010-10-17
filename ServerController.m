@@ -29,7 +29,7 @@
 
 -(void) setServerIndex:(NSInteger)index {
   [self bindToCurrentServer:NO];
-  
+  [self willChangeValueForKey:@"selectedIndices"];
   self.currentServer = [[servers content] objectAtIndex:index];
   serverIndex = index;
   [[NSUserDefaults standardUserDefaults] setObject:self.currentServer.url forKey:@"currentURL"];
@@ -45,10 +45,16 @@
   }
   
   [self bindToCurrentServer:YES];
-  
 }
 
-- (NSIndexSet *)selectedIndices {
+- (void)setSelectedIndices:(NSIndexSet *)i {
+  NSLog(@"index %@", i);
+  if([i count] ){
+    [self setServerIndex:[i firstIndex]];    
+  }
+
+}
+- (NSIndexSet *)getSelectedIndices {
   return [NSIndexSet indexSetWithIndex:serverIndex];
 }
 
@@ -203,7 +209,6 @@
   [mixer invalidateTicket:ticket];
 }
 
-
 -(void) createNewTicket: (Ticket *)ticket {
   [mixer createNewTicket:ticket];
 }
@@ -211,7 +216,6 @@
 + (NSSet *)keyPathsForValuesAffectingStatus {
   return [NSSet setWithObjects:@"currentAssignedToUser", @"currentMilestone", @"currentProject", nil];
 }
-
 
 - (NSString *) getStatus {
   NSString * milestone = self.currentMilestone.name;

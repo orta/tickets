@@ -333,7 +333,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>6074E9BF126B694D00E134B7</string>
+										<string>6074EA29126B718400E134B7</string>
 										<key>history</key>
 										<array>
 											<string>609660B112455392006C7E28</string>
@@ -370,7 +370,6 @@
 											<string>60E8A33B1263A30C004D1814</string>
 											<string>60E8A33C1263A30C004D1814</string>
 											<string>6074E953126B403900E134B7</string>
-											<string>6074E954126B403900E134B7</string>
 											<string>6074E955126B403900E134B7</string>
 											<string>6074E957126B403900E134B7</string>
 											<string>6074E958126B403900E134B7</string>
@@ -383,8 +382,11 @@
 											<string>6074E989126B439000E134B7</string>
 											<string>6074E98A126B439000E134B7</string>
 											<string>6074E9A5126B482200E134B7</string>
-											<string>6074E9BA126B665A00E134B7</string>
-											<string>6074E9A6126B482200E134B7</string>
+											<string>6074EA05126B6FE000E134B7</string>
+											<string>6074EA06126B6FE000E134B7</string>
+											<string>6074EA07126B6FE000E134B7</string>
+											<string>6074EA08126B6FE000E134B7</string>
+											<string>6074EA09126B6FE000E134B7</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -582,14 +584,14 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>6074E9C0126B694D00E134B7</string>
+		<string>6074EA2A126B718400E134B7</string>
 		<string>1C530D57069F1CE1000CFCEE</string>
 		<string>6074E967126B403900E134B7</string>
 		<string>6074E968126B403900E134B7</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>60554E3212428FF40071A103</string>
-		<string>/Users/orta/spiel/cocoa/tickifier/Tickifier.xcodeproj</string>
 		<string>1C78EAAD065D492600B07095</string>
+		<string>/Users/orta/spiel/cocoa/tickifier/Tickifier.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>1524 -41 1477 915 1440 -180 1920 1080 </string>
@@ -684,7 +686,7 @@
 			<key>WindowToolGUID</key>
 			<string>60554E3212428FF40071A103</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>
