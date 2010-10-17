@@ -76,11 +76,8 @@
 
 -(IBAction) addServer:(id)sender;
 - (void) getCachedServers;
+
 - (void) networkErrorSheet:(NSString *) errorString;
-
-- (NSString*) addressAt:(NSString*) postfix;
-- (void) createEntitiesWithXML:(NSString *) xml toArrayController:(NSArrayController*)controller;
-
 - (void) createNewTicket: (Ticket *)ticket;
 - (void) resolveTicket: (Ticket *)ticket;
 - (void) invalidateTicket: (Ticket *)ticket;

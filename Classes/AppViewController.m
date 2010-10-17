@@ -23,7 +23,11 @@
   [accessoryView setFrame:newFrame];
   [themeFrame addSubview:accessoryView];
   self.fullView = NO;
-  [self toggleViewMode:self];
+  
+  if ([[NSUserDefaults standardUserDefaults] boolForKey:@"simpleView"]) {
+    [self toggleViewMode:self];    
+  }
+
   [ticketWindow setContentBorderThickness:20.0 forEdge:NSMinYEdge];
 
 }
@@ -43,6 +47,8 @@
     newFrame.size.width = 266;
     [ticketWindow setFrame:newFrame display:YES animate:YES];
   }
+  [[NSUserDefaults standardUserDefaults] setBool:self.fullView forKey:@"simpleView"];
+
 }
 
 // tab support in textviews
