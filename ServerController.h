@@ -2,7 +2,7 @@
 //  LighthouseController.h
 //  Tickifier
 //
-//  Created by Ben Maslen on 16/09/2010.
+//  Created by orta therox on 16/09/2010.
 //  Copyright (c) 2010 http://www.ortatherox.com. All rights reserved.
 //
 
@@ -10,6 +10,7 @@
 #import "LighthouseEntity.h"
 #import "Ticket.h"
 #import "Server.h"
+#import "Mixer_Protocol.h"
 
 @interface ServerController : NSObject {
   
@@ -37,6 +38,8 @@
   NSString *status;
   
 	NSMutableData *payload;
+  
+  NSObject <Mixer> *mixer;
 }
 
 @property (retain) NSArrayController *projects;
@@ -58,6 +61,8 @@
 @property () NSInteger serverIndex;
 
 @property (retain) NSString *status;
+
+@property (retain) NSObject <Mixer> *mixer;
 
 - (IBAction) submit:(id)sender;
 - (IBAction) milestoneSelected:(id)sender;
@@ -81,8 +86,14 @@
 - (void) invalidateTicket: (Ticket *)ticket;
 - (void) updateTicket:(Ticket *)ticket withXML:(NSString*)XML;
 
+- (void) saveServerData;
+
 // remove em when ypu're not coding past midnight
 - (NSString *) pathForDataFile;
 - (IBAction)tableViewSelected:(id)sender;
+
+
+- (void) bindToCurrentServer:(BOOL)bind;
+- (NSObject *) mixerFromServer:(Server *) mixerServer;
 
 @end

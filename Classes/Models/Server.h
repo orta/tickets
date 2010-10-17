@@ -7,16 +7,20 @@
 //
 
 #import <Cocoa/Cocoa.h>
-
+#import "Mixer_Protocol.h"
 
 @interface Server : NSObject <NSCoding>{
+  NSString *mixer;
+
   NSString *url;
   NSString *APIKey;
   
   int projectIndex;
   int milestoneIndex;
   int userIndex;
+
 }
+@property (retain) NSString *mixer;
 
 @property (retain) NSString *url;
 @property (retain) NSString *APIKey;
