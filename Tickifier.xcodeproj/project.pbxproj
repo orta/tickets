@@ -153,8 +153,8 @@
 		6074E8F5126B33E100E134B7 /* LighthouseMixer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LighthouseMixer.h; sourceTree = "<group>"; };
 		6074E8F6126B33E100E134B7 /* LighthouseMixer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LighthouseMixer.m; sourceTree = "<group>"; };
 		6074E8F8126B341300E134B7 /* Mixer_Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mixer_Protocol.h; sourceTree = "<group>"; };
-		6074E9F9126B6EC300E134B7 /* OSStartupController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSStartupController.h; sourceTree = "<group>"; };
-		6074E9FA126B6EC300E134B7 /* OSStartupController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSStartupController.m; sourceTree = "<group>"; };
+		6074E9F9126B6EC300E134B7 /* OSStartupController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OSStartupController.h; path = ../OSStartupController.h; sourceTree = "<group>"; };
+		6074E9FA126B6EC300E134B7 /* OSStartupController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OSStartupController.m; path = ../OSStartupController.m; sourceTree = "<group>"; };
 		607F5F7112427E51003BC2E8 /* Tickifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tickifier.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607F5F7412427E51003BC2E8 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		607F5F7612427E51003BC2E8 /* Tickifier-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tickifier-Info.plist"; sourceTree = "<group>"; };
@@ -284,6 +284,8 @@
 				609662FC12468302006C7E28 /* AppViewController.m */,
 				607F5F9912428390003BC2E8 /* ServerController.m */,
 				607F5F9812428390003BC2E8 /* ServerController.h */,
+				6074E9F9126B6EC300E134B7 /* OSStartupController.h */,
+				6074E9FA126B6EC300E134B7 /* OSStartupController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -322,8 +324,6 @@
 				607F5F8412427E51003BC2E8 /* TickifierAppDelegate.m */,
 				60554E64124291E90071A103 /* Controllers */,
 				60554E4B124291B50071A103 /* Models */,
-				6074E9F9126B6EC300E134B7 /* OSStartupController.h */,
-				6074E9FA126B6EC300E134B7 /* OSStartupController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";

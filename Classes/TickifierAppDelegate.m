@@ -8,10 +8,11 @@
 
 #import "TickifierAppDelegate.h"
 #import "PTHotKeyCenter.h"
+#import "OSStartupController.h"
 
 @implementation TickifierAppDelegate
 
-@synthesize newTicketWindow, setupWindow;
+@synthesize newTicketWindow, setupWindow, openAtStartup;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
   [self toggleNewTicketHotKey:self];
@@ -30,6 +31,14 @@
     [setupWindow orderFrontRegardless];
     [setupWindow center];
   }
+}
+
+- (IBAction)toggleLoadOnStartup:(id)sender {
+  [OSStartupController toggleLaunchAtStartup:self];
+} 
+
+- (BOOL) getOpenAtStartup {
+  [OSStartupController isLaunchAtStartup];
 }
 
 - (IBAction)toggleNewTicketHotKey:(id)sender {

@@ -13,8 +13,8 @@
 
 }
 
-- (BOOL)isLaunchAtStartup;
-- (IBAction)toggleLaunchAtStartup:(id)sender;
-- (LSSharedFileListItemRef)itemRefInLoginItems;
++ (BOOL)isLaunchAtStartup;
++ (IBAction)toggleLaunchAtStartup:(id)sender;
++ (LSSharedFileListItemRef)itemRefInLoginItems;
 
 @end

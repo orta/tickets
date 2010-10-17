@@ -23,10 +23,13 @@
   
   NSString* previouslyActiveAppPath;
   NSNumber* previouslyActiveAppPID;
+  
+  BOOL openAtStartup;
  }
 
 - (IBAction)toggleNewTicketHotKey:(id)sender;
 - (IBAction)toggleListTicketsHotKey:(id)sender;
+- (IBAction)toggleLoadOnStartup:(id)sender;
 
 - (void)slideWindow:(NSWindow*)window direction:(BOOL)direction doSlide:(bool)doSlide;
 - (void)placeWindow:(id)win offset:(float)offset;
@@ -37,4 +40,5 @@
 
 @property (retain) IBOutlet NSWindow *newTicketWindow;
 @property (retain) IBOutlet NSWindow *setupWindow;
+@property ()  BOOL openAtStartup;
 @end

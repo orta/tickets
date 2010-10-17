@@ -13,7 +13,7 @@
 
 // MIT licensed, but thanks http://www.bdunagan.com/
 
-- (BOOL)isLaunchAtStartup {
++ (BOOL)isLaunchAtStartup {
 	// See if the app is currently in LoginItems.
 	LSSharedFileListItemRef itemRef = [self itemRefInLoginItems];
 	// Store away that boolean.
@@ -24,7 +24,7 @@
 	return isInList;
 }
 
-- (IBAction)toggleLaunchAtStartup:(id)sender {
++ (IBAction)toggleLaunchAtStartup:(id)sender {
 	// Toggle the state.
 	BOOL shouldBeToggled = ![self isLaunchAtStartup];
 	// Get the LoginItems list.
@@ -45,7 +45,7 @@
 	CFRelease(loginItemsRef);
 }
 
-- (LSSharedFileListItemRef)itemRefInLoginItems {
++ (LSSharedFileListItemRef)itemRefInLoginItems {
 	LSSharedFileListItemRef itemRef = nil;
 	NSURL *itemUrl = nil;
   
