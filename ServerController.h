@@ -82,7 +82,6 @@
 - (void) createNewTicket: (Ticket *)ticket;
 - (void) resolveTicket: (Ticket *)ticket;
 - (void) invalidateTicket: (Ticket *)ticket;
-- (void) updateTicket:(Ticket *)ticket withXML:(NSString*)XML;
 
 - (void) saveServerData;
 

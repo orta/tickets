@@ -38,7 +38,7 @@
 } 
 
 - (BOOL) getOpenAtStartup {
-  [OSStartupController isLaunchAtStartup];
+  return [OSStartupController isLaunchAtStartup];
 }
 
 - (IBAction)toggleNewTicketHotKey:(id)sender {
