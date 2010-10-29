@@ -11,7 +11,7 @@
 @implementation AppViewController
 @synthesize fullView;
 
--(void)awakeFromNib{
+-(void)awakeFromNib{  
   NSView *themeFrame = [[ticketWindow contentView] superview];
   NSRect containerRect = [themeFrame frame]; 
   NSRect accessoryViewRect = [accessoryView frame]; 
@@ -29,7 +29,6 @@
   }
 
   [ticketWindow setContentBorderThickness:20.0 forEdge:NSMinYEdge];
-
 }
 
 - (IBAction) toggleViewMode:(id)sender {

@@ -15,6 +15,9 @@
 @synthesize newTicketWindow, setupWindow, openAtStartup;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
+  [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(hideAll:) name:NSApplicationDidResignActiveNotification object: [NSApplication sharedApplication]];
+  [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(hideAll:) name:NSApplicationDidHideNotification object: [NSApplication sharedApplication]];
+  
   [self toggleNewTicketHotKey:self];
   [self toggleListTicketsHotKey:self];
 
@@ -75,8 +78,8 @@
 
 - (void)hitNewTicketHotKey:(PTHotKey *)hotKey {
   if([newTicketWindow isKeyWindow]){
-    [self slideWindow:newTicketWindow direction:NO doSlide:NO];
     [self restorePreviouslyActiveApp];    
+    [self hideAll:self];
 
   }else{
     [self storePreviouslyActiveApp];    
@@ -89,7 +92,7 @@
 - (void)hitListTicketHotKey:(PTHotKey *)hotKey {
   if([listTicketsWindow isKeyWindow]){
     [self restorePreviouslyActiveApp];
-    [self slideWindow:listTicketsWindow direction:NO doSlide:YES];
+    [self hideAll:self];
 
   }else{
     [self storePreviouslyActiveApp];    
@@ -100,6 +103,14 @@
   }
 }
 
+-(void)hideAll:(id)sender {
+  if([listTicketsWindow alphaValue] == 1){
+    [self slideWindow:listTicketsWindow direction:NO doSlide:YES];    
+  }
+  if([newTicketWindow alphaValue] == 1){
+    [self slideWindow:newTicketWindow direction:NO doSlide:NO];
+  }
+}
 
 // Thanks Visor!
 #define SLIDE_EASING(x) sin(M_PI_2*(x))
