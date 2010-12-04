@@ -7,10 +7,11 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "Mixer_Protocol.h"
 #import "LighthouseEntity.h"
 #import "Ticket.h"
 #import "Server.h"
-#import "Mixer_Protocol.h"
+#import "GrowlController.h"
 
 @interface ServerController : NSObject {
   
@@ -40,6 +41,8 @@
 	NSMutableData *payload;
   
   NSObject <Mixer> *mixer;
+  
+  GrowlController * growlController;
 }
 
 @property (retain) NSArrayController *projects;
@@ -63,6 +66,8 @@
 @property (retain) NSString *status;
 
 @property (retain) NSObject <Mixer> *mixer;
+
+@property (retain) GrowlController * growlController;
 
 - (IBAction) submit:(id)sender;
 - (IBAction) milestoneSelected:(id)sender;

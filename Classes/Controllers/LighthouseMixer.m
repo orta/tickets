@@ -158,6 +158,7 @@
 - (void) resolveTicket: (Ticket *)ticket {
   NSString *XML = @"<ticket><state>resolved</state></ticket>";
   [self updateTicket:ticket withXML:XML];
+  [controller.growlController postNotificationForResolvedTicket:ticket];
 }
 
 - (void) invalidateTicket: (Ticket *)ticket {
@@ -206,7 +207,7 @@
       NSLog(@"Error: %@", error);
       [controller networkErrorSheet:[error localizedDescription]];
     }else{
-      //   NSString *content = [NSString stringWithUTF8String:[payload bytes]];
+      [controller.growlController postNotificationForNewTicket:ticket];
       controller.currentTicket.body = @"";
       controller.currentTicket.tags = @"";
       controller.currentTicket.title= @"";

@@ -181,7 +181,7 @@
 - (void)storePreviouslyActiveApp {
   NSDictionary *activeAppDict = [[NSWorkspace sharedWorkspace] activeApplication];
   previouslyActiveAppPID = nil;
-  if ([[activeAppDict objectForKey:@"NSApplicationBundleIdentifier"] compare:@"com.ortatherox.Tickifier"]) {
+  if ([(NSString*)[activeAppDict objectForKey:@"NSApplicationBundleIdentifier"] compare:@"com.ortatherox.Tickifier"]) {
     previouslyActiveAppPID = [activeAppDict objectForKey:@"NSApplicationProcessIdentifier"];
   }
   

@@ -1,0 +1,207 @@
+<!doctype html>  
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <style>
+  
+  html, body, ul, li, h1, p{ margin:0; padding:0; }
+  li:nth-child(odd)    { background-color:#ccc; }
+  li:nth-child(even)    { background-color:#fff; }
+  li {
+    list-style: none;
+    margin: 0;
+    padding: 8px;
+    font-family:  Verdana, Arial, Helvetica, sans-serif;
+  }
+  li p { display: none; }
+  
+  li.selected {
+    color:white;
+    background-color: #1261F2;
+  }
+  li.selected p { 
+    display: block;
+  }
+  
+  body   {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 10px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  }
+
+
+  
+  html {
+  	overflow-y: auto;
+  	/* Kudos to @sami for pointing out that setting the overflow to "auto" instead of "hidden" fixes the keyboard nav bug! */
+  	background-color: transparent;
+  }
+
+  ::-webkit-scrollbar {
+      width: 10px;
+      height: 6px;
+  }
+
+  ::-webkit-scrollbar-button:start:decrement,
+  ::-webkit-scrollbar-button:end:increment {
+      height: 30px;
+      display: block;
+      background-color: transparent;
+  }
+
+  ::-webkit-scrollbar-track-piece {
+      background-color: rgba(0,0,0,0.2);
+      -webkit-border-radius: 6px;
+  }
+
+  ::-webkit-scrollbar-thumb:vertical {
+      height: 50px;
+      background-color: #666;
+      -webkit-border-radius: 6px;
+  }
+
+  ::-webkit-scrollbar-thumb:horizontal {
+      width: 50px;
+      background-color: #666;
+      -webkit-border-radius: 3px;
+  }
+  
+  
+  </style>
+  
+  
+</head>
+<body>
+
+  <ul>
+    <li>
+      <h1>Title of ticket 1</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <p>
+        Henk made this 4 days ago
+      </p>
+    </li>
+    
+    <li>
+      <h1>Title of ticket 2</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <p>
+        Henk made this 4 days ago
+      </p>
+    </li>
+    
+    
+    <li class="selected">
+      <h1>Title of ticket 2</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <p>
+        Henk made this 4 days ago
+      </p>
+    </li>
+    
+    <li>
+      <h1>Title of ticket 2</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <p>
+        Henk made this 4 days ago
+      </p>
+    </li>
+    
+    <li>
+      <h1>Title of ticket 2</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <p>
+        Henk made this 4 days ago
+      </p>
+    </li>
+    
+    
+    <li>
+      <h1>Title of ticket 2</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <p>
+        Henk made this 4 days ago
+      </p>
+    </li>
+    
+    
+    <li>
+      <h1>Title of ticket 2</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <p>
+        Henk made this 4 days ago
+      </p>
+    </li>
+    
+    
+    <li>
+      <h1>Title of ticket 2</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <p>
+        Henk made this 4 days ago
+      </p>
+    </li>
+    
+    
+    <li>
+      <h1>Title of ticket 2</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <p>
+        Henk made this 4 days ago
+      </p>
+    </li>
+    
+    <li>
+      <h1>Title of ticket 2</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <p>
+        Henk made this 4 days ago
+      </p>
+    </li>
+    
+    s
+    
+  </ul>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript  src="js/libs/jquery-1.4.2.js"%3E%3C/script%3E'))</script>
+  
+  <script>
+  $(document).ready(function(){
+    resizeContent();
+    $(window).resize(resizeContent)
+  })
+  
+  function resizeContent(){
+    $("ul").css("width", $(window).width() - 30)
+  }
+  
+  
+  </script>
+</body>
+</html>

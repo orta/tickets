@@ -14,7 +14,7 @@
 
 @synthesize currentProject, projects, currentMilestone, milestones, currentAssignedToUser, users, currentTicket;
 @synthesize currentServer, serverIndex, projectIndex, milestoneIndex, assignedToUserIndex, tickets;
-@synthesize status, mixer;
+@synthesize status, mixer, growlController;
 
 - (void)awakeFromNib {
   [self getCachedServers];
@@ -25,6 +25,8 @@
 	[users setSortDescriptors:[NSArray arrayWithObject:descriptor]];
   
   self.currentTicket = [[Ticket alloc] init];
+  self.growlController = [[GrowlController alloc] init];
+  
 }
 
 -(void) setServerIndex:(NSInteger)index {
@@ -212,6 +214,7 @@
 -(void) createNewTicket: (Ticket *)ticket {
   [mixer createNewTicket:ticket];
 }
+
 
 + (NSSet *)keyPathsForValuesAffectingStatus {
   return [NSSet setWithObjects:@"currentAssignedToUser", @"currentMilestone", @"currentProject", nil];

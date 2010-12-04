@@ -30,7 +30,7 @@
 - (IBAction)toggleNewTicketHotKey:(id)sender;
 - (IBAction)toggleListTicketsHotKey:(id)sender;
 - (IBAction)toggleLoadOnStartup:(id)sender;
-
+- (void)hideAll:(id)sender;
 - (void)slideWindow:(NSWindow*)window direction:(BOOL)direction doSlide:(bool)doSlide;
 - (void)placeWindow:(id)win offset:(float)offset;
 
