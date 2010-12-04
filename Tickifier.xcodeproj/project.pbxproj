@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		602EF0A5127ED4E300FAB0C2 /* PreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 602EF0A4127ED4E300FAB0C2 /* PreferencesWindow.xib */; };
 		6034C7221263471F0029D2CD /* ORBackwardsScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6034C7211263471F0029D2CD /* ORBackwardsScrollView.m */; };
 		6034C7BC12635BCF0029D2CD /* ORTransparentDarkScroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 6034C7BB12635BCF0029D2CD /* ORTransparentDarkScroller.m */; };
 		604513A4125CDBCB009D0824 /* ShortcutRecorder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60451357125CDBA5009D0824 /* ShortcutRecorder.framework */; };
@@ -137,7 +136,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		602EF0A4127ED4E300FAB0C2 /* PreferencesWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreferencesWindow.xib; sourceTree = "<group>"; };
 		6034C7201263471F0029D2CD /* ORBackwardsScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORBackwardsScrollView.h; sourceTree = "<group>"; };
 		6034C7211263471F0029D2CD /* ORBackwardsScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORBackwardsScrollView.m; sourceTree = "<group>"; };
 		6034C7BA12635BCF0029D2CD /* ORTransparentDarkScroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORTransparentDarkScroller.h; sourceTree = "<group>"; };
@@ -360,7 +358,6 @@
 				607F5F7812427E51003BC2E8 /* InfoPlist.strings */,
 				607F5F7D12427E51003BC2E8 /* MainMenu.xib */,
 				607F5F8012427E51003BC2E8 /* Credits.rtf */,
-				602EF0A4127ED4E300FAB0C2 /* PreferencesWindow.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -551,7 +548,6 @@
 				604A5DBB1261170800705440 /* icon-ok-hover.png in Resources */,
 				604A5DBC1261170800705440 /* icon-ok.png in Resources */,
 				604A5DBE1261189F00705440 /* key-labels.png in Resources */,
-				602EF0A5127ED4E300FAB0C2 /* PreferencesWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

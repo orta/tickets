@@ -255,17 +255,17 @@
 	};
 	6053D28A12AAD3CF009F7CEC /* GrowlController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1029, 718}}";
-			sepNavSelRange = "{286, 0}";
-			sepNavVisRange = "{0, 349}";
-			sepNavWindowFrame = "{{1478, 0}, {1141, 874}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1082, 723}}";
+			sepNavSelRange = "{403, 0}";
+			sepNavVisRange = "{0, 410}";
+			sepNavWindowFrame = "{{1547, -63}, {1141, 874}}";
 		};
 	};
 	6053D28B12AAD3CF009F7CEC /* GrowlController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1209, 723}}";
-			sepNavSelRange = "{1416, 0}";
-			sepNavVisRange = "{0, 1484}";
+			sepNavIntBoundsRect = "{{0, 0}, {1209, 741}}";
+			sepNavSelRange = "{619, 0}";
+			sepNavVisRange = "{473, 357}";
 		};
 	};
 	6053D29112AAD5AD009F7CEC /* XCBuildMessageTextBookmark */ = {
@@ -274,7 +274,7 @@
 		fRef = 6053D28A12AAD3CF009F7CEC /* GrowlController.h */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 14;
+		rLoc = 15;
 		rType = 1;
 	};
 	6053D29512AAD5C6009F7CEC /* XCBuildMessageTextBookmark */ = {
@@ -283,7 +283,7 @@
 		fRef = 6053D28A12AAD3CF009F7CEC /* GrowlController.h */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 14;
+		rLoc = 15;
 		rType = 1;
 	};
 	6053D29612AAD5C6009F7CEC /* PBXTextBookmark */ = {
@@ -381,7 +381,7 @@
 		fRef = 6053D28A12AAD3CF009F7CEC /* GrowlController.h */;
 		name = "GrowlController.h: 18";
 		rLen = 0;
-		rLoc = 349;
+		rLoc = 410;
 		rType = 0;
 		vrLen = 349;
 		vrLoc = 0;
@@ -609,7 +609,7 @@
 		fRef = 6053D28A12AAD3CF009F7CEC /* GrowlController.h */;
 		name = "GrowlController.h: 18";
 		rLen = 0;
-		rLoc = 349;
+		rLoc = 410;
 		rType = 0;
 		vrLen = 349;
 		vrLoc = 0;
@@ -619,7 +619,7 @@
 		fRef = 6053D28A12AAD3CF009F7CEC /* GrowlController.h */;
 		name = "GrowlController.h: 18";
 		rLen = 0;
-		rLoc = 349;
+		rLoc = 410;
 		rType = 0;
 		vrLen = 349;
 		vrLoc = 0;
@@ -1220,6 +1220,45 @@
 		vrLen = 1484;
 		vrLoc = 0;
 	};
+	6053D37712AAE400009F7CEC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 607F5F8412427E51003BC2E8 /* TickifierAppDelegate.m */;
+		name = "TickifierAppDelegate.m: 186";
+		rLen = 0;
+		rLoc = 7042;
+		rType = 0;
+		vrLen = 649;
+		vrLoc = 6676;
+	};
+	6053D37812AAE400009F7CEC /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "'kCloseTicket' undeclared (first use in this function)";
+		fRef = 6053D28B12AAD3CF009F7CEC /* GrowlController.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 30;
+		rType = 1;
+	};
+	6053D37912AAE400009F7CEC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 6053D28B12AAD3CF009F7CEC /* GrowlController.m */;
+		name = "GrowlController.m: 31";
+		rLen = 0;
+		rLoc = 619;
+		rType = 0;
+		vrLen = 357;
+		vrLoc = 473;
+	};
+	6053D37A12AAE400009F7CEC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 60E8A5B61265107B004D1814 /* Server.m */;
+		name = "Server.m: 32";
+		rLen = 4;
+		rLoc = 968;
+		rType = 0;
+		vrLen = 480;
+		vrLoc = 721;
+	};
 	60554DDD12428F870071A103 /* Tickifier */ = {
 		isa = PBXExecutable;
 		activeArgIndices = (
@@ -1304,9 +1343,9 @@
 	};
 	6074E8F6126B33E100E134B7 /* LighthouseMixer.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1489, 2782}}";
-			sepNavSelRange = "{8266, 0}";
-			sepNavVisRange = "{6071, 2373}";
+			sepNavIntBoundsRect = "{{0, 0}, {1489, 2873}}";
+			sepNavSelRange = "{6487, 0}";
+			sepNavVisRange = "{5277, 1903}";
 		};
 	};
 	6074E8F8126B341300E134B7 /* Mixer_Protocol.h */ = {
@@ -1647,6 +1686,10 @@
 			6053D37012AAE0F0009F7CEC /* PBXTextBookmark */ = 6053D37012AAE0F0009F7CEC /* PBXTextBookmark */;
 			6053D37112AAE0F0009F7CEC /* PBXTextBookmark */ = 6053D37112AAE0F0009F7CEC /* PBXTextBookmark */;
 			6053D37212AAE0F0009F7CEC /* PBXTextBookmark */ = 6053D37212AAE0F0009F7CEC /* PBXTextBookmark */;
+			6053D37712AAE400009F7CEC /* PBXTextBookmark */ = 6053D37712AAE400009F7CEC /* PBXTextBookmark */;
+			6053D37812AAE400009F7CEC /* XCBuildMessageTextBookmark */ = 6053D37812AAE400009F7CEC /* XCBuildMessageTextBookmark */;
+			6053D37912AAE400009F7CEC /* PBXTextBookmark */ = 6053D37912AAE400009F7CEC /* PBXTextBookmark */;
+			6053D37A12AAE400009F7CEC /* PBXTextBookmark */ = 6053D37A12AAE400009F7CEC /* PBXTextBookmark */;
 			6074E953126B403900E134B7 = 6074E953126B403900E134B7 /* PBXTextBookmark */;
 			6074E955126B403900E134B7 = 6074E955126B403900E134B7 /* PBXTextBookmark */;
 			6074E957126B403900E134B7 = 6074E957126B403900E134B7 /* PBXTextBookmark */;
@@ -1990,7 +2033,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1293, 624}}";
 			sepNavSelRange = "{968, 4}";
-			sepNavVisRange = "{721, 614}";
+			sepNavVisRange = "{721, 480}";
 			sepNavWindowFrame = "{{1524, -42}, {1141, 874}}";
 		};
 	};

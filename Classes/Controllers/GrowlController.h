@@ -13,5 +13,6 @@
 @interface GrowlController : NSObject <GrowlApplicationBridgeDelegate> {}
 
 - (void) postNotificationForNewTicket:(Ticket*) ticket;
+- (void) postNotificationForResolvedTicket:(Ticket*) ticket;
 
 @end
