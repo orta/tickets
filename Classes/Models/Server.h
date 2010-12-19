@@ -15,6 +15,9 @@
   NSString *url;
   NSString *APIKey;
   
+  NSString *username;
+  NSString *password;
+  
   int projectIndex;
   int milestoneIndex;
   int userIndex;
@@ -24,6 +27,10 @@
 
 @property (retain) NSString *url;
 @property (retain) NSString *APIKey;
+
+@property (retain) NSString *username;
+@property (retain) NSString *password;
+
 @property () int projectIndex;
 @property () int milestoneIndex;
 @property () int userIndex;

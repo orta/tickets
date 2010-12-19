@@ -26,7 +26,6 @@
   
   self.currentTicket = [[Ticket alloc] init];
   self.growlController = [[GrowlController alloc] init];
-  
 }
 
 -(void) setServerIndex:(NSInteger)index {
@@ -39,6 +38,7 @@
   
   self.mixer = [self mixerFromServer:self.currentServer];
   
+  NSLog(@"mixer : %@", self.mixer);
   if(self.currentServer.url && self.currentServer.APIKey){
     [self getProjects];    
     self.projectIndex = currentServer.projectIndex;
@@ -50,7 +50,6 @@
 }
 
 - (void)setSelectedIndices:(NSIndexSet *)i {
-  NSLog(@"index %@", i);
   if([i count] ){
     [self setServerIndex:[i firstIndex]];    
   }
@@ -103,9 +102,7 @@
 
   int i = 0;
   NSString * currentURL = [[NSUserDefaults standardUserDefaults] stringForKey:@"currentURL"];
-  NSLog(@"currentURL : %@", currentURL);
   for (Server *server in [servers content]) {
-    NSLog(@"found server %@", server);
     if ([server.url isEqualToString: currentURL ]) {
       self.serverIndex = i;
       break;
@@ -123,10 +120,18 @@
   [newServer addObserver:self forKeyPath:@"self.APIKey" options:0 context:@""];
 }
 
+// called when the newServer's url/APIkey change
 - (void)observeValueForKeyPath:(NSString *)keyPath
                       ofObject:(id)object
                         change:(NSDictionary *)change
                        context:(void *)context {
+  Server *server = (Server*) object;
+  if([server.url rangeOfString:@"github"].location != NSNotFound){
+    server.mixer = @"GitHubIssues";
+    NSLog(@"hubby");
+  }
+  NSLog(@"looking at object %@", object);
+
   [self saveServerData];
 }
 

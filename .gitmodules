@@ -4,3 +4,15 @@
 [submodule "ext/bwtoolkit"]
 	path = ext/bwtoolkit
 	url = http://github.com/orta/bwtoolkit.git
+[submodule "ext/GitHubObjC"]
+	path = ext/GitHubObjC
+	url = https://github.com/ernstsson/GitHubObjC.git
+[submodule "ext/UAGithubEngine"]
+	path = ext/UAGithubEngine
+	url = https://github.com/owainhunt/UAGithubEngine.git
+[submodule "ext/yamlkit"]
+	path = ext/yamlkit
+	url = https://github.com/patrickt/yamlkit.git
+[submodule "ext/syck"]
+	path = ext/syck
+	url = https://github.com/indeyets/syck.git
