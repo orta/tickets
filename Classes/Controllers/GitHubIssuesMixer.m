@@ -12,6 +12,7 @@
 @implementation GitHubIssuesMixer
 @synthesize server, controller;
 
+
 - (void) getTickets{
   NSLog(@"get tickets!");
 }
