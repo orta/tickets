@@ -31,8 +31,6 @@
 		600FEE7112BE4BBA00043BE8 /* UAGithubCommitsJSONParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 600FEE5812BE4BBA00043BE8 /* UAGithubCommitsJSONParser.m */; };
 		600FEE7212BE4BBA00043BE8 /* UAGithubIssuesJSONParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 600FEE5A12BE4BBA00043BE8 /* UAGithubIssuesJSONParser.m */; };
 		600FEE7312BE4BBA00043BE8 /* UAGithubIssueCommentsJSONParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 600FEE5C12BE4BBA00043BE8 /* UAGithubIssueCommentsJSONParser.m */; };
-		6034C7221263471F0029D2CD /* ORBackwardsScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6034C7211263471F0029D2CD /* ORBackwardsScrollView.m */; };
-		6034C7BC12635BCF0029D2CD /* ORTransparentDarkScroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 6034C7BB12635BCF0029D2CD /* ORTransparentDarkScroller.m */; };
 		604513A4125CDBCB009D0824 /* ShortcutRecorder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60451357125CDBA5009D0824 /* ShortcutRecorder.framework */; };
 		604513A5125CDBCF009D0824 /* ShortcutRecorder.framework in Move Frameworks */ = {isa = PBXBuildFile; fileRef = 60451357125CDBA5009D0824 /* ShortcutRecorder.framework */; };
 		604A5DB71261170800705440 /* icon-ok-comment-hover.png in Resources */ = {isa = PBXBuildFile; fileRef = 604A5DB11261170800705440 /* icon-ok-comment-hover.png */; };
@@ -47,12 +45,19 @@
 		6053D28212AAD23E009F7CEC /* Growl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6053D28112AAD23E009F7CEC /* Growl.framework */; };
 		6053D28C12AAD3CF009F7CEC /* GrowlController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6053D28B12AAD3CF009F7CEC /* GrowlController.m */; };
 		6053D2C912AAD87F009F7CEC /* Growl.framework in Move Frameworks */ = {isa = PBXBuildFile; fileRef = 6053D28112AAD23E009F7CEC /* Growl.framework */; };
-		6053D38012AAE7D2009F7CEC /* TColumnView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6053D37F12AAE7D2009F7CEC /* TColumnView.m */; };
-		6053D39312AAEAFC009F7CEC /* TicketItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6053D39212AAEAFC009F7CEC /* TicketItemView.m */; };
 		6053D39612AAEEC8009F7CEC /* TicketsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6053D39512AAEEC8009F7CEC /* TicketsViewController.m */; };
 		60554E2F12428FEE0071A103 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 60554E2E12428FED0071A103 /* libz.dylib */; };
 		60554E4A124291B20071A103 /* Ticket.m in Sources */ = {isa = PBXBuildFile; fileRef = 60554E49124291B20071A103 /* Ticket.m */; };
 		60554EBE124368B40071A103 /* LighthouseEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 60554EBD124368B40071A103 /* LighthouseEntity.m */; };
+		606B90CF132A812A006C3DAA /* JAListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 606B90C5132A812A006C3DAA /* JAListView.m */; };
+		606B90D0132A812A006C3DAA /* JASectionedListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 606B90C8132A812A006C3DAA /* JASectionedListView.m */; };
+		606B90D1132A812A006C3DAA /* JAObjectListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 606B90CA132A812A006C3DAA /* JAObjectListView.m */; };
+		606B90D2132A812A006C3DAA /* JAListViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 606B90CC132A812A006C3DAA /* JAListViewItem.m */; };
+		606B90D3132A812A006C3DAA /* NSIndexPath+JAListViewExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 606B90CE132A812A006C3DAA /* NSIndexPath+JAListViewExtensions.m */; };
+		606B90D6132A864A006C3DAA /* TicketItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 606B90D5132A8649006C3DAA /* TicketItemView.m */; };
+		606B90D8132A866D006C3DAA /* TicketItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 606B90D7132A866D006C3DAA /* TicketItemView.xib */; };
+		606B90DB132A8BD7006C3DAA /* JAObjectListViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 606B90DA132A8BD7006C3DAA /* JAObjectListViewItem.m */; };
+		606B90DD132A8C58006C3DAA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 606B90DC132A8C58006C3DAA /* QuartzCore.framework */; };
 		6074E8F7126B33E100E134B7 /* LighthouseMixer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6074E8F6126B33E100E134B7 /* LighthouseMixer.m */; };
 		6074E9FB126B6EC300E134B7 /* OSStartupController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6074E9FA126B6EC300E134B7 /* OSStartupController.m */; };
 		607F5F7512427E51003BC2E8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 607F5F7412427E51003BC2E8 /* Cocoa.framework */; };
@@ -214,10 +219,6 @@
 		600FEE5A12BE4BBA00043BE8 /* UAGithubIssuesJSONParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UAGithubIssuesJSONParser.m; path = ext/UAGithubEngine/UAGithubIssuesJSONParser.m; sourceTree = "<group>"; };
 		600FEE5B12BE4BBA00043BE8 /* UAGithubIssueCommentsJSONParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UAGithubIssueCommentsJSONParser.h; path = ext/UAGithubEngine/UAGithubIssueCommentsJSONParser.h; sourceTree = "<group>"; };
 		600FEE5C12BE4BBA00043BE8 /* UAGithubIssueCommentsJSONParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UAGithubIssueCommentsJSONParser.m; path = ext/UAGithubEngine/UAGithubIssueCommentsJSONParser.m; sourceTree = "<group>"; };
-		6034C7201263471F0029D2CD /* ORBackwardsScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORBackwardsScrollView.h; sourceTree = "<group>"; };
-		6034C7211263471F0029D2CD /* ORBackwardsScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORBackwardsScrollView.m; sourceTree = "<group>"; };
-		6034C7BA12635BCF0029D2CD /* ORTransparentDarkScroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORTransparentDarkScroller.h; sourceTree = "<group>"; };
-		6034C7BB12635BCF0029D2CD /* ORTransparentDarkScroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORTransparentDarkScroller.m; sourceTree = "<group>"; };
 		60451333125CDB9D009D0824 /* ShortcutRecorder.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ShortcutRecorder.xcodeproj; path = ext/shortcutrecorder/ShortcutRecorder.xcodeproj; sourceTree = SOURCE_ROOT; };
 		6045157C125CF921009D0824 /* BWToolkit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BWToolkit.xcodeproj; path = ext/bwtoolkit/BWToolkit.xcodeproj; sourceTree = "<group>"; };
 		604A5DB11261170800705440 /* icon-ok-comment-hover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-ok-comment-hover.png"; path = "resources/icon-ok-comment-hover.png"; sourceTree = "<group>"; };
@@ -230,10 +231,6 @@
 		6053D28112AAD23E009F7CEC /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Growl.framework; sourceTree = "<group>"; };
 		6053D28A12AAD3CF009F7CEC /* GrowlController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlController.h; sourceTree = "<group>"; };
 		6053D28B12AAD3CF009F7CEC /* GrowlController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrowlController.m; sourceTree = "<group>"; };
-		6053D37E12AAE7D2009F7CEC /* TColumnView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TColumnView.h; sourceTree = "<group>"; };
-		6053D37F12AAE7D2009F7CEC /* TColumnView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TColumnView.m; sourceTree = "<group>"; };
-		6053D39112AAEAFC009F7CEC /* TicketItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TicketItemView.h; sourceTree = "<group>"; };
-		6053D39212AAEAFC009F7CEC /* TicketItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TicketItemView.m; sourceTree = "<group>"; };
 		6053D39412AAEEC8009F7CEC /* TicketsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TicketsViewController.h; sourceTree = "<group>"; };
 		6053D39512AAEEC8009F7CEC /* TicketsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TicketsViewController.m; sourceTree = "<group>"; };
 		60554E2E12428FED0071A103 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -241,6 +238,23 @@
 		60554E49124291B20071A103 /* Ticket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ticket.m; sourceTree = "<group>"; };
 		60554EBC124368B40071A103 /* LighthouseEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LighthouseEntity.h; sourceTree = "<group>"; };
 		60554EBD124368B40071A103 /* LighthouseEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LighthouseEntity.m; sourceTree = "<group>"; };
+		606B90C4132A812A006C3DAA /* JAListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JAListView.h; sourceTree = "<group>"; };
+		606B90C5132A812A006C3DAA /* JAListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JAListView.m; sourceTree = "<group>"; };
+		606B90C6132A812A006C3DAA /* JAEdgeInsets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JAEdgeInsets.h; sourceTree = "<group>"; };
+		606B90C7132A812A006C3DAA /* JASectionedListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JASectionedListView.h; sourceTree = "<group>"; };
+		606B90C8132A812A006C3DAA /* JASectionedListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JASectionedListView.m; sourceTree = "<group>"; };
+		606B90C9132A812A006C3DAA /* JAObjectListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JAObjectListView.h; sourceTree = "<group>"; };
+		606B90CA132A812A006C3DAA /* JAObjectListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JAObjectListView.m; sourceTree = "<group>"; };
+		606B90CB132A812A006C3DAA /* JAListViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JAListViewItem.h; sourceTree = "<group>"; };
+		606B90CC132A812A006C3DAA /* JAListViewItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JAListViewItem.m; sourceTree = "<group>"; };
+		606B90CD132A812A006C3DAA /* NSIndexPath+JAListViewExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSIndexPath+JAListViewExtensions.h"; sourceTree = "<group>"; };
+		606B90CE132A812A006C3DAA /* NSIndexPath+JAListViewExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSIndexPath+JAListViewExtensions.m"; sourceTree = "<group>"; };
+		606B90D4132A8649006C3DAA /* TicketItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TicketItemView.h; path = Views/TicketItemView.h; sourceTree = "<group>"; };
+		606B90D5132A8649006C3DAA /* TicketItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TicketItemView.m; path = Views/TicketItemView.m; sourceTree = "<group>"; };
+		606B90D7132A866D006C3DAA /* TicketItemView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TicketItemView.xib; path = Views/TicketItemView.xib; sourceTree = "<group>"; };
+		606B90D9132A8BD7006C3DAA /* JAObjectListViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JAObjectListViewItem.h; sourceTree = "<group>"; };
+		606B90DA132A8BD7006C3DAA /* JAObjectListViewItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JAObjectListViewItem.m; sourceTree = "<group>"; };
+		606B90DC132A8C58006C3DAA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		6074E8F5126B33E100E134B7 /* LighthouseMixer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LighthouseMixer.h; sourceTree = "<group>"; };
 		6074E8F6126B33E100E134B7 /* LighthouseMixer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LighthouseMixer.m; sourceTree = "<group>"; };
 		6074E8F8126B341300E134B7 /* Mixer_Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mixer_Protocol.h; sourceTree = "<group>"; };
@@ -293,6 +307,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				606B90DD132A8C58006C3DAA /* QuartzCore.framework in Frameworks */,
 				604A5E611263419500705440 /* BWToolkitFramework.framework in Frameworks */,
 				604513A4125CDBCB009D0824 /* ShortcutRecorder.framework in Frameworks */,
 				607F5FDD12428852003BC2E8 /* SystemConfiguration.framework in Frameworks */,
@@ -445,14 +460,11 @@
 		604A5E97126345D300705440 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				6034C7201263471F0029D2CD /* ORBackwardsScrollView.h */,
-				6034C7211263471F0029D2CD /* ORBackwardsScrollView.m */,
-				6034C7BA12635BCF0029D2CD /* ORTransparentDarkScroller.h */,
-				6034C7BB12635BCF0029D2CD /* ORTransparentDarkScroller.m */,
-				6053D37E12AAE7D2009F7CEC /* TColumnView.h */,
-				6053D37F12AAE7D2009F7CEC /* TColumnView.m */,
-				6053D39112AAEAFC009F7CEC /* TicketItemView.h */,
-				6053D39212AAEAFC009F7CEC /* TicketItemView.m */,
+				606B90C3132A8112006C3DAA /* JAListView */,
+				607F5F7D12427E51003BC2E8 /* MainMenu.xib */,
+				606B90D4132A8649006C3DAA /* TicketItemView.h */,
+				606B90D5132A8649006C3DAA /* TicketItemView.m */,
+				606B90D7132A866D006C3DAA /* TicketItemView.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -476,14 +488,34 @@
 				6074E8F4126B33C200E134B7 /* Mixers */,
 				609662FB12468302006C7E28 /* AppViewController.h */,
 				609662FC12468302006C7E28 /* AppViewController.m */,
-				607F5F9912428390003BC2E8 /* ServerController.m */,
 				607F5F9812428390003BC2E8 /* ServerController.h */,
+				607F5F9912428390003BC2E8 /* ServerController.m */,
 				6053D28A12AAD3CF009F7CEC /* GrowlController.h */,
 				6053D28B12AAD3CF009F7CEC /* GrowlController.m */,
 				6053D39412AAEEC8009F7CEC /* TicketsViewController.h */,
 				6053D39512AAEEC8009F7CEC /* TicketsViewController.m */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		606B90C3132A8112006C3DAA /* JAListView */ = {
+			isa = PBXGroup;
+			children = (
+				606B90D9132A8BD7006C3DAA /* JAObjectListViewItem.h */,
+				606B90DA132A8BD7006C3DAA /* JAObjectListViewItem.m */,
+				606B90C4132A812A006C3DAA /* JAListView.h */,
+				606B90C5132A812A006C3DAA /* JAListView.m */,
+				606B90C6132A812A006C3DAA /* JAEdgeInsets.h */,
+				606B90C7132A812A006C3DAA /* JASectionedListView.h */,
+				606B90C8132A812A006C3DAA /* JASectionedListView.m */,
+				606B90C9132A812A006C3DAA /* JAObjectListView.h */,
+				606B90CA132A812A006C3DAA /* JAObjectListView.m */,
+				606B90CB132A812A006C3DAA /* JAListViewItem.h */,
+				606B90CC132A812A006C3DAA /* JAListViewItem.m */,
+				606B90CD132A812A006C3DAA /* NSIndexPath+JAListViewExtensions.h */,
+				606B90CE132A812A006C3DAA /* NSIndexPath+JAListViewExtensions.m */,
+			);
+			name = JAListView;
 			sourceTree = "<group>";
 		};
 		6074E8F4126B33C200E134B7 /* Mixers */ = {
@@ -547,7 +579,6 @@
 				604A5DAF126116F900705440 /* Images */,
 				607F5F7612427E51003BC2E8 /* Tickifier-Info.plist */,
 				607F5F7812427E51003BC2E8 /* InfoPlist.strings */,
-				607F5F7D12427E51003BC2E8 /* MainMenu.xib */,
 				607F5F8012427E51003BC2E8 /* Credits.rtf */,
 			);
 			name = Resources;
@@ -556,6 +587,7 @@
 		607F5F6C12427E51003BC2E8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				606B90DC132A8C58006C3DAA /* QuartzCore.framework */,
 				6053D28112AAD23E009F7CEC /* Growl.framework */,
 				607F5FDC12428852003BC2E8 /* SystemConfiguration.framework */,
 				607F5FD912428816003BC2E8 /* Security.framework */,
@@ -739,6 +771,7 @@
 				604A5DBB1261170800705440 /* icon-ok-hover.png in Resources */,
 				604A5DBC1261170800705440 /* icon-ok.png in Resources */,
 				604A5DBE1261189F00705440 /* key-labels.png in Resources */,
+				606B90D8132A866D006C3DAA /* TicketItemView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -761,16 +794,12 @@
 				609661FC12466BE4006C7E28 /* PTKeyCodeTranslator.m in Sources */,
 				609661FD12466BE4006C7E28 /* PTKeyCombo.m in Sources */,
 				609662FD12468302006C7E28 /* AppViewController.m in Sources */,
-				6034C7221263471F0029D2CD /* ORBackwardsScrollView.m in Sources */,
-				6034C7BC12635BCF0029D2CD /* ORTransparentDarkScroller.m in Sources */,
 				60E8A31E126390F6004D1814 /* AMCollectionView.m in Sources */,
 				60E8A31F126390F6004D1814 /* AMCollectionViewItem.m in Sources */,
 				60E8A5B71265107B004D1814 /* Server.m in Sources */,
 				6074E8F7126B33E100E134B7 /* LighthouseMixer.m in Sources */,
 				6074E9FB126B6EC300E134B7 /* OSStartupController.m in Sources */,
 				6053D28C12AAD3CF009F7CEC /* GrowlController.m in Sources */,
-				6053D38012AAE7D2009F7CEC /* TColumnView.m in Sources */,
-				6053D39312AAEAFC009F7CEC /* TicketItemView.m in Sources */,
 				6053D39612AAEEC8009F7CEC /* TicketsViewController.m in Sources */,
 				600FEDF812BE4ADD00043BE8 /* GitHubIssuesMixer.m in Sources */,
 				600FEE5D12BE4BBA00043BE8 /* UAGithubEngine.m in Sources */,
@@ -796,6 +825,13 @@
 				600FEE7112BE4BBA00043BE8 /* UAGithubCommitsJSONParser.m in Sources */,
 				600FEE7212BE4BBA00043BE8 /* UAGithubIssuesJSONParser.m in Sources */,
 				600FEE7312BE4BBA00043BE8 /* UAGithubIssueCommentsJSONParser.m in Sources */,
+				606B90CF132A812A006C3DAA /* JAListView.m in Sources */,
+				606B90D0132A812A006C3DAA /* JASectionedListView.m in Sources */,
+				606B90D1132A812A006C3DAA /* JAObjectListView.m in Sources */,
+				606B90D2132A812A006C3DAA /* JAListViewItem.m in Sources */,
+				606B90D3132A812A006C3DAA /* NSIndexPath+JAListViewExtensions.m in Sources */,
+				606B90D6132A864A006C3DAA /* TicketItemView.m in Sources */,
+				606B90DB132A8BD7006C3DAA /* JAObjectListViewItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -829,6 +865,7 @@
 				607F5F7E12427E51003BC2E8 /* en */,
 			);
 			name = MainMenu.xib;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		607F5F8012427E51003BC2E8 /* Credits.rtf */ = {

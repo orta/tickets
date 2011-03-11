@@ -21,4 +21,14 @@
   return t;
 }
 
+-(id)copyWithZone:(NSZone*)zone {
+	Ticket *t = [[[self class] allocWithZone:zone] init];
+  t.title = self.title;
+  t.identifier = self.identifier;
+  t.url = self.url;
+  t.tags = self.tags;
+  return t;
+}
+
+
 @end

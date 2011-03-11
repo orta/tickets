@@ -107,6 +107,7 @@
         [tempTickets addObject:t];
       }        
       [controller.tickets setContent:tempTickets];
+      [[NSNotificationCenter defaultCenter] postNotificationName:@"TicketsUpdated" object:nil];
     }
   }];
 }

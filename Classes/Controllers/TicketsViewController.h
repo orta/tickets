@@ -7,12 +7,16 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "JAListView.h"
+#import "JASectionedListView.h"
+#import "TicketItemView.h"
 
+@interface TicketsViewController : NSObject <JAListViewDataSource, JAListViewDelegate>{
 
-@interface TicketsViewController : NSObject {
+  IBOutlet NSArrayController * tickets;
+  JAListView *listView;
 
-  
-  
 }
+@property (assign) IBOutlet JAListView *listView;
 
 @end

@@ -313,14 +313,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>GrowlController.h</string>
+								<string>GrowlController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -328,11 +326,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>GrowlController.h</string>
+										<string>GrowlController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>6003D9611325233D009DA1FF</string>
+										<string>6003D96D13254026009DA1FF</string>
 										<key>history</key>
 										<array>
 											<string>609660B112455392006C7E28</string>
@@ -393,8 +391,8 @@
 											<string>600FEF8112BE5CC700043BE8</string>
 											<string>60C13D6712D75D5F008D643B</string>
 											<string>6003D95E1325233D009DA1FF</string>
+											<string>6003D96C13254026009DA1FF</string>
 											<string>6003D95F1325233D009DA1FF</string>
-											<string>6003D9601325233D009DA1FF</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -416,6 +414,8 @@
 							<string>476pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
