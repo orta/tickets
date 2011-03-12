@@ -36,6 +36,11 @@
   }
 }
 
+- (BOOL)applicationShouldHandleReopen:(NSApplication *)theApplication hasVisibleWindows:(BOOL)flag{
+  [self hitListTicketHotKey:nil];
+  return YES;
+}
+
 - (IBAction)newTicket:(id)sender {
   if([newTicketWindow isKeyWindow] == NO){
     [newTicketWindow makeKeyAndOrderFront:self];
@@ -97,7 +102,8 @@
 }
 
 - (void)hitListTicketHotKey:(PTHotKey *)hotKey {
-  if([listTicketsWindow isKeyWindow]){
+  // dock hits send through a nik hotkey
+  if([listTicketsWindow isKeyWindow] && hotKey != nil){
     [self restorePreviouslyActiveApp];
     [self hideAll:self];
 
