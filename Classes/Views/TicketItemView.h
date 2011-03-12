@@ -9,10 +9,14 @@
 #import <Cocoa/Cocoa.h>
 #import "JAListViewItem.h"
 
-@class Ticket;
+@class Ticket, TicketWrapper;
+
 @interface TicketItemView : JAListViewItem {
   BOOL selected;
-  Ticket * ticket;
+  NSGradient *gradient;
+  NSGradient *selectedGradient;
+
+  TicketWrapper *ticketWrapper;
 }
 
 + (TicketItemView *) ticketItemViewWithTicket:(Ticket *)t;

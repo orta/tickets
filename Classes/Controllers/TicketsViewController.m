@@ -14,11 +14,18 @@
 - (id) init {
   [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reloadTickets:) name:@"TicketsUpdated" object:nil];
   self = [super init];
+  
   return self;
 }
 
 - (void) reloadTickets: (NSNotification *) notification {
-  NSLog(@"wow, TV sucks");
+  NSMutableArray *spareViewArray = [NSMutableArray array];
+  for (Ticket* t in [tickets arrangedObjects]) {
+    TicketItemView *view = [TicketItemView ticketItemViewWithTicket:t];    
+    [spareViewArray addObject:view];
+  }
+  views = spareViewArray;
+  
   [listView reloadDataAnimated:true];
 }
 
@@ -26,24 +33,24 @@
 #pragma mark JAListViewDelegate
 
 - (void)listView:(JAListView *)list willSelectView:(JAListViewItem *)view {
-  if(list == self.listView) {
-    TicketItemView *demoView = (TicketItemView *) view;
-    demoView.selected = YES;
-  }
+//  if(list == self.listView) {
+//    TicketItemView *currentView = (TicketItemView *) view;
+//  }
 }
 
 - (void)listView:(JAListView *)list didSelectView:(JAListViewItem *)view {
+  NSLog(@"did selecr");
   if(list == self.listView) {
-    TicketItemView *demoView = (TicketItemView *) view;
-    demoView.selected = NO;
+    TicketItemView *currentView = (TicketItemView *) view;
+    currentView.selected = YES;
   }
   [list reloadDataAnimated:YES];
 }
 
 - (void)listView:(JAListView *)list didUnSelectView:(JAListViewItem *)view {
   if(list == self.listView) {
-    TicketItemView *demoView = (TicketItemView *) view;
-    demoView.selected = NO;
+    TicketItemView *currentView = (TicketItemView *) view;
+    currentView.selected = NO;
   }
 }
 
@@ -55,9 +62,7 @@
 }
 
 - (JAListViewItem *)listView:(JAListView *)listView viewAtIndex:(NSUInteger)index {
-  Ticket * currentTicket = [[tickets arrangedObjects] objectAtIndex:index];
-  TicketItemView *view = [TicketItemView ticketItemViewWithTicket:currentTicket];
-  return view;
+  return [views objectAtIndex:index];
 }
 
 @synthesize listView;

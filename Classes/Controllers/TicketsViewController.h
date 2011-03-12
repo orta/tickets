@@ -15,6 +15,7 @@
 
   IBOutlet NSArrayController * tickets;
   JAListView *listView;
+  NSArray * views;
 
 }
 @property (assign) IBOutlet JAListView *listView;
