@@ -23,7 +23,7 @@
 		</object>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="1025"/>
+			<integer value="876"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -1914,12 +1914,12 @@
 										<object class="NSCustomView" id="683111543">
 											<reference key="NSNextResponder" ref="868638906"/>
 											<int key="NSvFlags">274</int>
-											<string key="NSFrameSize">{367, 547}</string>
+											<string key="NSFrameSize">{367, 527}</string>
 											<reference key="NSSuperview" ref="868638906"/>
 											<string key="NSClassName">JAListView</string>
 										</object>
 									</object>
-									<string key="NSFrameSize">{367, 547}</string>
+									<string key="NSFrameSize">{367, 527}</string>
 									<reference key="NSSuperview" ref="136376618"/>
 									<reference key="NSNextKeyView" ref="683111543"/>
 									<reference key="NSDocView" ref="683111543"/>
@@ -1933,7 +1933,7 @@
 									<reference key="NSSuperview" ref="136376618"/>
 									<reference key="NSTarget" ref="136376618"/>
 									<string key="NSAction">_doScroller:</string>
-									<double key="NSCurValue">1</double>
+									<double key="NSCurValue">0.80080064106789162</double>
 									<double key="NSPercent">0.96363627910614014</double>
 								</object>
 								<object class="NSScroller" id="847188001">
@@ -1947,13 +1947,33 @@
 									<double key="NSPercent">0.50602412223815918</double>
 								</object>
 							</object>
-							<string key="NSFrameSize">{367, 547}</string>
+							<string key="NSFrameSize">{367, 527}</string>
 							<reference key="NSSuperview" ref="994627731"/>
 							<reference key="NSNextKeyView" ref="868638906"/>
 							<int key="NSsFlags">560</int>
 							<reference key="NSVScroller" ref="1006204303"/>
 							<reference key="NSHScroller" ref="847188001"/>
 							<reference key="NSContentView" ref="868638906"/>
+						</object>
+						<object class="NSButton" id="416254195">
+							<reference key="NSNextResponder" ref="994627731"/>
+							<int key="NSvFlags">268</int>
+							<string key="NSFrame">{{-13, 525}, {409, 23}}</string>
+							<reference key="NSSuperview" ref="994627731"/>
+							<bool key="NSEnabled">YES</bool>
+							<object class="NSButtonCell" key="NSCell" id="437452716">
+								<int key="NSCellFlags">-2080244224</int>
+								<int key="NSCellFlags2">134217728</int>
+								<string key="NSContents"/>
+								<reference key="NSSupport" ref="717616117"/>
+								<reference key="NSControlView" ref="416254195"/>
+								<int key="NSButtonFlags">-2033434369</int>
+								<int key="NSButtonFlags2">162</int>
+								<string key="NSAlternateContents"/>
+								<string key="NSKeyEquivalent"/>
+								<int key="NSPeriodicDelay">400</int>
+								<int key="NSPeriodicInterval">75</int>
+							</object>
 						</object>
 					</object>
 					<string key="NSFrameSize">{367, 547}</string>
@@ -4064,6 +4084,14 @@
 					</object>
 					<int key="connectionID">1029</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">initialFirstResponder</string>
+						<reference key="source" ref="826569656"/>
+						<reference key="destination" ref="683111543"/>
+					</object>
+					<int key="connectionID">1032</int>
+				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<object class="NSArray" key="orderedObjects">
@@ -5577,6 +5605,7 @@
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="136376618"/>
+							<reference ref="416254195"/>
 						</object>
 						<reference key="parent" ref="826569656"/>
 					</object>
@@ -5817,6 +5846,20 @@
 						<reference key="object" ref="683111543"/>
 						<reference key="parent" ref="136376618"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">1030</int>
+						<reference key="object" ref="416254195"/>
+						<object class="NSMutableArray" key="children">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<reference ref="437452716"/>
+						</object>
+						<reference key="parent" ref="994627731"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">1031</int>
+						<reference key="object" ref="437452716"/>
+						<reference key="parent" ref="416254195"/>
+					</object>
 				</object>
 			</object>
 			<object class="NSMutableDictionary" key="flattenedProperties">
@@ -5831,6 +5874,9 @@
 					<string>1023.IBPluginDependency</string>
 					<string>1024.IBPluginDependency</string>
 					<string>1025.IBPluginDependency</string>
+					<string>1030.IBPluginDependency</string>
+					<string>1030.IBViewBoundsToFrameTransform</string>
+					<string>1031.IBPluginDependency</string>
 					<string>129.IBPluginDependency</string>
 					<string>129.ImportedFromIB2</string>
 					<string>130.IBPluginDependency</string>
@@ -6190,10 +6236,15 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<object class="NSAffineTransform">
-						<bytes key="NSTransformStruct">P4AAAL+AAABBYAAAxAPAAA</bytes>
+						<bytes key="NSTransformStruct">P4AAAL+AAAAAAAAAw/CAAA</bytes>
 					</object>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
+					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
+					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
+					<object class="NSAffineTransform">
+						<bytes key="NSTransformStruct">P4AAAL+AAADB4AAAxAiAAA</bytes>
+					</object>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<integer value="1"/>
@@ -6612,7 +6663,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">1029</int>
+			<int key="maxID">1032</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">

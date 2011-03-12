@@ -456,7 +456,6 @@
 		604A5E97126345D300705440 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				606B90C3132A8112006C3DAA /* JAListView */,
 				607F5F7D12427E51003BC2E8 /* MainMenu.xib */,
 				606B90D4132A8649006C3DAA /* TicketItemView.h */,
 				606B90D5132A8649006C3DAA /* TicketItemView.m */,
@@ -514,6 +513,7 @@
 				606B90CE132A812A006C3DAA /* NSIndexPath+JAListViewExtensions.m */,
 			);
 			name = JAListView;
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		6074E8F4126B33C200E134B7 /* Mixers */ = {
@@ -547,9 +547,9 @@
 		607F5F6912427E51003BC2E8 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				604A5E97126345D300705440 /* Views */,
 				607F5F8312427E51003BC2E8 /* TickifierAppDelegate.h */,
 				607F5F8412427E51003BC2E8 /* TickifierAppDelegate.m */,
+				604A5E97126345D300705440 /* Views */,
 				60554E64124291E90071A103 /* Controllers */,
 				60554E4B124291B50071A103 /* Models */,
 			);
@@ -559,6 +559,7 @@
 		607F5F6A12427E51003BC2E8 /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
+				606B90C3132A8112006C3DAA /* JAListView */,
 				6074E9F9126B6EC300E134B7 /* OSStartupController.h */,
 				6074E9FA126B6EC300E134B7 /* OSStartupController.m */,
 				600FEE2612BE4BA700043BE8 /* UAGithubEngine */,

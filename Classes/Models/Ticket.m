@@ -17,6 +17,7 @@
   t.title = [[[element elementsForName:@"title"] objectAtIndex:0] stringValue];
   t.identifier = [[[element elementsForName:@"number"] objectAtIndex:0] stringValue];
   t.url = [[[element elementsForName:@"url"] objectAtIndex:0] stringValue];
+  t.body = [[[element elementsForName:@"latest-body"] objectAtIndex:0] stringValue];
   t.tags = [[[element elementsForName:@"tag"] objectAtIndex:0] stringValue];
   return t;
 }

@@ -42,7 +42,6 @@
 }
 
 - (void)listView:(JAListView *)list didSelectView:(JAListViewItem *)view {
-  NSLog(@"did selecr");
   if(list == self.listView) {
     TicketItemView *currentView = (TicketItemView *) view;
     currentView.selected = YES;

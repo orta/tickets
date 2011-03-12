@@ -36,6 +36,10 @@
   }
 }
 
+- (IBAction)newTicket:(id)sender {
+  
+}
+
 - (IBAction)toggleLoadOnStartup:(id)sender {
   [OSStartupController toggleLaunchAtStartup:self];
 } 
