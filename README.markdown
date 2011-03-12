@@ -11,4 +11,4 @@ At the minute the first-run experience is crap. But I can get around to that aft
 
 There's also some work towards adding github issue support. First though I'd need to actually use them =)
 
-![screenshot!](https://github.com/orta/tickets/raw/master/web/tickets.PNG)
+![screenshot!](https://github.com/orta/tickets/raw/master/web/ticketsapp.PNG)
