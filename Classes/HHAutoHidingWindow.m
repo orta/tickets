@@ -118,7 +118,7 @@
 - (void)scheduleHide
 {
 	[NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(autoHide) object:nil];
-	[self performSelector:@selector(autoHide) withObject:nil afterDelay:2];
+	[self performSelector:@selector(autoHide) withObject:nil afterDelay:1.5];
 }
 
 - (NSView*)wrapperViewWithFrame:(NSRect)bounds
@@ -197,7 +197,8 @@
 - (void)adjustWindowFrame
 {
 	NSScreen *mainScreen = [NSScreen mainScreen];
-	CGFloat menuBarHeight = 22.0f; //[NSMenuView menuBarHeight];
+  //  NSMenuView is depreciated
+	CGFloat menuBarHeight = [[NSApp mainMenu] menuBarHeight];
 	NSRect windowFrame = [mainScreen frame];
 	
 	windowFrame.size.height -= menuBarHeight;
