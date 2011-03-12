@@ -12,13 +12,16 @@
 @interface TicketWrapper : NSObject {
   Ticket * ticket;
   BOOL selected;
-    
+  NSColor *textColor;
 }
 
+@property (nonatomic, copy) NSColor *textColor;
 @property Ticket * ticket;
 @property BOOL selected;
 
 + (TicketWrapper *) ticketWrapperWithTicket: (Ticket *) t;
+
+- (void)setSelected:(BOOL)isSelected;
 - (NSString*) generateTimeString;
 
 @end

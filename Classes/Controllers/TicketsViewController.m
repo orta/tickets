@@ -14,8 +14,11 @@
 - (id) init {
   [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reloadTickets:) name:@"TicketsUpdated" object:nil];
   self = [super init];
-  
   return self;
+}
+
+- (void) awakeFromNib {
+  [listView setBackgroundColor:[NSColor colorWithDeviceWhite:1.0f alpha:255]];
 }
 
 - (void) reloadTickets: (NSNotification *) notification {

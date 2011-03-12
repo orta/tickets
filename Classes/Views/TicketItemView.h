@@ -15,13 +15,13 @@
   BOOL selected;
   NSGradient *gradient;
   NSGradient *selectedGradient;
-
+  
   TicketWrapper *ticketWrapper;
 }
 
 + (TicketItemView *) ticketItemViewWithTicket:(Ticket *)t;
+- (void) setSelected:(BOOL)isSelected;
 
-
-@property (nonatomic, copy) Ticket * ticket;
+@property (nonatomic, retain) TicketWrapper *ticketWrapper;
 
 @end

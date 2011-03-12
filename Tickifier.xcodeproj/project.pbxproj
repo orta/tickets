@@ -81,8 +81,6 @@
 		609662FD12468302006C7E28 /* AppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 609662FC12468302006C7E28 /* AppViewController.m */; };
 		6099805E124BD51E006AA575 /* tab.png in Resources */ = {isa = PBXBuildFile; fileRef = 6099805D124BD51E006AA575 /* tab.png */; };
 		60A4BCD5132BBD6400A95FD5 /* TicketWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A4BCD4132BBD6300A95FD5 /* TicketWrapper.m */; };
-		60E8A31E126390F6004D1814 /* AMCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E8A31A126390F6004D1814 /* AMCollectionView.m */; };
-		60E8A31F126390F6004D1814 /* AMCollectionViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E8A31C126390F6004D1814 /* AMCollectionViewItem.m */; };
 		60E8A5B71265107B004D1814 /* Server.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E8A5B61265107B004D1814 /* Server.m */; };
 /* End PBXBuildFile section */
 
@@ -296,11 +294,6 @@
 		6099805D124BD51E006AA575 /* tab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab.png; sourceTree = "<group>"; };
 		60A4BCD3132BBD6300A95FD5 /* TicketWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TicketWrapper.h; sourceTree = "<group>"; };
 		60A4BCD4132BBD6300A95FD5 /* TicketWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TicketWrapper.m; sourceTree = "<group>"; };
-		60E8A319126390F6004D1814 /* AMCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMCollectionView.h; sourceTree = "<group>"; };
-		60E8A31A126390F6004D1814 /* AMCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMCollectionView.m; sourceTree = "<group>"; };
-		60E8A31B126390F6004D1814 /* AMCollectionViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMCollectionViewItem.h; sourceTree = "<group>"; };
-		60E8A31C126390F6004D1814 /* AMCollectionViewItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMCollectionViewItem.m; sourceTree = "<group>"; };
-		60E8A31D126390F6004D1814 /* AMCollectionViewItemProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMCollectionViewItemProtocol.h; sourceTree = "<group>"; };
 		60E8A5B51265107B004D1814 /* Server.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Server.h; sourceTree = "<group>"; };
 		60E8A5B61265107B004D1814 /* Server.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Server.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -569,7 +562,6 @@
 				6074E9F9126B6EC300E134B7 /* OSStartupController.h */,
 				6074E9FA126B6EC300E134B7 /* OSStartupController.m */,
 				600FEE2612BE4BA700043BE8 /* UAGithubEngine */,
-				60E8A318126390E9004D1814 /* AMCollection */,
 				609661F112466BE4006C7E28 /* HotKey */,
 				60966051124551D7006C7E28 /* Seriously */,
 				607F5F7712427E51003BC2E8 /* Tickifier_Prefix.pch */,
@@ -635,18 +627,6 @@
 				609661F912466BE4006C7E28 /* PTKeyCombo.m */,
 			);
 			path = HotKey;
-			sourceTree = "<group>";
-		};
-		60E8A318126390E9004D1814 /* AMCollection */ = {
-			isa = PBXGroup;
-			children = (
-				60E8A319126390F6004D1814 /* AMCollectionView.h */,
-				60E8A31A126390F6004D1814 /* AMCollectionView.m */,
-				60E8A31B126390F6004D1814 /* AMCollectionViewItem.h */,
-				60E8A31C126390F6004D1814 /* AMCollectionViewItem.m */,
-				60E8A31D126390F6004D1814 /* AMCollectionViewItemProtocol.h */,
-			);
-			name = AMCollection;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -799,8 +779,6 @@
 				609661FC12466BE4006C7E28 /* PTKeyCodeTranslator.m in Sources */,
 				609661FD12466BE4006C7E28 /* PTKeyCombo.m in Sources */,
 				609662FD12468302006C7E28 /* AppViewController.m in Sources */,
-				60E8A31E126390F6004D1814 /* AMCollectionView.m in Sources */,
-				60E8A31F126390F6004D1814 /* AMCollectionViewItem.m in Sources */,
 				60E8A5B71265107B004D1814 /* Server.m in Sources */,
 				6074E8F7126B33E100E134B7 /* LighthouseMixer.m in Sources */,
 				6074E9FB126B6EC300E134B7 /* OSStartupController.m in Sources */,

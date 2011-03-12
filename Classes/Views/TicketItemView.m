@@ -12,9 +12,7 @@
 
 // privs, yeah?
 @interface TicketItemView ()
-- (void)drawBackground;
 - (void) setupGradients;
-
 @end
 
 
@@ -33,7 +31,7 @@
   [nib instantiateNibWithOwner:ticketWrapper topLevelObjects:&objects];
   for(id object in objects) {
     if([object isKindOfClass:self]) {
-      [object setTicket:t];
+      [object setTicketWrapper:ticketWrapper];
       [object setSelected:false];
       [object setupGradients];
       return object;
@@ -65,14 +63,18 @@
   NSRectFill(NSMakeRect(0.0f, self.bounds.size.height - 1.0f, self.bounds.size.width, 1.0f));
 }
 
-- (void)setSelected:(BOOL)isSelected {
+- (void) setSelected:(BOOL)isSelected {
   selected = isSelected;
+  ticketWrapper.selected = isSelected;
+    
+  //  hacky height thing. must be a better way
   NSRect frame = [self frame];
   frame.size.height = selected ? 200.0f : 50.0f; 
   [self setFrame: frame];
+  
   [self setNeedsDisplay:YES];
 }
 
 @synthesize selected;
-@synthesize ticket;
+@synthesize ticketWrapper;
 @end

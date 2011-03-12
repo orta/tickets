@@ -21,5 +21,11 @@
   return @"Henk said at 4am last night";
 }
 
-@synthesize ticket, selected;
+- (void)setSelected:(BOOL)isSelected {
+  NSLog(@"selected");
+  selected = isSelected;  
+  self.textColor = selected? [NSColor whiteColor] : [NSColor textColor];
+}
+
+@synthesize ticket, selected, textColor;
 @end
