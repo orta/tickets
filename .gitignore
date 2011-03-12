@@ -1,6 +1,8 @@
 # xcode noise
 Tickifier.xcodeproj/*.mode1v3
 Tickifier.xcodeproj/*.pbxuser
+Tickifier.xcodeproj/*.xcuserdatad
+Tickifier.xcodeproj/*.xcuserstate
 Tickifier.xcodeproj/*.perspective 
 Tickifier.xcodeproj/*.perspectivev3
 Tickifier.xcodeproj/*.pyc 

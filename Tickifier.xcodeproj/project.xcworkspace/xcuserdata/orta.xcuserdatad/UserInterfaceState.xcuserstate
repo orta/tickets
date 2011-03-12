@@ -4168,7 +4168,7 @@
 				</dict>
 			</array>
 		</dict>
-		<real>321659497.48397702</real>
+		<real>321660223.57978898</real>
 		<string>{2591, 1944}</string>
 		<string>{4019, 0}</string>
 		<dict>
@@ -14849,7 +14849,7 @@
 				</dict>
 			</array>
 		</dict>
-		<real>321659497.48775601</real>
+		<real>321660223.58222699</real>
 		<string>{2591, 1944}</string>
 		<string>{4019, 0}</string>
 		<string>-hitListTicketHotKey:</string>
@@ -15144,7 +15144,7 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>1077</integer>
+					<integer>1073</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
