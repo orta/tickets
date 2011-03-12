@@ -82,6 +82,8 @@
 		6099805E124BD51E006AA575 /* tab.png in Resources */ = {isa = PBXBuildFile; fileRef = 6099805D124BD51E006AA575 /* tab.png */; };
 		60A4BCD5132BBD6400A95FD5 /* TicketWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A4BCD4132BBD6300A95FD5 /* TicketWrapper.m */; };
 		60E8A5B71265107B004D1814 /* Server.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E8A5B61265107B004D1814 /* Server.m */; };
+		60EA7663132C28F40082A166 /* HHAutoHidingWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 60EA7660132C28F40082A166 /* HHAutoHidingWindow.m */; };
+		60EA7664132C28F40082A166 /* HHSlidingWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 60EA7662132C28F40082A166 /* HHSlidingWindow.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -296,6 +298,10 @@
 		60A4BCD4132BBD6300A95FD5 /* TicketWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TicketWrapper.m; sourceTree = "<group>"; };
 		60E8A5B51265107B004D1814 /* Server.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Server.h; sourceTree = "<group>"; };
 		60E8A5B61265107B004D1814 /* Server.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Server.m; sourceTree = "<group>"; };
+		60EA765F132C28F40082A166 /* HHAutoHidingWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHAutoHidingWindow.h; sourceTree = "<group>"; };
+		60EA7660132C28F40082A166 /* HHAutoHidingWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHAutoHidingWindow.m; sourceTree = "<group>"; };
+		60EA7661132C28F40082A166 /* HHSlidingWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHSlidingWindow.h; sourceTree = "<group>"; };
+		60EA7662132C28F40082A166 /* HHSlidingWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHSlidingWindow.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -456,6 +462,7 @@
 		604A5E97126345D300705440 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				60EA7655132C25C60082A166 /* Ticket List */,
 				607F5F7D12427E51003BC2E8 /* MainMenu.xib */,
 				606B90D4132A8649006C3DAA /* TicketItemView.h */,
 				606B90D5132A8649006C3DAA /* TicketItemView.m */,
@@ -539,8 +546,6 @@
 				607F5F96124281BE003BC2E8 /* IDEAS */,
 				607F5F6C12427E51003BC2E8 /* Frameworks */,
 				607F5F7212427E51003BC2E8 /* Products */,
-				6096620C12466CA0006C7E28 /* Carbon.framework */,
-				6096620E12466CA0006C7E28 /* CoreServices.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -585,6 +590,8 @@
 		607F5F6C12427E51003BC2E8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6096620C12466CA0006C7E28 /* Carbon.framework */,
+				6096620E12466CA0006C7E28 /* CoreServices.framework */,
 				606B90DC132A8C58006C3DAA /* QuartzCore.framework */,
 				6053D28112AAD23E009F7CEC /* Growl.framework */,
 				607F5FDC12428852003BC2E8 /* SystemConfiguration.framework */,
@@ -628,6 +635,17 @@
 				609661F912466BE4006C7E28 /* PTKeyCombo.m */,
 			);
 			path = HotKey;
+			sourceTree = "<group>";
+		};
+		60EA7655132C25C60082A166 /* Ticket List */ = {
+			isa = PBXGroup;
+			children = (
+				60EA765F132C28F40082A166 /* HHAutoHidingWindow.h */,
+				60EA7660132C28F40082A166 /* HHAutoHidingWindow.m */,
+				60EA7661132C28F40082A166 /* HHSlidingWindow.h */,
+				60EA7662132C28F40082A166 /* HHSlidingWindow.m */,
+			);
+			name = "Ticket List";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -817,6 +835,8 @@
 				606B90D6132A864A006C3DAA /* TicketItemView.m in Sources */,
 				606B90DB132A8BD7006C3DAA /* JAObjectListViewItem.m in Sources */,
 				60A4BCD5132BBD6400A95FD5 /* TicketWrapper.m in Sources */,
+				60EA7663132C28F40082A166 /* HHAutoHidingWindow.m in Sources */,
+				60EA7664132C28F40082A166 /* HHSlidingWindow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

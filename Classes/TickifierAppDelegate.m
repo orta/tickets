@@ -132,6 +132,7 @@
 #define ALPHA_DIRECTION(d,x) (d?(1.0f-(x)):(x))
 
 - (void)slideWindow:(NSWindow*)window direction:(BOOL)direction doSlide:(bool)doSlide { // true == down
+  return;
   BOOL doFade = YES;
   float animSpeed = 0.3f;
   
