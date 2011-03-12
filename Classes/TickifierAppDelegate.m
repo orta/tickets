@@ -37,7 +37,10 @@
 }
 
 - (IBAction)newTicket:(id)sender {
-  
+  if([newTicketWindow isKeyWindow] == NO){
+    [newTicketWindow makeKeyAndOrderFront:self];
+    [self slideWindow:newTicketWindow direction:YES doSlide:NO];    
+  }
 }
 
 - (IBAction)toggleLoadOnStartup:(id)sender {
