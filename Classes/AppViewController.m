@@ -47,7 +47,6 @@
     [ticketWindow setFrame:newFrame display:YES animate:YES];
   }
   [[NSUserDefaults standardUserDefaults] setBool:self.fullView forKey:@"simpleView"];
-
 }
 
 // tab support in textviews
