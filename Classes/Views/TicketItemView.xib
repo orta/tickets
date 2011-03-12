@@ -125,7 +125,7 @@
 					<object class="NSTextField" id="769818274">
 						<reference key="NSNextResponder" ref="1005"/>
 						<int key="NSvFlags">268</int>
-						<string key="NSFrame">{{223, 163}, {156, 57}}</string>
+						<string key="NSFrame">{{223, 168}, {156, 57}}</string>
 						<reference key="NSSuperview" ref="1005"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="522558092"/>
@@ -143,7 +143,7 @@
 							<reference key="NSBackgroundColor" ref="788914262"/>
 							<object class="NSColor" key="NSTextColor">
 								<int key="NSColorSpace">1</int>
-								<bytes key="NSRGB">MC42NDY3MzkxMzA0IDAuNjQ2NzM5MTMwNCAwLjY0NjczOTEzMDQgMC41AA</bytes>
+								<bytes key="NSRGB">MSAxIDEgMC4yNAA</bytes>
 							</object>
 						</object>
 					</object>

@@ -13,9 +13,12 @@
 
 @interface TicketItemView : JAListViewItem {
   BOOL selected;
+  BOOL pressed;
+  
   NSGradient *gradient;
   NSGradient *selectedGradient;
-  
+  NSGradient *pressedGradient;
+
   TicketWrapper *ticketWrapper;
 }
 
@@ -23,5 +26,6 @@
 - (void) setSelected:(BOOL)isSelected;
 
 @property (nonatomic, retain) TicketWrapper *ticketWrapper;
+@property BOOL pressed;
 
 @end

@@ -29,24 +29,26 @@
   }
   views = spareViewArray;
   
-  [listView reloadDataAnimated:true];
+  [listView reloadDataAnimated:YES];
 }
 
 
 #pragma mark JAListViewDelegate
 
 - (void)listView:(JAListView *)list willSelectView:(JAListViewItem *)view {
-//  if(list == self.listView) {
-//    TicketItemView *currentView = (TicketItemView *) view;
-//  }
+  if(list == self.listView) {
+    TicketItemView *currentView = (TicketItemView *) view;   
+    currentView.pressed = YES;
+  }
 }
 
 - (void)listView:(JAListView *)list didSelectView:(JAListViewItem *)view {
   if(list == self.listView) {
     TicketItemView *currentView = (TicketItemView *) view;
+    currentView.pressed = NO;
     currentView.selected = YES;
   }
-  [list reloadDataAnimated:YES];
+  [listView reloadLayoutAnimated:NO];
 }
 
 - (void)listView:(JAListView *)list didUnSelectView:(JAListViewItem *)view {
@@ -54,6 +56,8 @@
     TicketItemView *currentView = (TicketItemView *) view;
     currentView.selected = NO;
   }
+  [listView reloadLayoutAnimated:NO];
+
 }
 
 

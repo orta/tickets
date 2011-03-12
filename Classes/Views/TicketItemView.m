@@ -46,14 +46,21 @@
   gradient = [[NSGradient alloc] initWithStartingColor:[NSColor colorWithDeviceWhite:0.8f alpha:1.0f] endingColor:[NSColor colorWithDeviceWhite:0.85f alpha:1.0f]];
   
   selectedGradient = [[NSGradient alloc] initWithStartingColor:[NSColor colorWithCalibratedRed:0.086 green:0.398 blue:0.997 alpha:1.000] endingColor:[NSColor colorWithCalibratedRed:0.044 green:0.334 blue:0.872 alpha:1.000]];
+  
+  pressedGradient = [[NSGradient alloc] initWithStartingColor: [NSColor colorWithCalibratedWhite:0.603 alpha:1.000] endingColor:[NSColor colorWithCalibratedWhite:0.765 alpha:1.000]];
+
 }
 
 - (void)drawRect:(NSRect)dirtyRect {
-  if(self.selected) {
-    [selectedGradient drawInRect:self.bounds angle:self.selected ? 270.0f : 90.0f];   
-  }else{
+  if (!self.selected && !self.pressed) {
     [gradient drawInRect:self.bounds angle:self.selected ? 270.0f : 90.0f];   
   }
+  if(self.selected) {
+    [selectedGradient drawInRect:self.bounds angle:self.selected ? 270.0f : 90.0f];   
+  } 
+  if(self.pressed) {
+    [pressedGradient drawInRect:self.bounds angle:self.selected ? 270.0f : 90.0f];   
+  } 
  
   
   [[NSColor colorWithDeviceWhite:0.5f alpha:1.0f] set];
@@ -75,6 +82,7 @@
   [self setNeedsDisplay:YES];
 }
 
+@synthesize pressed;
 @synthesize selected;
 @synthesize ticketWrapper;
 @end
